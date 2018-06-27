@@ -12,8 +12,8 @@ Ho una simmetria assiale\index{Simmetria!assiale} di asse $r$ quando presi due p
 	\item Il segmento $PQ$ è perpendicolare ad $r$
 \end{enumerate} 
 \end{defn}
-\begin{thm}
-In una simmetria assiale di asse $r:y=mx+q$ la trasformazione che lega i punti della simmetria ha equazione
+\begin{thm}\label{thm:Sassiale1}
+In una simmetria assiale di asse $r:y=mx+q$ la trasformazione che lega i punti della simmetria ha equazione:
 \[\begin{cases}
 x_0=\frac{2m(y_1-q)+(1-m^2)x_1}{1+m^2}\\
 \\
@@ -21,7 +21,7 @@ y_0=\frac{2(mx_1+q)+(m^2-1)y_1}{1+m^2}
 \end{cases}\]
 \end{thm}
 \begin{proof}
-	Supponiamo di avere due punti $P(x_1,y_1)$ e $Q(x_0,y_0)$
+	Supponiamo di avere due punti $P(x_1,y_1)$ e $Q(x_0,y_0)$ con $x_1\neq x_0$
 	
 	 Dalla~\cref{defn:Sassiale1} se $P$ e $Q$ sono simmetrici rispetto alla retta $r$ 
 	  \begin{equation}
@@ -83,3 +83,31 @@ y_0=\frac{2(mx_1+q)+(m^2-1)y_1}{1+m^2}
 	 \end{cases}
  \end{align*}
  \end{proof}
+Discutendo il risultato del~\cref{thm:Sassiale1} otteniamo i seguenti corollari:
+\begin{cor}
+	Per $m=1$ il sistema diviene 
+	\begin{equation}
+	\begin{cases}
+	x_0=y_1-q\\
+	y_1=x_1+q
+	\end{cases}
+	\end{equation}
+\end{cor}
+\begin{cor}
+	Per $m=-1$ il sistema diviene 
+	\begin{equation}
+	\begin{cases}
+	x_0=-y_1-q\\
+	y_1=-x_1+q
+	\end{cases}
+	\end{equation}
+\end{cor}
+\begin{cor}
+	Per $m=0$ il sistema diviene 
+	\begin{equation}
+	\begin{cases}
+	x_0=x_1\\
+	y_1=2q-y_1
+	\end{cases}
+	\end{equation}
+\end{cor}
