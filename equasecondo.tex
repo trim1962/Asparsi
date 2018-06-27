@@ -1,0 +1,25 @@
+% !TeX root = Asparsi.tex
+% !BIB TS-program = biber
+% !TeX encoding = UTF-8
+% !TeX spellcheck = it_IT
+\chapter{Equazioni secondo grado}
+\section{Risoluzione}\label{thm:Equasec1}
+\begin{thm}
+	Una equazione di secondo grado $ax^2+bx+c=0$ con $a\neq 0$ ha soluzione \begin{equation}\label[equation]{eq:equasec1}
+	x_{1,2}=\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}
+	\end{equation}\index{Equazione!secondo grado!soluzioni}
+\end{thm}
+\begin{proof}
+	\begin{align*}
+	ax^2+bx+c=&0
+	\intertext{$a\neq 0$}
+	ax^2+bx+\frac{b^2}{4a}+c=&\frac{b^2}{4a}\\
+	ax^2+bx+\frac{b^2}{4a}=&\frac{b^2}{4a}-c\\
+	\frac{4a^2x^2+4abx+b^2}{4a}=&\frac{b^2-4ac}{4a}\\
+	\left(2ax+b\right)^2=&b^2-4ac
+	\intertext{Otteniamo un'equazione di primo grado che risolviamo separando le variabili}
+	2ax+b=&\pm\sqrt{b^2-4ac}\\
+	2ax=&-b\pm\sqrt{b^2-4ac}\\
+	x=&\frac{-b\pm\sqrt{b^2-4ac}}{2a}
+	\end{align*}
+\end{proof}
