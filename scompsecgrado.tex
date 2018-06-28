@@ -3,8 +3,9 @@
 % !TeX encoding = UTF-8
 % !TeX spellcheck = it_IT
 \chapter{Scomposizioni trinomio}
+\section{Formula generale}
 \begin{thm}\label{thm:scompsecgrad1}
-Data 	una equazione di secondo grado $ax^2+bx+c=0$ con $a\neq 0$ avremo:\begin{equation}\label[equation]{eq:scompsecgrad1}
+Dato un trinomio di secondo grado\index{Triniomio!secondo!grado} $ax^2+bx+c=0$ con $a\neq 0$ avremo:\begin{equation}\label[equation]{eq:scompsecgrad1}
 ax^2+bx+c=a\left[\left(\dfrac{2ax+b}{2a}\right)^2-\dfrac{\Delta}{4a^2}\right]\qquad\Delta=b^2-4ac
 \end{equation}
 \end{thm}
@@ -17,6 +18,46 @@ ax^2+bx+c=a\left[\left(\dfrac{2ax+b}{2a}\right)^2-\dfrac{\Delta}{4a^2}\right]\qq
 	=&a\left[\left(\frac{4a^2x^2+4abx+b^2}{4a^2}\right)+\left(\frac{4ac-b^2}{4a^2}\right)\right]\\
 	=&a\left[\left(\frac{2ax+b}{2a}\right)^2-\left(\frac{b^2-4ac}{4a^2}\right)\right]\\
 	\intertext{$\Delta=b^2-4ac$}
-	=&a\left[\left(\frac{2ax+b}{2a}\right)^2-\left(\frac{\Delta}{4a^2}\right)\right]
+	=&a\left[\left(\frac{2ax+b}{2a}\right)^2-\frac{\Delta}{4a^2}\right]
 	\end{align*}
 \end{proof}
+\begin{comm}
+	Utilizzando il~\cref{thm:scompsecgrad1} è possibile ottenere la risoluzione di un'equazione di secondo grado completa. Avremo tre casi:
+	\begin{description}
+		\item[$\Delta>0$]In questo caso l'\cref{eq:scompsecgrad1}, ponendola uguale a zero, diventa:  
+		\begin{equation*}
+		\left(\frac{2ax+b}{2a}-\frac{\sqrt{\Delta}}{2a}\right)\left(\frac{2ax+b}{2a}+\frac{\sqrt{\Delta}}{2a}\right)=0
+		\end{equation*}
+		\begin{align*}
+		\frac{2ax+b}{2a}-\frac{\sqrt{\Delta}}{2a}=&0&\frac{2ax+b}{2a}+\frac{\sqrt{\Delta}}{2a}=&0\\
+		2ax+b-\sqrt{\Delta}=&0&2ax+b+\sqrt{\Delta}=&0\\
+		2ax=&-b-\sqrt{\Delta}&2ax=&-b+\sqrt{\Delta}\\
+		x=&\frac{-b-\sqrt{\Delta}}{2a}&x=&\frac{-b+\sqrt{\Delta}}{2a}\\
+		\end{align*}
+	\item[$\Delta=0$]In questo caso l'\cref{eq:scompsecgrad1}, ponendola uguale a zero, diventa:
+	\begin{equation}
+	\left(\dfrac{2ax+b}{2a}\right)^2=0
+	\end{equation}Quindi:
+	\begin{align*}
+	2ax+b=&0\\
+	2ax=&-b\\
+	x=&-\frac{b}{2a}
+	\end{align*}
+	\item[$\Delta<0$]In questo caso l'\cref{eq:scompsecgrad1}, ponendola uguale a zero, diventa:
+	\begin{equation*}
+	\left(\dfrac{2ax+b}{2a}\right)^2-\dfrac{\Delta}{4a^2}=0
+	\end{equation*}
+	Dato che $\Delta$ è negativo abbiamo la somma di due quantità positive, questa somma può essere scomposta nel campo complesso \[a^2+b^2=(a+ib)(a-ib)\] Quindi
+	
+		\begin{equation*}
+	\left(\frac{2ax+b}{2a}-\frac{i\sqrt{\Delta}}{2a}\right)\left(\frac{2ax+b}{2a}+\frac{i\sqrt{\Delta}}{2a}\right)=0
+	\end{equation*}
+		\begin{align*}
+	\frac{2ax+b}{2a}-\frac{i\sqrt{\Delta}}{2a}=&0&\frac{2ax+b}{2a}+\frac{i\sqrt{\Delta}}{2a}=&0\\
+	2ax+b-i\sqrt{\Delta}=&0&2ax+b+i\sqrt{\Delta}=&0\\
+	2ax=&-b-i\sqrt{\Delta}&2ax=&-b+i\sqrt{\Delta}\\
+	x=&\frac{-b-i\sqrt{\Delta}}{2a}&x=&\frac{-b+i\sqrt{\Delta}}{2a}\\
+	\end{align*}
+
+	\end{description}
+\end{comm}
