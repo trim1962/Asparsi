@@ -1,0 +1,22 @@
+% !TeX root = Asparsi.tex
+% !BIB TS-program = biber
+% !TeX encoding = UTF-8
+% !TeX spellcheck = it_IT
+\chapter{Scomposizioni trinomio}
+\begin{thm}\label{thm:scompsecgrad1}
+Data 	una equazione di secondo grado $ax^2+bx+c=0$ con $a\neq 0$ avremo:\begin{equation}\label[equation]{eq:scompsecgrad1}
+ax^2+bx+c=a\left[\left(\dfrac{2ax+b}{2a}\right)^2-\dfrac{\Delta}{4a^2}\right]\qquad\Delta=b^2-4ac
+\end{equation}
+\end{thm}
+\begin{proof}
+	\begin{align*}
+	ax^2+bx+c=&0\\
+	\intertext{raccolgo $a$}
+	=&a\left(x^2+\frac{b}{a}x+\frac{c}{a}\right)\\
+	=&a\left(x^2+\frac{b}{a}x+\frac{b^2}{4a^2}+\frac{c}{a}-\frac{b^2}{4a^2}\right)\\
+	=&a\left[\left(\frac{4a^2x^2+4abx+b^2}{4a^2}\right)+\left(\frac{4ac-b^2}{4a^2}\right)\right]\\
+	=&a\left[\left(\frac{2ax+b}{2a}\right)^2-\left(\frac{b^2-4ac}{4a^2}\right)\right]\\
+	\intertext{$\Delta=b^2-4ac$}
+	=&a\left[\left(\frac{2ax+b}{2a}\right)^2-\left(\frac{\Delta}{4a^2}\right)\right]
+	\end{align*}
+\end{proof}
