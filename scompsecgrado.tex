@@ -48,8 +48,7 @@ ax^2+bx+c=a\left[\left(\dfrac{2ax+b}{2a}\right)^2-\dfrac{\Delta}{4a^2}\right]\qq
 	\left(\dfrac{2ax+b}{2a}\right)^2-\dfrac{\Delta}{4a^2}=0
 	\end{equation*}
 	Dato che $\Delta$ è negativo abbiamo la somma di due quantità positive, questa somma può essere scomposta nel campo complesso \[a^2+b^2=(a+ib)(a-ib)\] Quindi
-	
-		\begin{equation*}
+	\begin{equation*}
 	\left(\frac{2ax+b}{2a}-\frac{i\sqrt{\Delta}}{2a}\right)\left(\frac{2ax+b}{2a}+\frac{i\sqrt{\Delta}}{2a}\right)=0
 	\end{equation*}
 		\begin{align*}
@@ -58,6 +57,77 @@ ax^2+bx+c=a\left[\left(\dfrac{2ax+b}{2a}\right)^2-\dfrac{\Delta}{4a^2}\right]\qq
 	2ax=&-b-i\sqrt{\Delta}&2ax=&-b+i\sqrt{\Delta}\\
 	x=&\frac{-b-i\sqrt{\Delta}}{2a}&x=&\frac{-b+i\sqrt{\Delta}}{2a}\\
 	\end{align*}
-
 	\end{description}
 \end{comm}
+\begin{thm}\label{thm:scompsecgrad2}\index{Triniomio!secondo!grado}
+Dati due numeri $p$ e $p$ allora \begin{equation}
+	px^2+(p+q)x+q=(x+1)(px+q)
+\end{equation}\label[equation]{eq:scompsecgrad2}
+\end{thm}
+\begin{proof}
+	\begin{align*}
+	px^2+(p+q)x+q=&\\
+	&=px^2+px+qx+q\\
+	&=px(x+1)+q(x+1)\\
+	&=(x+1)(px+q)
+	\end{align*}
+\end{proof}
+\begin{thm}\label{thm:scompsecgrad3}\index{Triniomio!secondo!grado}
+Se esistono due numeri $t_1$ e $t_2$ tali che\begin{equation}
+\begin{cases}
+s=t_1+t_2\\
+p=t_1\cdot t_2
+\end{cases}
+\end{equation} allora \begin{equation}
+x^2+sx+p=(x+t_1)(x+t_2)
+\end{equation}\label[equation]{eq:scompsecgrad3}
+\end{thm}
+\begin{proof}
+	\begin{align*}
+	x^2+sx+p=&\\
+	&=x^2+(t_1+t_2)x+t_1\cdot t_2\\
+	&=x^2+t_1x+t_2x+t_1\cdot t_2\\
+	&=x(x+t_1)+t_2(x+t_1)\\
+	&=(x+t_1)(x+t_2)
+	\end{align*}
+\end{proof}
+\begin{thm}\label{thm:scompsecgrad4}\index{Triniomio!secondo!grado}
+	Se esistono due numeri $t_1$ e $t_2$ tali che\begin{equation}
+	\begin{cases}
+	s=t_1+t_2\\
+	p=t_1\cdot t_2
+	\end{cases}
+	\end{equation} allora \begin{equation}
+	x^{2n}+sx^n+p=(x^n+t_1)(x^n+t_2)
+	\end{equation}\label[equation]{eq:scompsecgrad4}
+\end{thm}
+\begin{proof}
+	\begin{align*}
+	x^{2n}+sx^n+p=&\\
+	&=x^{2n}+(t_1+t_2)x^n+t_1\cdot t_2\\
+	&=x^{2n}+t_1x^n+t_2x^n+t_1\cdot t_2\\
+	&=x^n(x^n+t_1)+t_2(x^n+t_1)\\
+	&=(x^n+t_1)(x^n+t_2)
+	\end{align*}
+\end{proof}
+\begin{thm}\label{thm:scompsecgrad5}\index{Triniomio!secondo!grado}
+	Se esistono due numeri $t_1$ e $t_2$ tali che\begin{equation}
+	\begin{cases}
+	s=t_1+t_2\\
+	ap=t_1\cdot t_2
+	\end{cases}
+	\end{equation} allora \begin{equation}
+	ax^{2}+sx+p=(ax+t_1)(x+\frac{t_2}{a})
+	\end{equation}\label[equation]{eq:scompsecgrad5}
+\end{thm}
+\begin{proof}
+	\begin{align*}
+	ax^{2}+sx+p=&\\
+	&=x^{2}+(t_1+t_2)x+\frac{t_1\cdot t_2}{a}\\
+	&=x^{2}+t_1x+t_2x+\frac{t_1\cdot t_2}{a}\\
+	&=x^{2}+t_1x+\frac{a}{a}t_2x+\frac{t_1\cdot t_2}{a}\\
+	&=x(ax+t_1)+\frac{t_2}{a}(ax+t_1)\\
+	&=(ax+t_1)\left(x+\frac{t_2}{a}\right)
+	\end{align*}
+\end{proof}
+
