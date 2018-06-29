@@ -1,0 +1,57 @@
+% !TeX root = Asparsi.tex
+% !BIB TS-program = biber
+% !TeX encoding = UTF-8
+% !TeX spellcheck = it_IT
+\chapter{Sistemi lineari}
+\section{Metodo di Cramer}\index{Sistemi!lineari!Cramer}
+\begin{thm}\label{thm:teoCramer1}
+	Dato un sistema lineare del tipo
+\begin{equation}\label[sistema]{si:teoCramer1}
+\begin{cases}
+a_1x+b_1y=c_1\\
+a_2x+b_2y=c_2
+\end{cases}
+\end{equation}
+allora 
+\begin{align*}
+x=&\frac{c_{1} b_{2} - c_{2} b_{1}}{a_{1} b_{2} - a_{2} b_{1}}=\frac{\begin{vmatrix}
+	c_{1} & b_{1}  \\
+	c_{2} & b_{2}
+	\end{vmatrix} }{\begin{vmatrix}
+	a_{1} & b_{1}  \\
+	a_{2} & b_{2}  \\
+	\end{vmatrix}}\\
+y=&\frac{c_{2} a_{1} - c_{1} a_{2}}{a_{1} b_{2} - a_{2} b_{1}}=\frac{\begin{vmatrix}
+	a_{1} & c_{1}  \\
+	a_{2} & c_{2}
+	\end{vmatrix} }{\begin{vmatrix}
+	a_{1} & b_{1}  \\
+	a_{2} & b_{2}  \\
+	\end{vmatrix}}\\
+&&a_{1} b_{2} - a_{2} b_{1}\neq& 0\\
+\end{align*}
+\end{thm}
+Consideriamo il~\cref{si:teoCramer1} moltiplicando la prima riga per $b_2$ e la seconda riga per $b_1$ otteniamo:
+\begin{equation}\label[sistema]{si:teoCramer2}
+\begin{cases}
+a_1b_2x+b_1b_2y=c_1b_2\\
+a_2b_1x+b_2b_1y=c_2b_1
+\end{cases}
+\end{equation}
+sottraendo otteniamo
+\begin{align*}
+a_1b_2x-a_2b_1x+0=&b_2c_1-b_1c_2\\
+x=&\frac{b_2c_1-b_1c_2}{a_1b_2-a_2b_1}
+\end{align*}
+Ripartiamo dal~\cref{si:teoCramer1} moltiplicando la prima riga per $a_2$ e la seconda riga per $a_1$ otteniamo:
+\begin{equation}\label[sistema]{si:teoCramer3}
+\begin{cases}
+a_1a_2x+b_1a_2y=c_1a_2\\
+a_2a_1x+b_2a_1y=c_2a_1
+\end{cases}
+\end{equation}
+sottraendo otteniamo
+\begin{align*}
+0+a_1b_2y-a_2b_1y=&a_2c_1-a_1c_2\\
+y=&\frac{c_2a_1-c_1a_2}{a_1b_2-a_2b_1}
+\end{align*}
