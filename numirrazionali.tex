@@ -1,0 +1,41 @@
+% !TeX root = Asparsi.tex
+% !BIB TS-program = biber
+% !TeX encoding = UTF-8
+% !TeX spellcheck = it_IT
+\chapter{Numeri irrazionali}
+\section{Preliminari}
+\begin{lem}\label[lem]{lem:numirra1}
+	Se il quadrato di un numero è pari allora quale numero è pari\index{Numero!pari}\index{Numero!quadrato}
+	\begin{equation}
+	a^2=2k \Rightarrow\qquad a=2m\quad a\neq 0
+	\end{equation}
+\end{lem}
+\begin{proof}
+P.A. Se $a$ non è pari allora $a$ è dispari quindi $a=2m+1$ segue che 
+\begin{align*}
+a^2=&(2m+1)^2\\
+=&4m^2+4m+1\\
+=&4m(m+1)+1
+\end{align*}
+Abbiamo dimostrato che $a^2$ è dispari, assurdo per ipotesi $a^2$ era pari. Segue che  $a$ è pari.
+\end{proof}
+\begin{lem}\label[lem]{lem:numirra2}
+	S $a$ e $b$ sono coprimi allora $a^2$ e $b^2$ sono coprimi
+\end{lem}
+\section{Radice di due è irrazionale}
+\begin{thm}
+	Radice di due è irrazionale
+\end{thm}
+\begin{proof}
+	Se radice di due non è irrazionale allora è razionale. Quindi esistono due numeri $a$ e$b$, primi fra loro, tali che
+	\begin{align*}
+	\frac{a}{b}=&\sqrt{2}\\
+	\frac{a^2}{b^2}=&2\\
+	a^2=&2b^2
+	\intertext{Quindi per il~\vref{lem:numirra1} $a$ è pari, segue}
+	a=&2k\\
+	4k^2=&2b^2\\
+	2k^2=&b^2\\
+	\intertext{Per quanto detto prima anche $b$ è pari ma $a$ e $b$ erano primi fra di loro, assurdo}
+	\end{align*}
+\end{proof}
