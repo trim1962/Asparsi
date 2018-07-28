@@ -1,0 +1,23 @@
+% !TeX root = Asparsi.tex
+% !BIB TS-program = biber
+% !TeX encoding = UTF-8
+% !TeX spellcheck = it_IT
+\chapter{Brahmagupta Fibonacci}
+\section{Identità Brahmagupta Fibonacci}
+\begin{thm}[Brahmagupta Fibonacci]
+Un numero che è somma di quattro quadrati può essere scritto come somma di due quadrati.
+	\begin{align*}
+	(a^2+b^2)(c^2+d^2)=&\\
+	&=(ac-bd)^2+(ad+bc)^2\\
+	&=(ac+bd)^2+(ad-bc)^2\\
+	\end{align*}
+\end{thm}
+\begin{proof}
+\begin{align*}
+	(a^2+b^2)(c^2+d^2)=&\\
+	=&a^2c^2+a^2b^2+b^2c^2+b^2d^2\\
+	=&a^2c^2+b^2d^2-2abcd+a^2d^2+b^2c^2+2abcd\\
+	=&(ac-bd)^2+(ad+bc)^2\\
+	=&(ac+bd)^2+(ad-bc)^2\\
+\end{align*}
+\end{proof}
