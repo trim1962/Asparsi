@@ -1,0 +1,41 @@
+\documentclass[10pt]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\begin{axis}[
+x=1.0cm,y=1.0cm,
+axis lines=middle,
+ticks=none,
+xmin=-1.0,
+xmax=8.0,
+ymin=-2.5,
+ymax=6.5,]
+\clip(-1.,-2.5) rectangle (8.,6.5);
+\fill[color=black,fill=black,fill opacity=0.1] (0.,0.) -- (7.,0.) -- (7.,4.) -- cycle;
+\draw  (0.,0.)-- (7.,0.);
+\draw  (7.,0.)-- (7.,4.);
+\draw  (7.,4.)-- (0.,0.);
+\draw (3.5,2.) circle (4.031128874149275cm);
+\draw (3.5,-2.5) -- (3.5,6.5);
+\draw [domain=-1.:8.] plot(\x,{(--32.5-7.*\x)/4.});
+\draw [domain=-1.:8.] plot(\x,{(-8.-0.*\x)/-4.});
+\begin{scriptsize}
+\draw [fill=black] (0.,0.) circle (2.0pt);
+\draw (-0.44,-0.35) node {$A$};
+\draw [fill=black] (7.,0.) circle (2.5pt);
+\draw (7.22,-0.35) node {$B$};
+\draw [fill=black] (7.,4.) circle (2.0pt);
+\draw (7.14,4.37) node {$C$};
+
+\draw [fill=black] (3.5,2.) circle (2.0pt);
+\draw (3.64,2.33) node {$D$};
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
+\end{document}

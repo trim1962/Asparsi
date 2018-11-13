@@ -1,0 +1,30 @@
+\documentclass[10pt]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(0.,-0.8) rectangle (10.5,5.5);
+\begin{scriptsize}
+\draw  (4.,5.)-- (10.,0.) node [midway,above] {$c$};
+\draw  (10.,0.)-- (6.,0.)node [midway,below] {$y$};
+\draw  (1.,0.)-- (6.,0.)node [midway,below] {$x$};
+\draw  (1.,0.)-- (4.,5.)node [midway,above] {$b$};
+\draw  (4.,5.)-- (6.,0.)node [midway,above] {$t$};
+
+\draw [fill=black] (4.,5.) circle (2.0pt);
+\draw[color=black] (4.14,5.33) node {$A$};
+\draw [fill=black] (1.,0.) circle (2.0pt);
+\draw[color=black] (0.82,-0.33) node {$B$};
+\draw [fill=black] (10.,0.) circle (2.0pt);
+\draw[color=black] (9.92,-0.33) node {$C$};
+\draw [fill=black] (6.,0.) circle (2.0pt);
+\draw[color=black] (6.02,-0.33) node {$P$};
+\draw[color=black] (6.02,-0.5) node {$a$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}
