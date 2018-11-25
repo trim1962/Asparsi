@@ -4,9 +4,52 @@
 % !TeX encoding = UTF-8
 % !TeX spellcheck = it_IT
 \chapter{Triangolo}
+\begin{thm}[Posizione punto circonferenza]
+Data una circonferenza $C$ di diametro$AB$, valgono le seguenti affermazioni
+\begin{itemize}
+	\item Un punto $P$ appartiene a $C$ se e solo se $A\hat{P}B$ è retto.
+	\item Un punto $P$ è interno a $C$ se e solo se $A\hat{P}B$ è ottuso.
+	\item Un punto $P$ è esterno a $C$ se e solo se $A\hat{P}B$ è acuto
+\end{itemize}
+\end{thm}\index{Circonferenza}
+\begin{proof} Consideriamo i vari casi\newline
+	\begin{itemize}
+		\item Un punto $P$ appartiene a $C$ se e solo se $A\hat{P}B$ è retto.\newline
+		Se il punto è sulla circonferenza come nella~\cref{fig:circonferenza1} l'angolo in $\hat{P}$ è la metà di un angolo piatto quindi è retto. 
+		\item Un punto $P$ è interno a $C$ se e solo se $A\hat{P}B$ è ottuso.\newline Consideriamo la~\cref{fig:circonferenza2}. Se il punto $P$ è interno prolunghiamo $AP$ in modo che incontri in $Q$ la circonferenza. Il Triangolo $AQB$ è retto in$Q$. L'angolo $A\hat{P}B$ è somma di $P\hat{Q}B$ e $P\hat{B}Q$, quindi è ottuso.
+		\item Un punto $P$ è esterno a $C$  se e solo se $A\hat{P}B$ è acuto.\newline
+		Prendiamo un punto $P$ punto esterno alla circonferenza $C$ come nella~\cref{fig:circonferenza3}. Se $AP$ è secante a $C$ in  $Q$ l'angolo $A\hat{Q}B$ è retto ed è la somma di $Q\hat{P}B$ e $Q\hat{B}P$. Quindi $A\hat{P}B$ è acuto.
+	\end{itemize}
+\end{proof}
+\begin{figure}
+	\centering
+	\input{geometria/circonferenza1}
+	\caption{Posizione punto circonferenza, angolo retto}
+	\label{fig:circonferenza1}
+\end{figure}
+\begin{figure}
+	\centering
+	\input{geometria/circonferenza2}
+	\caption{Posizione punto circonferenza, angolo ottuso}
+	\label{fig:circonferenza2}
+\end{figure}
+\begin{figure}
+	\centering
+	\input{geometria/circonferenza3}
+	\caption{Posizione punto circonferenza, angolo acuto}
+	\label{fig:circonferenza3}
+\end{figure}
+\begin{defn}[Ceviana]\label{defn:ceviana1}
+Una Ceviana è un segmento che congiunge un vertice di un triangolo con il suo lato opposto.
+\end{defn}\index{Triangolo!ceviana}\index{Ceviana}
 \section{Teorema di Stewart}
 \begin{thm}[Teorema di Stewart]\label{thm:Stewart}
-Dato un triangolo $ABC$ colleghiamo un vertice con il lato opposto come nella figura~\cref{fig:stewart1} allora vale la relazione \[c^2y+b^2x=a(t^2+xy) \]
+Dato un triangolo $ABC$ colleghiamo un vertice con il lato opposto come nella figura~\cref{fig:stewart1} allora vale la relazione 
+\begin{align*}
+c^2y+b^2x=&a(t^2+xy)\\     
+a^2y+c^2x=&b(l^2+xy)\\        
+b^2y+a^2x=&c(m^2+xy)
+\end{align*}
 \end{thm}\index{Triangolo!teorema di Stewart}
 \begin{figure}
 	\centering
@@ -35,9 +78,16 @@ c^2y+b^2x=&t^2(x+y)+xy(x+y)\\
 c^2y+b^2x=&(x+y)(t^2+xy)\\
 c^2y+b^2x=&a(t^2+xy)\\
 \end{align*}
-come si voleva dimostrare
-\end{proof}
-
+come si volevasi dimostrare
+\end{proof}\index{Triangolo!Carnot}\index{Triangolo!ceviana}
+\begin{cor}[Lunghezza ceviana]\label{cor:ceviana1}
+In un trangolo le ceviane hanno lunhezza:
+\begin{align*}
+l=&\sqrt{\dfrac{a^2y-x(by-c^2)}{b}}\\
+m=&\sqrt{\dfrac{b^2y-x(cy-a^2)}{c}}\\
+t=&\sqrt{\dfrac{c^2y-x(ay-b^2)}{a}}\\
+\end{align*}
+\end{cor}
 \section{Circocentro}
 \begin{defn}[Circonferenza circoscritta]\label{defn:CircCirc1}
 Dato un triangolo, una circonferenza circoscritta è una circonferenza che passa per i vertici del triangolo\index{Triangolo!circonferenza!circoscritta}\index{Circonferenza!circoscritta}
@@ -72,7 +122,7 @@ Il circocentro è il punto di incontro degli assi del segmento.\index{Triangolo!
 		c=0
 	\end{cases}&\\
 	\intertext{L'equazione cercata è}
-	x^2+y^2-sx-\dfrac{t^2+r^2-ts}{r}y=0\\
+	x^2+y^2-sx-\dfrac{t^2+r^2-ts}{r}y=&0
 	\intertext{Il centro $D$ ha coordinate:}
 	\begin{cases}
 	x=\dfrac{s}{2}\\ \\
@@ -95,6 +145,74 @@ Il circocentro è il punto di incontro degli assi del segmento.\index{Triangolo!
 	\end{align*}
 	Da cui la tesi.
 \end{proof}
+\begin{proof}
+	Consideriamo il triangolo $ABC$ della figura~\cref{fig:circumcerchio2}, per comodità poniamo il vertice $A$ nell'origine degli assi e il vertice $B$ sull'asse delle $x$. Determiniamo la circonferenza che passa per i tre vertici.
+	\begin{align*}
+	\intertext{Considero la circonferenza generica}
+	x^2+y^2+ax+by+c=&0\\
+	\intertext{Passaggio per $A(0,0)$ }
+	c=&0\\
+	\intertext{Passaggio per $B(s,0)$}
+	s^2+as+c=0\\
+	\intertext{Passaggio per $C(t,r)$}
+	t^2+r^2+at+br+c=&0\\
+	\intertext{Risolvendo il sistema con il metodo di Cramer}
+\Delta=&\begin{vmatrix}
+0&0&1\\
+s&0&1\\
+t&r&1\\
+\end{vmatrix}=rs\\
+\Delta_a=&\begin{vmatrix}
+0&0&1\\
+-s^2&0&1\\
+-t^2-r^2&r&1\\
+\end{vmatrix}=-rs^2\\
+\Delta_b=&\begin{vmatrix}
+0&0&1\\
+s&-s^2&1\\
+t&-t^2-r^2&1\\
+\end{vmatrix}=-s(t^2-st+r^2)\\
+\Delta_c=&\begin{vmatrix}
+0&0&0\\
+s&0&-s^2\\
+t&r&-t^2-r^2\\
+\end{vmatrix}=0\\
+a=&\dfrac{\Delta_a}{\Delta}=-\dfrac{rs^2}{rs}=-s\\
+b=&\dfrac{\Delta_b}{\Delta}=-\dfrac{s(t^2-st+r^2)}{rs}=-\dfrac{t^2-st+r^2}{r}\\
+c=&\dfrac{\Delta_c}{\Delta}=-\dfrac{0}{rs}=0
+	\intertext{L'equazione cercata è}
+&x^2+y^2-sx-\dfrac{t^2+r^2-ts}{r}y=0\\
+\intertext{Il centro $D$ ha coordinate:}
+&	\begin{cases}
+x=\dfrac{s}{2}\\ \\
+y=\dfrac{t^2+r^2-ts}{2r}\\
+\end{cases}\\
+	\end{align*}
+	Troviamo l'intersezione degli assi dei lati
+	\begin{align*}
+	\intertext{L'asse del lato $AB$ ha equazione}
+	x=&\dfrac{s}{2}\\
+	\intertext{Per l'asse del lato $BC$ procediamo come segue:}
+	(x-s)^2+y^2=&(x-t)^2+(x-r)^2\\
+	2x(s-t)-2ry=&s^2-r^2-t^2
+	\intertext{Risolvendo il sistema otteniamo}
+	\Delta=&\begin{vmatrix}
+	2(s-t)&-2r\\
+	1&0\\
+	\end{vmatrix}=2r\\
+	\Delta_x=&\begin{vmatrix}
+	s^2-r^2-t^2&-2r\\
+	\dfrac{s}{2}&0\\
+	\end{vmatrix}=rs\\
+	\Delta_y=&\begin{vmatrix}
+	2(s-t)&s^2-r^2-t^2\\
+	1&0\\
+	\end{vmatrix}=t^2+r^2-st\\
+	x=&\dfrac{\Delta_x}{\Delta}=\dfrac{rs}{2r}=\dfrac{s}{2}\\
+	y=&\dfrac{\Delta_y}{\Delta}=\dfrac{t^2+r^2-st}{2r}\\
+	\end{align*}
+	Da cui la tesi.
+\end{proof}
 \begin{figure}
 	\centering
 	\includestandalone{geometria/circumcerchio2}
@@ -110,7 +228,7 @@ Il circocentro è il punto di incontro degli assi del segmento.\index{Triangolo!
 	x=\dfrac{s}{2}\\ \\
 	y=\dfrac{t^2+r^2-ts}{2r}\\
 	\end{cases}\]
-	Se come nella figura~\cref{fig:circumcerchio3} il triangolo è retto in $B$ quindi le coordinate del punto $C$ diventano $C(s,n)$ e di conseguenza quelle del punto $D$ si trasformano in 	\[	\begin{cases}
+	Se come nella figura~\cref{fig:circumcerchio3} il triangolo è retto in $B$ quindi le coordinate del punto $C$ diventano $C(s,r)$ e di conseguenza quelle del punto $D$ si trasformano in 	\[\begin{cases}
 	x=\dfrac{s}{2}\\ \\
 	y=\dfrac{s^2+r^2-s^2}{2r}=\dfrac{r}{2}\\
 	\end{cases}\]Per verificare che il punto $D$ è sull'ipotenusa\index{Triangolo!rettangolo!ipotenusa} basta trovare l'equazione di questa. Banalmente l'ipotenusa ha equazione:
@@ -130,6 +248,114 @@ Il circocentro è il punto di incontro degli assi del segmento.\index{Triangolo!
 \begin{cor}[Triangolo ottusangolo]\label{cor:CircoAsse2}
 	In un triangolo ottusangolo il circocentro è esterno al triangolo.\index{Triangolo!ottusangolo!circocentro}\index{Circocentro!triangolo!ottusangolo}
 \end{cor}
+\begin{figure}
+	\centering
+	\input{geometria/incentro1}
+	\caption{Incentro di un triangolo}
+	\label{fig:incentro1}
+\end{figure}
+\section{Incentro}
+\begin{defn}[Incentro]\label{defn:incentro1}
+L'incentro è il punto di intersezione delle bisettrici di un triangolo
+\end{defn}\index{Triangolo!incentro}\index{Incentro!triangolo}\index{Triangolo!bisettrice}
+\begin{thm}[Incentro]\label{thm:incentro1}
+	Le tre bisettrici si incontrano in un punto detto incentro.
+\end{thm}
+%\begin{proof}
+%	Consideriamo la~\cref{fig:incentro1}. Poniamo $A(0,0)$, $B(s,0)$ e $C(t,r)$
+%	\begin{align*}
+%	\intertext{La retta $AC$ ha equazione:}
+%	xr+y(r-t)=&0
+%	\intertext{La retta $AB$ ha equazione:}	
+%	y=&0
+%	\intertext{La retta $BC$ ha equazione:}
+%	xr+y(s-t)-sr=&0
+%	\intertext{La bisettrice tra $AC$ e $AB$ è:}
+%	\dfrac{xr+y(r-t)}{\sqrt{r^2+(r-t)^2}}=&\pm y
+%	\intertext{La bisettrice tra $AB$ e $BC$ è:}
+%	\dfrac{xr+y(s-t)-sr}{\sqrt{r^2+(s-t)^2}}=&\pm y
+%	\intertext{Poniamo}
+%	a=&\sqrt{r^2+(r-t)^2}\\
+%	b=&\sqrt{r^2+(s-t)^2}
+%	\intertext{otteniamo quattro sistemi}
+%	&\begin{cases}
+%\dfrac{xr+y(r-t)}{a}=\pm y\\
+%\dfrac{xr+y(s-t)-sr}{b}=\pm y
+%	\end{cases}\\
+%	\intertext{il primo}
+%	&\begin{cases}
+%	\dfrac{xr+y(r-t)}{a}=y\\
+%	\dfrac{xr+y(s-t)-sr}{b}=y
+%	\end{cases}\\
+%	\intertext{che ha per soluzione}
+%	&\begin{cases}
+%	x=\dfrac{s(a-r+t)}{a-b-r+s}\\
+%	y=\dfrac{rs}{a-b-r+s}
+%	\end{cases}\\
+%		\intertext{il secondo}
+%	&\begin{cases}
+%	\dfrac{xr+y(r-t)}{a}=y\\
+%	\dfrac{xr+y(s-t)-sr}{b}=-y
+%	\end{cases}\\
+%	\intertext{che ha per soluzione}
+%	&\begin{cases}
+%	x=\dfrac{s(a-r+t)}{a+b-r+s}\\
+%	y=\dfrac{rs}{a+b-r+s}
+%	\end{cases}\\
+%			\intertext{il terzo}
+%	&\begin{cases}
+%	\dfrac{xr+y(r-t)}{a}=-y\\
+%	\dfrac{xr+y(s-t)-sr}{b}=y
+%	\end{cases}\\
+%	\intertext{che ha per soluzione}
+%	&\begin{cases}
+%	x=\dfrac{s(a+r-t)}{a+b+r-s}\\
+%	y=-\dfrac{rs}{a+b+r-s}
+%	\end{cases}\\
+%		\intertext{il quarto}
+%	&\begin{cases}
+%	\dfrac{xr+y(r-t)}{a}=-y\\
+%	\dfrac{xr+y(s-t)-sr}{b}=-y
+%	\end{cases}\\
+%	\intertext{che ha per soluzione}
+%	&\begin{cases}
+%	x=\dfrac{s(a+r-t)}{a-b+r-s}\\
+%	y=-\dfrac{rs}{a-b+r-s}
+%	\end{cases}\\
+%	\intertext{La bisettrice tra $AC$ e $AB$ è:}
+%	\dfrac{xr+y(r-t)}{\sqrt{r^2+(r-t)^2}}=&\pm y
+%	\intertext{La bisettrice tra $AC$ e $CB$ è:}
+%	\dfrac{xr+y(r-t)}{\sqrt{r^2+(r-t)^2}}=&\pm\dfrac{xr+y(s-t)-sr}{\sqrt{r^2+(s-t)^2}}
+%	\intertext{Poniamo}
+%	a=&\sqrt{r^2+(r-t)^2}\\
+%	b=&\sqrt{r^2+(s-t)^2}
+%	\intertext{otteniamo quattro sistemi}
+%	&\begin{cases}
+%	\dfrac{xr+y(r-t)}{a}=\pm y\\
+%	\dfrac{xr+y(r-t)}{a}=\pm\dfrac{xr+y(s-t)-sr}{b}
+%	\end{cases}\\
+%	\intertext{il primo}
+%	&\begin{cases}
+%	\dfrac{xr+y(r-t)}{a}=y\\
+%	\dfrac{xr+y(r-t)}{a}=\dfrac{xr+y(s-t)-sr}{b}
+%	\end{cases}\\
+%	\intertext{che ha per soluzione}
+%	&\begin{cases}
+%	x=\dfrac{s(a-r+t)}{a-b-r+s}\\
+%	y=\dfrac{rs}{a-b-r+s}
+%	\end{cases}\\
+%		\intertext{il secondo}
+%	&\begin{cases}
+%	\dfrac{xr+y(r-t)}{a}=y\\
+%	\dfrac{xr+y(r-t)}{a}=-\dfrac{xr+y(s-t)-sr}{b}
+%	\end{cases}\\
+%	\intertext{che ha per soluzione}
+%	&\begin{cases}
+%	x=\dfrac{s(a-r+t)}{a+b-r+s}\\
+%	y=\dfrac{rs}{a+b-r+s}
+%	\end{cases}\\
+%	\end{align*}
+%\end{proof}
 \section{Ortocentro}
 \begin{defn}[Ortocentro]\label{defn:ortocentro1}
 	L'ortocentro è il punto di intersezione delle altezze di un triangolo \index{Triangolo!ortocentro}\index{Ortocentro!triangolo}
@@ -188,10 +414,73 @@ x=s
 \end{cases}
 \end{align*}
 \end{proof}
+\section{Baricentro}
+\begin{defn}[Mediana]\label{defn:mediana1}
+	In un triangolo è il segmento che unisce un vertice con il punto medio del lato opposto.\index{Triangolo!mediana}\index{Mediana!triangolo}
+\end{defn}
+\begin{thm}[Lunghezza mediana]\label{thm:mediana1}
+Consideriamo il triangolo in~\cref{fig:mediana1} le mediane hanno lunghezza
+\begin{align*}
+m_a=&\dfrac{\sqrt{2(b^2+c^2)-a^2}}{2}\\
+m_b=&\dfrac{\sqrt{2(a^2+c^2)-b^2}}{2}\\
+m_c=&\dfrac{\sqrt{2(a^2+b^2)-c^2}}{2}\\
+\end{align*}
+\end{thm}
+\begin{proof}
+Diretta conseguenza del~\cref{cor:ceviana1}
+\end{proof}
+\begin{figure}
+	\centering
+	\input{geometria/mediana1}
+	\caption{Lunghezza mediane}
+	\label{fig:mediana1}
+\end{figure}
+ \begin{defn}[Baricentro]\label{defn:baricentro1}
+	Il Baricentro è il punto di intersezione delle mediane di un triangolo \index{Triangolo!baricentro}\index{Baricentro!triangolo}
+\end{defn}
+\begin{thm}[Coordinate baricentro]\label{thm:baricentro1}
+	In un triangolo di vertici $A(a,b)$, $B(c,d)$ e $C(e,f)$ il baricentro $M$ ha coordinate\[M\left(\frac{a+c+e}{3},\frac{b+d+f}{3}\right)\]
+\end{thm}\index{Triangolo!baricentro!coordinate}\index{Baricentro!coordinate}	
+\begin{proof}
+Consideriamo il triangolo della~\cref{fig:baricentro1} e determiniamo le mediane
+\begin{align*}
+\intertext{La mediana $AF$ ha equazione}
+y =& x\dfrac{2b-d-f}{2a-c-e}+\dfrac{a(d+f)-b(c+e)}{2a-c-e}\\
+\intertext{La mediana $BD$ ha equazione}
+y =& x\dfrac{b - 2d + f}{a - 2c + e} +\dfrac{d(a+e)-c(b+f)}{a - 2c + e}\\
+\intertext{Per trovare il punto $M$ di intersezione le metto a sistema}
+&\begin{cases}
+y = x\dfrac{2b-d-f}{2a-c- e}+\dfrac{a(d+f)-b(c+e)}{2a-c-e}\\ \\
+y = x\dfrac{b - 2d + f}{a - 2c + e}+\dfrac{d(a+e)-c(b+f)}{a-2c+e}
+\end{cases}
+\intertext{che risolto mi da}
+&\begin{cases}
+x=\dfrac{a+c+e}{3}\\ \\
+y=\dfrac{b+d+f}{3}
+\end{cases}
+\end{align*}
+Da cui la tesi
+\end{proof}
+\begin{figure}
+	\centering
+	\input{geometria/baricentro1}
+	\caption{Baricentro di un triangolo}
+	\label{fig:baricentro1}
+\end{figure}
+\begin{thm}[Teorema di Eulero]\label{thm:eulero1}
+In un triangolo Ortocentro, Circocentro e Baricentro sono allineati
+\end{thm}\index{Triangolo!Eulero}\index{Triangolo!ortocentro}\index{Triangolo!circocentro}\index{Circocentro!triangolo}\index{Ortocentro!triangolo}\index{Baricentro!triangolo}\index{Triangolo!baricentro}
+\begin{proof}
+	Consideriamo la retta che passa per il circocentro e per l'ortocentro. Utilizzando il~\cref{thm:CircoAsse1} e il~\cref{thm:baricentro1} otteniamo
+	\[y=x\dfrac{[r^2-3t(s-t)]}{r(s-2t)}+\dfrac{t[r^2-(s+t)(s-t)]}{r(s-2t)}\]
+Adattando il~\cref{thm:baricentro1} il Baricentro ha coordinate: \[M\left(\frac{s+t}{3},\frac{t}{3}\right)\] che verificano l'equazione.
+\end{proof}
+\begin{defn}[Retta di Eulero]\label{defn:rettaEulero1}
+La retta che passa per Ortocentro, Circocentro e Baricentro  chiamata retta di Eulero\end{defn}\index{Retta!Eulero}
 \section{Triangolo equilatero}
-\begin{thm}[Ortocentro e circocentro]\label{thm:triangoloequilatero1}
-In un triangolo equilatero Ortocentro e Circocentro coincidono
-\end{thm}\index{Triangolo!equilatero}\index{Triangolo!equilatero!ortocentro}\index{Triangolo!equilatero!circocentro}\index{Circocentro!triangolo!equilatero}\index{Ortocentro!triangolo!equilatero}
+\begin{thm}[Ortocentro, circocentro e baricentro]\label{thm:triangoloequilatero1}
+In un triangolo equilatero Ortocentro, Circocentro e Baricentro coincidono.
+\end{thm}\index{Triangolo!equilatero}\index{Triangolo!equilatero!ortocentro}\index{Triangolo!equilatero!circocentro}\index{Circocentro!triangolo!equilatero}\index{Ortocentro!triangolo!equilatero}\index{Triangolo!baricentro}\index{Triangolo!equilatero!baricentro}
 \begin{figure}
 	\centering
 	\input{geometria/triangoloEquilatero1}
@@ -199,19 +488,33 @@ In un triangolo equilatero Ortocentro e Circocentro coincidono
 	\label{fig:triangoloequilatero1}
 \end{figure}
 \begin{proof}
-	Costruiamo la~\cref{fig:triangoloequilatero1}, un triangolo equilatero di lato $s$. Le coordinate del suoi vertici sono $A(0,0)$, $B(0,s)$ e $C(\frac{s}{2},\frac{s}{2}\sqrt{3})$. Per~\cref{thm:CircoAsse1} le coordinate del circocentro\index{Triangolo!circocentro}\index{Circocentro!triangolo} sono
+	Costruiamo la~\cref{fig:triangoloequilatero1}, un triangolo equilatero di lato $s$. Le coordinate del suoi vertici sono $A(0,0)$, $B(s,0)$ e $C(\frac{s}{2},\frac{s}{2}\sqrt{3})$. 
+	Per~\cref{thm:CircoAsse1} le coordinate del circocentro\index{Triangolo!circocentro}\index{Circocentro!triangolo!equilatero} sono
 	\[\begin{cases}
 	x=\dfrac{s}{2}\\ \\
 	y=\dfrac{t^2+r^2-ts}{2r}\\
 	\end{cases}\]
-	mentre per il~\cref{thm:ortocentro1} le coordinate dell'ortocentro\index{Triangolo!ortocentro}\index{Ortocentro!triangolo} sono \[\begin{cases}
+	Per il~\cref{thm:ortocentro1} le coordinate dell'ortocentro\index{Triangolo!ortocentro}\index{Ortocentro!triangolo!equilatero} sono \[\begin{cases}
 	y=\dfrac{t}{r}(s-t)\\
 	x=t
 	\end{cases}\] 
-	Adattando le due formule al triangolo isoscele otteniamo per entrambi:
+	Per il~\cref{thm:baricentro1} le coordinate del baricentro\index{Triangolo!baricentro}\index{Baricentro!triangolo!equilatero} sono \[\begin{cases}
+	x=\dfrac{a+c+e}{3}\\ \\
+	y=\dfrac{b+d+f}{3}
+	\end{cases} \]
+	Adattando le tre formule al triangolo equilatero otteniamo:
 	\[\begin{cases}
 	x=\dfrac{s}{2}\\ \\
 	y=\dfrac{s}{6}\sqrt{3}
 	\end{cases}\]
-	
 \end{proof}
+\section{Excentro}
+\begin{defn}[Exentro]\label{defn:excentro}
+Si dice excentro  di un triangolo il punto di incontro delle bisettrici di due angoli esterni e della bisettrice dell'angolo interno non adiacente ad essi.
+\end{defn}\index{Triangolo!excentro}
+\begin{figure}
+	\centering
+	\input{geometria/excentro1}
+	\caption{Triangolo e circonferenze tangenti}
+	\label{fig:excentro1}
+\end{figure}
