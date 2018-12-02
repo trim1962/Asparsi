@@ -186,7 +186,14 @@ baseurl={http://breviariomatematico.altervista.org}
 
 \input{compilaTexStudio}
 \listfiles
-
+%patch allieamento lista teoremi
+\usepackage{regexpatch}
+\makeatletter
+%\xpatchcmd*{\thm@@thmline}{2.3em}{5em}{}{} % not really needed
+\xpatchcmd*{\thm@@thmline@name}{2.3em}{5em}{}{} 
+\xpatchcmd*{\thm@@thmline@noname}{2.3em}{5em}{}{}
+\makeatother
+%fine patch allieamento lista teoremi
 \begin{document}
 %\setcounter{page}{2}
 		\frontmatter

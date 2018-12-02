@@ -3,8 +3,8 @@
 % !BIB TS-program = biber
 % !TeX encoding = UTF-8
 % !TeX spellcheck = it_IT
-\chapter{Triangolo}
-\begin{thm}[Posizione punto circonferenza]
+\chapter{Triangolo}\label{ch:triangolo}
+\begin{thm}[Posizione punto circonferenza]\label{thm:Posizione-punto-circonferenza}
 Data una circonferenza $C$ di diametro$AB$, valgono le seguenti affermazioni
 \begin{itemize}
 	\item Un punto $P$ appartiene a $C$ se e solo se $A\hat{P}B$ è retto.
@@ -42,7 +42,7 @@ Data una circonferenza $C$ di diametro$AB$, valgono le seguenti affermazioni
 \begin{defn}[Ceviana]\label{defn:ceviana1}
 Una Ceviana è un segmento che congiunge un vertice di un triangolo con il suo lato opposto.
 \end{defn}\index{Triangolo!ceviana}\index{Ceviana}
-\section{Teorema di Stewart}
+\section{Teorema di Stewart}\label{sec:teorema-di-stewart}
 \begin{thm}[Teorema di Stewart]\label{thm:Stewart}
 Dato un triangolo $ABC$ colleghiamo un vertice con il lato opposto come nella figura~\cref{fig:stewart1} allora vale la relazione 
 \begin{align*}
@@ -88,7 +88,7 @@ m=&\sqrt{\dfrac{b^2y-x(cy-a^2)}{c}}\\
 t=&\sqrt{\dfrac{c^2y-x(ay-b^2)}{a}}\\
 \end{align*}
 \end{cor}
-\section{Circocentro}
+\section{Circocentro}\label{sec:circocentro}
 \begin{defn}[Circonferenza circoscritta]\label{defn:CircCirc1}
 Dato un triangolo, una circonferenza circoscritta è una circonferenza che passa per i vertici del triangolo\index{Triangolo!circonferenza!circoscritta}\index{Circonferenza!circoscritta}
 \end{defn}
@@ -254,7 +254,7 @@ y=\dfrac{t^2+r^2-ts}{2r}\\
 	\caption{Incentro di un triangolo}
 	\label{fig:incentro1}
 \end{figure}
-\section{Incentro}
+\section{Incentro}\label{sec:incentro}
 \begin{defn}[Incentro]\label{defn:incentro1}
 L'incentro è il punto di intersezione delle bisettrici di un triangolo
 \end{defn}\index{Triangolo!incentro}\index{Incentro!triangolo}\index{Triangolo!bisettrice}
@@ -356,7 +356,7 @@ L'incentro è il punto di intersezione delle bisettrici di un triangolo
 %	\end{cases}\\
 %	\end{align*}
 %\end{proof}
-\section{Ortocentro}
+\section{Ortocentro}\label{sec:ortocentro}
 \begin{defn}[Ortocentro]\label{defn:ortocentro1}
 	L'ortocentro è il punto di intersezione delle altezze di un triangolo \index{Triangolo!ortocentro}\index{Ortocentro!triangolo}
 \end{defn}
@@ -414,7 +414,7 @@ x=s
 \end{cases}
 \end{align*}
 \end{proof}
-\section{Baricentro}
+\section{Baricentro}\label{sec:baricentro}
 \begin{defn}[Mediana]\label{defn:mediana1}
 	In un triangolo è il segmento che unisce un vertice con il punto medio del lato opposto.\index{Triangolo!mediana}\index{Mediana!triangolo}
 \end{defn}
@@ -477,7 +477,7 @@ Adattando il~\cref{thm:baricentro1} il Baricentro ha coordinate: \[M\left(\frac{
 \end{proof}
 \begin{defn}[Retta di Eulero]\label{defn:rettaEulero1}
 La retta che passa per Ortocentro, Circocentro e Baricentro  chiamata retta di Eulero\end{defn}\index{Retta!Eulero}
-\section{Triangolo equilatero}
+\section{Triangolo equilatero}\label{sec:triangolo-equilatero}
 \begin{thm}[Ortocentro, circocentro e baricentro]\label{thm:triangoloequilatero1}
 In un triangolo equilatero Ortocentro, Circocentro e Baricentro coincidono.
 \end{thm}\index{Triangolo!equilatero}\index{Triangolo!equilatero!ortocentro}\index{Triangolo!equilatero!circocentro}\index{Circocentro!triangolo!equilatero}\index{Ortocentro!triangolo!equilatero}\index{Triangolo!baricentro}\index{Triangolo!equilatero!baricentro}
@@ -508,7 +508,7 @@ In un triangolo equilatero Ortocentro, Circocentro e Baricentro coincidono.
 	y=\dfrac{s}{6}\sqrt{3}
 	\end{cases}\]
 \end{proof}
-\section{Excentro}
+\section{Excentro}\label{sec:excentro}
 \begin{defn}[Exentro]\label{defn:excentro}
 Si dice excentro  di un triangolo il punto di incontro delle bisettrici di due angoli esterni e della bisettrice dell'angolo interno non adiacente ad essi.
 \end{defn}\index{Triangolo!excentro}
