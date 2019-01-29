@@ -1,0 +1,57 @@
+\chapter{Forma goniometrica dei numeri complessi}
+\section{Definizioni}
+\begin{defn}[Forma goniometrica]
+	Un numero complesso $z\in\Co$ è in forma goniometrica se
+	\[z=r\left[\cos\theta+\uimm\sin\theta \right] \] dove
+	\begin{itemize}
+		\item $\uimm$ unità immaginaria
+		\item $r\in\R\; r\geq 0$ detto modulo
+		\item $-\pi <\theta\leq\pi\; \vee\; 0\leq\theta<2\pi$ detto anomalia.
+	\end{itemize}
+\end{defn}\index{Numero!complesso}\index{Numero!complesso!goniometrica}
+\begin{thm}[Prodotto]\label{thm:Compl_Prodotto}
+Se $z_1=a_1(cos\theta_1+\uimm\sin\theta_1)$ e $z_2=a_2(cos\theta_2+\uimm\sin\theta_2)$ allora il prodotto \[z_1\cdot z_2=a_1\cdot a_2\left[cos(\theta_1+\theta_2)+\uimm\sin(\theta_1+\theta_2)\right] \] 
+\end{thm}
+\begin{proof} del teorema
+	\begin{align*}
+	z_1=&a_1(cos\theta_1+\uimm\sin\theta_1)\\
+	z_2=&a_2(cos\theta_2+\uimm\sin\theta_2)\\
+	z_1\cdot z_2=&a_1(cos\theta_1+\uimm\sin\theta_1)\cdot a_2(cos\theta_2+\uimm\sin\theta_2)\\
+	=&a_1\cdot a_2\left(\cos\theta_1\cos\theta_2+\uimm\sin\theta_2\cos\theta_1+\uimm\sin\theta_1\cos\theta_2-\sin\theta_1\sin\theta_2\right)\\
+	=&a_1\cdot a_2\left[\cos\theta_1\cos\theta_2-\sin\theta_1\sin\theta_2+\uimm(sin\theta_1\cos\theta_2+\cos\theta_1\sin\theta_2)\right]\\
+	=&a_1\cdot a_2\left[\cos\left(\theta_1+\theta_2\right)+\uimm\sin\left(\theta_1+\theta_2\right)\right]
+	\end{align*}
+	Da cui la tesi.
+\end{proof}\index{Numero!complesso!prodotto}
+Dal teorema precedente segue il seguente corollario:
+\begin{cor}[Reciproco]\label{cor:Complex:reciproco}
+	Dato in numero complesso $z=a(cos\theta+\uimm\sin\theta)$ allora il suo reciproco è \begin{equation*}
+	\dfrac{1}{z}=\dfrac{1}{a}\left[\cos (-\theta)+\uimm\sin(-\theta)\right]
+	\end{equation*}\label{equa:Compl_reciproco}
+\end{cor}
+\begin{proof}\index{Numero!complesso!reciproco}
+	Per il prodotto di due numeri reciproci è l'unità quindi verifichiamo 
+\begin{align*}
+z\cdot\dfrac{1}{z}=&\\
+=&a(cos\theta+\uimm\sin\theta)\cdot\dfrac{1}{a}\left[\cos (-\theta)+\uimm\sin(-\theta)\right]\\
+=&a\cdot\dfrac{1}{a}\left[\cos(\theta-\theta)+\uimm\sin(\theta-\theta)\right]\\
+=&1\cdot\left[cos(0)-\uimm\sin(0)\right]\\
+=&1\cdot\left[1-\uimm 0\right]\\
+=&1
+\end{align*}
+Come si voleva dimostrare.
+\end{proof}
+\begin{thm}[Quoziente]\index{Numero!complesso!quoziente}
+Se $z_1=a_1(cos\theta_1+\uimm\sin\theta_1)$ e $z_2=a_2(cos\theta_2+\uimm\sin\theta_2)$ allora il quoziente \[\dfrac{z_1}{z_2}=\dfrac{a_1}{a_2}\left[cos(\theta_1-\theta_2)+\uimm\sin(\theta_1-\theta_2)\right] \] 
+\end{thm}
+\begin{proof}
+	Dal~\cref{cor:Complex:reciproco} abbiamo:
+	\begin{align*}
+	\dfrac{z_1}{z_2}=&\dfrac{a_1(cos\theta_1+\uimm\sin\theta_1)}{a_2(cos\theta_2+\uimm\sin\theta_2}\\
+	=&a_1(cos\theta_1+\uimm\sin\theta_1)\cdot\dfrac{1}{a_2}\left[cos(-\theta_2)+\uimm\sin(-\theta_2) \right]\\
+	=&\dfrac{a_1}{a_2}\left(\cos\theta_1\cos(-\theta_2)+\uimm\sin(-\theta_2)\cos\theta_1+\uimm\sin\theta_1\cos(-\theta_2)-\sin\theta_1\sin(-\theta_2)\right)\\
+	=&\dfrac{a_1}{a_2}\left[\cos\theta_1\cos(-\theta_2)-\sin\theta_1\sin(-\theta_2)+\uimm(sin\theta_1\cos(-\theta_2)+\cos\theta_1\sin(-\theta_2))\right]\\
+	=&\dfrac{a_1}{a_2}\left[\cos\left(\theta_1-\theta_2\right)+\uimm\sin\left(\theta_1-\theta_2\right)\right]
+	\end{align*}
+	Come si voleva dimostrare.
+\end{proof}
