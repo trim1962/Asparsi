@@ -5,9 +5,9 @@
 \chapter{Equazioni secondo grado}\label{ch:equazioni-secondo-grado}
 \section{Risoluzione}\label{sec:risoluzione}
 \begin{thm}[Formula risolutiva]\label{thm:Equasec1}
-	Una equazione di secondo grado $ax^2+bx+c=0$ con $a\neq 0$ ha soluzione \begin{equation}\label[equation]{eq:equasec1}
+	Una equazione di secondo grado $ax^2+bx+c=0$ con $a\neq 0$ ha soluzione \begin{equation*}\label[equation]{eq:equasec1}
 	x_{1,2}=\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}
-	\end{equation}\index{Equazione!secondo grado!soluzioni}\index{Triniomio!secondo!grado}
+	\end{equation*}\index{Equazione!secondo grado!soluzioni}\index{Triniomio!secondo!grado}
 \end{thm}
 \begin{proof}
 	\begin{align*}
@@ -20,6 +20,42 @@
 	\intertext{Otteniamo un'equazione di primo grado che risolviamo separando le variabili}
 	2ax+b=&\pm\sqrt{b^2-4ac}\\
 	2ax=&-b\pm\sqrt{b^2-4ac}\\
-	x=&\frac{-b\pm\sqrt{b^2-4ac}}{2a}
+	x_{1,2}=&\frac{-b\pm\sqrt{b^2-4ac}}{2a}
 	\end{align*}
+	Da cui la tesi.
+\end{proof}
+\section{Casi particolari}
+\begin{thm}[Formula ridotta]\label{thm:Equasec2}
+	Se l'equazione di secondo grado è del tipo\[ax^2+2\beta x+c=0 \] allora la formula risolutiva è \begin{equation*}\label[equation]{eq:equasec2}
+	x_{1,2}=\dfrac{-\beta\pm\sqrt{\beta^2- ac}}{a}
+	\end{equation*}
+\end{thm}
+\begin{proof}
+Consideriamo l'equazione $ax^2+2\beta x+c=0$, dal~\cref{thm:Equasec1} otteniamo:
+\begin{align*}
+x_{1,2}=&\dfrac{-2\beta\pm\sqrt{4\beta^2-4ac}}{2a}\\
+=&\dfrac{-2\beta\pm\sqrt{4(\beta^2-ac)}}{2a}\\
+=&\dfrac{-2\beta\pm 2\sqrt{(\beta^2-ac)}}{2a}\\
+=&\dfrac{-\beta\pm \sqrt{(\beta^2-ac)}}{a}
+\end{align*}
+Come si voleva dimostrare.
+\end{proof}
+\begin{thm}[somma di due numeri]\label{thm:Equasec3}
+	\[px^2+(p+q)x+q=0 \] allora l'equazione ha soluzione \[\begin{cases}
+	x_1=-1\\ x_2=-\dfrac{q}{p}
+	\end{cases}\]
+\end{thm}
+\begin{proof}
+	Consideriamo l'equazione $px^2+(p+q) x+q=0$, dal~\cref{thm:Equasec1} otteniamo:
+	\begin{align*}
+	x_{1,2}=&\dfrac{-(p+q)\pm\sqrt{(p+q)^2-4pq}}{2p}\\
+	=&\dfrac{-(p+q)\pm\sqrt{p^2+q^2-2pq}}{2p}\\
+	=&\dfrac{-(p+q)\pm\sqrt{(p-q)^2}}{2p}\\
+	=&\dfrac{-(p+q)\pm(p-q)}{2p}\\
+	&\begin{cases}
+	x_1=\dfrac{-p-q+p-q}{2p}=-\dfrac{2q}{2p}=-\dfrac{q}{p}\\ \\
+	x_2=\dfrac{-p-q-p+q}{2p}=-\dfrac{2p}{2p}=-1\\
+	\end{cases}\\
+	\end{align*}
+	Come si voleva dimostrare.
 \end{proof}

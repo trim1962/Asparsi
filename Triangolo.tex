@@ -23,19 +23,19 @@ Data una circonferenza $C$ di diametro$AB$, valgono le seguenti affermazioni
 \end{proof}
 \begin{figure}
 	\centering
-	\input{geometria/circonferenza1}
+%	\includestandalone{geometria/circonferenza1}
 	\caption{Posizione punto circonferenza, angolo retto}
 	\label{fig:circonferenza1}
 \end{figure}
 \begin{figure}
 	\centering
-	\input{geometria/circonferenza2}
+	\includestandalone{geometria/circonferenza2}
 	\caption{Posizione punto circonferenza, angolo ottuso}
 	\label{fig:circonferenza2}
 \end{figure}
 \begin{figure}
 	\centering
-	\input{geometria/circonferenza3}
+	\includestandalone{geometria/circonferenza3}
 	\caption{Posizione punto circonferenza, angolo acuto}
 	\label{fig:circonferenza3}
 \end{figure}
@@ -53,7 +53,7 @@ b^2y+a^2x=&c(m^2+xy)
 \end{thm}\index{Triangolo!teorema di Stewart}
 \begin{figure}
 	\centering
-	\input{geometria/Stewart1}
+	\includestandalone{geometria/Stewart1}
 	\caption{Teorema di Stewart}
 	\label{fig:stewart1}
 \end{figure}
@@ -250,7 +250,7 @@ y=\dfrac{t^2+r^2-ts}{2r}\\
 \end{cor}
 \begin{figure}
 	\centering
-	\input{geometria/incentro1}
+	\includestandalone[width=0.9\linewidth]{geometria/incentro1}
 	\caption{Incentro di un triangolo}
 	\label{fig:incentro1}
 \end{figure}
@@ -365,7 +365,7 @@ L'incentro è il punto di intersezione delle bisettrici di un triangolo
 \end{thm}
 \begin{figure}
 	\centering
-	\input{geometria/ortocentro1}
+	\includestandalone{geometria/ortocentro1}
 	\caption{Ortocentro triangolo}
 	\label{fig:ortocentro1}
 \end{figure}
@@ -431,7 +431,7 @@ Diretta conseguenza del~\cref{cor:ceviana1}
 \end{proof}
 \begin{figure}
 	\centering
-	\input{geometria/mediana1}
+	\includestandalone{geometria/mediana1}
 	\caption{Lunghezza mediane}
 	\label{fig:mediana1}
 \end{figure}
@@ -463,7 +463,7 @@ Da cui la tesi
 \end{proof}
 \begin{figure}
 	\centering
-	\input{geometria/baricentro1}
+	\includestandalone{geometria/baricentro1}
 	\caption{Baricentro di un triangolo}
 	\label{fig:baricentro1}
 \end{figure}
@@ -483,7 +483,7 @@ In un triangolo equilatero Ortocentro, Circocentro e Baricentro coincidono.
 \end{thm}\index{Triangolo!equilatero}\index{Triangolo!equilatero!ortocentro}\index{Triangolo!equilatero!circocentro}\index{Circocentro!triangolo!equilatero}\index{Ortocentro!triangolo!equilatero}\index{Triangolo!baricentro}\index{Triangolo!equilatero!baricentro}
 \begin{figure}
 	\centering
-	\input{geometria/triangoloEquilatero1}
+	\includestandalone{geometria/triangoloEquilatero1}
 	\caption{Triangolo equilatero}
 	\label{fig:triangoloequilatero1}
 \end{figure}
@@ -514,7 +514,49 @@ Si dice excentro  di un triangolo il punto di incontro delle bisettrici di due a
 \end{defn}\index{Triangolo!excentro}
 \begin{figure}
 	\centering
-	\input{geometria/excentro1}
+	\includestandalone[width=0.9\linewidth]{geometria/excentro1}
 	\caption{Triangolo e circonferenze tangenti}
 	\label{fig:excentro1}
+\end{figure}
+\section{Formula di Erone}\label{sec:Formula_Erone}
+\begin{thm}[Formula di Erone]
+Dato un trinagolo, se $2p=a+b+c$ allora l'area del triangolo è \[A=\sqrt{p(p-a)(p-b)(p-c)}\]
+\end{thm}\index{Triangolo!Erone}
+\begin{proof}
+Consideriamo la~\cref{fig:erone1} se indichiamo con $h$ l'altezza del triangolo relativa al lato di lunghezza $a$ otteniamo \begin{align}
+h^2=&b^2-x^2\label{eqn:erone1}\\
+h^2=&c^2-(a-x)^2\nonumber
+\intertext{uguagliando}
+b^2-x^2=&c^2-(a-x)^2\nonumber\\
+b^2-x^2=&c^2-a^2-x^2+2ax\nonumber\\
+2ax=&b^2+a^2-c^2\nonumber\\
+x=&\dfrac{b^2+a^2-c^2}{2a}\nonumber\\
+\intertext{Per esprire l'altezza in funzione dei lati sostiuiamo il risultato precedente nell'~\cref{eqn:erone1}}
+h^2=&b^2-\dfrac{\left(b^2+a^2-c^2\right)^2}{4a^2}\nonumber\\
+=&\dfrac{4a^2b^2-(b^2+a^2-c^2)^2}{4a^2}\nonumber\\
+=&\dfrac{\left[2ab-\left(a^2+b^2-c^2\right)\right]\left[2ab+\left(a^2+b^2-c^2\right)\right]}{4a^2}\nonumber\\
+=&\dfrac{\left(2ab-b^2-a^2+c^2\right)\left(2ab+b^2+a^2-c^2\right)}{4a^2}\nonumber\\
+=&\dfrac{\left[c^2-\left(b-a\right)^2\right]\left[\left(a+b\right)^2-c^2\right]}{4a^2}\nonumber\\
+=&\dfrac{(c-b+a)(c+b-a)(a+b-c)(a+b+c)}{4a^2}\label{eqn:erone2}
+\intertext{Ponendo}
+a+b+c=&2p\nonumber\\
+c+b-a=&a+b+c-2a=2p-2a=2(p-a)\nonumber\\
+a+c-b=&a+b+c-2b=2p-2b=2(p-b)\nonumber\\
+a+b-c=&a+b+c-2c=2p-2c=2(p-c)\nonumber
+\intertext{l'~\cref{eqn:erone2} diventa}
+h^2=&\dfrac{2p2(p-a)2p(p-b)2(p-c)}{4a^2}\nonumber\\
+=&\dfrac{4ap(p-a)(p-b)(p-c)}{a^2}\nonumber\\
+h=&\dfrac{2\sqrt{p(p-a)(p-b)(p-c)}}{a}\nonumber\\
+\intertext{Quindi l'area del triangolo è}
+A=&\dfrac{1}{2}ah\nonumber\\
+=&\dfrac{1}{2}a\dfrac{2\sqrt{p(p-a)(p-b)(p-c)}}{a}\nonumber\\
+=&\sqrt{p(p-a)(p-b)(p-c)}\nonumber
+\end{align}
+Come si voleva dimostrare.
+\end{proof}
+\begin{figure}
+	\centering
+	\includestandalone{geometria/erone1}
+	\caption{Formula di Erone}
+	\label{fig:erone1}
 \end{figure}

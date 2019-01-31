@@ -17,7 +17,7 @@ xmax=8.5,
 ymin=-0.5,
 ymax=4.5,]
 \clip(-0.5,-0.5) rectangle (8.5,4.5);
-\fill[color=black,fill=black,fill opacity=0.10000000149011612] (0.,0.) -- (7.,4.) -- (8.,0.) -- cycle;
+%\fill[color=black,fill=black,fill opacity=0.10000000149011612] (0.,0.) -- (7.,4.) -- (8.,0.) -- cycle;
 \draw  (0.,0.)-- (7.,4.);
 \draw  (7.,4.)-- (8.,0.);
 \draw  (8.,0.)-- (0.,0.);
@@ -26,9 +26,9 @@ ymax=4.5,]
 \draw [domain=-0.5:8.5] plot(\x,{(--14.-1.75*\x)/1.});
 \begin{scriptsize}
 \draw [fill=black] (0.,0.) circle (2.0pt);
-\draw (-0.44,-0.35) node {$A$};
+\draw (0.2,-0.35) node {$A$};
 \draw [fill=black] (7.,4.) circle (2.0pt);
-\draw (7.2,4.37) node {$C$};
+\draw (7.2,4.3) node {$C$};
 \draw [fill=black] (8.,0.) circle (2.0pt);
 \draw (8.0,-0.35) node {$B$};
 
