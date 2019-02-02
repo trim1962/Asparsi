@@ -11,6 +11,7 @@
 \usepackage{amssymb}
 \usepackage[italian]{babel}
 \usepackage[thmmarks,hyperref]{ntheorem}
+\usepackage{physics}
 \newcommand{\numberset}[1]{\mathbb{#1}}
 \newcommand{\R}{\numberset{R}}
 \newcommand{\Co}{\numberset{C}}
@@ -67,6 +68,7 @@
 \theoremstyle{plain}
 \theoremsymbol{\ensuremath{\clubsuit}}
 \theoremseparator{.}
+\theoremstyle{marginbreak}
 \theoremprework{\hrule\bigskip}
 \theorempostwork{\hrule\bigskip}
 \newtheorem{defn}{Definizione}[section]
@@ -75,7 +77,7 @@
 \theorembodyfont{\upshape}
 \theoremsymbol{\ensuremath{\blacklozenge}}
 \theoremseparator{:}
-\newtheorem{comm}{Commento}
+\newtheorem{commento}{Commento}
 %dimostrazione
 
 \theoremstyle{plain}
@@ -85,6 +87,10 @@
 %^{}\theoremseparator{.}
 
 \theoremsymbol{\ensuremath{\blacksquare}}
+\theoremheaderfont{\bfseries}
+%\theoremstyle{nonumberplain}
+%\theoremstyle{marginbreak}
+\theorembodyfont{\normalfont}
 \newtheorem{proof}{Dimostrazione}
 %\input{../Mod_base/tabelle}
 

@@ -1,0 +1,111 @@
+\chapter{Geometria analitica}
+\section{Retta}
+\subsection{Rette perpendicolari}
+\begin{thm}[Rette perpendicolari]\label{thm:rette_perpendicolari}
+	Due rette $y=m_1x+q_1$ e $y=m_2x+q_2$ incidenti sono perpendicolari se solo se \[m_1\cdot m_2=-1\]
+\end{thm}
+\begin{figure}
+	\centering
+	\includestandalone{geometria/retteperp1}
+	\caption{Rette perpendicolari}
+	\label{fig:retteperp1}
+\end{figure}
+\begin{proof}
+	Consideriamo due rette perpendicolari~\cite{Dodero1999b}, trasportiamo il centro del sistema di riferimento in modo che coincida co il punto di inteserzione trala due rette come nella~\cref{fig:retteperp1}. Le rette $y=m_1x+q_1$ e $y=m_2x+q_2$ diventano $y=m_1x$ e $y=m_2x$. Consideriamo due punti $C$ e $D$ di ascissa uno.  Il triangolo $ABC$ è retto in $\hat{A}$ di conseguenza vale il teorema di Pitagora\index{Teorema!Pitagora}
+	\begin{align*}
+	\overline{BC}^2=&\overline{AB}^2+\overline{AC}^2\\
+	\intertext{Dato che}
+	\overline{BC}^2=&\abs{m_2-m_1}^2\\
+	\overline{AB}^2=&1+m_1^2\\
+	\overline{AC}^2=&1+m_2^2
+	\intertext{Quindi}
+	\abs{m_2-m_1}^2=&1+m_1^2+1+m_2^2\\
+	m_1^2+m_2^2-2m_1m_2=&1+m_1^2+1+m_2^2\\
+	-2m_1m_2=2\\
+	m_1m_2=&-1\\
+	\end{align*}
+	Dimostriamo il viceversa. Consideriamo la~\cref{fig:retteperp1}, le rette $y=m_1x$ e $y=m_2x$ sono tali che \[m_1m_2=-1\] Poniamo che $C(1,m_1)$, $H(1,0)$ e $B(1,m_2)$ 
+	
+Quindi 
+\begin{align*}
+\abs{m_1}\cdot\abs{m_2}=&\abs{m_1\cdot m_2}=1
+\intertext{$ABH$ è retto in $\hat{H}$ quindi}
+\overline{AB}^2=&\overline{HB}^2+\overline{HA}^2
+\intertext{$ACH$ è retto in $\hat{H}$ quindi}
+\overline{AC}^2=&\overline{HC}^2+\overline{HA}^2
+\intertext{Per cui}
+\overline{AB}^2+\overline{AC}^2=&\overline{HC}^2+\overline{HA}^2+\overline{HB}^2+\overline{HA}^2\\
+=&\overline{HC}^2+\overline{HB}^2+2\overline{HA}^2\\
+\intertext{Ma $\overline{HA}^2=\overline{HC}\cdot\overline{HB}$ quindi}
+=&\overline{HC}^2+\overline{HB}^2+2\overline{HC}\cdot\overline{HB}\\
+=&(\overline{HC}+\overline{HB})^2\\
+=&\overline{CB}^2
+\intertext{Segue}
+\overline{AB}^2+\overline{AC}^2=&\overline{CB}^2
+\end{align*}
+come si voleva dimostrare.
+\end{proof}
+Altra dimostrazione della prima parte del~\cref{thm:rette_perpendicolari}
+\begin{thm}[Rette perpendicolari]\label{thm:rette_perpendicolari1}
+	Due rette $y=m_1x+q_1$ e $y=m_2x+q_2$ incidenti sono perpendicolari se \[m_1\cdot m_2=-1\]
+\end{thm}
+\begin{proof}
+Procediamo come il~\cref{thm:rette_perpendicolari} e consideriamo la~\cref{fig:retteperp1}. Dato che il triangolo $ABC$ è retto vale il secondo teorema di Euclide\index{Teorema!Euclide}
+\begin{align*}
+\overline{HC}\cdot\overline{HB}=&\overline{HA}^2
+\intertext{Dato che}
+\overline{HC}=&m_1\\
+\overline{HB}=&-m_2\\
+\overline{HA}=&1\\
+\intertext{otteniamo}
+-m_2\cdot m_1=1\\
+m_2\cdot m_1=-1\\ 
+\end{align*}
+Come si voleva dimostrare
+\end{proof}
+\section{Parabola}
+\begin{defn}[Definizione parabola]
+	Definisco parabola l'equazione $y=ax^2+bx+c$ $a\neq0$
+\end{defn}\index{Parabola}
+\subsection{Proprietà}
+\begin{thm}[Complemento al quadrato]\label{thm:Parabola_complemento}
+	La parabola $y=ax^2+bx+c$ $a\neq0$ è equivalente a \begin{equation*}
+	y+\dfrac{\Delta}{4a}=a\left(x+\dfrac{b}{2a}\right)^2\quad\Delta=b^2-4ac
+	\end{equation*}\label{equa:Parabola_scomposizione}
+\end{thm}\index{Parabola!complemento!quadrato}
+\begin{proof}
+	\begin{align*}
+	y=&ax^2+bx+c\\
+	y-c=&ax^2+bx\\
+	y+\dfrac{b^2}{4a}-c=&ax^2+bx+\dfrac{b^2}{4a}\\
+	y+\dfrac{b^2-4ac}{4a}=&a\dfrac{4a^2x^2+4abx+b^2}{4a^2}\\
+	y+\dfrac{\Delta}{4a}=&a\left(\dfrac{2ax+b}{2a}\right)^2\\
+	y+\dfrac{\Delta}{4a}=&a\left(x+\dfrac{b}{2a}\right)^2
+	\end{align*}
+	Da cui la tesi.
+\end{proof}
+\subsection{Concavità}
+\begin{lem}
+	Se $m>0$ $\forall n$ $m-n>-n$ se $m<0$ $\forall n$ $m-n<-n$
+\end{lem}
+\begin{thm}[Concavità]
+	Data una parabola~\cite{Zwirner1988} $y=ax^2+bx+c$ $a\neq0$ allora se $a>0$ la parabola ha la concavità rivolata verso l'alto e il vertice è il punto di minima ordinata, se $a<0$ la parabola ha la concavità rivolata verso il basso e il vertice è il punto di massima ordinata
+\end{thm}
+\begin{proof}
+	Dal~\cref{thm:Parabola_complemento} abbiamo
+	\begin{align*}
+	y=&a\left(x+\dfrac{b}{2a}\right)^2-\dfrac{b^2-4ac}{4a}& x\neq&\dfrac{b}{2a}\\
+	\intertext{Il vertice della parabola ha ordinata}
+	y_v=&-\dfrac{b^2-4ac}{4a}
+	\intertext{Se $a>0$ }
+	a\left(x+\dfrac{b}{2a}\right)^2>&0\\
+	\intertext{Quindi}
+	a\left(x+\dfrac{b}{2a}\right)^2-\dfrac{b^2-4ac}{4a}>&-\dfrac{b^2-4ac}{4a}\\
+	\intertext{Analogamente}
+	\intertext{Se $a<0$ }
+	a\left(x+\dfrac{b}{2a}\right)^2<&0\\
+	\intertext{Quindi}
+	a\left(x+\dfrac{b}{2a}\right)^2-\dfrac{b^2-4ac}{4a}<&-\dfrac{b^2-4ac}{4a}\\
+	\end{align*}
+	Da cui la tesi
+\end{proof}
