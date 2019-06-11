@@ -1,0 +1,40 @@
+% !TeX root = Asparsi.tex
+% !BIB TS-program = biber
+% !TeX encoding = UTF-8
+% !TeX spellcheck = it_IT
+\chapter{Goniometria}
+\section{Formule parametriche}
+\begin{thm}[Formule parametriche]\label{thm:formuleparametriche1}
+	Se $\alpha$ è un angolo allora
+	\begin{align*}
+\sin\alpha=&\frac{2t}{1+t^2}\\
+\cos\alpha=&\frac{1-t^2}{1+t^2}\\
+t=&\tan\frac{\alpha}{2}&\alpha\neq\pi+2k\pi
+	\end{align*}
+\end{thm}
+\begin{proof} Dalla somma di due angoli otteniamo
+	\begin{align*}
+	\intertext{Prima relazione}
+	\sin2\alpha=&2\sin\alpha\cos\alpha\\
+	=&\frac{2\sin\alpha\cos\alpha}{1}\\
+	=&\frac{2\sin\alpha\cos\alpha}{\cos^2\alpha+\sin^2\alpha}\\
+	=&\dfrac{\dfrac{2\sin\alpha\cos\alpha}{\cos^2\alpha}}{\dfrac{\cos^2\alpha+\sin^2\alpha}{cos^2\alpha}}&\alpha\neq\frac{\pi}{2}+k\pi\\
+	=&\dfrac{\dfrac{2\sin\alpha}{\cos\alpha}}{\dfrac{\cos^2\alpha}{\cos^2\alpha}+\dfrac{\sin^2\alpha}{cos^2\alpha}}\\
+	=&\dfrac{2\tan\alpha}{1+\tan^2\alpha}\\
+	\alpha&\longmapsto\dfrac{\alpha}{2}\\
+	\sin\alpha=&\dfrac{2\tan\dfrac{\alpha}{2}}{1+\tan^2\dfrac{\alpha}{2}}\\
+	t=&\tan\frac{\alpha}{2}\\
+	\sin\alpha=&\frac{2t}{1+t^2}\\
+	\intertext{Seconda relazione}
+	\cos 2\alpha=&\cos^2\alpha-\sin^2\alpha\\
+	=&\dfrac{\cos^2\alpha-\sin^2\alpha}{1}\\
+	=&\frac{\cos^2\alpha-\sin^2\alpha}{\cos^2\alpha+\sin^2\alpha}\\
+	=&\frac{\dfrac{\cos^2\alpha-\sin^2\alpha}{\cos^2\alpha}}{\dfrac{\cos^2\alpha+\sin^2\alpha}{\cos^2\alpha}}&\alpha\neq\frac{\pi}{2}+k\pi\\ 
+	=&\frac{1-\dfrac{\sin^2\alpha}{\cos^2\alpha}}{1+\dfrac{\sin^2\alpha}{\cos^2\alpha}}\\
+	=&\frac{1-\tan^2\alpha}{1+\tan^2\alpha}\\
+	\alpha&\longmapsto\dfrac{\alpha}{2}\\
+	\cos 2\alpha=&\frac{1-\tan^2\dfrac{\alpha}{2}}{1+\tan^2\dfrac{\alpha}{2}}\\
+	t=&\tan\frac{\alpha}{2}\\
+	\cos\alpha=&\frac{1-t^2}{1+t^2}
+	\end{align*}
+\end{proof}
