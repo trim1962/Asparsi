@@ -1,0 +1,83 @@
+\chapter{Trigonometria}
+\section{Teorema di Carnot}\index{Carnot!Teorema}
+\begin{thm}[Teorema di Carnot]\label{thm:TeoremadiCarnot}
+	In un triangolo, il quadrato della lunghezza di un lato è uguale alla somma dei quadrati delle lunghezze dei rimanenti diminuito dal doppio del prodotto delle lunghezze di questi lati per il coseno dell'angolo fra essi compreso. 
+	\begin{align*}
+	a^2=&b^2+c^2-2bc\cos\alpha\\
+	b^2=&a^2+c^2-2ac\cos\beta\\
+	c^2=&a^2+b^2-2ab\cos\gamma\\
+	\end{align*}
+\end{thm}
+\begin{figure}
+	\centering
+	\includestandalone{geometria/triangolopitagorico1}
+	\caption{Teorema di Carnot, angolo acuto}
+	\label{fig:triangolopitagorico1}
+\end{figure}
+\begin{proof}
+	Consideriamo il triangolo~\vref{fig:triangolopitagorico1} cioè supponiamo che l'angolo $\beta$ sia un angolo acuto. Prendiamo il triangolo rettangolo $ADC$ allora:
+	\begin{align*}
+	\intertext{Per il teorema di Pitagora}
+\widebar{AC}^2=&\widebar{AD}^2+\widebar{DC}^2\\
+\widebar{AC}=&b\\
+\widebar{AD}=&c\sin\beta\\
+\widebar{BD}=&c\cos\beta\\
+\widebar{DC}=&a-c\cos\beta\\
+\intertext{Otteniamo}
+b^2=&c^2\sin^2\beta+\left(a-c\cos\beta\right)^2\\
+=&c^2\sin^2\beta+a^2+c^2\cos^2\beta-2ac\cos\beta\\
+=&c^2\left(\sin^2\beta+\cos^2\beta\right)+a^2-2ac\cos\beta\\
+=&c^2+a^2-2ac\cos\beta\\
+	\end{align*}
+	Consideriamo il triangolo come in~\vref{fig:triangolopitagorico2} cioè supponiamo che l'angolo $\beta$ sia un angolo ottuso. Prendiamo il triangolo rettangolo $ADC$ allora:
+		\begin{align*}
+	\intertext{Per il teorema di Pitagora}
+	\widebar{AC}^2=&\widebar{AD}^2+\widebar{DC}^2\\
+	\widebar{AC}=&b\\
+	\widebar{AD}=&c\sin\left(\ang{180}-\beta\right)\\
+	=&c\sin\beta\\
+	\widebar{BD}=&c\cos\left(\ang{180}-\beta\right)\\
+	=&-c\cos\beta\\
+	\widebar{DC}=&a+c\cos\left(\ang{180}-\beta\right)\\
+	=&a-c\cos\beta\\
+	\intertext{Otteniamo}
+	b^2=&c^2\sin^2\beta+\left(a-c\cos\beta\right)^2\\
+	=&c^2\sin^2\beta+a^2+c^2\cos^2\beta-2ac\cos\beta\\
+	=&c^2\left(\sin^2\beta+\cos^2\beta\right)+a^2-2ac\cos\beta\\
+	=&c^2+a^2-2ac\cos\beta\\
+	\end{align*}
+	Da cui la tesi.
+\end{proof}
+\begin{cor}[Teorema di Carnot]\label{cor:TeoremaCarnot1}
+	In un triangolo avremo che
+	\begin{align*}
+	\cos\alpha=&\dfrac{b^2+c^2-a^2}{2bc}\\
+	\cos\beta=&\dfrac{a^2+c^2-b^2}{2ac}\\
+	\cos\gamma=&\dfrac{a^2+b^2-c^2}{2bc}\\
+	\end{align*}
+\end{cor}
+\begin{cor}[Teorema di Carnot]
+	In un triangolo un angolo $\alpha\in[0,\ang{180}]$ è acuto, retto o ottuso se $b^2+c^2-a^2$ è positivo, nullo o negativo.
+\end{cor}
+\begin{proof}
+	Dal~\cref{cor:TeoremaCarnot1} \begin{align*}
+	\cos\alpha=&\dfrac{b^2+c^2-a^2}{2bc}\\
+	\intertext{Il segno della frazione è il segno del numeratore, quindi}
+	\intertext{Se:}
+	b^2+c^2-a^2>&0\\
+	\intertext{Il coseno è positivo, quindi l'angolo è acuto}
+	\intertext{Se:}
+	b^2+c^2-a^2=&0\\
+	\intertext{Il coseno è nullo, quindi l'angolo è retto}
+		\intertext{Se:}
+	b^2+c^2-a^2<&0\\
+	\intertext{Il coseno è negativo, quindi l'angolo è ottuso}
+	\end{align*}
+	Da cui la tesi.
+\end{proof}
+\begin{figure}
+	\centering
+	\includestandalone{geometria/triangolopitagorico2}
+	\caption{Teorema di Carnot, angolo ottuso}
+	\label{fig:triangolopitagorico2}
+\end{figure}
