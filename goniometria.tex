@@ -3,6 +3,51 @@
 % !TeX encoding = UTF-8
 % !TeX spellcheck = it_IT
 \chapter{Goniometria}
+\section{Somma sottrazione di angoli}
+\begin{figure}
+	\centering
+\includestandalone[scale=0.68]{geometria/cosenosommadifferenza1}
+	\caption{Coseno della differenza}
+	\label{fig:cosenosommadifferenza1}
+\end{figure}
+\begin{thm}[Coseno della differenza di due angoli]\label{thm:Cosenodelladifferenza}
+Dati due angoli $\alpha$ e $\beta$ allora
+\[\cos(\alpha-\beta)=\cos\alpha\cos\beta+\sin\alpha\sin\beta  \]
+\end{thm}\index{Coseno!differenza}
+\begin{proof}
+Consideriamo due angoli $\alpha$ e $\beta$ con $\alpha>\beta$. Otteniamo la~\vref{fig:cosenosommadifferenza1}. Costruiamo una angolo di ampiezza $\alpha-\beta$ con vertice in $O$ e un lato $AD$. Otteniamo quattro punti $A(\cos\alpha;\sin\alpha)$, $B (\cos\beta;\sin\beta)$, $C(\cos\left(\alpha-\beta\right);\sin\left(\alpha-\beta\right))$ e $D(1;0)$. I triangoli $AOB$ e $COD$ sono congruenti in particolare abbiamo: \begin{align*}
+\widebar{CD}=&\widebar{AB}\\
+\left[\cos(\alpha-\beta)-1\right]^2+\sin^2(\alpha-\beta)=&\left[\cos\alpha-\cos\beta\right]^2+\left[\sin\alpha-\sin\beta\right]^2\\
+\cos^2(\alpha-\beta)-2\cos(\alpha-\beta)+1+\sin^2(\alpha-\beta)=&\cos^2\alpha+\cos^2\beta-2\cos\alpha\cos\beta+\sin^2\alpha+\sin^2\beta-2\sin\alpha\sin\beta\\
+\intertext{ma}
+\cos^2(\alpha-\beta)+\sin^2(\alpha-\beta)=&1\\
+\cos^2\alpha+\sin^2\alpha=&1\\
+\cos^2\beta+\sin^2\beta=&1\\
+\intertext{quindi}
+1+1-2\cos(\alpha-\beta)=&1+1-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta\\
+2\cos(\alpha-\beta)=&-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta\\
+\intertext{semplifichiamo}
+\cos(\alpha-\beta)=&\cos\alpha\cos\beta+\sin\alpha\sin\beta 
+\end{align*}
+Da cui la tesi.
+\end{proof}
+\begin{cor}[Coseno della somma di due angoli]\label{thm:Cosenodellasomma}
+Dati due angoli $\alpha$ e $\beta$ allora
+\[\cos(\alpha+\beta)=\cos\alpha\cos\beta-\sin\alpha\sin\beta  \]
+\end{cor}\index{Coseno!somma}
+\begin{proof}
+	Dal~\vref{thm:Cosenodelladifferenza}
+	\begin{align*}
+	\cos(\alpha+\beta)=&\cos\left[\alpha-(-\beta)\right]\\
+	\cos\left[\alpha-(-\beta)\right]=&\cos\alpha\cos(-\beta)+\sin\alpha\sin(-\beta)\\
+	\intertext{ma}
+	\cos(-\beta)=&\cos\beta\\
+	\sin(-\beta)=&-\sin\beta
+	\intertext{quindi}
+	\cos(\alpha+\beta)=&\cos\alpha\cos\beta-\sin\alpha\sin\beta
+	\end{align*}
+	Da cui la tesi
+\end{proof}
 \section{Formule parametriche}
 \begin{thm}[Formule parametriche]\label{thm:formuleparametriche1}
 	Se $\alpha$ è un angolo allora
