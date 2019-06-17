@@ -31,7 +31,7 @@ Consideriamo due angoli $\alpha$ e $\beta$ con $\alpha>\beta$. Otteniamo la~\vre
 \end{align*}
 Da cui la tesi.
 \end{proof}
-\begin{cor}[Coseno della somma di due angoli]\label{thm:Cosenodellasomma}
+\begin{cor}[Coseno della somma di due angoli]\label{cor:Cosenodellasomma}
 Dati due angoli $\alpha$ e $\beta$ allora
 \[\cos(\alpha+\beta)=\cos\alpha\cos\beta-\sin\alpha\sin\beta  \]
 \end{cor}\index{Coseno!somma}
@@ -46,7 +46,71 @@ Dati due angoli $\alpha$ e $\beta$ allora
 	\intertext{quindi}
 	\cos(\alpha+\beta)=&\cos\alpha\cos\beta-\sin\alpha\sin\beta
 	\end{align*}
-	Da cui la tesi
+	Da cui la tesi.
+\end{proof}
+\begin{cor}[Seno della differenza di due angoli]\label{cor:Senodelladifferenza}
+Dati due angoli $\alpha$ e $\beta$ allora
+\[\sin(\alpha-\beta)=\sin\alpha\cos\beta-\cos\alpha\sin\beta  \]
+\end{cor}\index{Seno!differenza}
+\begin{proof}
+		Dal~\vref{thm:Cosenodelladifferenza}
+		\begin{align*}
+		\sin(\alpha-\beta)=&\cos\left[\ang{90}-\left(\alpha-\beta\right)\right]\\
+		=&\cos\left[\left(\ang{90}-\alpha\right)+\beta\right]\\
+		=&\cos\left(\ang{90}-\alpha\right)\cos\beta-\sin\left(\ang{90}-\alpha\right)\sin\beta\\
+		\intertext{ma}
+		\cos\left(\ang{90}-\alpha\right)=&\sin\alpha\\
+		\sin\left(\ang{90}-\alpha\right)=&\cos\alpha\\
+		\intertext{quindi}
+		\sin(\alpha-\beta)=&\sin\alpha\cos\beta-\cos\alpha\sin\beta\\
+		\end{align*}
+		Da cui la tesi.
+\end{proof}
+\begin{cor}[Seno della somma di due angoli]
+	Dati due angoli $\alpha$ e $\beta$ allora
+	\[\sin(\alpha+\beta)=\sin\alpha\cos\beta+\cos\alpha\sin\beta  \]
+\end{cor}\index{Seno!somma}
+\begin{proof}
+	Dal~\vref{cor:Cosenodellasomma}
+	\begin{align*}
+	\sin(\alpha+\beta)=&\cos\left[\ang{90}-\left(\alpha+\beta\right)\right]\\
+	=&\cos\left[\left(\ang{90}-\alpha\right)-\beta\right]\\
+	=&\cos\left(\ang{90}-\alpha\right)\cos\beta+\sin\left(\ang{90}-\alpha\right)\sin\beta\\
+	\intertext{ma}
+	\cos\left(\ang{90}-\alpha\right)=&\sin\alpha\\
+	\sin\left(\ang{90}-\alpha\right)=&\cos\alpha\\
+	\intertext{quindi}
+	\sin(\alpha\beta)=&\sin\alpha\cos\beta+\cos\alpha\sin\beta\\
+	\end{align*}
+	Da cui la tesi.
+\end{proof}
+\begin{thm}[Tangente differenza di angoli]\label{thm:tangentedifferenza}
+Dati due angoli $\alpha$ e $\beta$ allora\[\tan\left(\alpha-\beta\right)=\dfrac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}\qquad\alpha,\beta,(\alpha-\beta)\neq\ang{90}+k\ang{180}\]
+\end{thm}\index{Tangente!differenza}
+\begin{proof}
+	Dalla definizione dal~\vref{thm:Cosenodelladifferenza} e dal~\vref{cor:Senodelladifferenza}
+	\begin{align*}
+	\tan\left(\alpha-\beta\right)=&\dfrac{\sin\left(\alpha-\beta\right)}{\cos\left(\alpha-\beta\right)}\\
+	=&\dfrac{\sin\alpha\cos\beta-\cos\alpha\sin\beta}{\cos\alpha\cos\beta+\sin\alpha\sin\beta}\\
+	\intertext{Dato che $\cos\alpha\cos\beta\neq 0$}
+	=&\dfrac{\dfrac{\sin\alpha\cos\beta}{\cos\alpha\cos\beta}-\dfrac{\cos\alpha\sin\beta}{\cos\alpha\cos\beta}}{\dfrac{\cos\alpha\cos\beta}{\cos\alpha\cos\beta}+\dfrac{\sin\alpha\sin\beta}{\cos\alpha\cos\beta}}\\
+	=&\dfrac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}\\
+	\end{align*}
+	Da cui la tesi.
+\end{proof}
+\begin{cor}[Tangente somma di angoli]\label{cor:Tangentesommadiangoli}
+	Dati due angoli $\alpha$ e $\beta$ allora\[\tan\left(\alpha+\beta\right)=\dfrac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}\qquad\alpha,\beta,(\alpha-\beta)\neq\ang{90}+k\ang{180}\]
+\end{cor}\index{Tangente!somma}
+\begin{proof}
+	Dal~\vref{thm:tangentedifferenza} avremo:
+	\begin{align*}
+	\tan\left(\alpha+\beta\right)=&\tan\left[\alpha-\left(-\beta\right)\right]\\
+	=&\dfrac{\tan\alpha-\tan\left(-\beta\right)}{1+\tan\alpha\tan\left(-\beta\right)}
+	\intertext{ma}
+	\tan\left(-\beta\right)=&-\tan\beta\\
+	=&\dfrac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}\\
+	\end{align*}
+	Da cui la tesi.
 \end{proof}
 \section{Formule parametriche}
 \begin{thm}[Formule parametriche]\label{thm:formuleparametriche1}
