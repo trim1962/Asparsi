@@ -55,40 +55,40 @@ Dati due angoli $\alpha$ e $\beta$ allora
 \begin{proof}
 		Dal~\vref{thm:Cosenodelladifferenza}
 		\begin{align*}
-		\sin(\alpha-\beta)=&\cos\left[\ang{90}-\left(\alpha-\beta\right)\right]\\
-		=&\cos\left[\left(\ang{90}-\alpha\right)+\beta\right]\\
-		=&\cos\left(\ang{90}-\alpha\right)\cos\beta-\sin\left(\ang{90}-\alpha\right)\sin\beta\\
+		\sin(\alpha-\beta)=&\cos\left[\dfrac{\pi}{2}-\left(\alpha-\beta\right)\right]\\
+		=&\cos\left[\left(\dfrac{\pi}{2}-\alpha\right)+\beta\right]\\
+		=&\cos\left(\dfrac{\pi}{2}-\alpha\right)\cos\beta-\sin\left(\dfrac{\pi}{2}-\alpha\right)\sin\beta\\
 		\intertext{ma}
-		\cos\left(\ang{90}-\alpha\right)=&\sin\alpha\\
-		\sin\left(\ang{90}-\alpha\right)=&\cos\alpha\\
+		\cos\left(\dfrac{\pi}{2}-\alpha\right)=&\sin\alpha\\
+		\sin\left(\dfrac{\pi}{2}-\alpha\right)=&\cos\alpha\\
 		\intertext{quindi}
 		\sin(\alpha-\beta)=&\sin\alpha\cos\beta-\cos\alpha\sin\beta\\
 		\end{align*}
 		Da cui la tesi.
 \end{proof}
-\begin{cor}[Seno della somma di due angoli]
+\begin{cor}[Seno della somma di due angoli]\label{cor:senosommaangoli}
 	Dati due angoli $\alpha$ e $\beta$ allora
 	\[\sin(\alpha+\beta)=\sin\alpha\cos\beta+\cos\alpha\sin\beta  \]
 \end{cor}\index{Seno!somma}
 \begin{proof}
 	Dal~\vref{cor:Cosenodellasomma}
 	\begin{align*}
-	\sin(\alpha+\beta)=&\cos\left[\ang{90}-\left(\alpha+\beta\right)\right]\\
-	=&\cos\left[\left(\ang{90}-\alpha\right)-\beta\right]\\
-	=&\cos\left(\ang{90}-\alpha\right)\cos\beta+\sin\left(\ang{90}-\alpha\right)\sin\beta\\
+	\sin(\alpha+\beta)=&\cos\left[\dfrac{\pi}{2}-\left(\alpha+\beta\right)\right]\\
+	=&\cos\left[\left(\dfrac{\pi}{2}-\alpha\right)-\beta\right]\\
+	=&\cos\left(\dfrac{\pi}{2}-\alpha\right)\cos\beta+\sin\left(\dfrac{\pi}{2}-\alpha\right)\sin\beta\\
 	\intertext{ma}
-	\cos\left(\ang{90}-\alpha\right)=&\sin\alpha\\
-	\sin\left(\ang{90}-\alpha\right)=&\cos\alpha\\
+	\cos\left(\dfrac{\pi}{2}-\alpha\right)=&\sin\alpha\\
+	\sin\left(\dfrac{\pi}{2}-\alpha\right)=&\cos\alpha\\
 	\intertext{quindi}
 	\sin(\alpha\beta)=&\sin\alpha\cos\beta+\cos\alpha\sin\beta\\
 	\end{align*}
 	Da cui la tesi.
 \end{proof}
 \begin{thm}[Tangente differenza di angoli]\label{thm:tangentedifferenza}
-Dati due angoli $\alpha$ e $\beta$ allora\[\tan\left(\alpha-\beta\right)=\dfrac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}\qquad\alpha,\beta,(\alpha-\beta)\neq\ang{90}+k\ang{180}\]
+Dati due angoli $\alpha$ e $\beta$ allora\[\tan\left(\alpha-\beta\right)=\dfrac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}\qquad\alpha,\beta,(\alpha-\beta)\neq\dfrac{\pi}{2}+k\pi\]
 \end{thm}\index{Tangente!differenza}
 \begin{proof}
-	Dalla definizione dal~\vref{thm:Cosenodelladifferenza} e dal~\vref{cor:Senodelladifferenza}
+	Dalla definizione, dal~\vref{thm:Cosenodelladifferenza} e dal~\vref{cor:Senodelladifferenza}
 	\begin{align*}
 	\tan\left(\alpha-\beta\right)=&\dfrac{\sin\left(\alpha-\beta\right)}{\cos\left(\alpha-\beta\right)}\\
 	=&\dfrac{\sin\alpha\cos\beta-\cos\alpha\sin\beta}{\cos\alpha\cos\beta+\sin\alpha\sin\beta}\\
@@ -99,7 +99,7 @@ Dati due angoli $\alpha$ e $\beta$ allora\[\tan\left(\alpha-\beta\right)=\dfrac{
 	Da cui la tesi.
 \end{proof}
 \begin{cor}[Tangente somma di angoli]\label{cor:Tangentesommadiangoli}
-	Dati due angoli $\alpha$ e $\beta$ allora\[\tan\left(\alpha+\beta\right)=\dfrac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}\qquad\alpha,\beta,(\alpha-\beta)\neq\ang{90}+k\ang{180}\]
+	Dati due angoli $\alpha$ e $\beta$ allora\[\tan\left(\alpha+\beta\right)=\dfrac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}\qquad\alpha,\beta,(\alpha-\beta)\neq\dfrac{\pi}{2}+k\pi\]
 \end{cor}\index{Tangente!somma}
 \begin{proof}
 	Dal~\vref{thm:tangentedifferenza} avremo:
@@ -108,20 +108,140 @@ Dati due angoli $\alpha$ e $\beta$ allora\[\tan\left(\alpha-\beta\right)=\dfrac{
 	=&\dfrac{\tan\alpha-\tan\left(-\beta\right)}{1+\tan\alpha\tan\left(-\beta\right)}
 	\intertext{ma}
 	\tan\left(-\beta\right)=&-\tan\beta\\
+	\intertext{quindi}
 	=&\dfrac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}\\
 	\end{align*}
 	Da cui la tesi.
 \end{proof}
-\section{Formule parametriche}
-\begin{thm}[Formule parametriche]\label{thm:formuleparametriche1}
-	Se $\alpha$ è un angolo allora
+\begin{thm}[Cotangente differenza di angoli]\label{thm:cotangentedifferenza}
+	Dati due angoli $\alpha$ e $\beta$ allora\[\cot\left(\alpha-\beta\right)=\dfrac{\cot\alpha\cot\beta+1}{\cot\beta-\cot\alpha}\qquad\alpha,\beta,(\alpha-\beta)\neq\ k\pi\]
+\end{thm}\index{Cotangente!differenza}
+\begin{proof}
+	Dalla definizione dal~\vref{thm:Cosenodelladifferenza} e dal~\vref{cor:Senodelladifferenza}
 	\begin{align*}
+	\cot\left(\alpha-\beta\right)=&\dfrac{\cos\left(\alpha-\beta\right)}{\sin\left(\alpha-\beta\right)}\\
+	=&\dfrac{\cos\alpha\cos\beta+\sin\alpha\sin\beta}{\sin\alpha\cos\beta-\cos\alpha\sin\beta}\\
+	\intertext{Dato che $\sin\alpha\sin\beta\neq 0$}
+	=&\dfrac{\dfrac{\cos\alpha\cos\beta}{[\sin\alpha\sin\beta}+\dfrac{\sin\alpha\sin\beta}{[\sin\alpha\sin\beta}}{\dfrac{\sin\alpha\cos\beta}{[\sin\alpha\sin\beta}-\dfrac{\cos\alpha\sin\beta}{[\sin\alpha\sin\beta}}\\
+	=&\dfrac{\cot\alpha\cot\beta+1}{\cot\beta-\cot\alpha}\\
+	\end{align*}
+	Da cui la tesi.
+\end{proof}
+\begin{cor}[Cotangente somma di angoli]\label{cor:Cotangentesommadiangoli}
+	Dati due angoli $\alpha$ e $\beta$ allora\[\cot\left(\alpha+\beta\right)=\dfrac{\cot\alpha\cot\beta-1}{\cot\alpha+\cot\beta}\qquad\alpha,\beta,(\alpha-\beta)\neq\ k\pi\]
+\end{cor}\index{Cotangente!somma}
+\begin{proof}
+	Dal~\vref{thm:cotangentedifferenza} avremo:
+	\begin{align*}
+	\cot\left(\alpha+\beta\right)=&\cot\left[\alpha-\left(-\beta\right)\right]\\
+	=&\dfrac{\cot\alpha\cot\left(-\beta\right)+1}{\cot\left(-\beta\right)-\cot\alpha}
+	\intertext{ma}
+	\cot\left(-\beta\right)=&-\cot\beta\\
+	\intertext{quindi}
+	=&\dfrac{-\cot\alpha\cot\beta+1}{-\cot\beta-\cot\alpha}\\
+	=&\dfrac{\cot\alpha\cot\beta-1}{\cot\alpha+\cot\beta}\\
+	\end{align*}
+	Da cui la tesi.
+\end{proof}
+\section{Formule di duplicazione}
+\begin{thm}[Formule di duplicazione coseno]\label{thm:Formulediduplicazionecoseno}
+Dato un angolo $\alpha$ avremo:
+\begin{align*}
+\cos 2\alpha=&\cos^2\alpha-\sin^2\cos\alpha\\
+\cos 2\alpha=&1-2\sin^2\alpha\\
+\cos 2\alpha=&2\cos^2\alpha-1\\
+\end{align*}
+\end{thm}\index{Coseno!duplicazione}
+\begin{proof}
+\begin{align*}
+\intertext{Dal~\vref{cor:Cosenodellasomma}}
+\cos\left(2\alpha\right)=&\cos\left(2\alpha\right)\\
+=&\cos\alpha\cos\alpha-\sin\alpha\sin\alpha\\
+=&\cos^2\alpha-\sin^2\alpha\\
+\intertext{ma}
+\cos^2\alpha=&1-\sin^2\alpha\\
+\sin^2\alpha=&1-\cos^2\alpha\\
+\intertext{quindi}
+=&\cos^2\alpha-\sin^2\alpha\\
+=&1-\sin^2\alpha-\sin^2\alpha\\
+=&1-2\sin^2\alpha\\
+=&\cos^2\alpha-\sin^2\alpha\\
+=&\cos^2\alpha-1+\cos^2\alpha\\
+=&2\cos^2\alpha-1\\
+\end{align*}
+Da cui la tesi.
+\end{proof}
+\begin{thm}[Formule di duplicazione seno]\label{thm:Formulediduplicazioneseno}
+	Dato un angolo $\alpha$ avremo:
+	\[\sin\left(2\alpha\right)=2\sin\alpha\cos\alpha\]
+\end{thm}\index{Seno!duplicazione}
+\begin{proof}
+	Dal~\vref{cor:senosommaangoli} abbiamo:
+	\begin{align*}
+	\sin\left(2\alpha\right)=&\sin\left(\alpha+\alpha\right)\\
+	=&\sin\alpha\cos\alpha+\cos\alpha\sin\alpha\\
+	=&2\sin\alpha\cos\alpha\\
+	\end{align*}
+	Da cui la tesi.
+\end{proof}
+\begin{thm}[Formule di duplicazione tangente]\label{thm:Formulediduplicazionetangente}
+	Dato un angolo $\alpha$ avremo:
+	\[\tan\left(2\alpha\right)=\dfrac{2\tan\alpha}{1-\tan^2\alpha}\qquad\begin{cases}
+	\alpha\neq\dfrac{\pi}{2}+k\pi\\
+	\\
+	\alpha\neq\dfrac{\pi}{4}+k\dfrac{\pi}{2}\\
+	\end{cases}\]
+\end{thm}\index{Tangente!duplicazione}
+\begin{proof}
+Dal~\vref{cor:Tangentesommadiangoli} abbiamo
+\begin{align*}
+\tan\left(2\alpha\right)=&\tan\left(\alpha+\alpha\right)\\
+=&\dfrac{\tan\alpha+\tan\alpha}{1-\tan\alpha\tan\alpha}\\
+=&\dfrac{2\tan\alpha}{1-\tan^2\alpha}\\
+\end{align*}
+Da cui la tesi.
+\end{proof}
+\begin{thm}[Formule di duplicazione cotangente]\label{thm:Formulediduplicazionecotangente}
+	Dato un angolo $\alpha$ avremo:
+	\[\cot\left(2\alpha\right)=\dfrac{\cot^2\alpha-1}{2\cot\alpha}\qquad\alpha\neq\dfrac{\pi}{2}k\]
+\end{thm}\index{Cotangente!duplicazione}
+\begin{proof}
+	Dal~\vref{cor:Cotangentesommadiangoli} abbiamo
+	\begin{align*}
+	\cot\left(2\alpha\right)=&\cot\left(\alpha+\alpha\right)\\
+	=&\dfrac{1-\cot\alpha\tan\alpha}{\cot\alpha+\cot\alpha}\\
+	=&\dfrac{1-\cot^2\alpha}{2\cot\alpha}\\
+	\end{align*}
+	Da cui la tesi.
+\end{proof}
+\section{Formule parametriche}
+\begin{thm}[Funzione seno in funzione della tangente dell'angolo metà]\label{thm:senotangentemeta}
+	Dato una angolo $\alpha$  allora:
+\[\sin\alpha=\dfrac{2\tan\dfrac{\alpha}{2}}{1+\tan^2\dfrac{\alpha}{2}}\qquad\alpha\neq\pi+2k\pi \]
+\end{thm}\index{Seno!tangente!metà}
+\begin{proof}
+	Dal~\vref{thm:Formulediduplicazioneseno} il seno della somma di due angoli 
+	\begin{align*}
+	\sin2\alpha=&2\sin\alpha\cos\alpha\\
+	=&\frac{2\sin\alpha\cos\alpha}{1}\\
+	=&\frac{2\sin\alpha\cos\alpha}{\cos^2\alpha+\sin^2\alpha}\\
+	=&\dfrac{\dfrac{2\sin\alpha\cos\alpha}{\cos^2\alpha}}{\dfrac{\cos^2\alpha+\sin^2\alpha}{cos^2\alpha}}&\alpha\neq\frac{\pi}{2}+k\pi\\
+	=&\dfrac{\dfrac{2\sin\alpha}{\cos\alpha}}{\dfrac{\cos^2\alpha}{\cos^2\alpha}+\dfrac{\sin^2\alpha}{cos^2\alpha}}\\
+	=&\dfrac{2\tan\alpha}{1+\tan^2\alpha}\\
+	\alpha&\longmapsto\dfrac{\alpha}{2}\\
+	\sin\alpha=&\dfrac{2\tan\dfrac{\alpha}{2}}{1+\tan^2\dfrac{\alpha}{2}}\\
+	\end{align*}
+Da cui la tesi:
+\end{proof}
+\begin{thm}[Formule parametriche]\label{thm:formuleparametriche1}
+	Dato una angolo $\alpha$  allora
+\begin{align*}
 \sin\alpha=&\frac{2t}{1+t^2}\\
 \cos\alpha=&\frac{1-t^2}{1+t^2}\\
 t=&\tan\frac{\alpha}{2}&\alpha\neq\pi+2k\pi
-	\end{align*}\index{Seno}\index{Coseno}\index{Tangente}\index{Formule!parametriche}
+\end{align*}\index{Seno}\index{Coseno}\index{Tangente}\index{Formule!parametriche}
 \end{thm}
-\begin{proof} Dalla somma di due angoli otteniamo le seguenti relazioni
+\begin{proof} Dal~\vref{thm:Formulediduplicazioneseno} somma di due angoli otteniamo le seguenti relazioni
 	\begin{align*}
 	\intertext{Prima relazione}
 	\sin2\alpha=&2\sin\alpha\cos\alpha\\
@@ -135,6 +255,7 @@ t=&\tan\frac{\alpha}{2}&\alpha\neq\pi+2k\pi
 	t=&\tan\frac{\alpha}{2}\\
 	\sin\alpha=&\frac{2t}{1+t^2}\\
 	\end{align*}
+	Dal~\vref{thm:Formulediduplicazionecoseno} otteniamo:
 	\begin{align*}
 	\intertext{Seconda relazione}
 	\cos 2\alpha=&\cos^2\alpha-\sin^2\alpha\\
@@ -148,5 +269,5 @@ t=&\tan\frac{\alpha}{2}&\alpha\neq\pi+2k\pi
 	t=&\tan\frac{\alpha}{2}\\
 	\cos\alpha=&\frac{1-t^2}{1+t^2}
 	\end{align*}
-	da cui la tesi.
+	Da cui la tesi.
 \end{proof}
