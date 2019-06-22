@@ -220,7 +220,7 @@ Da cui la tesi.
 \[\sin\alpha=\dfrac{2\tan\dfrac{\alpha}{2}}{1+\tan^2\dfrac{\alpha}{2}}\qquad\alpha\neq\pi+2k\pi \]
 \end{thm}\index{Seno!tangente!metà}
 \begin{proof}
-	Dal~\vref{thm:Formulediduplicazioneseno} il seno della somma di due angoli 
+	Per il~\vref{thm:Formulediduplicazioneseno} il seno della somma di due angoli 
 	\begin{align*}
 	\sin2\alpha=&2\sin\alpha\cos\alpha\\
 	=&\frac{2\sin\alpha\cos\alpha}{1}\\
@@ -232,6 +232,49 @@ Da cui la tesi.
 	\sin\alpha=&\dfrac{2\tan\dfrac{\alpha}{2}}{1+\tan^2\dfrac{\alpha}{2}}\\
 	\end{align*}
 Da cui la tesi:
+\end{proof}
+\begin{thm}[Funzione coseno in funzione della tangente dell'angolo metà]\label{thm:cosenotangentemeta}
+	Dato una angolo $\alpha$  allora:
+	\[\tan\left(\alpha\right)=\dfrac{2\tan\dfrac{\alpha}{2}}{1-\tan^2\dfrac{\alpha}{2}}\qquad\alpha\neq\pi+2\pi k\]
+\end{thm}\index{Tangente!tangente!metà}
+\begin{proof}
+Per il~\vref{thm:Formulediduplicazionecoseno} il coseno dell'angolo è
+\begin{align*}
+\cos 2\alpha=&\cos^2\alpha-\sin^2\alpha\\
+=&\dfrac{\cos^2\alpha-\sin^2\alpha}{1}\\
+=&\frac{\cos^2\alpha-\sin^2\alpha}{\cos^2\alpha+\sin^2\alpha}\\
+=&\frac{\dfrac{\cos^2\alpha-\sin^2\alpha}{\cos^2\alpha}}{\dfrac{\cos^2\alpha+\sin^2\alpha}{\cos^2\alpha}}&\alpha\neq\frac{\pi}{2}+k\pi\\ 
+=&\frac{1-\dfrac{\sin^2\alpha}{\cos^2\alpha}}{1+\dfrac{\sin^2\alpha}{\cos^2\alpha}}\\
+=&\frac{1-\tan^2\alpha}{1+\tan^2\alpha}\\
+\alpha&\longmapsto\dfrac{\alpha}{2}\\
+\cos\alpha=&\frac{1-\tan^2\dfrac{\alpha}{2}}{1+\tan^2\dfrac{\alpha}{2}}\\
+\end{align*}
+\end{proof}
+\begin{thm}[Funzione tangente in funzione della tangente dell'angolo metà]\label{thm:tangentetangentemeta}
+	Dato una angolo $\alpha$  allora:
+	\[\tan\alpha=\dfrac{2\tan\dfrac{\alpha}{2}}{1-\tan^2\dfrac{\alpha}{2}}\qquad\begin{cases}
+	\alpha\neq\pi+2k\pi\\
+	\\
+	\alpha\neq\dfrac{\pi}{2}+2k\pi\\
+	\end{cases}\]
+\end{thm}\index{Tangente!tangente!metà}
+\begin{proof}
+Dal~\vref{thm:Formulediduplicazionetangente} abbiamo
+\begin{align*}
+\tan\alpha=&\tan 2\dfrac{\alpha}{2}\\
+=&\dfrac{2\tan\dfrac{\alpha}{2}}{1-\tan^2\dfrac{\alpha}{2}}\\
+\end{align*}
+\end{proof}
+\begin{thm}[Funzione cotangente in funzione della tangente dell'angolo metà]\label{thm:cotangentetangentemeta}
+	Dato una angolo $\alpha$  allora:
+	\[\cot\alpha=\dfrac{1-\tan^2\dfrac{\alpha}{2}}{2\tan\dfrac{\alpha}{2}}\qquad\alpha\neq k\dfrac{\pi}{2}\]
+\end{thm}\index{Cotangente!tangente!metà}
+\begin{proof}
+	Dal~\vref{thm:tangentetangentemeta} e dato che tangente e cotangente sono reciproci abbiamo
+	\begin{align*}
+	\cot\alpha=&\dfrac{1}{\tan\alpha}\\
+	=&\dfrac{1-\tan^2\dfrac{\alpha}{2}}{2\tan\dfrac{\alpha}{2}}
+	\end{align*}
 \end{proof}
 \begin{thm}[Formule parametriche]\label{thm:formuleparametriche1}
 	Dato una angolo $\alpha$  allora

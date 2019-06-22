@@ -5,7 +5,7 @@
 \chapter{Equazioni secondo grado}\label{ch:equazioni-secondo-grado}
 \section{Risoluzione}\label{sec:risoluzione}
 \begin{thm}[Formula risolutiva]\label{thm:Equasec1}
-	Una equazione di secondo grado $ax^2+bx+c=0$ con $a\neq 0$ ha soluzione \begin{equation*}\label[equation]{eq:equasec1}
+	Una equazione di secondo grado $ax^2+bx+c=0$ con $a\neq 0$ ha per soluzioni \begin{equation*}\label[equation]{eq:equasec1}
 	x_{1,2}=\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}
 	\end{equation*}\index{Equazione!secondo grado!soluzioni}\index{Triniomio!secondo!grado}
 \end{thm}
@@ -21,6 +21,30 @@
 	2ax+b=&\pm\sqrt{b^2-4ac}\\
 	2ax=&-b\pm\sqrt{b^2-4ac}\\
 	x_{1,2}=&\frac{-b\pm\sqrt{b^2-4ac}}{2a}
+	\end{align*}
+	Da cui la tesi.
+\end{proof}
+\begin{cor}[Proprietà delle soluzioni]\label{cor:secondogradopropsoluzioni}
+Data equazione di secondo grado $ax^2+bx+c=0$ con $a\neq 0$, se $x_1$ e $x_2$ sono le sue soluzioni allora\[\begin{cases}
+	x_1+x_2=-\dfrac{b}{a}\\
+	x_1\cdot x_2=\dfrac{c}{a}\\
+\end{cases}\]
+\end{cor}
+\begin{proof}Dal~\vref{thm:Equasec1} abbiamo:
+	\begin{align*}
+	&\begin{cases}
+	x_1=\frac{-b+\sqrt{b^2-4ac}}{2a}\\
+	\\
+	x_2=\frac{-b-\sqrt{b^2-4ac}}{2a}\\
+	\end{cases}\\
+	x_1+x_2=&\frac{-b+\sqrt{b^2-4ac}}{2a}+\frac{-b-\sqrt{b^2-4ac}}{2a}\\
+	=&\frac{-b+\sqrt{b^2-4ac}-b-\sqrt{b^2-4ac}}{2a}\\
+	=&-\frac{2b}{2a}\\
+	=&-\dfrac{b}{a}\\
+	x_1\cdot x_2=&\frac{-b+\sqrt{b^2-4ac}}{2a}\cdot\frac{-b-\sqrt{b^2-4ac}}{2a}\\
+	=&\frac{b^2-b^2+4ac}{4a^2}\\
+	=&\frac{4ac}{4a^2}\\
+	=&\frac{c}{a}
 	\end{align*}
 	Da cui la tesi.
 \end{proof}
