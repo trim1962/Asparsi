@@ -51,6 +51,15 @@ Data un'equazione di secondo grado $ax^2+bx+c=0$ con $a\neq 0$, se $x_1$ e $x_2$
 \begin{cor}[Scomposizione del trinomio di secondo grado]\label{cor:Scomposizionetrisecgrad}
 Data un'equazione di secondo grado $ax^2+bx+c=0$ con $a\neq 0$, se $x_1$ e $x_2$ sono le sue soluzioni allora:\[ax^2+bx+c=a\left(x-x_1\right)\left(x-x_2\right) \]
 \end{cor}\index{Trinomio!scomposizione}
+\begin{proof}Dal~\vref{cor:secondogradopropsoluzioni} otteniamo
+	\begin{align*}
+ax^2+bx+c=&a\left(x^2+\dfrac{b}{a}+\dfrac{c}{a}\right)\\
+=&a\left[x^2-\left(x_1+x_2\right)x+x_1\cdot x_2\right]\\
+=&a\left(x^2-x_1x-x_2x+x_1\cdot x_2\right)\\
+=&a\left[x\left(x-x_1\right)-x_2\left(x-x_1\right)\right]\\
+=&a\left(x-x_1\right)\left(x-x_2\right)\\
+	\end{align*}
+\end{proof}
 \section{Casi particolari}
 \begin{thm}[Formula ridotta]\label{thm:Equasec2}
 	Se l'equazione di secondo grado è del tipo\[ax^2+2\beta x+c=0 \] allora la formula risolutiva è \begin{equation*}\label[equation]{eq:equasec2}
