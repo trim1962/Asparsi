@@ -7,7 +7,7 @@
 \usepackage{cmap}
 \frenchspacing%
 \usepackage{amsmath}
-\usepackage{qrcode}
+
 \usepackage{amssymb}
 \usepackage[italian]{babel}
 \usepackage[thmmarks,hyperref]{ntheorem}
@@ -95,11 +95,10 @@
 \usepackage{pagina}
 
 \setlength{\headheight}{13pt}
-\useboxarray{indice}
+\usepackage{indice}
+\usepackage{date}
+\usepackage{unita_misura}
 
-\input{../Mod_base/date}
-\input{../Mod_base/loghi}
-\input{../Mod_base/unita_misura}
 \usepackage{imakeidx}
 \makeindex[options=-s ../Mod_base/oldclaudio.sti]
 
@@ -194,7 +193,7 @@ baseurl={http://breviariomatematico.altervista.org}
 }
 
 \input{compilaTexStudio}
-\listfiles
+
 %patch allieamento lista teoremi
 \usepackage{regexpatch}
 \makeatletter
@@ -203,6 +202,8 @@ baseurl={http://breviariomatematico.altervista.org}
 \xpatchcmd*{\thm@@thmline@noname}{2.3em}{5em}{}{}
 \makeatother
 %fine patch allieamento lista teoremi
+\usepackage{CDloghi}
+\listfiles
 \begin{document}
 %\setcounter{page}{2}
 		\frontmatter
@@ -211,7 +212,7 @@ baseurl={http://breviariomatematico.altervista.org}
 			\centering
 			\parbox{0.8\textwidth}{\centering
 %			\begin{center}
-			\input{../Mod_base/Lgrande}\\[1cm]
+				\Lgrandedue\\[1cm]   
 				\textsc{\LARGE Claudio Duchi}\\[1.5cm]
 				\HRule \\[0.4cm]
 				{ \huge \bfseries Zibaldone}\\[0.4cm]
@@ -233,7 +234,7 @@ baseurl={http://breviariomatematico.altervista.org}
 }
 		\end{titlepage}
 	\hypersetup{pageanchor=true}
-		\input{../Mod_base/copyright}
+		\CDcopyright
 		\tableofcontents
 		\chapter*{Lista dei teoremi}
 		\theoremlisttype{allname}
@@ -244,12 +245,13 @@ baseurl={http://breviariomatematico.altervista.org}
 %			\listoftables
 			\mainmatter
 \input{compilaTexStudioDue}			
-\begin{appendices}
-	\input{../Mod_base/MezziUsati}
-\end{appendices}
+
 \nocite{*}
  \addcontentsline{toc}{chapter}{\bibname}
 \printbibliography
  \addcontentsline{toc}{chapter}{\indexname}
  \printindex
+ \appendix
+ \chapter{Mezzi usati}
+ \CDMezziUsati
 \end{document}
