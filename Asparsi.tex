@@ -207,33 +207,28 @@ baseurl={http://breviariomatematico.altervista.org}
 \usepackage{CDloghi}
 \listfiles
 \begin{document}
-\setcounter{page}{2}
-		\frontmatter
-		\begin{titlepage}\parindent=0pt
-			\centering
-			\parbox{0.8\textwidth}{\centering
-%			\begin{center}
-				\Lgrandedue\\[1cm]   
-				\textsc{\LARGE Claudio Duchi}\\[1.5cm]
-				\HRule \\[0.4cm]
-				{ \huge \bfseries Zibaldone}\\[0.4cm]
-				{ \large \bfseries di}\\[0.4cm]
-				{ \large \bfseries pensieri}\\[0.4cm]
-				\HRule \\[1.5cm]
-				\vfill
-			\begin{tikzpicture}
-			\renewcommand*{\VertexBallColor}{green!50!black}
-			\GraphInit[vstyle=Art]
-\grCirculant[RA=6]{5}{1,3,10}%
-%			\grComplete[RA=6]{20}
-			\end{tikzpicture}
-%		\end{center}
+\begin{titlepage}
+\begin{center}	
+	\Lgrandedue\\[1cm]    
+	\textsc{\LARGE Claudio Duchi}\\[1.5cm]
+	
+\HRule \\[0.4cm]
+{ \huge \bfseries Zibaldone}\\[0.4cm]
+{ \large \bfseries di}\\[0.4cm]
+{ \large \bfseries pensieri}\\[0.4cm]
+\HRule \\[1.5cm]
+\vfill
+	% Bottom of the page
+	\polylogo{15}		
+	{\large $-$\DTMnow$-$}
+\end{center}
 
-\makebox[\linewidth]{\centering
-		Release:\gitReln\ (\gitAbbrevHash)\ Autore:\gitAuthorName\ 
-  \gitCommitterDate}
-}
-		\end{titlepage}
+\end{titlepage}	
+	
+	
+	
+	
+	
 	\hypersetup{pageanchor=true}
 		\CDcopyright
 		\tableofcontents
