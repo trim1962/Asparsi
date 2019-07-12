@@ -201,6 +201,8 @@ baseurl={http://breviariomatematico.altervista.org}
 \xpatchcmd*{\thm@@thmline@noname}{2.3em}{5em}{}{}
 \makeatother
 %fine patch allieamento lista teoremi
+\usepackage{CDloghi}
+\listfiles
 \begin{document}
 %\setcounter{page}{2}
 		\frontmatter
@@ -209,7 +211,7 @@ baseurl={http://breviariomatematico.altervista.org}
 			\centering
 			\parbox{0.8\textwidth}{\centering
 %			\begin{center}
-			\input{../Mod_base/Lgrande}\\[1cm]
+			\Lgrandedue\\[1cm]
 				\textsc{\LARGE Claudio Duchi}\\[1.5cm]
 				\HRule \\[0.4cm]
 				{ \huge \bfseries Zibaldone}\\[0.4cm]
@@ -217,21 +219,12 @@ baseurl={http://breviariomatematico.altervista.org}
 				{ \large \bfseries pensieri}\\[0.4cm]
 				\HRule \\[1.5cm]
 				\vfill
-			\begin{tikzpicture}
-			\renewcommand*{\VertexBallColor}{green!50!black}
-			\GraphInit[vstyle=Art]
-\grCirculant[RA=6]{5}{1,3,10}%
-%			\grComplete[RA=6]{20}
-			\end{tikzpicture}
-%		\end{center}
-
-\makebox[\linewidth]{\centering
-		Release:\gitReln\ (\gitAbbrevHash)\ Autore:\gitAuthorName\ 
-  \gitCommitterDate}
-}
+			\polylogo{14}
 		\end{titlepage}
 	\hypersetup{pageanchor=true}
-		\input{../Mod_base/copyright}
+		\setcounter{page}{2}
+		%\hypersetup{pageanchor=true}
+		\CDcopyright
 		\tableofcontents
 		\chapter*{Lista dei teoremi}
 		\theoremlisttype{allname}
@@ -242,9 +235,7 @@ baseurl={http://breviariomatematico.altervista.org}
 %			\listoftables
 			\mainmatter
 \input{compilaTexStudioDue}			
-\begin{appendices}
-	\input{../Mod_base/MezziUsati}
-\end{appendices}
+
 \nocite{*}
  \addcontentsline{toc}{chapter}{\bibname}
 \printbibliography
