@@ -7,7 +7,7 @@
 \usepackage{cmap}
 \frenchspacing%
 \usepackage{amsmath}
-\usepackage{qrcode}
+
 \usepackage{amssymb}
 \usepackage[italian]{babel}
 \usepackage[thmmarks,hyperref]{ntheorem}
@@ -20,8 +20,7 @@
 %\usepackage{geometry}
 \usepackage{textcomp}
 \usepackage[big]{layaureo}
-%\geometry{top=1.5cm,bottom=1.5cm}
-\input{../Mod_base/grafica}
+\usepackage{grafica}
 
 %Teorema
 \theoremstyle{marginbreak}
@@ -93,18 +92,18 @@
 %\usepackage{adjustbox}
 %\input{../Mod_base/stand_class}
 
-\input{../Mod_base/pagina}
+
 \setlength{\headheight}{13pt}
-\input{../Mod_base/indice}
-\input{../Mod_base/date}
-\input{../Mod_base/loghi}
-\input{../Mod_base/unita_misura}
+\usepackage{indice}
+\usepackage{date}
+\usepackage{pagina}
+\usepackage{unita_misura}
 \usepackage{imakeidx}
 \makeindex[options=-s ../Mod_base/oldclaudio.sti]
 
 \usepackage{diagbox}
 %\include{simboli_operatori}
-\input{../Mod_base/stand_class}
+\usepackage{stand_class}
 
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 
@@ -129,7 +128,7 @@
 \renewcommand{\appendixtocname}{Appendici}
 
 \renewcommand{\appendixpagename}{Appendici}
-\usepackage{tkz-berge}
+
 
 \usepackage[style=italian]{csquotes}
 \usepackage[%
@@ -156,7 +155,7 @@ backref]{biblatex}
 \crefname{lem}{lemma}{lemmi}
 \Crefname{lem}{Lemma}{Lemmi}
 \creflabelformat{equation}{#2\textup{#1}#3}
-\input{../Mod_base/tcolorboxgest}
+%\input{../Mod_base/tcolorboxgest}
 
 \title{Zibaldone di pensieri}
 \author{Claudio Duchi}
