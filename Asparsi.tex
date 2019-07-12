@@ -7,7 +7,7 @@
 \usepackage{cmap}
 \frenchspacing%
 \usepackage{amsmath}
-
+\usepackage{qrcode}
 \usepackage{amssymb}
 \usepackage[italian]{babel}
 \usepackage[thmmarks,hyperref]{ntheorem}
@@ -20,7 +20,8 @@
 %\usepackage{geometry}
 \usepackage{textcomp}
 \usepackage[big]{layaureo}
-\usepackage{grafica}
+%\geometry{top=1.5cm,bottom=1.5cm}
+\input{../Mod_base/grafica}
 
 %Teorema
 \theoremstyle{marginbreak}
@@ -92,18 +93,18 @@
 %\usepackage{adjustbox}
 %\input{../Mod_base/stand_class}
 
-
+\input{../Mod_base/pagina}
 \setlength{\headheight}{13pt}
-\usepackage{indice}
-\usepackage{date}
-\usepackage{pagina}
-\usepackage{unita_misura}
+\input{../Mod_base/indice}
+\input{../Mod_base/date}
+\input{../Mod_base/loghi}
+\input{../Mod_base/unita_misura}
 \usepackage{imakeidx}
 \makeindex[options=-s ../Mod_base/oldclaudio.sti]
 
 \usepackage{diagbox}
 %\include{simboli_operatori}
-\usepackage{stand_class}
+\input{../Mod_base/stand_class}
 
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 
@@ -128,7 +129,7 @@
 \renewcommand{\appendixtocname}{Appendici}
 
 \renewcommand{\appendixpagename}{Appendici}
-
+\usepackage{tkz-berge}
 
 \usepackage[style=italian]{csquotes}
 \usepackage[%
@@ -201,8 +202,6 @@ baseurl={http://breviariomatematico.altervista.org}
 \xpatchcmd*{\thm@@thmline@noname}{2.3em}{5em}{}{}
 \makeatother
 %fine patch allieamento lista teoremi
-\usepackage{CDloghi}
-\listfiles
 \begin{document}
 %\setcounter{page}{2}
 		\frontmatter
@@ -211,7 +210,7 @@ baseurl={http://breviariomatematico.altervista.org}
 			\centering
 			\parbox{0.8\textwidth}{\centering
 %			\begin{center}
-			\Lgrandedue\\[1cm]
+			\input{../Mod_base/Lgrande}\\[1cm]
 				\textsc{\LARGE Claudio Duchi}\\[1.5cm]
 				\HRule \\[0.4cm]
 				{ \huge \bfseries Zibaldone}\\[0.4cm]
@@ -219,12 +218,21 @@ baseurl={http://breviariomatematico.altervista.org}
 				{ \large \bfseries pensieri}\\[0.4cm]
 				\HRule \\[1.5cm]
 				\vfill
-			\polylogo{14}
+			\begin{tikzpicture}
+			\renewcommand*{\VertexBallColor}{green!50!black}
+			\GraphInit[vstyle=Art]
+\grCirculant[RA=6]{5}{1,3,10}%
+%			\grComplete[RA=6]{20}
+			\end{tikzpicture}
+%		\end{center}
+
+\makebox[\linewidth]{\centering
+		Release:\gitReln\ (\gitAbbrevHash)\ Autore:\gitAuthorName\ 
+  \gitCommitterDate}
+}
 		\end{titlepage}
 	\hypersetup{pageanchor=true}
-		\setcounter{page}{2}
-		%\hypersetup{pageanchor=true}
-		\CDcopyright
+		\input{../Mod_base/copyright}
 		\tableofcontents
 		\chapter*{Lista dei teoremi}
 		\theoremlisttype{allname}
@@ -235,13 +243,12 @@ baseurl={http://breviariomatematico.altervista.org}
 %			\listoftables
 			\mainmatter
 \input{compilaTexStudioDue}			
-
+\begin{appendices}
+	\input{../Mod_base/MezziUsati}
+\end{appendices}
 \nocite{*}
  \addcontentsline{toc}{chapter}{\bibname}
 \printbibliography
  \addcontentsline{toc}{chapter}{\indexname}
  \printindex
-\appendix
- \chapter{Mezzi usati}
- \CDMezziUsati
 \end{document}
