@@ -1,0 +1,35 @@
+\documentclass[10pt]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\begin{axis}[
+x=1.0cm,y=1.0cm,
+axis lines=middle,
+xmin=-4.0,
+xmax=4.0,
+ymin=-4.0,
+ymax=4.0,ticks=none,]
+\clip(-4.,-4.) rectangle (4.,4.);
+\draw  (0.,0.) circle (3.cm);
+\draw  (-3.,0.)-- (3.,0.);
+\draw  (1.0090091909944687,2.8252257347845124)-- (3.,0.);
+\draw  (1.0090091909944687,2.8252257347845124)-- (-3.,0.);
+\begin{scriptsize}
+\draw [fill=black] (0.,0.) circle (2.0pt);
+\draw (0.10539369875728254,0.24463681834588916) node {$O$};
+
+\draw [fill=black] (3.,0.) circle (2.0pt);
+\draw (3.1055390182961964,0.2746382715412783) node {$A$};
+\draw [fill=black] (1.0090091909944687,2.8252257347845124) circle (2.0pt);
+\draw (1.1104423808028188,3.1097755985055526) node {$B$};
+\draw [fill=black] (-3.,0.) circle (2.0pt);
+\draw (-2.8947516207816313,0.24463681834588916) node {$C$};
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
+\end{document}

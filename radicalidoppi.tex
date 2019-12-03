@@ -1,0 +1,71 @@
+% !TeX root = Asparsi.tex
+% !BIB TS-program = biber
+% !TeX encoding = UTF-8
+% !TeX spellcheck = it_IT
+\chapter{Radicali doppi}\label{ch:radicalidoppi}
+\section{Radicali doppi}
+\begin{thm}[Radicali doppi]\label{thm:Radicalidoppi1}
+Se  $a$ e $b$ sono numeri interi allora
+\begin{align*}
+		\sqrt{a+\sqrt{b}}=&\sqrt{\dfrac{a+\sqrt{a^2-b}}{2}}+\sqrt{\dfrac{a-\sqrt{a^2-b}}{2}}\\
+		\sqrt{a-\sqrt{b}}=&\sqrt{\dfrac{a+\sqrt{a^2-b}}{2}}-\sqrt{\dfrac{a-\sqrt{a^2-b}}{2}}
+		\\
+\end{align*}
+\end{thm}\index{Radicali!doppi}
+\begin{proof}
+	\begin{align*}
+	\intertext{Dimostriamo la prima relazione}
+	\sqrt{a+\sqrt{b}}=&\sqrt{x}+\sqrt{y}\\
+	\intertext{Elevando al quadrato}
+	a+\sqrt{b}=&x+y+2\sqrt{xy}\\
+	a+\sqrt{b}=&x+y+\sqrt{4xy}\\
+	\intertext{Otteniamo il sistema simmetrico}
+	&\begin{cases}
+	x+y=a\\
+	xy=\dfrac{b}{4}
+	\end{cases}\\
+	t^2-at+\dfrac{b}{4}=&0\\
+	\intertext{Che ha per soluzioni}
+	t_{1,2}=&\dfrac{4a\pm\sqrt{16a^2-16b}}{8}\\
+	=&\dfrac{4a\pm 4\sqrt{a^2-b}}{8}\\
+	=&\dfrac{a\pm\sqrt{a^2-b}}{2}\\
+	&\begin{cases}
+	x=\dfrac{a+\sqrt{a^2-b}}{2}\\
+	\\
+	y=\dfrac{a-\sqrt{a^2-b}}{2}\\
+	\end{cases}
+	\intertext{Quindi}
+	\sqrt{a+\sqrt{b}}=&\sqrt{\dfrac{a+\sqrt{a^2-b}}{2}}+\sqrt{\dfrac{a-\sqrt{a^2-b}}{2}}\\
+	\end{align*}
+		\begin{align*}
+	\intertext{Dimostriamo la seconda relazione}
+	\sqrt{a-\sqrt{b}}=&\sqrt{x}-\sqrt{y}\\
+	\intertext{Elevando al quadrato}
+	a+\sqrt{b}=&x+y-2\sqrt{xy}\\
+	a+\sqrt{b}=&x+y-\sqrt{4xy}\\
+	\intertext{Otteniamo il sistema simmetrico}
+	&\begin{cases}
+	x+y=a\\
+	xy=\dfrac{b}{4}
+	\end{cases}\\
+	t^2-at+\dfrac{b}{4}=&0\\
+	\intertext{Che ha per soluzioni}
+	t_{1,2}=&\dfrac{4a\pm\sqrt{16a^2-16b}}{8}\\
+	=&\dfrac{4a\pm 4\sqrt{a^2-b}}{8}\\
+	=&\dfrac{a\pm\sqrt{a^2-b}}{2}\\
+	&\begin{cases}
+	x=\dfrac{a+\sqrt{a^2-b}}{2}\\
+	\\
+	y=\dfrac{a-\sqrt{a^2-b}}{2}\\
+	\end{cases}
+	\intertext{Quindi}
+	\sqrt{a-\sqrt{b}}=&\sqrt{\dfrac{a+\sqrt{a^2-b}}{2}}-\sqrt{\dfrac{a-\sqrt{a^2-b}}{2}}\\
+	\end{align*}
+\end{proof}  
+\begin{cor}[Quadrato perfetto]\label{cor:quadratoperfetto}
+	Dato $\sqrt{a+\sqrt{b}}$ e $\sqrt{a-\sqrt{b}}$ se $a^2-b=x^2$ è un quadrato perfetto allora
+	\begin{align*}
+	\sqrt{a+\sqrt{b}}=&\sqrt{\dfrac{a+x}{2}}+\sqrt{\dfrac{a-x}{2}}\\
+	\sqrt{a-\sqrt{b}}=&\sqrt{\dfrac{a+x}{2}}-\sqrt{\dfrac{a-x}{2}}\\
+	\end{align*}
+\end{cor}\index{Quadrato!perfetto}
