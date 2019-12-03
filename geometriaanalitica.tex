@@ -109,9 +109,45 @@ Come si voleva dimostrare
 	\end{align*}
 	Da cui la tesi
 \end{proof}
+\subsection{Tangente formula di sdoppiamento}
+\begin{thm}[Formula di sdoppiamento]\label{thm:Formulasdoppiamento_parab}
+	Data una parabola~\cite{ReFraschini2008} $y=ax^2+bx+c$ e $P(x_0,y_0)$ un suo punto. Allora la retta tangente alla parabola per $P$ ha equazione \[ \dfrac{y+y_0}{2}=ax_0x+b\left(\dfrac{x+x_0}{2}\right)+c \] 
+\end{thm}\index{Parabola!tangente}
+\begin{proof}
+	Poniamo a sistema la parabola con il fascio di rette di centro $P$ 
+	\begin{align*}
+	&\begin{cases}
+	y=ax^2+bx+c\\y-y_0=m(x-x_0)
+	\end{cases}
+	\intertext{Otteniamo}
+	ax^2+bx+c-y_0-mx+mx_0=&0\\
+	ax^2+(b-m)x+c-y_0+mx_0=&0\\
+	\intertext{Dato che $P$ è un punto di tangenza, le soluzioni sono coincidenti, quindi la somma delle soluzioni è}
+	-\dfrac{b-m}{a}=&2x_0\\
+	m=&2ax_0+b\\
+	\intertext{Sostituendo nell'equazione del fascio di rette }
+	y-y_0=&(2ax_0+b)(x-x_0)\\
+	y=&2ax_0x-2ax_0^2+bx-bx_0+y_0\\
+	\intertext{Il punto $P$ appartiene alla parabola quindi}
+	y=&2ax_0x-2ax_0^2+bx-bx_0+ax_0^2+bx_0+c\\
+	\intertext{Dividendo per due ambi i membri}
+	\dfrac{y}{2}=&ax_0x-ax_0^2+\dfrac{b}{2}x+\dfrac{a}{2}x_0^2+\dfrac{c}{2}\\
+	\intertext{Aggiungendo a sinistra e a destra $\dfrac{x_0+y_0}{2}$ otteniamo}
+	\dfrac{y}{2}+\dfrac{x_0+y_0}{2}=&ax_0x-ax_0^2+\dfrac{b}{2}x+\dfrac{a}{2}x_0^2+\dfrac{c}{2}+\dfrac{x_0+y_0}{2}\\
+	\dfrac{y}{2}+\dfrac{y_0}{2}=&-\dfrac{x_0}{2}+ax_0x-ax_0^2+\dfrac{b}{2}x+\dfrac{a}{2}x_0^2+\dfrac{c}{2}+\dfrac{x_0}{2}+\dfrac{y_0}{2}\\
+	\intertext{Semplificando}
+	\dfrac{y+y_0}{2}=&ax_0x-ax_0^2+\dfrac{b}{2}x+\dfrac{a}{2}x_0^2+\dfrac{c}{2}+\dfrac{y_0}{2}\\
+	\intertext{Il punto $P$ appartiene alla parabola quindi}
+	\dfrac{y+y_0}{2}=&ax_0x-ax_0^2+\dfrac{b}{2}x+\dfrac{a}{2}x_0^2+\dfrac{c}{2}+\dfrac{a}{2}x_0^2+\dfrac{b}{2}x_0+\dfrac{c}{2}\\
+	\intertext{Semplificando}
+	\dfrac{y+y_0}{2}=&ax_0x+\dfrac{b}{2}x+\dfrac{b}{2}x_0+c\\
+	\dfrac{y+y_0}{2}=&ax_0x+b\dfrac{x+x_0}{2}+c\\
+	\end{align*}
+	Da cui la tesi.
+\end{proof}
 \section{Varie}
 \subsection{Triangolo rettangolo}
-\begin{thm}[Triangolo inscritto in una semicirconferenza ]\label{thm:TriangoloRettangoloSemicirconferenza}
+\begin{thm}[Triangolo inscritto in una semicirconferenza]\label{thm:TriangoloRettangoloSemicirconferenza}
 Ogni triangolo inscritto in una semicirconferenza è rettangolo.
 \end{thm}
 \begin{figure}
@@ -130,5 +166,5 @@ m_{BC}\cdot m_{BA}=&\dfrac{\sqrt{1-x^2}-0}{x+1}\cdot\dfrac{\sqrt{1-x^2}-0}{x-1}\
 =&\dfrac{1-x^2}{x^2-1}\\
 =&-1
 \end{align*}
-Le due rette sono perpendicolari da cui la tesi
+Le due rette sono perpendicolari da cui la tesi.
 \end{proof}
