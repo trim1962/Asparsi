@@ -31,6 +31,45 @@ Consideriamo due angoli $\alpha$ e $\beta$ con $\alpha>\beta$. Otteniamo la~\vre
 \end{align*}
 Da cui la tesi.
 \end{proof}
+\begin{thm}[Coseno e seno della somma di due angoli]\label{thm:Cosenosenosomma}
+	Dati due angoli $\alpha$ e $\beta$ allora
+	\begin{align*}
+	\cos(\alpha+\beta)=&\cos\alpha\cos\beta-\sin\alpha\sin\beta \\
+	\sin(\alpha+\beta)=&\sin\alpha\cos\beta+\cos\alpha\sin\beta 
+	\end{align*}
+\end{thm}\index{Coseno!somma}\index{Seno!somma}
+\begin{proof}
+Costruiamo la~\vref{fig:sommaangoli} ruotando in senso antiorario di un angolo$\alpha$, il segmento unitario $AB$ e successivamente di un angolo $\beta$. Tracciamo il segmento $DE$ ortogonale ad $AC$. Avremo che le coordinate del punto $D$ sono il coseno e il seno  della somma  di $\alpha$ e $\beta$.  In particolare 
+\begin{align*}
+\sin(\alpha+\beta)=&\overline{EH}+\overline{EF}\\
+\cos(\alpha+\beta)=&\overline{AH}-\overline{DF}
+\end{align*}
+Osserviamo la figura. Il triangolo $DFE$ è retto in $F$. Inoltre dato che l'angolo $H\hat{E}F$ è piatto ed è somma di $F\hat{E}D$ $D\hat{E}A$ retto e di $A\hat{E}H$ che ha ampiezza  $\ang{90;;}-\alpha$ per somma di angoli interni a $AEH$, segue che $D\hat{E}F$ ha ampiezza $\alpha$. Quindi:
+\begin{align*}
+\overline{HE}=&\overline{AE}\sin\alpha\\
+\overline{AE}=&\cos\beta\\
+\overline{DE}=&\sin\beta\\
+\overline{AH}=&\overline{AE}\cos\alpha\\
+\overline{FD}=&\overline{DE}\sin\alpha\\
+\overline{FE}=&\overline{DE}\cos\alpha\\
+\overline{AH}=&\overline{AE}\cos\alpha\\
+\intertext{ripartendo}
+\sin(\alpha+\beta)=&\overline{EF}+\overline{EH}\\
+=&\overline{DE}\cos\alpha+\overline{AE}\sin\alpha\\
+=&\sin\beta\cos\alpha+\cos\beta\sin\alpha\\
+\intertext{rimane}
+\cos(\alpha+\beta)=&\overline{AH}-\overline{DF}\\
+=&\overline{AE}\cos\alpha-\overline{DE}\sin\alpha\\
+=&\cos\beta\cos\alpha-\sin\beta\sin\alpha\\
+\end{align*}
+da cui la tesi.
+\end{proof}
+\begin{figure}
+	\centering
+	\includestandalone{geometria/sommaangoli}
+	\caption[Somma di angoli]{Somma di angoli}
+	\label{fig:sommaangoli}
+\end{figure}
 \begin{cor}[Coseno della somma di due angoli]\label{cor:Cosenodellasomma}
 Dati due angoli $\alpha$ e $\beta$ allora
 \[\cos(\alpha+\beta)=\cos\alpha\cos\beta-\sin\alpha\sin\beta  \]
