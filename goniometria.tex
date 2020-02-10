@@ -31,55 +31,6 @@ Consideriamo due angoli $\alpha$ e $\beta$ con $\alpha>\beta$. Otteniamo la~\vre
 \end{align*}
 Da cui la tesi.
 \end{proof}
-\begin{thm}[Coseno e seno della somma di due angoli]\label{thm:Cosenosenosomma}
-	Dati due angoli $\alpha$ e $\beta$ allora
-	\begin{align*}
-	\cos(\alpha+\beta)=&\cos\alpha\cos\beta-\sin\alpha\sin\beta \\
-	\sin(\alpha+\beta)=&\sin\alpha\cos\beta+\cos\alpha\sin\beta 
-	\end{align*}
-\end{thm}~\cite{Brett2020}\index{Coseno!somma}\index{Seno!somma}
-\begin{proof}
-Costruiamo la~\vref{fig:sommaangoli} ruotando in senso antiorario di un angolo$\alpha$, il segmento unitario $AB$ e successivamente di un angolo $\beta$. Tracciamo il segmento $DE$ ortogonale ad $AC$. Avremo che le coordinate del punto $D$ sono il coseno e il seno  della somma  di $\alpha$ e $\beta$.  In particolare 
-\begin{align*}
-\sin(\alpha+\beta)=&\overline{EH}+\overline{EF}\\
-\cos(\alpha+\beta)=&\overline{AH}-\overline{DF}
-\end{align*}
-Osserviamo la figura. Il triangolo $DFE$ è retto in $F$. Inoltre dato che l'angolo $H\hat{E}F$ è piatto ed è somma di $F\hat{E}D$ $D\hat{E}A$ retto e di $A\hat{E}H$ che ha ampiezza  $\ang{90;;}-\alpha$ per somma di angoli interni a $AEH$, segue che $D\hat{E}F$ ha ampiezza $\alpha$. Quindi:
-\begin{align*}
-\overline{HE}=&\overline{AE}\sin\alpha\\
-\overline{AE}=&\cos\beta\\
-\overline{DE}=&\sin\beta\\
-\overline{AH}=&\overline{AE}\cos\alpha\\
-\overline{FD}=&\overline{DE}\sin\alpha\\
-\overline{FE}=&\overline{DE}\cos\alpha\\
-\overline{AH}=&\overline{AE}\cos\alpha\\
-\intertext{ripartendo}
-\sin(\alpha+\beta)=&\overline{EF}+\overline{EH}\\
-=&\overline{DE}\cos\alpha+\overline{AE}\sin\alpha\\
-=&\sin\beta\cos\alpha+\cos\beta\sin\alpha\\
-\intertext{rimane}
-\cos(\alpha+\beta)=&\overline{AH}-\overline{DF}\\
-=&\overline{AE}\cos\alpha-\overline{DE}\sin\alpha\\
-=&\cos\beta\cos\alpha-\sin\beta\sin\alpha\\
-\end{align*}
-da cui la tesi.
-\end{proof}
-\begin{figure}
-	\centering
-	\includestandalone{geometria/sommaangoli}
-	\caption[Somma di angoli]{Somma di angoli}
-	\label{fig:sommaangoli}
-\end{figure}
-\begin{thm}[Seno della differenza di due angoli]\label{thm:Senodifferenza}
-	Dati due angoli $\alpha$ e $\beta$ allora
-	\[\sin(\alpha-\beta)=\sin\alpha\cos\beta-\cos\alpha\sin\beta  \]
-\end{thm}~\cite{Smiley1999}\index{Seno!differenza}
-\begin{figure}
-	\centering
-	\includestandalone{geometria/senodifferenza}
-	\caption[Seno differenza]{Seno differenza}
-	\label{fig:senodifferenza}
-\end{figure}
 \begin{cor}[Coseno della somma di due angoli]\label{cor:Cosenodellasomma}
 Dati due angoli $\alpha$ e $\beta$ allora
 \[\cos(\alpha+\beta)=\cos\alpha\cos\beta-\sin\alpha\sin\beta  \]
@@ -99,7 +50,7 @@ Dati due angoli $\alpha$ e $\beta$ allora
 \end{proof}
 \begin{cor}[Seno della differenza di due angoli]\label{cor:Senodelladifferenza}
 Dati due angoli $\alpha$ e $\beta$ allora
-\[\sin(\alpha-\beta)=\sin\alpha\cos\beta-\cos\alpha\sin\beta  \]
+\[\sin(\alpha-\beta)=\sin\alpha\cos\beta-\cos\alpha\sin\beta\]
 \end{cor}\index{Seno!differenza}
 \begin{proof}
 		Dal~\vref{thm:Cosenodelladifferenza}
@@ -133,6 +84,12 @@ Dati due angoli $\alpha$ e $\beta$ allora
 	\end{align*}
 	Da cui la tesi.
 \end{proof}
+\begin{figure}
+	\centering
+	\includestandalone{geometria/sommaangoli}
+	\caption[Somma di angoli]{Somma di angoli}
+	\label{fig:sommaangoli}
+\end{figure}
 \begin{thm}[Tangente differenza di angoli]\label{thm:tangentedifferenza}
 Dati due angoli $\alpha$ e $\beta$ allora\[\tan\left(\alpha-\beta\right)=\dfrac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}\qquad\alpha,\beta,(\alpha-\beta)\neq\dfrac{\pi}{2}+k\pi\]
 \end{thm}\index{Tangente!differenza}
@@ -162,6 +119,12 @@ Dati due angoli $\alpha$ e $\beta$ allora\[\tan\left(\alpha-\beta\right)=\dfrac{
 	\end{align*}
 	Da cui la tesi.
 \end{proof}
+\begin{figure}
+	\centering
+	\includestandalone{geometria/senodifferenza}
+	\caption[Seno differenza]{Seno differenza}
+	\label{fig:senodifferenza}
+\end{figure}
 \begin{thm}[Cotangente differenza di angoli]\label{thm:cotangentedifferenza}
 	Dati due angoli $\alpha$ e $\beta$ allora\[\cot\left(\alpha-\beta\right)=\dfrac{\cot\alpha\cot\beta+1}{\cot\beta-\cot\alpha}\qquad\alpha,\beta,(\alpha-\beta)\neq\ k\pi\]
 \end{thm}\index{Cotangente!differenza}
@@ -362,4 +325,178 @@ t=&\tan\frac{\alpha}{2}&\alpha\neq\pi+2k\pi
 	\cos\alpha=&\frac{1-t^2}{1+t^2}
 	\end{align*}
 	Da cui la tesi.
+\end{proof}
+\section{Altre dimostrazioni}
+\begin{thm}[Coseno e seno della somma di due angoli]\label{thm:Cosenosenosomma}
+	Dati due angoli $\alpha$ e $\beta$ allora
+	\begin{align*}
+	\cos(\alpha+\beta)=&\cos\alpha\cos\beta-\sin\alpha\sin\beta \\
+	\sin(\alpha+\beta)=&\sin\alpha\cos\beta+\cos\alpha\sin\beta 
+	\end{align*}
+\end{thm}~\cite{Brett2020}\index{Coseno!somma}\index{Seno!somma}
+\begin{proof}
+	Costruiamo la~\vref{fig:sommaangoli} ruotando in senso antiorario di un angolo$\alpha$, il segmento unitario $AB$ e successivamente di un angolo $\beta$. Tracciamo il segmento $DE$ ortogonale ad $AC$. Avremo che le coordinate del punto $D$ sono il coseno e il seno  della somma  di $\alpha$ e $\beta$.  In particolare 
+	\begin{align*}
+	\sin(\alpha+\beta)=&\overline{EH}+\overline{EF}\\
+	\cos(\alpha+\beta)=&\overline{AH}-\overline{DF}
+	\end{align*}
+	Osserviamo la figura. Il triangolo $DFE$ è retto in $F$. Inoltre dato che l'angolo $H\hat{E}F$ è piatto ed è somma di $F\hat{E}D$ $D\hat{E}A$ retto e di $A\hat{E}H$ che ha ampiezza  $\ang{90;;}-\alpha$ per somma di angoli interni a $AEH$, segue che $D\hat{E}F$ ha ampiezza $\alpha$. Quindi:
+	\begin{align*}
+	\overline{HE}=&\overline{AE}\sin\alpha\\
+	\overline{AE}=&\cos\beta\\
+	\overline{DE}=&\sin\beta\\
+	\overline{AH}=&\overline{AE}\cos\alpha\\
+	\overline{FD}=&\overline{DE}\sin\alpha\\
+	\overline{FE}=&\overline{DE}\cos\alpha\\
+	\overline{AH}=&\overline{AE}\cos\alpha\\
+	\intertext{ripartendo}
+	\sin(\alpha+\beta)=&\overline{EF}+\overline{EH}\\
+	=&\overline{DE}\cos\alpha+\overline{AE}\sin\alpha\\
+	=&\sin\beta\cos\alpha+\cos\beta\sin\alpha\\
+	\intertext{rimane}
+	\cos(\alpha+\beta)=&\overline{AH}-\overline{DF}\\
+	=&\overline{AE}\cos\alpha-\overline{DE}\sin\alpha\\
+	=&\cos\beta\cos\alpha-\sin\beta\sin\alpha\\
+	\end{align*}
+	da cui la tesi.
+\end{proof}
+\begin{figure}
+	\centering
+	\includestandalone{geometria/cosenodifferenza}
+	\caption[Coseno differenza]{Coseno differenza}
+	\label{fig:cosenodifferenza}
+\end{figure}
+\begin{thm}[Seno della differenza di due angoli]\label{thm:Senodifferenza}
+	Dati due angoli $\alpha$ e $\beta$ allora
+	\[\sin(\alpha-\beta)=\sin\alpha\cos\beta-\cos\alpha\sin\beta  \]
+\end{thm}~\cite{Smiley1999}\index{Seno!differenza}
+\begin{proof}
+	Consideriamo la~\vref{fig:senodifferenza} triangolo rettangolo di ipotenusa $AC$ di lunghezza unitaria. 
+	
+	Consideriamo un angolo $\beta$ minore di $\alpha$. Otteniamo il triangolo $ABD$ rettangolo in $B$. Tracciamo la perpendicolare $HD$ al lato $AC$. Avremo:
+	\begin{align*}
+	\intertext{Per il triangolo $ABC$}
+	m=&1\cos\alpha\\
+	y+w=&1\sin\alpha\\
+	\intertext{Per il triangolo $ABD$}
+	m=&h\cos\beta\\
+	y=&h\sin\beta\\
+	\intertext{Per il triangolo$HDC$}
+	x=&\sin(90^{\circ}-\alpha)\\
+	=&\cos(90^{\circ}-\alpha)\\
+	\intertext{Per il triangolo $HDA$}
+	x=&h\sin(\alpha-\beta)\\ 
+	\intertext{Ricapitolando}
+	w&=\sin\alpha-h\sin\beta\\
+	h\cos\beta=&\cos\alpha\\
+	h=&\dfrac{\cos\alpha}{\cos\beta}\\
+	h\sin(\alpha-\beta)=&w\cos\alpha\\
+	\dfrac{\cos\alpha}{\cos\beta}\sin(\alpha-\beta)=&(\sin\alpha-h\sin\beta)\cos\alpha\\
+	\dfrac{\cos\alpha}{\cos\beta}\sin(\alpha-\beta)=&(\sin\alpha-h\sin\beta)\cos\alpha\\
+	\sin(\alpha-\beta)=&\dfrac{\cos\beta}{\cos\alpha}\sin\alpha\cos\alpha-\sin\beta\cos\alpha\\
+	\sin(\alpha-\beta)=&\sin\alpha\cos\beta-\cos\alpha\sin\beta\\
+	\end{align*} 
+	Come volevasi dimostrare.
+\end{proof}
+\begin{thm}[Coseno della differenza di due angoli]\label{thm:cosenodifferenza}
+	Dati due angoli $\alpha$ e $\beta$ allora
+	\[\cos(\alpha-\beta)=\cos\alpha\cos\beta+\sin\alpha\sin\beta  \]	
+\end{thm}~\cite{Smiley1999}\index{Coseno!differenza}
+\begin{proof}
+	Consideriamo la~\vref{fig:cosenodifferenza} triangolo rettangolo d'ipotenusa $CD$ di lunghezza unitaria. 
+	\begin{align*}
+	\intertext{Per il triangolo $ADH$}
+	m=&h\cos\beta\\
+	w=&h\sin\beta\\
+	\intertext{Per il triangolo $CHD$}
+	w=&\sin(90^{\circ}-\alpha)\\
+	=&\cos\alpha\\
+	n=&\cos(90^{\circ}-\alpha)\\
+	=&\sin\alpha\\
+	\intertext{Per il triangolo $ABC$}
+	x=&(m+n)\cos\alpha\\
+	\intertext{Per il triangolo $ABD$}
+	x=&h\cos(\alpha-\beta)\\
+	\intertext{Complessivamente}
+	h\sin\beta=&\cos\alpha\\
+	h=&\\
+	h\cos(\alpha-\beta)=&(m+n)\cos\alpha\\
+	h\cos(\alpha-\beta)=&(h\cos\beta+\sin\alpha)\cos\alpha\\
+	h\cos(\alpha-\beta)=&h\cos\beta\cos\alpha+\sin\alpha\cos\alpha\\
+	\cos(\alpha-\beta)=&\cos\beta\cos\alpha+\dfrac{\sin\beta}{cos\alpha}\sin\alpha\cos\alpha\\
+	\cos(\alpha-\beta)=&\cos\beta\cos\alpha+\sin\beta\sin\alpha\\
+	\end{align*}
+	Come volevasi dimostrare.
+\end{proof}
+\begin{figure}
+	\centering
+	\includestandalone{geometria/cosenosomma}
+	\caption[Coseno somma]{Coseno somma}
+	\label{fig:cosenosomma}
+\end{figure}
+\begin{thm}[Coseno della somma di due angoli]\label{thm:cosenosomma}
+	Dati due angoli $\alpha$ e $\beta$ allora
+	\[\cos(\alpha+\beta)=\cos\alpha\cos\beta-\sin\alpha\sin\beta  \]	
+\end{thm}~\cite{Smiley1999}\index{Coseno!somma}
+\begin{proof}
+	Consideriamo la~\vref{fig:cosenosomma} triangolo rettangolo d'ipotenusa $AD$ di lunghezza unitaria. Poniamo che l'angolo $ACB$ sia di ampiezza $\alpha$. Poniamo che l'angolo $DAB$ sia si ampiezza $\beta$.
+
+Avremo:\begin{align*}
+\intertext{Per il triangolo $ABD$}
+a=&\cos\beta\\
+b=&\sin\beta\\
+\intertext{Per il triangolo $HDA$}
+c=&\cos(\alpha+\beta)\\
+\intertext{Per il triangolo $CDA$}
+c=&d\sin\alpha\\
+x=&d\cos\alpha\\
+\intertext{Per il triangolo $ABC$}
+b+d=&(x+y)\cos\beta\\
+\intertext{Complessivamente}
+\cos(\alpha+\beta)=&d\sin\alpha\\
+d=&\dfrac{\cos(\alpha+\beta)}{\sin\alpha}\\
+d+b=&\dfrac{\cos(\alpha+\beta)}{\sin\alpha}+\sin\beta\\
+\cos\beta=&(x+y)\sin\alpha\\
+x+y=&\dfrac{\cos\beta}{\sin\alpha}\\
+d+b=&(x+y)\cos\alpha\\
+\dfrac{\cos(\alpha+\beta)}{\sin\alpha}+\sin\beta=&\dfrac{\cos\beta}{\sin\alpha}\cos\alpha\\
+\dfrac{\cos(\alpha+\beta)}{\sin\alpha}=&\dfrac{\cos\beta}{\sin\alpha}\cos\alpha-\sin\beta\\
+\cos(\alpha+\beta)=&\cos\beta\cos\alpha-\sin\beta\sin\alpha\\
+\end{align*}
+Come volevasi dimostrare.
+\end{proof}
+\begin{figure}
+	\centering
+	\includestandalone{geometria/senosomma}
+	\caption[Seno somma]{Seno Somma}
+	\label{fig:senosomma}
+\end{figure}
+\begin{thm}[Seno della somma di due angoli]\label{thm:senosomma}
+	Dati due angoli $\alpha$ e $\beta$ allora
+	\[\sin(\alpha+\beta)=\sin\alpha\cos\beta+\cos\alpha\sin\beta\]	
+\end{thm}~\cite{Smiley1999}\index{Seno!somma}
+\begin{proof}
+	Consideriamo la~\vref{fig:senosomma} triangolo rettangolo d'ipotenusa $AD$ di lunghezza unitaria. Poniamo che l'angolo $ACB$ sia di ampiezza $\alpha$ e che l'angolo $CAD$ sia di ampiezza $\beta$.
+	
+	Abbiamo:
+	\begin{align*}
+	\intertext{Per il triangolo $ADH$}
+	a=&\cos\beta\\
+	b=&\sin\beta\\
+	\intertext{Per il triangolo $HDC$}
+	b=&d\sin\alpha\\
+	c=&d\cos\alpha\\
+	\intertext{Per il triangolo $ADB$}
+	x=&\sin(\alpha+\beta)\\
+	\intertext{Per il trinagolo $ABC$}
+	x=&(a+c)\sin\alpha\\
+	\intertext{Complessivamente}
+	\sin\beta=&d\sin\alpha\\
+	d=&\dfrac{\sin\beta}{\sin\alpha}\\
+	c=&d\cos\alpha\\
+	c=&\dfrac{\sin\beta}{\sin\alpha}\cos\alpha\\
+	a+c=&\cos\beta+\dfrac{\sin\beta}{\sin\alpha}\cos\alpha\\
+	\sin(\alpha+\beta)=&\left(\cos\beta+\dfrac{\sin\beta}{\sin\alpha}\cos\alpha\right)\sin\alpha\\
+	\sin(\alpha+\beta)=&\sin\alpha\cos\beta+\cos\alpha\sin\beta
+	\end{align*}
 \end{proof}

@@ -1,0 +1,40 @@
+\documentclass[10pt]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage{tkz-euclide}
+
+\begin{document}
+
+\begin{tikzpicture}[scale=1]
+\tkzDefPoints{0/0/A,4/0/B,4/6/C,4/3/D}
+\tkzDrawPolygon(A,B,C)
+\tkzDrawLine(A,D)
+\tkzDrawLine[altitude](A,D,C)
+\tkzGetPoint{H}
+%%%%%%%%punti
+\tkzDrawPoints(A,B,C,D,H)
+\tkzLabelPoints(B,C,D)
+\tkzLabelPoints[above left](H)
+\tkzLabelPoints[below left](A)
+%%%%%%%%%Angoli
+\tkzMarkRightAngles(A,B,C)
+\tkzMarkRightAngles(C,H,D)
+\tkzMarkRightAngles(D,H,A)
+%\tkzDrawArc[R](A,.5cm)(-10,100)
+%\tkzLabelPoint[above left,font=\scriptsize](A){$\alpha$}
+\tkzMarkAngles[size=0.5](B,A,D)
+\tkzLabelAngle[pos=1.0,font=\scriptsize](B,A,D){$\beta$}
+\tkzMarkAngles[size=0.5](H,D,A)
+\tkzLabelAngle[pos=1.0,font=\scriptsize](H,D,A){$\alpha+\beta$}
+\tkzMarkAngles[size=0.5](A,C,B)
+\tkzLabelAngle[pos=1.0,font=\scriptsize](A,C,B){$\alpha$}
+%%%%%%%%%% label
+\tkzLabelSegment[](B,A){$a$}
+\tkzLabelSegment[swap,font=\scriptsize](A,D){$1$}
+\tkzLabelSegment[](H,D){$c$}
+\tkzLabelSegment[](A,H){$y$}
+\tkzLabelSegment[](H,C){$x$}
+\tkzLabelSegment[](C,D){$d$}
+\tkzLabelSegment[](D,B){$b$}
+\end{tikzpicture}
+
+\end{document}
