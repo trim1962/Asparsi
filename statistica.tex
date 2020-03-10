@@ -1,0 +1,33 @@
+% !TeX root = Asparsi.tex
+% !BIB TS-program = biber
+% !TeX encoding = UTF-8
+% !TeX spellcheck = it_IT
+\chapter{Statistica}
+\section{Varianza}
+\begin{thm}[Varianza]\index{Varianza}
+	Se abbiamo una distribuzione di frequenze di n dati  $x_{i}$ di frequenza $n_{i}$, la varianza è: \[\sigma^{2}=\dfrac{\sum_{i=1}^{n}x_{i}^{2}\cdot n_{i}}{\sum_{i=1}^{n} n_{i}}-M^2\] 
+\end{thm}
+\begin{proof}
+	\begin{align*}
+	\sigma^{2}=&\dfrac{\sum_{i=1}^{n}(x_{i}-M)^{2}\cdot n_{i}}{\sum_{i=1}^{n} n_{i}}\\
+	=&\dfrac{\sum_{i=1}^{n}(x_{i}^{2} -2Mx_{i}+M^{2})\cdot n_{i}}{\sum_{i=1}^{n} n_{i}}\\
+	=&\dfrac{\sum_{i=1}^{n}x_{i}^{2}\cdot n_{i}}{\sum_{i=1}^{n} n_{i}}-2 \dfrac{\sum_{i=1}^{n}Mx_{i}\cdot n_{i}}{\sum_{i=1}^{n} n_{i}} +\dfrac{\sum_{i=1}^{n}M^{2}\cdot n_{i}}{\sum_{i=1}^{n} n_{i}}\\
+	=&\dfrac{\sum_{i=1}^{n}x_{i}^{2}\cdot n_{i}}{\sum_{i=1}^{n} n_{i}}-2M \dfrac{\sum_{i=1}^{n}x_{i}\cdot n_{i}}{\sum_{i=1}^{n} n_{i}} +M^{2}\dfrac{\sum_{i=1}^{n}\cdot n_{i}}{\sum_{i=1}^{n} n_{i}}\\
+	=&\dfrac{\sum_{i=1}^{n}x_{i}^{2}\cdot n_{i}}{\sum_{i=1}^{n} n_{i}}-2MM +M^{2}\\
+	=&\dfrac{\sum_{i=1}^{n}x_{i}^{2}\cdot n_{i}}{\sum_{i=1}^{n} n_{i}}-2M^{2} +M^{2}\\
+	=&\dfrac{\sum_{i=1}^{n}x_{i}^{2}\cdot n_{i}}{\sum_{i=1}^{n} n_{i}}-M^{2}\\
+	\end{align*}
+	Come si voleva dimostrare
+\end{proof}
+\section{Media}
+\begin{thm}[Scarto dalla media]\index{Media!scarto}
+	Lo scarto dalla media vale zero.\[\sum_{i=1}^{n}(x_{i}-M)=0\] 
+\end{thm}
+\begin{proof}
+	\begin{align*}
+	\sum_{i=1}^{n}(x_{i}-M)=&\\
+	=&\sum_{i=1}^{n}x_{i}-\sum_{i=1}^{n}M\\
+	=&nM-nM=0\\
+	\end{align*}
+	Come volevasi dimostrare
+\end{proof}
