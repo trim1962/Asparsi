@@ -1,0 +1,25 @@
+% !TeX root = Asparsi.tex
+% !BIB TS-program = biber
+% !TeX encoding = UTF-8
+% !TeX spellcheck = it_IT
+\chapter{Pitagora}
+\begin{thm}[Teorema di Pitagora]
+In un triangolo rettangolo\index{Triangolo!rettangolo}\index{Pitagora} di cateti $a$, $b$ e ipotenusa $c$ avremo\[c^2=a^2+b^2\]
+\end{thm}
+% TODO: \usepackage{graphicx} required
+\begin{figure}
+	\centering
+	\includestandalone{geometria/teoremapitagorauno}
+	\caption{Teorema di Pitagora}
+	\label{fig:teoremapitagorauno}
+\end{figure}
+\begin{proof}
+	Consideriamo la~\vref{fig:teoremapitagorauno}, il quadrato ha il lato di lunghezza $a+b$.  Il poligono $EFGH$ è un quadrato ha i lati che sono le ipotenuse di quattro triangoli rettangoli uguali. Ha inoltre tutti gli angoli retti. Dimostriamolo per l'angolo $EHG$. Dato che la somma di $CHG$ e $EHD$ è  retto e visto che $DHE+GHC+EHG=DHC$ segue che $EHG$ è retto.\par 
+	L'area del quadrato $ABCD$ è uguale alla somma dell'area del quadrato $EFGH$ e quelle dei triangoli rettangoli $AFE$, $FBG$, $GCH$ e $HDE$.\par Quindi
+	\begin{align*}
+	(a+b)^2=&c^2+4\dfrac{1}{2}ab\\
+	a^2+b^2+2ab=&c^2+2ab\\
+	c^2=&a^2+b^2
+	\end{align*}
+	Come volevasi dimostrare.
+\end{proof}

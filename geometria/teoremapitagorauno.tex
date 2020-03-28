@@ -1,0 +1,55 @@
+\documentclass[10pt]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+
+\usepackage{mathrsfs}
+
+\pagestyle{empty}
+\begin{document}
+
+\begin{tikzpicture}[line cap=round,line join=round,x=1.0cm,y=1.0cm]
+\clip(3.,1) rectangle (11.,9.);
+\coordinate (A) at (4,2);
+\coordinate (B) at (10.,2.);
+\coordinate (C) at (10,8);
+\coordinate (D) at (4,8);
+\coordinate (E) at (4,4);
+\coordinate (F) at (8,2);
+\coordinate (G) at (10,6);
+\coordinate (H) at (6,8);
+\draw  (A)-- (F)node[midway,below]{$a$};
+\draw  (F)-- (B)node[midway,below]{$b$};
+\draw  (B)-- (G)node[midway,right]{$a$};
+\draw  (G)-- (C)node[midway,right]{$b$};
+\draw  (C)-- (H)node[midway,above]{$a$};
+\draw  (H)-- (D)node[midway,above]{$b$};
+\draw  (D)-- (E)node[midway,left]{$a$};
+\draw  (E)-- (A)node[midway,left]{$b$};
+
+
+\draw  (H)-- (E) node[midway,above]{$c$};
+\draw  (E)-- (F)node[midway,above]{$c$};
+\draw  (F)-- (G)node[midway,above]{$c$};
+\draw  (G)-- (H)node[midway,above]{$c$};
+
+\draw [fill=black] (A) circle (2.0pt);
+\draw[left] (A) node {$A$};
+\draw [fill=black] (B) circle (2.0pt);
+\draw[right] (B) node {$B$};
+
+\draw [fill=black] (D) circle (2.0pt);
+\draw[left] (D) node {$D$};
+\draw [fill=black] (C) circle (2.0pt);
+\draw[right] (C) node {$C$};
+
+\draw [fill=black] (H) circle (2.0pt);
+\draw[above] (H) node {$H$};
+\draw [fill=black] (E) circle (2.0pt);
+\draw[left] (E) node {$E$};
+\draw [fill=black] (F) circle (2.0pt);
+\draw[below] (F) node {$F$};
+\draw [fill=black] (G) circle (2.0pt);
+\draw[right] (G) node {$G$};
+
+\end{tikzpicture}
+\end{document}
