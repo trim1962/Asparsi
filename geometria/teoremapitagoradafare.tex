@@ -1,0 +1,39 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{ududff}{rgb}{0.5333333333333333,0.5333333333333333,0.5333333333333333}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(1.5,1.) rectangle (9.,10.);
+\draw [line width=2.pt] (3.,9.)-- (5.,9.);
+\draw [line width=2.pt] (3.,9.)-- (3.,4.);
+\draw [line width=2.pt] (5.,9.)-- (3.,4.);
+\draw [line width=2.pt] (3.,2.)-- (3.,4.);
+\draw [line width=2.pt] (3.,2.)-- (8.,2.);
+\draw [line width=2.pt] (3.,4.)-- (8.,2.);
+\draw [line width=2.pt] (5.,9.)-- (8.,2.);
+\begin{scriptsize}
+\draw [fill=ududff] (3.,9.) circle (2.5pt);
+\draw[color=ududff] (3.14,9.37) node {$A$};
+\draw [fill=ududff] (5.,9.) circle (2.5pt);
+\draw[color=ududff] (5.14,9.37) node {$B$};
+\draw[color=black] (4.06,8.85) node {$f$};
+\draw [fill=ududff] (3.,4.) circle (2.5pt);
+\draw[color=ududff] (3.14,4.37) node {$C$};
+\draw[color=black] (2.74,6.67) node {$g$};
+\draw[color=black] (3.76,6.79) node {$h$};
+\draw [fill=ududff] (3.,2.) circle (2.5pt);
+\draw[color=ududff] (3.14,2.37) node {$D$};
+\draw[color=black] (3.38,3.17) node {$i$};
+\draw [fill=ududff] (8.,2.) circle (2.5pt);
+\draw[color=ududff] (8.14,2.37) node {$F$};
+\draw[color=black] (5.56,1.85) node {$k$};
+\draw[color=black] (5.44,2.89) node {$l$};
+\draw[color=black] (6.26,5.55) node {$m$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}
