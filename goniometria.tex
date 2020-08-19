@@ -48,7 +48,7 @@ Dati due angoli $\alpha$ e $\beta$ allora
 	\end{align*}
 	Da cui la tesi.
 \end{proof}
-\begin{cor}[Seno della differenza di due angoli]\label{cor:Senodelladifferenza}
+\begin{cor}[Seno della differenza di due angoli (Geometrica)]\label{cor:Senodelladifferenza}
 Dati due angoli $\alpha$ e $\beta$ allora
 \[\sin(\alpha-\beta)=\sin\alpha\cos\beta-\cos\alpha\sin\beta\]
 \end{cor}\index{Seno!differenza}
@@ -154,6 +154,31 @@ Dati due angoli $\alpha$ e $\beta$ allora\[\tan\left(\alpha-\beta\right)=\dfrac{
 	=&\dfrac{\cot\alpha\cot\beta-1}{\cot\alpha+\cot\beta}\\
 	\end{align*}
 	Da cui la tesi.
+\end{proof}
+\begin{thm}[Seno della somma di due angoli]\label{thm:Senodellasommageometrico}
+Dati due angoli $\alpha$ e $\beta$ allora
+\[\sin(\alpha+\beta)=\sin\alpha\cos\beta+\cos\alpha\sin\beta  \]
+\end{thm}\index{Seno!somma}
+\begin{figure}
+	\centering
+	\includestandalone{geometria/senosommadue}
+	\caption[Seno somma dimostrazione geometrica]{Seno somma dimostrazione geometrica}
+	\label{fig:senosommagemetrica}
+\end{figure}
+\begin{proof}
+	Consideriamo la figura\cref{fig:senosommagemetrica} avremo che se indichiamo con $AD$ la perpendicolare a $BC$
+	\begin{align*}
+	h=&a\cos\alpha\\
+	h=&b\cos\beta\\
+	\intertext{Mentre l'area del triangolo è}
+	A=&\frac{1}{2}ab\sin(\alpha+\beta)\\
+	\intertext{Ma l'area è anche}
+	A=&\frac{1}{2}ah\sin\alpha+\frac{1}{2}bh\sin\beta\\
+	=&\frac{1}{2}ab\cos\beta\sin\alpha+\frac{1}{2}ba\cos\alpha\sin\beta\\
+	\frac{1}{2}ab\sin(\alpha+\beta)=&\frac{1}{2}ab\cos\beta\sin\alpha+\frac{1}{2}ba\cos\alpha\sin\beta\\
+	\sin(\alpha+\beta)=&\cos\beta\sin\alpha+\cos\alpha\sin\beta\\
+	\end{align*}
+	da cui la tesi.
 \end{proof}
 \section{Formule di duplicazione}
 \begin{thm}[Formule di duplicazione coseno]\label{thm:Formulediduplicazionecoseno}

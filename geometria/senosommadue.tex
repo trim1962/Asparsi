@@ -1,0 +1,51 @@
+\documentclass[10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{grafica}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows,calc,positioning,shapes.symbols,shapes.geometric,shapes.misc}
+\pagestyle{empty}
+\usepackage{siunitx}
+\begin{document}
+\begin{tikzpicture}
+\tikzstyle{every node}=[font=\Large]
+\pgfmathsetmacro{\moltiplicatore}{2};
+\pgfmathsetmacro{\latoa}{5};
+\pgfmathsetmacro{\latob}{4};
+\pgfmathsetmacro{\latoc}{3};
+\pgfmathsetmacro{\latoam}{\latoa*\moltiplicatore};
+\pgfmathsetmacro{\latobm}{\latob*\moltiplicatore};
+\pgfmathsetmacro{\latocm}{\latoc*\moltiplicatore};
+\pgfmathsetmacro{\latocq}{\latocm*\latocm};
+\pgfmathsetmacro{\xa}{\latocq/\latoam};
+\pgfmathsetmacro{\cb}{\latocm*\latobm};
+\pgfmathsetmacro{\ya}{\cb/\latoam};
+
+\tkzDefPoint(0,0){B}
+\tkzDefPoint(\latoam,0){C}
+\tkzDefPoint(\xa,\ya){A}
+
+
+%\tkzLabelSegment[below,yshift=-0.5cm](C,B){a}
+
+%\tkzDrawPoints(A,B,C)
+
+\tkzDrawSegment(A,B)
+\tkzDrawSegment(A,C)
+\tkzDrawSegment(C,B)
+\tkzDrawLine[altitude](C,A,B)  
+\tkzGetPoint{D}
+\tkzDrawPoints(A,B,C,D)
+\tkzLabelPoints[below right,font=\Large](C)
+\tkzLabelPoints[below left, font=\Large](B)
+\tkzLabelPoints[above,font=\Large](A)
+\tkzLabelPoints[below, font=\Large](D)
+\tkzMarkAngle[size=1cm](B,A,D)
+\tkzLabelAngle[pos=1.5](B,A,D){$\alpha$}
+\tkzMarkAngle[size=1cm](D,A,C)
+\tkzLabelAngle[pos=1.5](D,A,C){$\beta$}
+\tkzLabelSegment[above](C,A){b}
+\tkzLabelSegment[above](B,A){a}
+\tkzLabelSegment[left](A,D){h}
+\end{tikzpicture}
+\end{document}
