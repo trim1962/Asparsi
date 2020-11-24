@@ -1,0 +1,35 @@
+\documentclass[10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{grafica}
+\usepackage{matematica}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\usepackage{siunitx}
+\begin{document}
+\begin{tikzpicture} %[scale=0.7]
+%\tkzInit[xmin=-1,xmax=5,ymin=-2,ymax=3]
+%\tkzDrawX[noticks,label=$\Re$]
+%\tkzDrawY[noticks,label=$\Im$]
+\tkzDefPoint(2,3){A} \tkzDefPoint(3,0){C}
+\tkzDefPoint(0,0){B}
+%\tkzDefPointWith[colinear=at A](O,B)
+%\tkzGetPoint{D}
+\tkzDrawPoints(A,B,C)
+\tkzLabelPoints(A,B,C)
+\tkzDrawSegment(A,B) 
+\tkzDrawSegment(A,C)
+\tkzDrawSegment(B,C)
+\tkzDrawBisector(B,A,C)
+\tkzGetPoint{M}
+\tkzDrawPoint(M)
+
+%\tkzDrawSegment[->](A,D)
+%\tkzDrawSegment[->](B,D) 
+\tkzLabelSegment[left](M,A){$t$}
+%\tkzLabelSegment[below](O,B){$z_2$}
+%\tkzLabelLine[above,midway,sloped](O,D){$z=z_1+z_2$}
+\end{tikzpicture}
+
+\end{document}
