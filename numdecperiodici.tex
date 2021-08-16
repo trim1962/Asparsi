@@ -2,11 +2,33 @@
 % !BIB TS-program = biber
 % !TeX encoding = UTF-8
 % !TeX spellcheck = it_IT
-\chapter{Numeri primi}\label{ch:numeri-primi}
+\chapter{Numeri}\label{ch:numeri-primi}
 \section{I numeri primi sono infiniti}\label{sec:i-numeri-primi}
 \begin{thm}[Numeri primi]\label{thm:numeriprimiinfiniti1}
 I numeri primi sono infiniti
 \end{thm}\index{Numero!primo!infiniti}
+\chapter{Numeri pari}
+\section{Numeri pari per differenza}\label{sec:quadratodifferenza}
+\begin{thm}[Quadrato meno differenza]\label{thm:quadratodifferenza}
+	Se $x$ è un numero naturale allora $x^2-x$ è pari. 
+\end{thm}\index{Numero!pari}
+\begin{proof}
+		\begin{align*}
+		\intertext{Se $x$ è pari allora:}
+		x=&2n\\
+		x^2-x=&4n^2-2n\\
+		=&2n(2n-1)\\
+		\intertext{pari}
+		\intertext{Se $x$ è dispari allora:}
+		x=&2n+1\\
+		x^2-x=&4n^2-4n+1-(2n+1)\\
+		=&4n^2-4n+1-2n-1\\
+		=&4n^2-4n-2n\\
+		=&4n^2-6n\\
+		=&2n(2n-3)
+		\intertext{pari}
+	\end{align*}
+\end{proof}
 \chapter{Numeri decimali periodici}\label{ch:numeri-decimali-periodici}
 \section{Numero decimale periodico puro}\label{sec:numerodecimaleperiodico-puro}
 \begin{thm}[Numero decimale periodico puro]
