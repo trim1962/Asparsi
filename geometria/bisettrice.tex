@@ -17,17 +17,22 @@
 %\tkzDefPointWith[colinear=at A](O,B)
 %\tkzGetPoint{D}
 \tkzDrawPoints(A,B,C)
-\tkzLabelPoints(A,B,C)
+
 \tkzDrawSegment(A,B) 
 \tkzDrawSegment(A,C)
 \tkzDrawSegment(B,C)
 \tkzDrawBisector(B,A,C)
 \tkzGetPoint{M}
 \tkzDrawPoint(M)
-
+\tkzLabelPoints(A,B,C,M)
 %\tkzDrawSegment[->](A,D)
 %\tkzDrawSegment[->](B,D) 
 \tkzLabelSegment[left](M,A){$t$}
+\tkzLabelSegment[left](B,A){$a$}
+\tkzLabelSegment[left](C,A){$b$}
+\tkzLabelSegment[below](C,B){$c$}
+\tkzMarkAngle[arc=lll, size=1](B,A,M)
+\tkzMarkAngle[arc=lll, size=1](M,A,C)
 %\tkzLabelSegment[below](O,B){$z_2$}
 %\tkzLabelLine[above,midway,sloped](O,D){$z=z_1+z_2$}
 \end{tikzpicture}
