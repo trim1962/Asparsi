@@ -1,0 +1,48 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+
+\definecolor{ududff}{rgb}{0.5333333333333333,0.5333333333333333,0.5333333333333333}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-5.,-4.5) rectangle (5.,5.5);
+\draw [line width=2.pt] (-4.,-2.)-- (4.,-2.);
+\draw [line width=2.pt] (0.,4.92820323027551)-- (4.,-2.);
+\draw [line width=2.pt] (0.,4.92820323027551)-- (-4.,-2.);
+\draw [line width=2.pt] (0.,0.3094010767585034) circle (4.618802153517006cm);
+\draw [line width=2.pt] (0.,0.3094010767585034)-- (4.,-2.);
+\draw [line width=2.pt] (0.,4.92820323027551)-- (0.,0.3094010767585034);
+\draw [line width=2.pt] (0.,0.3094010767585034)-- (-4.,-2.);
+\draw [line width=2.pt] (0.,0.3094010767585034)-- (0.,-2.);
+\begin{scriptsize}
+\draw [fill=ududff] (-4.,-2.) circle (2.5pt);
+\draw[color=ududff] (-3.8619827013812116,-1.6570971173097209) node {$B$};
+\draw [fill=ududff] (4.,-2.) circle (2.5pt);
+\draw[color=ududff] (4.126417784482242,-1.6570971173097209) node {$C$};
+\draw[color=black] (0.04842313085963966,-2.1226216211479176) node {$f$};
+\draw [fill=black] (0.,4.92820323027551) circle (2.0pt);
+\draw[color=black] (0.12290705147375111,5.232665539495595) node {$D$};
+\draw [fill=black] (0.,-8.928203230275509) circle (2.0pt);
+\draw[color=black] (0.12290705147375111,-8.621343694729148) node {$E$};
+\draw [fill=black] (0.,4.92820323027551) circle (2.0pt);
+\draw[color=black] (0.12290705147375111,5.232665539495595) node {$F$};
+\draw[color=black] (1.780174285137731,1.4898485286364909) node {$g$};
+\draw[color=black] (-2.204715467717232,1.787784211092937) node {$h$};
+\draw[color=black] (-2.2605784081778153,4.022301829516283) node {$e$};
+\draw [fill=black] (0.,0.3094010767585034) circle (2.0pt);
+\draw[color=black] (0.12290705147375111,0.6146624614206806) node {$H$};
+\draw[color=black] (1.8919001660588979,-0.9308788913221335) node {$k$};
+\draw[color=black] (-0.24951255159680613,2.7933171393834426) node {$l$};
+\draw[color=black] (-2.1116105669495924,-0.42811242717688075) node {$m$};
+\draw [fill=black] (0.,-2.) circle (2.0pt);
+\draw[color=black] (0.12290705147375111,-1.6943390776167766) node {$I$};
+\draw [fill=black] (0.,0.3094010767585034) circle (2.0pt);
+\draw[color=black] (0.12290705147375111,0.6146624614206806) node {$J$};
+\draw[color=black] (-0.24951255159680613,-0.6701851691727432) node {$n$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}
