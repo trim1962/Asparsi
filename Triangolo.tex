@@ -477,71 +477,6 @@ Adattando il~\cref{thm:baricentro1} il Baricentro ha coordinate: \[M\left(\frac{
 \end{proof}
 \begin{defn}[Retta di Eulero]\label{defn:rettaEulero1}
 La retta che passa per Ortocentro, Circocentro e Baricentro  chiamata retta di Eulero\end{defn}\index{Retta!Eulero}
-\section{Triangolo equilatero}\label{sec:triangolo-equilatero}
-\begin{thm}[Ortocentro, circocentro e baricentro]\label{thm:triangoloequilatero1}
-In un triangolo equilatero Ortocentro, Circocentro e Baricentro coincidono.
-\end{thm}\index{Triangolo!equilatero}\index{Triangolo!equilatero!ortocentro}\index{Triangolo!equilatero!circocentro}\index{Circocentro!triangolo!equilatero}\index{Ortocentro!triangolo!equilatero}\index{Triangolo!baricentro}\index{Triangolo!equilatero!baricentro}
-\begin{figure}
-	\centering
-	\includestandalone{geometria/triangoloEquilatero1}
-	\caption{Triangolo equilatero}
-	\label{fig:triangoloequilatero1}
-\end{figure}
-\begin{proof}
-	Costruiamo la~\cref{fig:triangoloequilatero1}, un triangolo equilatero di lato $s$. Le coordinate del suoi vertici sono $A(0,0)$, $B(s,0)$ e $C(\frac{s}{2},\frac{s}{2}\sqrt{3})$. 
-	Per~\cref{thm:CircoAsse1} le coordinate del circocentro\index{Triangolo!circocentro}\index{Circocentro!triangolo!equilatero} sono
-	\[\begin{cases}
-	x=\dfrac{s}{2}\\ \\
-	y=\dfrac{t^2+r^2-ts}{2r}\\
-	\end{cases}\]
-	Per il~\cref{thm:ortocentro1} le coordinate dell'ortocentro\index{Triangolo!ortocentro}\index{Ortocentro!triangolo!equilatero} sono \[\begin{cases}
-	y=\dfrac{t}{r}(s-t)\\
-	x=t
-	\end{cases}\] 
-	Per il~\cref{thm:baricentro1} le coordinate del baricentro\index{Triangolo!baricentro}\index{Baricentro!triangolo!equilatero} sono \[\begin{cases}
-	x=\dfrac{a+c+e}{3}\\ \\
-	y=\dfrac{b+d+f}{3}
-	\end{cases} \]
-	Adattando le tre formule al triangolo equilatero otteniamo:
-	\[\begin{cases}
-	x=\dfrac{s}{2}\\ \\
-	y=\dfrac{s}{6}\sqrt{3}
-	\end{cases}\]
-\end{proof}
-\begin{thm}[Raggio della circonferenza circoscritta]\label{thm:raggiocirconferenzacircoscritta}
-	In un triangolo equilatero di lato $l$, il raggio della circonferenza circoscritta è \[R=\dfrac{\sqrt{3}}{3}l\]
-\end{thm}\index{Triangolo!baricentro}\index{Circonferenza!circoscritta}
-\begin{figure}
-	\centering
-	\includestandalone[width=0.9\linewidth]{geometria/triangolo_equi_raggiocirconferenza_circoscritta}
-	\caption{Raggio della circonferenza circoscritta}
-	\label{fig:raggiocirconferenzacircoscritta}
-\end{figure}
-\begin{proof}
-		Costruiamo la~\cref{fig:raggiocirconferenzacircoscritta}
-		\begin{align*}
-		\intertext{Consideriamo il triangolo $ABC$}
-			h^2=&l^2-\dfrac{l^2}{4}\\
-			=&\dfrac{4l^2-l^2}{4}\\
-			=&\dfrac{3}{4}l^2\\
-\intertext{Quindi}
-h=&\dfrac{l}{2}\sqrt{3}\\
-\intertext{Consideriamo il triangolo $OBC$}
-x^2=&r^2-\dfrac{l^2}{4}\\
-x=&h-R\\
-(h-R)^2=&r^2-\dfrac{l^2}{4}\\
-2hR-h^2=&\dfrac{l^2}{4}\\
-2(\dfrac{l}{2}\sqrt{3})R-(\dfrac{l}{2}\sqrt{3})^2=&\dfrac{l^2}{4}\\
-\dfrac{3}{4}l^2-l\sqrt{3}R=&-\dfrac{l^2}{4}\\
-\dfrac{3}{4}l^2+\dfrac{l^2}{4}-l\sqrt{3}R=&0\\
-l^2-l\sqrt{3}R=&0\\
-l=&0\\
-l-\sqrt{3}R=&0\\
-l=&\sqrt{3}R\\
-R=&\dfrac{\sqrt{3}}{3}l
-		\end{align*}
-Come volevasi dimostrare.
-\end{proof}
 \section{Excentro}\label{sec:excentro}
 \begin{defn}[Exentro]\label{defn:excentro}
 Si dice excentro  di un triangolo il punto di incontro delle bisettrici di due angoli esterni e della bisettrice dell'angolo interno non adiacente ad essi.
@@ -594,3 +529,68 @@ Come si voleva dimostrare.
 	\caption{Formula di Erone}
 	\label{fig:erone1}
 \end{figure}
+\section{Triangolo equilatero}\label{sec:triangolo-equilatero}
+\begin{thm}[Ortocentro, circocentro e baricentro]\label{thm:triangoloequilatero1}
+	In un triangolo equilatero Ortocentro, Circocentro e Baricentro coincidono.
+\end{thm}\index{Triangolo!equilatero}\index{Triangolo!equilatero!ortocentro}\index{Triangolo!equilatero!circocentro}\index{Circocentro!triangolo!equilatero}\index{Ortocentro!triangolo!equilatero}\index{Triangolo!baricentro}\index{Triangolo!equilatero!baricentro}
+\begin{figure}
+	\centering
+	\includestandalone{geometria/triangoloEquilatero1}
+	\caption{Triangolo equilatero}
+	\label{fig:triangoloequilatero1}
+\end{figure}
+\begin{proof}
+	Costruiamo la~\cref{fig:triangoloequilatero1}, un triangolo equilatero di lato $s$. Le coordinate del suoi vertici sono $A(0,0)$, $B(s,0)$ e $C(\frac{s}{2},\frac{s}{2}\sqrt{3})$. 
+	Per~\cref{thm:CircoAsse1} le coordinate del circocentro\index{Triangolo!circocentro}\index{Circocentro!triangolo!equilatero} sono
+	\[\begin{cases}
+		x=\dfrac{s}{2}\\ \\
+		y=\dfrac{t^2+r^2-ts}{2r}\\
+	\end{cases}\]
+	Per il~\cref{thm:ortocentro1} le coordinate dell'ortocentro\index{Triangolo!ortocentro}\index{Ortocentro!triangolo!equilatero} sono \[\begin{cases}
+		y=\dfrac{t}{r}(s-t)\\
+		x=t
+	\end{cases}\] 
+	Per il~\cref{thm:baricentro1} le coordinate del baricentro\index{Triangolo!baricentro}\index{Baricentro!triangolo!equilatero} sono \[\begin{cases}
+		x=\dfrac{a+c+e}{3}\\ \\
+		y=\dfrac{b+d+f}{3}
+	\end{cases} \]
+	Adattando le tre formule al triangolo equilatero otteniamo:
+	\[\begin{cases}
+		x=\dfrac{s}{2}\\ \\
+		y=\dfrac{s}{6}\sqrt{3}
+	\end{cases}\]
+\end{proof}
+\begin{thm}[Raggio della circonferenza circoscritta]\label{thm:raggiocirconferenzacircoscritta}
+	In un triangolo equilatero di lato $l$, il raggio della circonferenza circoscritta è \[R=\dfrac{\sqrt{3}}{3}l\]
+\end{thm}\index{Triangolo!baricentro}\index{Circonferenza!circoscritta}
+\begin{figure}
+	\centering
+	\includestandalone[width=0.9\linewidth]{geometria/triangolo_equi_raggiocirconferenza_circoscritta}
+	\caption{Raggio della circonferenza circoscritta}
+	\label{fig:raggiocirconferenzacircoscritta}
+\end{figure}
+\begin{proof}
+	Costruiamo la~\cref{fig:raggiocirconferenzacircoscritta}
+	\begin{align*}
+		\intertext{Consideriamo il triangolo $ABC$}
+		h^2=&l^2-\dfrac{l^2}{4}\\
+		=&\dfrac{4l^2-l^2}{4}\\
+		=&\dfrac{3}{4}l^2\\
+		\intertext{Quindi}
+		h=&\dfrac{l}{2}\sqrt{3}\\
+		\intertext{Consideriamo il triangolo $OBC$}
+		x^2=&r^2-\dfrac{l^2}{4}\\
+		x=&h-R\\
+		(h-R)^2=&r^2-\dfrac{l^2}{4}\\
+		2hR-h^2=&\dfrac{l^2}{4}\\
+		2(\dfrac{l}{2}\sqrt{3})R-(\dfrac{l}{2}\sqrt{3})^2=&\dfrac{l^2}{4}\\
+		\dfrac{3}{4}l^2-l\sqrt{3}R=&-\dfrac{l^2}{4}\\
+		\dfrac{3}{4}l^2+\dfrac{l^2}{4}-l\sqrt{3}R=&0\\
+		l^2-l\sqrt{3}R=&0\\
+		l=&0\\
+		l-\sqrt{3}R=&0\\
+		l=&\sqrt{3}R\\
+		R=&\dfrac{\sqrt{3}}{3}l
+	\end{align*}
+	Come volevasi dimostrare.
+\end{proof}
