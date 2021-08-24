@@ -6,44 +6,43 @@
 \usetikzlibrary{arrows}
 \pagestyle{empty}
 \begin{document}
-
+\definecolor{black}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\definecolor{black}{rgb}{0.5333333333333333,0.5333333333333333,0.5333333333333333}
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-\clip(-7.,-1.) rectangle (13.,14.8);
-\draw  (-6.,0.)-- (10.,0.);
-\draw  (2.,13.856406460551018)-- (-6.,0.);
-\draw  (2.,13.856406460551018)-- (10.,0.);
-\draw  (-6.,0.)-- (10.,0.);
-\draw  (2.,4.618802153517006) circle (4.618802153517007cm);
-\draw  (-2.,6.92820323027551)-- (2.,4.618802153517007);
-\draw  (2.,4.618802153517007)-- (6.,6.92820323027551);
-\draw  (2.,4.618802153517007)-- (2.,0.);
-\draw  (2.,4.618802153517007)-- (-6.,0.);
-\draw  (2.,13.856406460551018)-- (2.,4.618802153517007);
-\draw  (2.,4.618802153517007)-- (10.,0.);
-
-\draw [fill=black] (-6.,0.) circle (2.5pt);
-\draw[color=black] (-5.727406871667903,0.716204506156949) node {$A$};
-\draw [fill=black] (10.,0.) circle (2.5pt);
-\draw[color=black] (10.262256636227464,0.716204506156949) node {$B$};
-%\draw[color=black] (2.1091113822016085,-0.2732548693316274) node {$f$};
-\draw [fill=black] (2.,13.856406460551018) circle (2.5pt);
-\draw[color=black] (2.26742488227978,14.529057387977474) node {$C$};
-\draw [fill=black] (2.,-13.85640646055102) circle (2.5pt);
-\draw[color=black] (2.3663708198286377,-13.116437563173347) node {$D_{1}$};
-\draw[color=black] (-2.4424017450458355,7.602841759557441) node {$b$};
-\draw[color=black] (5.552430008901849,6.969587759244751) node {$a$};
-\draw[color=black] (2.1091113822016085,-0.2732548693316274) node {$c$};
-\draw [fill=black] (-2.,6.92820323027551) circle (2.5pt);
-\draw[color=black] (-1.7299909946940617,7.563263384537898) node {$D$};
-\draw [fill=black] (6.,6.92820323027551) circle (2.5pt);
-\draw[color=black] (6.264840759253623,7.563263384537898) node {$F$};
-\draw [fill=black] (2.,4.618802153517007) circle (2.5pt);
-\draw[color=black] (2.307003257299323,5.2677176334044) node {$G$};
-\draw [fill=black] (2.,0.) circle (2.5pt);
-\draw[color=black] (2.26742488227978,0.6370477561178629) node {$E$};
-\draw[color=black] (-0.22601274395142806,5.584344633560745) node {$R$};
-\draw[color=black] (4.503603070883959,5.683290571109603) node {$R$};
-\draw[color=black] (1.5748033194377782,2.754490819663416) node {$R$};
-%789900259019107,2.101447631840956) node {$O$};
+\clip(-5.,0.) rectangle (5.,9.);
+\draw  (-4.,1.)-- (4.,1.);
+\draw  (0.,7.928203230275509)-- (4.,1.);
+\draw  (0.,7.928203230275509)-- (-4.,1.);
+\draw  (0.,3.309401076758503) circle (2.309401076758503cm);
+\draw  (0.,3.309401076758503)-- (2.,4.464101615137754);
+\draw  (0.,3.309401076758503)-- (0.,1.);
+\draw  (-2.,4.464101615137754)-- (0.,3.309401076758503);
+\draw  (0.,7.928203230275509)-- (0.,3.309401076758503);
+\draw  (0.,3.309401076758503)-- (-4.,1.);
+\draw  (0.,3.309401076758503)-- (4.,1.);
+\begin{scriptsize}
+\draw [fill=black] (-4.,1.) circle (2.5pt);
+\draw[color=black] (-3.86,1.37) node {$A$};
+\draw [fill=black] (4.,1.) circle (2.5pt);
+\draw[color=black] (4.14,1.37) node {$B$};
+\draw[color=black] (0.04,0.85) node {$c$};
+\draw [fill=black] (0.,-5.92820323027551) circle (2.0pt);
+\draw[color=black] (-11.47,11.34) node {$C_{1}$};
+\draw [fill=black] (0.,7.928203230275509) circle (2.0pt);
+\draw[color=black] (0.14,8.25) node {$C$};
+\draw[color=black] (1.78,4.49) node {$a$};
+\draw[color=black] (-2.22,4.81) node {$b$};
+\draw [fill=black] (0.,3.309401076758503) circle (2.0pt);
+\draw[color=black] (0.14,3.63) node {$O$};
+\draw [fill=black] (-2.,4.464101615137754) circle (2.0pt);
+\draw[color=black] (-1.86,4.79) node {$D$};
+\draw [fill=black] (2.,4.464101615137754) circle (2.0pt);
+\draw[color=black] (2.14,4.79) node {$F$};
+\draw [fill=black] (0.,1.) circle (2.0pt);
+\draw[color=black] (0.12,1.33) node {$E$};
+\draw[color=black] (1.25,3.84) node {$R_{2}$};
+\draw[color=black] (-0.28,2.33) node {$R$};
+\draw[color=black] (-1.07,3.84) node {$R_{1}$};
+\end{scriptsize}
 \end{tikzpicture}
 \end{document}
