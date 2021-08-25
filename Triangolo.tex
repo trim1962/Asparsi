@@ -498,9 +498,20 @@ Si dice excentro  di un triangolo il punto di incontro delle bisettrici di due a
 	\label{fig:triangoloexraggio}
 \end{figure}
 \begin{proof}
-Consideriamo la~\cref{fig:triangoloexraggio}. Possiamo dire che:
+Consideriamo la~\cref{fig:triangoloexraggio}. Possiamo dire che per le aree vale:
 \begin{align*}
 	A_{ABC}=&A_{BCO}+A_{BAO}-A_{ACO}\\
+	=&\dfrac{aR}{2}+\dfrac{cR}{2}-\dfrac{bR}{2}\\
+	=&\dfrac{R}{2}\left(c+a-b\right)
+	\intertext{ma per il perimetro vale}
+	2p=&a+b+c\\
+	2p-2b=&a+b+c-2b\\
+	a+c-b=&2p-2b\\
+	\intertext{Quindi}
+	A_{ABC}=&\dfrac{R}{2}(2p-2b)\\
+	=&R(p-c)\\
+	\intertext{Da cui}
+	R=&\dfrac{A}{p-b}\\
 \end{align*}
 \end{proof}
 \section{Formula di Erone}\label{sec:Formu la_Erone}
