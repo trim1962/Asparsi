@@ -9,8 +9,8 @@
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
 \clip(-1.,-1.) rectangle (18.5,10.);
 \draw  (12.,0.)-- (7.,5.);
-%\draw [line width=2.pt,domain=0.0:18.5] plot(\x,{(-0.--5.*\x)/7.});
-%\draw [line width=2.pt,domain=0.0:18.5] plot(\x,{(-0.-0.*\x)/12.});
+\draw [domain=0.0:18.5] plot(\x,{(-0.--5.*\x)/7.});
+\draw [domain=0.0:18.5] plot(\x,{(-0.-0.*\x)/12.});
 \draw  (13.83669653945405,4.4341776955137) circle (4.424931549999381cm);
 \draw  (0.,0.)-- (13.83669653945405,4.4341776955137);
 \draw  (11.259383105084162,8.042416503631543)-- (13.83669653945405,4.4341776955137);
