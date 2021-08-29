@@ -487,9 +487,13 @@ Si dice excentro  di un triangolo il punto di incontro delle bisettrici di due a
 	\caption{Triangolo e circonferenze tangenti}
 	\label{fig:excentro1}
 \end{figure}
-\begin{thm}[Raggio della circonferenza exinscritta]
-	Dato un triangolo di area $A$ e perimetro $2p$ se i  lati sono $a$, $b$ e $c$ allora il raggio della circonferenza exinscritta è:
-	\[R=\dfrac{A}{p-a}=\dfrac{A}{p-b}=\dfrac{A}{p-c}\]
+\begin{thm}[Raggio della circonferenza exinscritta]\label{thm:Raggiocirconferenzaexinscritta}
+	Dato un triangolo di area $A$ e perimetro $2p$ se i  lati sono $a$, $b$ e $c$ allora per i raggi delle circonferenze exinscritte abbiamo:
+	\begin{align*}
+		R_a=&\dfrac{A}{p-a}\\
+		R_b=&\dfrac{A}{p-b}\\
+		R_c=&\dfrac{A}{p-c}\\
+	\end{align*}
 \end{thm}\index{Circonferenza!exinscritta}
 \begin{figure}
 	\centering
@@ -503,7 +507,7 @@ Consideriamo la~\cref{fig:triangoloexraggio}. Possiamo dire che per le aree vale
 	A_{ABC}=&A_{BCO}+A_{BAO}-A_{ACO}\\
 	=&\dfrac{aR}{2}+\dfrac{cR}{2}-\dfrac{bR}{2}\\
 	=&\dfrac{R}{2}\left(c+a-b\right)
-	\intertext{ma per il perimetro vale}
+	\intertext{ma  per il perimetro vale}
 	2p=&a+b+c\\
 	2p-2b=&a+b+c-2b\\
 	a+c-b=&2p-2b\\
@@ -513,50 +517,8 @@ Consideriamo la~\cref{fig:triangoloexraggio}. Possiamo dire che per le aree vale
 	\intertext{Da cui}
 	R=&\dfrac{A}{p-b}\\
 \end{align*}
-Come volevasi dimostrare.
+Come volevasi dimostrare. 
 \end{proof}
-\section{Formula di Erone}\label{sec:Formu la_Erone}
-\begin{thm}[Formula di Erone]
-Dato un triangolo~\cite{Dodero1999b}, se $2p=a+b+c$ allora l'area del triangolo è \[A=\sqrt{p(p-a)(p-b)(p-c)}\]
-\end{thm}\index{Triangolo!Erone}\index{Teorema!Erone}
-\begin{proof}
-Consideriamo la~\cref{fig:erone1} se indichiamo con $h$ l'altezza del triangolo relativa al lato di lunghezza $a$ otteniamo \begin{align}
-h^2=&b^2-x^2\label{eqn:erone1}\\
-h^2=&c^2-(a-x)^2\nonumber
-\intertext{uguagliando}
-b^2-x^2=&c^2-(a-x)^2\nonumber\\
-b^2-x^2=&c^2-a^2-x^2+2ax\nonumber\\
-2ax=&b^2+a^2-c^2\nonumber\\
-x=&\dfrac{b^2+a^2-c^2}{2a}\nonumber\\
-\intertext{Per esprire l'altezza in funzione dei lati sostituiamo il risultato precedente nell'~\cref{eqn:erone1}}
-h^2=&b^2-\dfrac{\left(b^2+a^2-c^2\right)^2}{4a^2}\nonumber\\
-=&\dfrac{4a^2b^2-(b^2+a^2-c^2)^2}{4a^2}\nonumber\\
-=&\dfrac{\left[2ab-\left(a^2+b^2-c^2\right)\right]\left[2ab+\left(a^2+b^2-c^2\right)\right]}{4a^2}\nonumber\\
-=&\dfrac{\left(2ab-b^2-a^2+c^2\right)\left(2ab+b^2+a^2-c^2\right)}{4a^2}\nonumber\\
-=&\dfrac{\left[c^2-\left(b-a\right)^2\right]\left[\left(a+b\right)^2-c^2\right]}{4a^2}\nonumber\\
-=&\dfrac{(c-b+a)(c+b-a)(a+b-c)(a+b+c)}{4a^2}\label{eqn:erone2}
-\intertext{Ponendo}
-a+b+c=&2p\nonumber\\
-c+b-a=&a+b+c-2a=2p-2a=2(p-a)\nonumber\\
-a+c-b=&a+b+c-2b=2p-2b=2(p-b)\nonumber\\
-a+b-c=&a+b+c-2c=2p-2c=2(p-c)\nonumber
-\intertext{l'~\cref{eqn:erone2} diventa}
-h^2=&\dfrac{2p2(p-a)2p(p-b)2(p-c)}{4a^2}\nonumber\\
-=&\dfrac{4p(p-a)(p-b)(p-c)}{a^2}\nonumber\\
-h=&\dfrac{2\sqrt{p(p-a)(p-b)(p-c)}}{a}\nonumber\\
-\intertext{Quindi l'area del triangolo è}
-A=&\dfrac{1}{2}ah\nonumber\\
-=&\dfrac{1}{2}a\dfrac{2\sqrt{p(p-a)(p-b)(p-c)}}{a}\nonumber\\
-=&\sqrt{p(p-a)(p-b)(p-c)}\nonumber
-\end{align}
-Come si voleva dimostrare.
-\end{proof}
-\begin{figure}
-	\centering
-	\includestandalone{geometria/erone1}
-	\caption{Formula di Erone}
-	\label{fig:erone1}
-\end{figure}
 \begin{thm}[Il raggio della circonferenza inscritta ad un triangolo]\label{thm:raggiocirconferenzainscrittatriangolo}
 In un triangolo il raggio della circonferenza inscritta ad un triangolo
 \[R=\dfrac{A}{p}\]
@@ -573,13 +535,114 @@ Dove $A$ è l'area del triangolo e $p$ il suo semiperimetro
 		\begin{align*}
 			A=&\dfrac{1}{2}Ra+\dfrac{1}{2}Rb+\dfrac{1}{2}Rc\\
 			=&\dfrac{1}{2}\left(a+b+c\right)R\\
+			\intertext{ma}
 			2p=&a+b+c\\
+			\intertext{quindi}
 			=&\dfrac{1}{2}2pR\\
 			=&pR\\
-			\intertext{Quindi}
+			\intertext{concludendo}
 			R=&\dfrac{A}{p}\\
 		\end{align*}
 	Come volevasi dimostrare.
+\end{proof} 
+\begin{thm}[Raggio circonferenza inscritta e exscritta]\label{thm:Raggiocirconferenzainscrittaexscritta}
+	In un triangolo se $R$ è il raggio della circonferenza inscritta e $R_a$, $R_b$ e $R_c$ sono i raggi delle circonferenze exscritte allora\[\dfrac{1}{R}=\dfrac{1}{R_a}+\dfrac{1}{R_b}+\dfrac{1}{R_c}\]
+\end{thm}\index{Circonferenza!inscritta}\index{Circonferenza!exscritta}
+\begin{proof}
+	Per il~\cref{thm:Raggiocirconferenzaexinscritta} possiamo scrivere
+	\begin{align*}
+	A=&(p-a)R_a\\
+	A=&(p-b)R_b\\
+	A=&(p-c)R_c
+	\intertext{Per il~\cref{thm:raggiocirconferenzainscrittatriangolo}}
+	A=&pR
+	\intertext{da cui}
+	pr=&(p-a)R_a\\
+	pr=&(p-b)R_b\\
+	pr=&(p-c)R_c
+	\intertext{quindi}
+	\dfrac{R}{R_a}=&\dfrac{p-a}{p}\\
+	\dfrac{R}{R_b}=&\dfrac{p-b}{p}\\
+	\dfrac{R}{R_c}=&\dfrac{p-c}{p}\\
+	\intertext{sommando}
+	\dfrac{R}{R_a}+\dfrac{R}{R_b}+\dfrac{R}{R_c}=&-\dfrac{a+b+c-3p}{p}\\
+	\intertext{ma}
+	a+b+c=&2p\\
+	\dfrac{R}{R_a}+\dfrac{R}{R_b}+\dfrac{R}{R_c}=&\dfrac{p}{p}\\
+	\dfrac{R}{R_a}+\dfrac{R}{R_b}+\dfrac{R}{R_c}=&1\\
+	\dfrac{1}{R_a}+\dfrac{1}{R_b}+\dfrac{1}{R_c}=&\dfrac{1}{R}\\
+	\end{align*}
+Come volevasi dimostrare.
+\end{proof}
+\section{Triangolo rettangolo}\label{sec:triangolo-rettangolo}
+\begin{thm}[Circonferenza inscritta]\label{thm:triangolo-rettangoloraggio}
+	In un triangolo rettangolo di ipotenusa $a$ e cateti $b$ e $c$,u  il raggio della circonferenza inscritta è:
+	\[r=\dfrac{b+c-a}{2}\]
+\end{thm}\index{Triangolo!rettangolo}\index{Circonferenza!inscritta}\index{Circocentro!triangolo!rettangolo}
+\begin{figure}
+	\centering
+	\includestandalone{geometria/triangolo_rettangolo_raggiocirconferenza_inscritta}
+	\caption{Circonferenza inscritta triangolo rettangolo}
+	\label{fig:Circonferenza inscrittatriangolorettangolo}
+\end{figure}
+\begin{proof}
+	Costruiamo la~\cref{fig:Circonferenza inscrittatriangolorettangolo}
+	L'area del tringolo  $ABC$ è 
+	\begin{align*}
+		A=&\dfrac{1}{2}bc\\
+		\intertext{ma}
+		A=&A_{OCA}+A_{AOB}+A_{OBC}
+		\intertext{quindi}
+		\dfrac{1}{2}bc=&\dfrac{1}{2}ar+\dfrac{1}{2}br+\dfrac{1}{2}cr\\
+		bc=&ar+br+cr\\
+		r(a+b+c)=&bc\\
+		r=&\dfrac{bc}{a+b+c}\\
+		=&\dfrac{bc}{a+b+c}\dfrac{b+c-a}{b+c-a}\\
+		=&\dfrac{bc(b+c-a)}{(b+c)^2-a^2}\\
+		=&\dfrac{bc(b+c-a)}{b^2+c^2+2bc-a^2}\\
+		\intertext{ma}
+		a^2=&b^2+c^2\\
+		=&\dfrac{bc(b+c-a)}{2bc}\\
+		=&\dfrac{b+c-a}{bc}
+	\end{align*}
+Come volevasi dimostrare.
+\end{proof}
+\section{Triangolo isoscele}
+\begin{thm}[Raggio circonferenza inscritta]\label{thm:triangoloisoscelecirconferenzainscritta}
+	In un triangolo isoscele di lato obliquo $a$ e base $b$
+\end{thm}\index{Triangolo!isoscele}\index{Circonferenza!inscritta}il raggio della circonferenza inscritta è \[R=\dfrac{1}{2}b\sqrt{\dfrac{p-b}{p}}\] dove $p$ è il semiperimetro.
+\begin{figure}
+	\centering
+	\includestandalone{geometria/triangolo_isoscele_raggiocirconferenza_inscritta}
+	\caption{Triangolo isoscele circonferenza inscritta}
+	\label{fig:Triangoloisoscelecirconferenzainscritta}
+\end{figure}
+\begin{proof}
+	Costruiamo la~\cref{fig:Triangoloisoscelecirconferenzainscritta}. La sua area è:
+	\begin{align*}
+		A=&\dfrac{1}{2}bh
+			\intertext{ma}
+		h=&\sqrt{a^2-\dfrac{b^2}{4}}\\
+		=&\dfrac{1}{2}b\sqrt{a^2-\dfrac{b^2}{4}}\\
+		\intertext{ma vale anche}
+		A_{ABC}=&A_{AOB}+A_{COB}+A_{AOC}\\
+		=&\dfrac{1}{2}ar+\dfrac{1}{2}ar+\dfrac{1}{2}cr\\
+		=&\dfrac{1}{2}r(2a+b)\\
+		\intertext{quindi}
+		\dfrac{1}{2}r(2a+b)=&\dfrac{1}{2}b\sqrt{a^2-\dfrac{b^2}{4}}\\
+		\dfrac{1}{2}r(2a+b)=&\dfrac{1}{4}b\sqrt{4a^2-b^2}\\
+		r=&\dfrac{1}{2}b\dfrac{\sqrt{4a^2-b^2}}{2a+b}\\
+		=&\dfrac{1}{2}b\sqrt{\dfrac{4a^2-b^2}{(2a+b)^2}}\\
+		=&\dfrac{1}{2}b\sqrt{\dfrac{(2a+b)(2a-b)}{(2a+b)^2}}\\
+		=&\dfrac{1}{2}b\sqrt{\dfrac{2a-b}{2a+b}}
+		\intertext{ma}
+		2p=&2a+b\\
+		2a-b=&2p-2b
+		\intertext{sostituendo}
+		=&\dfrac{1}{2}b\sqrt{\dfrac{2p-2b}{2p}}\\
+		=&\dfrac{1}{2}b\sqrt{\dfrac{p-b}{p}}
+	\end{align*} 
+Come volevasi dimostrare
 \end{proof}
 \section{Triangolo equilatero}\label{sec:triangolo-equilatero}
 \begin{thm}[Ortocentro, circocentro e baricentro]\label{thm:triangoloequilatero1}
@@ -618,7 +681,7 @@ Dove $A$ è l'area del triangolo e $p$ il suo semiperimetro
 \begin{figure}
 	\centering
 	\includestandalone[width=0.7\linewidth]{geometria/triangolo_equi_raggiocirconferenza_circoscritta}
-	\caption{Raggio della circonferenza circoscritta}
+	\caption{Triangolo equilatero raggio della circonferenza circoscritta}
 	\label{fig:raggiocirconferenzacircoscritta}
 \end{figure}
 \begin{proof}
@@ -696,4 +759,47 @@ Costruiamo la~\cref{fig:raggicirconferenzainscrittacircoscritta} Utilizzando il~
 	R=&\dfrac{\sqrt{3}}{3}\dfrac{6}{\sqrt{3}}r\\
 	R=&2r\\
 \end{align*}
+Come volevasi dimostrare.
 \end{proof}
+\section{Formula di Erone}\label{sec:Formu la_Erone}
+\begin{thm}[Formula di Erone]
+	Dato un triangolo~\cite{Dodero1999b}, se $2p=a+b+c$ allora l'area del triangolo è \[A=\sqrt{p(p-a)(p-b)(p-c)}\]
+\end{thm}\index{Triangolo!Erone}\index{Teorema!Erone}
+\begin{proof}
+	Consideriamo la~\cref{fig:erone1} se indichiamo con $h$ l'altezza del triangolo relativa al lato di lunghezza $a$ otteniamo \begin{align}
+		h^2=&b^2-x^2\label{eqn:erone1}\\
+		h^2=&c^2-(a-x)^2\nonumber
+		\intertext{uguagliando}
+		b^2-x^2=&c^2-(a-x)^2\nonumber\\
+		b^2-x^2=&c^2-a^2-x^2+2ax\nonumber\\
+		2ax=&b^2+a^2-c^2\nonumber\\
+		x=&\dfrac{b^2+a^2-c^2}{2a}\nonumber\\
+		\intertext{Per esprire l'altezza in funzione dei lati sostituiamo il risultato precedente nell'~\cref{eqn:erone1}}
+		h^2=&b^2-\dfrac{\left(b^2+a^2-c^2\right)^2}{4a^2}\nonumber\\
+		=&\dfrac{4a^2b^2-(b^2+a^2-c^2)^2}{4a^2}\nonumber\\
+		=&\dfrac{\left[2ab-\left(a^2+b^2-c^2\right)\right]\left[2ab+\left(a^2+b^2-c^2\right)\right]}{4a^2}\nonumber\\
+		=&\dfrac{\left(2ab-b^2-a^2+c^2\right)\left(2ab+b^2+a^2-c^2\right)}{4a^2}\nonumber\\
+		=&\dfrac{\left[c^2-\left(b-a\right)^2\right]\left[\left(a+b\right)^2-c^2\right]}{4a^2}\nonumber\\
+		=&\dfrac{(c-b+a)(c+b-a)(a+b-c)(a+b+c)}{4a^2}\label{eqn:erone2}
+		\intertext{Ponendo}
+		a+b+c=&2p\nonumber\\
+		c+b-a=&a+b+c-2a=2p-2a=2(p-a)\nonumber\\
+		a+c-b=&a+b+c-2b=2p-2b=2(p-b)\nonumber\\
+		a+b-c=&a+b+c-2c=2p-2c=2(p-c)\nonumber
+		\intertext{l'~\cref{eqn:erone2} diventa}
+		h^2=&\dfrac{2p2(p-a)2p(p-b)2(p-c)}{4a^2}\nonumber\\
+		=&\dfrac{4p(p-a)(p-b)(p-c)}{a^2}\nonumber\\
+		h=&\dfrac{2\sqrt{p(p-a)(p-b)(p-c)}}{a}\nonumber\\
+		\intertext{Quindi l'area del triangolo è}
+		A=&\dfrac{1}{2}ah\nonumber\\
+		=&\dfrac{1}{2}a\dfrac{2\sqrt{p(p-a)(p-b)(p-c)}}{a}\nonumber\\
+		=&\sqrt{p(p-a)(p-b)(p-c)}\nonumber
+	\end{align}
+	Come si voleva dimostrare.
+\end{proof}
+\begin{figure}
+	\centering
+	\includestandalone{geometria/erone1}
+	\caption{Formula di Erone}
+	\label{fig:erone1}
+\end{figure}
