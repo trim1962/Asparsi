@@ -1,0 +1,70 @@
+% !TeX root = Asparsi.tex
+% !BIB TS-program = biber
+% !TeX encoding = UTF-8
+% !TeX spellcheck = it_IT
+\chapter{Poligoni}\label{ch:poligoni}
+\begin{defn}[Diagonali]\label{defn:poligonidiagonale}
+In un poligono regolare una diagonale è il segmento che unisce due vertici non consecutivi.
+\end{defn}\index{Diagonale}\index{Poligono!diagonale}
+\begin{defn}[Apotema]\label{defn:poligoniapotema}
+	In un poligono regolare l'apotema è il raggio del cerchio inscritto.
+\end{defn}\index{Apotema}\index{Poligono!apotema}
+\section{Esagono}\label{sec:esagono }
+\begin{figure}
+	\centering
+	\includestandalone{geometria/esagono}
+	\caption{Esagono}
+	\label{fig:esagono1}
+\end{figure}
+\begin{thm}[Diagonali]
+	Un esagono ha nove diagonali.
+\end{thm}\index{Esagono!diagonale}\index{Diagonale!esagono}
+\begin{figure}
+	\centering
+	\includestandalone{geometria/esagono_diagonali}
+	\caption{Esagono diagonali}
+	\label{fig:esagonodiagonali}
+\end{figure}
+\begin{proof}
+	Consideriamo la~\cref{fig:esagonodiagonali}. Da ogni vertice escono tre diagonali i vertici sono sei quindi abbiamo \num{18} diagonali ma ogni diagonale collega due vertici quindi il numero totale delle diagonali è nove. 
+	
+	Come volevasi dimostrare.
+\end{proof}
+\begin{thm}[Lato esagono]\label{thm:latoesagonoinscritto}
+	L'esagono inscritto in una circonferenza ha i lati uguali al raggio della circonferenza.
+\end{thm}\index{Esagono!lato}
+\begin{proof}
+	Consideriamo la~\cref{fig:esagono1}. Il triangolo $OCD$ è isoscele di lati uguali $OC$ e $OD$. Quindi gli angoli in $C$ e in $D$ sono uguali. L'angolo in $O$ è la sesta parte di un angolo giro. Quindi
+	\begin{align*} 
+		2x+\ang{60}=&\ang{180}\\
+		x=&\ang{60}
+	\end{align*} 
+Dato che un triangolo equiangolo è equilatero i tre lati sono uguali.
+
+Come volevasi dimostrare.
+\end{proof}
+\begin{thm}[Area esagono]
+	L'area dell'esagono di lato $R$ è \[A=\dfrac{3}{2}R^2\sqrt{3}\]
+\end{thm}\index{Esagono!area}
+\begin{proof}
+Consideriamo la~\cref{fig:esagono1}. Calcoliamo l'area del triangolo $OCD$. 
+\begin{align*}
+	A=&Ra\dfrac{1}{2}
+	\intertext{Abbiamo:}
+	a=&\sqrt{\dfrac{4R^2-R^2}{4}}\\
+	=&	\sqrt{\dfrac{4R^2-R^2}{4}}\\
+	=&\dfrac{R}{2}\sqrt{3}\\
+	\intertext{sostituendo}
+	=&\dfrac{R^2}{4}\sqrt{3}\\
+	\intertext{L'esagono è formato da sei triangoli quindi:}
+	A=&6\dfrac{R^2}{4}\sqrt{3}\\
+	=&\dfrac{3}{2}R^2\sqrt{3}
+\end{align*}
+Come volevasi dimostrare.
+\end{proof}
+\begin{figure}
+	\centering
+	\includestandalone{geometria/esagono_inscritta_circoscritta}
+	\caption{Esagono inscritto e circoscritto}
+	\label{fig:esagonoinscrittocircoscritto}
+\end{figure} 

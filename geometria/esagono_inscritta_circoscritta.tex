@@ -1,0 +1,44 @@
+\documentclass[10pt]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-0.5,-3.5) rectangle (6.5,3.5);
+\draw  (3.,0.) circle (3.cm);
+\draw  (3.,3.)-- (0.40192378864668404,1.5);
+\draw  (0.40192378864668404,1.5)-- (0.40192378864668404,-1.5);
+\draw  (0.40192378864668404,-1.5)-- (3.,-3.);
+\draw  (3.,-3.)-- (5.598076211353316,-1.5);
+\draw  (5.598076211353316,-1.5)-- (5.598076211353316,1.5);
+\draw  (5.598076211353316,1.5)-- (3.,3.);
+\draw  (3.,0.) circle (2.598076211353316cm);
+\draw  (3.,0.)-- (0.40192378864668404,-1.5);
+\draw  (3.,0.)-- (3.,-3.);
+\draw  (3.,0.)-- (1.700961894323342,-2.25);
+
+\draw [fill=black] (3.,0.) circle (2.5pt);
+\draw[color=black] (3.111038305247182,0.29634942454720253) node {$O$};
+\draw [fill=black] (3.,3.) circle (2.5pt);
+\draw[color=black] (3.0,3.3) node {$A$};
+\draw [fill=black] (3.,-3.) circle (2.5pt);
+\draw[color=black] (3.0,-3.3) node {$D$};
+\draw [fill=black] (5.598076211353316,1.5) circle (2.5pt);
+\draw[color=black] (5.7,1.8) node {$F$};
+\draw [fill=black] (0.40192378864668404,1.5) circle (2.5pt);
+\draw[color=black] (0.3,1.8) node {$B$};
+\draw [fill=black] (0.40192378864668404,-1.5) circle (2.5pt);
+\draw[color=black] (0.3,-1.8) node {$C$};
+\draw [fill=black] (5.598076211353316,-1.5) circle (2.5pt);
+\draw[color=black] (5.7,-1.8) node {$E$};
+\draw [fill=black] (1.700961894323342,-2.25) circle (2.5pt);
+\draw[color=black] (1.7,-2.0) node {$J$};
+\draw[color=black] (1.6,-0.5) node {$R$};
+\draw[color=black] (2.8,-1.4) node {$R$};
+\draw[color=black] (2.2,-1.0) node {$a$};
+\end{tikzpicture}
+\end{document}
