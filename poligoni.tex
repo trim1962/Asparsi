@@ -7,9 +7,78 @@
 In un poligono regolare una diagonale è il segmento che unisce due vertici non consecutivi.
 \end{defn}\index{Diagonale}\index{Poligono!diagonale}
 \begin{defn}[Apotema]\label{defn:poligoniapotema}
-	In un poligono regolare l'apotema è il raggio del cerchio inscritto.
+	In un poligono regolare l'apotema è il raggio della circonferenza inscritta.
 \end{defn}\index{Apotema}\index{Poligono!apotema}
-\section{Esagono}\label{sec:esagono }
+\begin{thm}[Area poligono circoscritto]\label{thm:areapoligonocircoscritto}
+Dato un poligono di perimetro $2p$ ed area $A$ allora 
+\[A=pa\]
+dove $a$ è l'apotema.
+\end{thm}\index{Poligono!area}\index{Poligono!apotema}\index{Poligono!perimetro}
+\begin{figure}
+	\centering
+	\includestandalone{geometria/circonferenzainscrittapoligono}
+	\caption{Area poligono circoscritto}
+	\label{fig:circonferenzainscrittapoligono}
+\end{figure}
+\begin{proof}
+Consideriamo la~\cref{fig:circonferenzainscrittapoligono}. Avremo che
+\begin{align*}
+	A_{ABCD}=&A_{AOB}+A_{BOC}+A_{COD}+A_{AOD}\\
+	=&\dfrac{aR}{2}+\dfrac{bR}{2}+\dfrac{cR}{2}+\dfrac{dR}{2}\\
+	=&(a+b+c+d)\dfrac{R}{2}\\
+	=&2p\dfrac{R}{2}\\
+	=&pR
+\end{align*}
+Come volevasi dimostrare.
+\end{proof}
+\begin{thm}[Rapporto tra apotema e lato]\label{thm:rapportoapotemalato}
+In un poligono regolare il rapporto tra apotema e lato è costante.
+\[\dfrac{a}{l}=\dfrac{1}{2\tan{\dfrac{\pi}{n}}}=\phi\]
+\end{thm}\index{Poligono!regolare}\index{Apotema}\index{Poligono!lato}
+\begin{figure}
+	\centering
+	\includestandalone{geometria/latoapotema}
+	\caption{Rapporto lato apotema}
+	\label{fig:latoapotema}
+\end{figure}
+\begin{proof}
+	Costruiamo la~\cref{fig:latoapotema}.  Ogni poligono regolare è formato da $n$ triangoli isosceli formati da i raggi della circonferenza circoscritta e dal lato $r$. Consideriamo il triangolo $ADC$. Questo triangolo è retto in D. L'angolo in $C$ è $\dfrac{2\pi}{2n}=\dfrac{\pi}{n}=\phi$. Applicando la trigonometria abbiamo:
+\begin{align*}
+\dfrac{l}{2}=&R\sin\dfrac{\pi}{n}\\
+R=&\dfrac{l}{2\sin\dfrac{\pi}{n}}\\
+a=&R\cos\dfrac{\pi}{n}
+\intertext{ma semplificando}
+a=&\dfrac{l}{2\sin\dfrac{\pi}{n}}\cos\dfrac{\pi}{n}\\
+=&\dfrac{l}{2\tan{\dfrac{\pi}{n}}}\\
+\dfrac{a}{l}=&\dfrac{1}{2\tan{\dfrac{\pi}{n}}}=\phi_n
+\end{align*}
+Come volevasi dimostrare.
+\end{proof}
+\begin{defn}[Numero fisso poligono]
+	Dato un poligono di $n$ lati chiamo numero fisso del poligono
+	\[\phi_n=\dfrac{1}{2\tan{\dfrac{\pi}{n}}}\]
+\end{defn}\index{Poligono!numero fisso}
+\begin{thm}[Rapporto tra area e lato]
+In un poligono regolare il rapporto tra l'area e il quadrato del lato è costante.
+\[\dfrac{A}{l^2}=\dfrac{n}{2}\phi\]
+\end{thm}
+\begin{proof}
+	\begin{align*}
+		\intertext{Per il~\cref{thm:areapoligonocircoscritto}}
+		A=&pa\\
+		\intertext{Per il~\cref{thm:rapportoapotemalato}}
+		a=&l\phi_n\\
+		A=&pl\phi_n\\
+		\intertext{ma}
+		p=&\dfrac{nl}{2}\\
+		\intertext{quindi}
+		A=&\dfrac{nl}{2}l\phi\\
+		A=&\dfrac{nl^2}{2}\phi\\
+		\dfrac{A}{l^2}=&\dfrac{n}{2}\phi_n\\
+	\end{align*}
+Come volevasi dimostrare.
+\end{proof}
+\section{Esagono}
 \begin{figure}
 	\centering
 	\includestandalone{geometria/esagono}
@@ -19,6 +88,7 @@ In un poligono regolare una diagonale è il segmento che unisce due vertici non 
 \begin{thm}[Diagonali]
 	Un esagono ha nove diagonali.
 \end{thm}\index{Esagono!diagonale}\index{Diagonale!esagono}
+
 \begin{figure}
 	\centering
 	\includestandalone{geometria/esagono_diagonali}
@@ -49,22 +119,25 @@ Come volevasi dimostrare.
 \begin{proof}
 Consideriamo la~\cref{fig:esagono1}. Calcoliamo l'area del triangolo $OCD$. 
 \begin{align*}
-	A=&Ra\dfrac{1}{2}
+	A_{OCD}=&Ra\dfrac{1}{2}
 	\intertext{Abbiamo:}
 	a=&\sqrt{\dfrac{4R^2-R^2}{4}}\\
 	=&	\sqrt{\dfrac{4R^2-R^2}{4}}\\
 	=&\dfrac{R}{2}\sqrt{3}\\
 	\intertext{sostituendo}
-	=&\dfrac{R^2}{4}\sqrt{3}\\
+	A_{OCD}=&\dfrac{R^2}{4}\sqrt{3}\\
 	\intertext{L'esagono è formato da sei triangoli quindi:}
 	A=&6\dfrac{R^2}{4}\sqrt{3}\\
 	=&\dfrac{3}{2}R^2\sqrt{3}
 \end{align*}
 Come volevasi dimostrare.
 \end{proof}
+\begin{thm}[Apotema dell'esagono]
+	in un esagono l'apotema è:\[a=\dfrac{R}{2}\sqrt{3} \]
+\end{thm}
 \begin{figure}
 	\centering
 	\includestandalone{geometria/esagono_inscritta_circoscritta}
 	\caption{Esagono inscritto e circoscritto}
 	\label{fig:esagonoinscrittocircoscritto}
-\end{figure} 
+\end{figure}

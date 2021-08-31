@@ -1,0 +1,38 @@
+\documentclass[10pt]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\newcommand{\degre}{\ensuremath{^\circ}}
+\begin{document}
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(1.,-1.) rectangle (15.,8.);
+\draw [shift={(2.,0.)},color=black,fill=black,fill opacity=0.10000000149011612] (0,0) -- (0.:0.7390977976047471) arc (0.:41.185925165709655:0.7390977976047471) -- cycle;
+\draw [shift={(10.,7.)},color=black,fill=black,fill opacity=0.10000000149011612] (0,0) -- (-138.81407483429035:0.7390977976047471) arc (-138.81407483429035:-60.25511870305777:0.7390977976047471) -- cycle;
+\draw [shift={(14.,0.)},color=black,fill=black,fill opacity=0.10000000149011612] (0,0) -- (119.74488129694224:0.7390977976047471) arc (119.74488129694224:180.:0.7390977976047471) -- cycle;
+\draw  (2.,0.)-- (14.,0.);
+\draw  (14.,0.)-- (10.,7.);
+\draw  (10.,7.)-- (2.,0.);
+\draw  (10.,7.)-- (10.,0.);
+
+\draw [fill=black] (2.,0.) circle (2.5pt);
+\draw[color=black] (2.0,-
+0.4) node {$A$};
+\draw [fill=black] (10.,7.) circle (2.5pt);
+\draw[color=black] (10.0,7.4) node {$C$};
+\draw [fill=black] (14.,0.) circle (2.5pt);
+\draw[color=black] (14.0,-0.4) node {$B$};
+\draw[color=black] (8.069289173473868,-0.1798183068185239) node {$c$};
+\draw[color=black] (12.0,4.0) node {$a$};
+\draw[color=black] (6.1,4.0) node {$b$};
+\draw[color=black] (2.9,0.3) node {$\alpha$};
+\draw [fill=black] (10.,0.) circle (2.0pt);
+\draw[color=black] (10.0,-0.4) node {$D$};
+\draw[color=black] (9.7,4.0) node {$h$};
+\draw[color=black] (10.2,6.0) node {$\gamma$};
+\draw[color=black] (13.1,0.3) node {$\beta$};
+\end{tikzpicture}
+\end{document}
