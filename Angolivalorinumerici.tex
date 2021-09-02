@@ -1,0 +1,78 @@
+% !TeX root = Asparsi.tex
+% !BIB TS-program = biber
+% !TeX encoding = UTF-8
+% !TeX spellcheck = it_IT
+\chapter{Angoli valori numerici}\label{chap:Angoli_valori_numerici}
+\section{$alpha=\ang{15}$}
+\begin{align*}
+	\cos\ang{15}=&\cos(\ang{60}-\ang{45})\\
+	=&\difcos{60}{45}\\
+	=&\cossessanta\cosquarantacinque+\sinsessanta\sinquarantecinque\\
+	=&\dfrac{\sqrt{2}+\sqrt{6}}{4}\\
+	\sin\ang{15}=&\sin(\ang{60}-\ang{45})\\
+	=&\difsin{60}{45}\\
+	=&\sinsessanta\cosquarantacinque-\cossessanta\sinquarantecinque\\
+	=&\dfrac{\sqrt{6}-\sqrt{2}}{4}\\
+	\tan\ang{15}=&\dfrac{\sin\ang{15}}{\cos\ang{15}}\\
+	=&\dfrac{\dfrac{\sqrt{6}-\sqrt{2}}{4}}{\dfrac{\sqrt{2}+\sqrt{6}}{4}}\\
+	=&\dfrac{\sqrt{6}-\sqrt{2}}{4}\dfrac{4}{\sqrt{2}+\sqrt{6}}\\
+	=&\dfrac{\sqrt{6}-\sqrt{2}}{\sqrt{2}+\sqrt{6}}\\
+	=&\dfrac{\sqrt{6}-\sqrt{2}}{\sqrt{2}+\sqrt{6}}\dfrac{\sqrt{6}-\sqrt{2}}{\sqrt{2}-\sqrt{6}}\\
+	=&\dfrac{8-2\sqrt{12}}{6-2}\\
+	=&2-\sqrt{3}\\
+	\cot\ang{15}=&\dfrac{1}{\tan\ang{15}}\\
+	=&\dfrac{1}{2-\sqrt{3}}\\
+	=&\dfrac{1}{2-\sqrt{3}}\dfrac{2+\sqrt{3}}{2+\sqrt{3}}\\
+	=2+\sqrt{3}\\
+\end{align*}
+\section{$alpha=\ang{75}$}
+\begin{align*}
+\cos\ang{75}=&\cos(\ang{30}+\ang{45})\\
+=&\sumcos{30}{45}\\
+=&\costrenta\cosquarantacinque-\sintrenta\sinquarantecinque\\
+=&\dfrac{\sqrt{6}}{4}-\dfrac{\sqrt{2}}{4}\\
+=&\dfrac{\sqrt{6}-\sqrt{2}}{4}\\
+\sin\ang{75}=&\cos(\ang{90}-\ang{75})\\
+=&\cos\ang{15}\\
+=&\dfrac{\sqrt{6}+\sqrt{2}}{4}\\
+\tan\ang{75}=&\dfrac{\sin\ang{15}}{\cos\ang{15}}\\
+=&\dfrac{\dfrac{\sqrt{6}+\sqrt{2}}{4}}{\dfrac{\sqrt{2}-\sqrt{6}}{4}}\\
+=&\dfrac{\sqrt{6}+\sqrt{2}}{4}\dfrac{4}{\sqrt{2}-\sqrt{6}}\\
+=&\dfrac{\sqrt{6}+\sqrt{2}}{\sqrt{2}-\sqrt{6}}\\
+=&\dfrac{\sqrt{6}+\sqrt{2}}{\sqrt{2}-\sqrt{6}}\dfrac{\sqrt{6}+\sqrt{2}}{\sqrt{2}+\sqrt{6}}\\
+=&\dfrac{8+2\sqrt{12}}{6-2}\\
+=&2+\sqrt{3}\\
+\cot\ang{75}=&\dfrac{1}{\tan\ang{75}}\\
+=&\dfrac{1}{2+\sqrt{3}}\\
+=&\dfrac{1}{2+\sqrt{3}}\dfrac{2-\sqrt{3}}{2-\sqrt{3}}\\
+=&2-\sqrt{3}\\
+\end{align*}
+\section{$alpha=\ang{18}$}
+\begin{align*}
+	\sin\ang{18&}
+	a=&\ang{18}\\
+	5a=&\ang{90}\\
+	2a+3a=&\ang{90}\\
+	2a=&\ang{90}-3a\\
+	\sin 2a=&\sin(\ang{90}-3a)=\cos 3a\\
+	\intertext{trasformiamo l'espressione}
+	\sin 2a=&2\sin a\cos a\\
+	\cos 3a=&\cos2a\cos a-\sin 2a\sin a\\
+	 =&\cos a(2\cos^2 a -1)-2\sin^2 a\cos a\\
+	 =&\cos^3 a -\cos a -2(1-cos^2 a)\cos a\\
+	 =&\cos^3 a -\cos a -2\cos a +cos^3 a\\
+	 =&4\cos^3 a-3\cos a
+	 \intertext{Riprendendo}
+	 2\sin a\cos a=&4\cos^3 a-3\cos a
+	 \intertext{$\cos a\neq 0$}
+	 2\sin a=&4\cos^2 a-3 \\
+	 2\sin a-4\cos^2 a+3=&0 \\
+	 2\sin a-4(1-\sin^2 a) a+3=&0 \\
+	 4\sin^2 a+2\sin a-1=&0 \\
+	 \sin a=&\dfrac{-2\pm\sqrt{4+16}}{8}\\
+	 =&\dfrac{-2\pm\sqrt{20}}{8}\\
+	 =&\dfrac{-2\pm2\sqrt{5}}{8}\\
+	 =&\dfrac{-1\pm\sqrt{5}}{4}\\
+	 \intertext{ma $\sin\ang{18}>0$}
+	 \sin a=&\dfrac{-1+\sqrt{5}}{4}\\
+\end{align*}
