@@ -251,6 +251,52 @@ Da cui la tesi.
 	\end{align*}
 	Da cui la tesi.
 \end{proof}
+\section{Formule di dimezzamento}
+\begin{cor}[Coseno angolo metà]\label{cor:Cosenoangolometa}
+	Dato un angolo $\alpha$ avremo:
+	\[\cos\alpha=2\cos^2\dfrac{\alpha}{2}-1\]
+\end{cor}\index{Coseno!dimezzamento}
+\begin{proof}
+	Segue facilmente dal~\vref{thm:Formulediduplicazionecoseno}. 
+	\begin{align*}
+		\cos 2\alpha=&\cos^2\alpha-\sin^2\alpha\\
+		\intertext{Posto $\alpha=\dfrac{x}{2}$}
+		\cos 2\dfrac{x}{2}=&\cos^2\dfrac{x}{2}-\sin^2\dfrac{x}{2}\\
+		\cos x=&\cos^2\dfrac{x}{2}-\sin^2\dfrac{x}{2}\\
+		=&\cos^2\dfrac{x}{2}- 1+\cos^2\dfrac{x}{2}\\
+		=&2\cos^2\dfrac{x}{2}- 1\\
+	\end{align*}
+	Come volevasi dimostrare.
+\end{proof}
+\begin{cor}[Seno angolo metà]\label{cor:Senoangolometa}
+	Dato un angolo $\alpha$ avremo:
+	\[\sin\alpha=2\sin\dfrac{\alpha}{2}\cos\dfrac{\alpha}{2}\]
+\end{cor}\index{Seno!dimezzamento}
+\begin{proof}
+	Segue facilmente dal~\vref{thm:Formulediduplicazioneseno}.
+	\begin{align*}
+		\sin\left(2\alpha\right)=&2\sin\alpha\cos\alpha\\
+		\intertext{Posto $\alpha=\dfrac{x}{2}$}
+		\sin\alpha=&2\sin\dfrac{\alpha}{2}\cos\dfrac{\alpha}{2}
+	\end{align*}
+	Come volevasi dimostrare.
+\end{proof}
+\begin{cor}[Seno in funzione del coseno dell'angolo metà]\label{cor:Senoangolometacoseno}
+	Dato un angolo $\alpha$ avremo:
+	\[\sin^2\dfrac{\alpha}{2}=\dfrac{1-\cos\alpha}{2}\]
+\end{cor}\index{Seno!coseno!dimezzamento}
+\begin{proof}
+	Segue facilmente dal~\vref{thm:Formulediduplicazionecoseno}. 
+	\begin{align*}
+		\cos 2\alpha=&\cos^2\alpha-\sin^2\alpha\\
+		\intertext{Posto $\alpha=\dfrac{x}{2}$}
+		\cos 2\dfrac{x}{2}=&\cos^2\dfrac{x}{2}-\sin^2\dfrac{x}{2}\\
+		\cos x=&1-\sin^2\dfrac{x}{2}-\sin^2\dfrac{x}{2}\\
+		=&1-2\sin^2\dfrac{x}{2}\\
+		\sin^2\dfrac{\alpha}{2}=&\dfrac{1-\cos\alpha}{2}
+	\end{align*}
+	Come volevasi dimostrare.
+\end{proof}
 \section{Formule parametriche}
 \begin{thm}[Funzione seno in funzione della tangente dell'angolo metà]\label{thm:senotangentemeta}
 	Dato una angolo $\alpha$  allora:

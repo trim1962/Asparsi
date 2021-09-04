@@ -3,23 +3,66 @@
 % !TeX encoding = UTF-8
 % !TeX spellcheck = it_IT
 \chapter{Angoli valori numerici}\label{chap:Angoli_valori_numerici}
+\section{$alpha=\ang{7.5}$}
+\begin{align*}
+	\intertext{Utilizzando il~\vref{cor:Cosenoangolometa}}
+	\cos^2\dfrac{\alpha}{2}=&\dfrac{1}{2}(\cos\alpha+1)\\
+	\cos^2\ang{7.5}=&\dfrac{1}{2}(\cos\ang{15}+1)\\ 
+	=&\dfrac{1}{2}(\dfrac{\sqrt{2}+\sqrt{6}}{4}+1)\\
+	=&\dfrac{1}{8}(\sqrt{2}+\sqrt{6}+4)\\
+	\cos\ang{7.5}=&\sqrt{\dfrac{1}{8}(\sqrt{2}+\sqrt{6}+4)}\\
+\end{align*}
+\begin{align*}
+\intertext{Utilizzando il~\vref{cor:Senoangolometacoseno}}
+\sin^2\dfrac{\alpha}{2}=&\dfrac{1}{2}(1-\cos\alpha)\\ 
+\sin^2\ang{7.5}=&\dfrac{1}{2}(1-\dfrac{\sqrt{2}+\sqrt{6}}{4})\\ 
+=&\dfrac{1}{2}(\dfrac{4-\sqrt{2}-\sqrt{6}}{4})\\ 
+=&\dfrac{1}{8}(4-\sqrt{2}-\sqrt{6})\\ 
+\sin\ang{7.5}=&\sqrt{\dfrac{1}{8}(4-\sqrt{2}-\sqrt{6})}
+\end{align*}
+\begin{align*}
+	\tan\dfrac{\alpha}{2}=&\dfrac{\sin\dfrac{\alpha}{2}}{\cos\dfrac{\alpha}{2}}\\
+	=&\dfrac{2\sin\dfrac{\alpha}{2}\sin\dfrac{\alpha}{2}}{2\cos\dfrac{\alpha}{2}\sin\dfrac{\alpha}{2}}\\
+	=&\dfrac{2\sin^2\dfrac{\alpha}{2}}{2\cos\dfrac{\alpha}{2}\sin\dfrac{\alpha}{2}}\\
+	\intertext{ma}
+	2\sin^2\dfrac{\alpha}{2}=&1-\cos\alpha\\
+	2\cos\dfrac{\alpha}{2}\sin\dfrac{\alpha}{2}=&\sin\alpha\\
+	\tan\dfrac{\alpha}{2}=&\dfrac{1-\cos\alpha}{\sin\alpha}\\
+\end{align*}
+\begin{align*}
+	\intertext{Quindi}
+	\tan\ang{7.5}=&\dfrac{1-\cos\ang{15}}{\sin\ang{15}}\\
+	=&\dfrac{1-\dfrac{\sqrt{2}+\sqrt{6}}{4}}{\dfrac{\sqrt{6}-\sqrt{2}}{4}}\\
+	=&\dfrac{\dfrac{4-\sqrt{2}-\sqrt{6}}{4}}{\dfrac{\sqrt{6}-\sqrt{2}}{4}}\\
+	=&\dfrac{4-\sqrt{2}-\sqrt{6}}{4}\dfrac{4}{\sqrt{6}-\sqrt{2}}\\
+	=&\dfrac{4-\sqrt{2}-\sqrt{6}}{\sqrt{6}-\sqrt{2}}\\
+	=&\dfrac{4-\sqrt{2}-\sqrt{6}}{\sqrt{6}-\sqrt{2}}\dfrac{\sqrt{6}+\sqrt{2}}{\sqrt{6}+\sqrt{2}}\\
+	=&\dfrac{4\sqrt{6}+4\sqrt{2}-4\sqrt{3}-8}{4}\\
+	=&\sqrt{6}+\sqrt{2}-\sqrt{3}-2
+\end{align*}
 \section{$alpha=\ang{15}$}
 \begin{align*}
 	\cos\ang{15}=&\cos(\ang{60}-\ang{45})\\
 	=&\difcos{60}{45}\\
 	=&\cossessanta\cosquarantacinque+\sinsessanta\sinquarantecinque\\
 	=&\dfrac{\sqrt{2}+\sqrt{6}}{4}\\
+\end{align*}
+\begin{align*}
 	\sin\ang{15}=&\sin(\ang{60}-\ang{45})\\
 	=&\difsin{60}{45}\\
 	=&\sinsessanta\cosquarantacinque-\cossessanta\sinquarantecinque\\
-	=&\dfrac{\sqrt{6}-\sqrt{2}}{4}\\
+	=&\dfrac{\sqrt{6}-\sqrt{2}}{4}
+\end{align*}
+\begin{align*}
 	\tan\ang{15}=&\dfrac{\sin\ang{15}}{\cos\ang{15}}\\
 	=&\dfrac{\dfrac{\sqrt{6}-\sqrt{2}}{4}}{\dfrac{\sqrt{2}+\sqrt{6}}{4}}\\
 	=&\dfrac{\sqrt{6}-\sqrt{2}}{4}\dfrac{4}{\sqrt{2}+\sqrt{6}}\\
 	=&\dfrac{\sqrt{6}-\sqrt{2}}{\sqrt{2}+\sqrt{6}}\\
 	=&\dfrac{\sqrt{6}-\sqrt{2}}{\sqrt{2}+\sqrt{6}}\dfrac{\sqrt{6}-\sqrt{2}}{\sqrt{2}-\sqrt{6}}\\
 	=&\dfrac{8-2\sqrt{12}}{6-2}\\
-	=&2-\sqrt{3}\\
+	=&2-\sqrt{3}
+\end{align*}
+\begin{align*}
 	\cot\ang{15}=&\dfrac{1}{\tan\ang{15}}\\
 	=&\dfrac{1}{2-\sqrt{3}}\\
 	=&\dfrac{1}{2-\sqrt{3}}\dfrac{2+\sqrt{3}}{2+\sqrt{3}}\\
@@ -31,17 +74,23 @@
 =&\sumcos{30}{45}\\
 =&\costrenta\cosquarantacinque-\sintrenta\sinquarantecinque\\
 =&\dfrac{\sqrt{6}}{4}-\dfrac{\sqrt{2}}{4}\\
-=&\dfrac{\sqrt{6}-\sqrt{2}}{4}\\
+=&\dfrac{\sqrt{6}-\sqrt{2}}{4}
+\end{align*}
+\begin{align*}
 \sin\ang{75}=&\cos(\ang{90}-\ang{75})\\
 =&\cos\ang{15}\\
-=&\dfrac{\sqrt{6}+\sqrt{2}}{4}\\
-\tan\ang{75}=&\dfrac{\sin\ang{15}}{\cos\ang{15}}\\
+=&\dfrac{\sqrt{6}+\sqrt{2}}{4}
+\end{align*}
+\begin{align*}
+\tan\ang{75}=&\dfrac{\sin\ang{75}}{\cos\ang{75}}\\
 =&\dfrac{\dfrac{\sqrt{6}+\sqrt{2}}{4}}{\dfrac{\sqrt{2}-\sqrt{6}}{4}}\\
 =&\dfrac{\sqrt{6}+\sqrt{2}}{4}\dfrac{4}{\sqrt{2}-\sqrt{6}}\\
 =&\dfrac{\sqrt{6}+\sqrt{2}}{\sqrt{2}-\sqrt{6}}\\
 =&\dfrac{\sqrt{6}+\sqrt{2}}{\sqrt{2}-\sqrt{6}}\dfrac{\sqrt{6}+\sqrt{2}}{\sqrt{2}+\sqrt{6}}\\
 =&\dfrac{8+2\sqrt{12}}{6-2}\\
-=&2+\sqrt{3}\\
+=&2+\sqrt{3}
+\end{align*}
+\begin{align*}
 \cot\ang{75}=&\dfrac{1}{\tan\ang{75}}\\
 =&\dfrac{1}{2+\sqrt{3}}\\
 =&\dfrac{1}{2+\sqrt{3}}\dfrac{2-\sqrt{3}}{2-\sqrt{3}}\\
@@ -49,7 +98,7 @@
 \end{align*}
 \section{$alpha=\ang{18}$}
 \begin{align*}
-	\sin\ang{18&}
+	\sin\ang{18}\\
 	a=&\ang{18}\\
 	5a=&\ang{90}\\
 	2a+3a=&\ang{90}\\
@@ -74,5 +123,56 @@
 	 =&\dfrac{-2\pm2\sqrt{5}}{8}\\
 	 =&\dfrac{-1\pm\sqrt{5}}{4}\\
 	 \intertext{ma $\sin\ang{18}>0$}
-	 \sin a=&\dfrac{-1+\sqrt{5}}{4}\\
+	 \sin a=&\dfrac{-1+\sqrt{5}}{4}
+	\end{align*}
+\begin{align*}
+	 \cos a=&\pm\sqrt{1-\sin^2a}\\
+	 \intertext{ma l'angolo è nel primo quadrante quindi}
+	 \cos a=&\sqrt{1-\left(\dfrac{-1+\sqrt{5}}{4}\right)^2}\\	
+	 =&\sqrt{\dfrac{16-6+2\sqrt{5}}{16}}\\
+	 =&\dfrac{\sqrt{10+2\sqrt{5}}}{4}
+	\end{align*}
+\begin{align*}
+	 \tan\ang{18}=&\dfrac{\sin\ang{18}}{\cos\ang{18}}\\
+	 =&\dfrac{\dfrac{-1+\sqrt{5}}{4}}{\dfrac{\sqrt{10+2\sqrt{5}}}{4}}\\
+	 =&\dfrac{-1+\sqrt{5}}{4}\dfrac{4}{\sqrt{10+2\sqrt{5}}}\\
+	 =&\dfrac{-1+\sqrt{5}}{\sqrt{10+2\sqrt{5}}}\\
+	 =&\dfrac{-1+\sqrt{5}}{\sqrt{10+2\sqrt{5}}}\dfrac{\sqrt{10-2\sqrt{5}}}{\sqrt{10-2\sqrt{5}}}\\
+	 &=\dfrac{\sqrt{(-1+\sqrt{5})^2(\sqrt{10-2\sqrt{5}})}}{\sqrt{100-20}}\\
+	 &=\dfrac{\sqrt{(6-2\sqrt{5})(\sqrt{10-2\sqrt{5}})}}{\sqrt{80}}\\
+	 =&\sqrt{\dfrac{60-12\sqrt{5}-20\sqrt{5}+20}{80}}\\
+	 =&\sqrt{\dfrac{80-32\sqrt{5}}{80}}\\
+	 =&\sqrt{\dfrac{5-2\sqrt{5}}{5}}
+	 	\end{align*}
+ 	 \begin{align*}
+ 	 	\cot\ang{18}=&\dfrac{1}{\sqrt{\dfrac{5-2\sqrt{5}}{5}}}\\
+ 	 	=&\sqrt{\dfrac{5}{5-2\sqrt{5}}}\\
+ 	 	=&\sqrt{\dfrac{5}{5-2\sqrt{5}}}\sqrt{\dfrac{5+2\sqrt{5}}{5+2\sqrt{5}}}\\
+ 	 	=&\sqrt{\dfrac{5(5+2\sqrt{5})}{25-20}}\\
+ 	 	=&\sqrt{5+2\sqrt{5}}
+\end{align*}
+\section{$alpha=\ang{72}$}
+\begin{align*}
+	\cos\ang{72}=&\sin(\ang{90}-\ang{72})\\
+	=&\sin\ang{18}\\
+	=&\dfrac{-1+\sqrt{5}}{4}
+\end{align*}
+\begin{align*}
+	\sin\ang{72}=&\cos(\ang{90}-\ang{72})\\
+	=&\cos\ang{18}\\
+	=&\dfrac{\sqrt{10+2\sqrt{5}}}{4}
+\end{align*}
+\begin{align*}
+	\tan\ang{72}=&\dfrac{\sin\ang{72}}{\cos\ang{72}}\\
+	=&\dfrac{\cos(\ang{90}-\ang{72})}{\sin(\ang{90}-\ang{72})}\\
+	=&\dfrac{\cos(\ang{18})}{\sin\ang{18}}\\	
+	=&\cot\ang{18}\\
+	=&\sqrt{5+2\sqrt{5}}
+\end{align*}
+\begin{align*}
+	\cot\ang{72}=&\dfrac{\cos\ang{72}}{\sin\ang{72}}\\
+	=&\dfrac{\sin(\ang{90}-\ang{72})}{\cos(\ang{90}-\ang{72})}\\
+	=&\dfrac{\sin(\ang{18})}{\cos\ang{18}}\\	
+	=&\tan\ang{18}\\
+	=&\sqrt{\dfrac{5-2\sqrt{5}}{5}}
 \end{align*}
