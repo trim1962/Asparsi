@@ -3,7 +3,7 @@
 % !TeX encoding = UTF-8
 % !TeX spellcheck = it_IT
 \chapter{Angoli valori numerici}\label{chap:Angoli_valori_numerici}
-\section{$alpha=\ang{7.5}$}
+\section{$\alpha=\ang{7.5}$}
 \begin{align*}
 	\intertext{Utilizzando il~\vref{cor:Cosenoangolometa}}
 	\cos^2\dfrac{\alpha}{2}=&\dfrac{1}{2}(\cos\alpha+1)\\
@@ -40,7 +40,41 @@
 	=&\dfrac{4\sqrt{6}+4\sqrt{2}-4\sqrt{3}-8}{4}\\
 	=&\sqrt{6}+\sqrt{2}-\sqrt{3}-2
 \end{align*}
-\section{$alpha=\ang{15}$}
+\begin{align*}
+	\cot\ang{7.5}=&\dfrac{1}{\tan\ang{7.5}}\\
+	=&\dfrac{1}{\sqrt{6}+\sqrt{2}-\sqrt{3}-2}\\
+	=&\dfrac{1}{\sqrt{6}+\sqrt{2}-\sqrt{3}-2}\dfrac{\sqrt{6}+\sqrt{2}+\sqrt{3}+2}{\sqrt{6}+\sqrt{2}+\sqrt{3}+2}\\
+	=&\dfrac{\sqrt{6}+\sqrt{2}+\sqrt{3}+2}{1}\\
+	=&\sqrt{6}+\sqrt{2}+\sqrt{3}+2\\
+\end{align*}
+\section{$\alpha=\ang{9}$}
+\begin{align*}
+	\cos\ang{9}=&\sqrt{\dfrac{1+cos\ang{18}}{2}}\\
+	=&\sqrt{\dfrac{1+\dfrac{\sqrt{10+2\sqrt{5}}}{4}}{2}}\\
+	=&\sqrt{\dfrac{\dfrac{4+\sqrt{10+2\sqrt{5}}}{4}}{2}}\\
+	=&\sqrt{\dfrac{4+\sqrt{10+2\sqrt{5}}}{8}}\\
+	=&\sqrt{\dfrac{8+2\sqrt{10+2\sqrt{5}}}{16}}\\
+	=&\sqrt{\dfrac{(5-\sqrt{5})+(3+\sqrt{5})+2\sqrt{10+2\sqrt{5}}}{16}}\\
+	=&\sqrt{\dfrac{\left(\sqrt{5-\sqrt{5}}\right)^2+\left(\sqrt{3+\sqrt{5}}\right)^2+2\sqrt{(15+5\sqrt{5})-(5+3\sqrt{5})}}{16}}\\
+	=&\sqrt{\dfrac{\left(\sqrt{5-\sqrt{5}}\right)^2+\left(\sqrt{3+\sqrt{5}}\right)^2+2\sqrt{5(3+\sqrt{5})-\sqrt{5}(\sqrt{5}+3)}}{16}}\\
+	=&\sqrt{\dfrac{\left(\sqrt{5-\sqrt{5}}\right)^2+\left(\sqrt{3+\sqrt{5}}\right)^2+2\sqrt{(3+\sqrt{5})(5-\sqrt{5})}}{16}}\\
+	=&\sqrt{\dfrac{\left(\sqrt{5-\sqrt{5}}+\sqrt{3+\sqrt{5}}\right)^2}{16}}\\
+	=&\dfrac{\sqrt{5-\sqrt{5}}+\sqrt{3+\sqrt{5}}}{4}\\
+\end{align*}
+\begin{align*}
+	\sin\ang{9}=&\sqrt{\dfrac{1-cos\ang{18}}{2}}\\
+	=&\sqrt{\dfrac{1-\dfrac{\sqrt{10+2\sqrt{5}}}{4}}{2}}\\
+	=&\sqrt{\dfrac{\dfrac{4-\sqrt{10+2\sqrt{5}}}{4}}{2}}\\
+	=&\sqrt{\dfrac{4-\sqrt{10+2\sqrt{5}}}{8}}\\
+	=&\sqrt{\dfrac{8-2\sqrt{10+2\sqrt{5}}}{16}}\\
+	=&\sqrt{\dfrac{(5-\sqrt{5})+(3+\sqrt{5})+2\sqrt{10-2\sqrt{5}}}{16}}\\
+	=&\sqrt{\dfrac{\left(\sqrt{5-\sqrt{5}}\right)^2+\left(\sqrt{3+\sqrt{5}}\right)^2-2\sqrt{(15+5\sqrt{5})-(5+3\sqrt{5})}}{16}}\\
+	=&\sqrt{\dfrac{\left(\sqrt{5-\sqrt{5}}\right)^2+\left(\sqrt{3+\sqrt{5}}\right)^2-2\sqrt{5(3+\sqrt{5})-\sqrt{5}(\sqrt{5}+3)}}{16}}\\
+	=&\sqrt{\dfrac{\left(\sqrt{5-\sqrt{5}}\right)^2+\left(\sqrt{3+\sqrt{5}}\right)^2-2\sqrt{(3+\sqrt{5})(5-\sqrt{5})}}{16}}\\
+	=&\sqrt{\dfrac{\left(\sqrt{5-\sqrt{5}}-\sqrt{3+\sqrt{5}}\right)^2}{16}}\\
+	=&\dfrac{\sqrt{5-\sqrt{5}}-\sqrt{3+\sqrt{5}}}{4}\\
+\end{align*}
+\section{$\alpha=\ang{15}$}
 \begin{align*}
 	\cos\ang{15}=&\cos(\ang{60}-\ang{45})\\
 	=&\difcos{60}{45}\\
@@ -68,35 +102,7 @@
 	=&\dfrac{1}{2-\sqrt{3}}\dfrac{2+\sqrt{3}}{2+\sqrt{3}}\\
 	=2+\sqrt{3}\\
 \end{align*}
-\section{$alpha=\ang{75}$}
-\begin{align*}
-\cos\ang{75}=&\cos(\ang{30}+\ang{45})\\
-=&\sumcos{30}{45}\\
-=&\costrenta\cosquarantacinque-\sintrenta\sinquarantecinque\\
-=&\dfrac{\sqrt{6}}{4}-\dfrac{\sqrt{2}}{4}\\
-=&\dfrac{\sqrt{6}-\sqrt{2}}{4}
-\end{align*}
-\begin{align*}
-\sin\ang{75}=&\cos(\ang{90}-\ang{75})\\
-=&\cos\ang{15}\\
-=&\dfrac{\sqrt{6}+\sqrt{2}}{4}
-\end{align*}
-\begin{align*}
-\tan\ang{75}=&\dfrac{\sin\ang{75}}{\cos\ang{75}}\\
-=&\dfrac{\dfrac{\sqrt{6}+\sqrt{2}}{4}}{\dfrac{\sqrt{2}-\sqrt{6}}{4}}\\
-=&\dfrac{\sqrt{6}+\sqrt{2}}{4}\dfrac{4}{\sqrt{2}-\sqrt{6}}\\
-=&\dfrac{\sqrt{6}+\sqrt{2}}{\sqrt{2}-\sqrt{6}}\\
-=&\dfrac{\sqrt{6}+\sqrt{2}}{\sqrt{2}-\sqrt{6}}\dfrac{\sqrt{6}+\sqrt{2}}{\sqrt{2}+\sqrt{6}}\\
-=&\dfrac{8+2\sqrt{12}}{6-2}\\
-=&2+\sqrt{3}
-\end{align*}
-\begin{align*}
-\cot\ang{75}=&\dfrac{1}{\tan\ang{75}}\\
-=&\dfrac{1}{2+\sqrt{3}}\\
-=&\dfrac{1}{2+\sqrt{3}}\dfrac{2-\sqrt{3}}{2-\sqrt{3}}\\
-=&2-\sqrt{3}\\
-\end{align*}
-\section{$alpha=\ang{18}$}
+\section{$\alpha=\ang{18}$}
 \begin{align*}
 	\sin\ang{18}\\
 	a=&\ang{18}\\
@@ -123,12 +129,12 @@
 	 =&\dfrac{-2\pm2\sqrt{5}}{8}\\
 	 =&\dfrac{-1\pm\sqrt{5}}{4}\\
 	 \intertext{ma $\sin\ang{18}>0$}
-	 \sin a=&\dfrac{-1+\sqrt{5}}{4}
+	 \sin\ang{18}=&\dfrac{-1+\sqrt{5}}{4}
 	\end{align*}
 \begin{align*}
 	 \cos a=&\pm\sqrt{1-\sin^2a}\\
 	 \intertext{ma l'angolo è nel primo quadrante quindi}
-	 \cos a=&\sqrt{1-\left(\dfrac{-1+\sqrt{5}}{4}\right)^2}\\	
+	 \cos \ang{18}=&\sqrt{1-\left(\dfrac{-1+\sqrt{5}}{4}\right)^2}\\	
 	 =&\sqrt{\dfrac{16-6+2\sqrt{5}}{16}}\\
 	 =&\dfrac{\sqrt{10+2\sqrt{5}}}{4}
 	\end{align*}
@@ -151,7 +157,241 @@
  	 	=&\sqrt{\dfrac{5(5+2\sqrt{5})}{25-20}}\\
  	 	=&\sqrt{5+2\sqrt{5}}
 \end{align*}
-\section{$alpha=\ang{72}$}
+\section{$\alpha=\ang{22;30;}$}
+\begin{align*}
+	\intertext{Dal~\vref{cor:Cosenoangolometa}}
+	\cos^2\ang{22;30;}=&\dfrac{1}{2}\left(\cos\ang{45}+1\right)\\
+	=&\dfrac{1}{2}\left(\dfrac{\sqrt{2}}{2}+1\right)\\
+	=&\left(\dfrac{\sqrt{2}+2}{4}\right)\\
+	\cos^2\ang{22;30;}=&\dfrac{\sqrt{2}+2}{4}\\
+	\cos\ang{22;30;}=&\pm\sqrt{\dfrac{\sqrt{2}+2}{4}}
+	\intertext{ma $\cos\ang{22;30;}>0$ }
+	\cos\ang{22;30;}=&\dfrac{\sqrt{\sqrt{2}+2}}{2}
+\end{align*}
+\begin{align*}
+	\intertext{Dal~\vref{cor:Senoangolometa}}
+	\sin^2\ang{22;30;}=&\dfrac{1}{2}\left(1-\cos\ang{45}\right)\\
+	=&\left(\dfrac{2-\sqrt{2}}{4}\right)\\
+	\sin\ang{22;30;}=&\pm\sqrt{\dfrac{2-\sqrt{2}}{4}}
+	\intertext{ma $\sin\ang{22;30;}>0$ }
+	\cos\ang{22;30;}=&\dfrac{\sqrt{2- \sqrt{2}}}{2}
+\end{align*}
+\begin{align*}
+	\tan\ang{22;30;}=&\dfrac{\sin\ang{22;30;}}{\cos\ang{22;30;}}\\
+	=&\dfrac{\sqrt{2- \sqrt{2}}}{\sqrt{2+ \sqrt{2}}}\\
+		=&\dfrac{\sqrt{2- \sqrt{2}}}{\sqrt{2+ \sqrt{2}}}\dfrac{\sqrt{2+\sqrt{2}}}{\sqrt{2+ \sqrt{2}}}\\
+=&\dfrac{\sqrt{(2- \sqrt{2})(2+ \sqrt{2})}}{\sqrt{(2+ \sqrt{2})^2}}\\	
+=&\dfrac{\sqrt{2}}{2+ \sqrt{2}}\\	
+=&\dfrac{\sqrt{2}}{2+ \sqrt{2}}\dfrac{2-\sqrt{2}}{2-\sqrt{2}}\\
+=&\dfrac{2\sqrt{2}-2}{4-2}\\
+=&\sqrt{2}-1
+\end{align*}
+\begin{align*}
+	\cot\ang{22;30;}=&\dfrac{1}{\tan\ang{22;30;}}\\
+	=&\dfrac{1}{\sqrt{2}-1}\\
+	=&\dfrac{1}{\sqrt{2}-1}\dfrac{\sqrt{2}+1}{\sqrt{2}+1}\\
+	=&\dfrac{\sqrt{2}+1}{1}\\
+	=&\sqrt{2}+1
+\end{align*}
+\section{$\alpha=\ang{30}$}
+Consideriamo la~\vref{fig:triangolosenotrenta}. Poniamo che l'angolo $BOC$ sia di ampiezza di \ang{30}. Ottengo il triangolo $OBA$. Ribalto la figura $OBA$ lungo il lato $OA$. Il triangolo $OBC$ è isoscele dato che ha i lati $OB$ e$OC$ uguali al raggio $R$. $OA$ è bisettrice dell'angolo $BOC$ e quindi è anche mediana ed altezza per il lato $BC$. Segue che l'angolo $BAO$ è retto. Se è retto allora l'angolo in $B$ è di \ang{60}. Segue che l'angolo in $C$ è di \ang{60}. Segue che il triangolo $BOC$ è equiangolo e quindi equilatero. Per cui il lato $AB$ è metà del raggio. Quindi 
+\begin{align*}
+	\sin\ang{30}=&\dfrac{AB}{OB}\\
+	=&\dfrac{\dfrac{1}{2}R}{R}\\
+	=&\dfrac{1}{2}\dfrac{R}{R}\\
+	=&\dfrac{1}{2}
+\end{align*}
+\begin{align*}
+	\cos\ang{30}=&\dfrac{OA}{OB}\\
+	\intertext{ma}
+	OA=&\sqrt{OB^2-AB^2}\\
+	=&\sqrt{R^2-\dfrac{R^2}{4}}\\
+	=&\dfrac{R}{2}\sqrt{3}
+	\intertext{riprendendo}
+	\cos\ang{30}=&\dfrac{R}{2}\sqrt{3}\dfrac{1}{R}\\
+	=&\dfrac{\sqrt{3}}{2}
+\end{align*}
+\begin{align*}
+	\sin\ang{30}=&2\sin\ang{15}\cos\ang{15}\\
+	=&2\dfrac{\sqrt{6}+\sqrt{2}}{4}\dfrac{\sqrt{6}-\sqrt{2}}{4}\\
+	=&2\dfrac{6-2}{16}\\
+	=&\dfrac{1}{2}
+\end{align*}
+\begin{align*}
+	\cos\ang{30}=&\cos^2\ang{15}-\sin\ang{15}\\
+	=&\left(\dfrac{\sqrt{6}+\sqrt{2}}{4}\right)^2-\left(\dfrac{\sqrt{6}-\sqrt{2}}{4}\right)^2\\
+	=&\dfrac{6+2+2\sqrt{12}}{16}-\dfrac{6+2-2\sqrt{12}}{16}\\
+	=&\dfrac{4\sqrt{12}}{16}\\
+	=&\dfrac{\sqrt{3}}{2}
+\end{align*}
+\begin{figure}
+	\centering
+	\includestandalone[width=0.3\linewidth]{geometria/triangolosenotrenta}
+	\caption{$\alpha=\ang{30}$}
+	\label{fig:triangolosenotrenta}
+\end{figure}
+\begin{align*}
+	\tan\ang{30}=&\dfrac{\sin\ang{30}}{cos\ang{30}}\\
+	=&\dfrac{\dfrac{1}{2}}{\dfrac{\sqrt{3}}{2}}\\
+	=&\dfrac{1}{2}\dfrac{2}{\sqrt{3}}\\
+		=&\dfrac{1}{\sqrt{3}}\\
+		=&\dfrac{\sqrt{3}}{3}\\
+\end{align*}
+\begin{align*}
+	\cot\ang{30}=&\dfrac{1}{\tan\ang{30}}\\
+	=&\dfrac{1}{\dfrac{\sqrt{3}}{3}}\\
+	=&\dfrac{3}{\sqrt{3}}\\
+	=&\sqrt{3}
+\end{align*}
+\section{$\alpha=\ang{36}$}
+\begin{align*}
+	\sin\ang{36}=&2\sin\ang{18}\cos\ang{18}\\
+	=&2\dfrac{-1+\sqrt{5}}{4}\dfrac{\sqrt{10+2\sqrt{5}}}{4}\\
+	=&\dfrac{\sqrt{(-1+\sqrt{5})^2(10+2\sqrt{5})}}{8}\\
+	=&\dfrac{\sqrt{(6-2\sqrt{5})(10+2\sqrt{5})}}{8}\\
+	=&\dfrac{\sqrt{60+12\sqrt{5}-20\sqrt{5}-20}}{8}\\
+	=&\dfrac{\sqrt{40-8\sqrt{5}}}{8}\\
+	=&\dfrac{\sqrt{10-2\sqrt{5}}}{4}\\
+\end{align*}
+\begin{align*}
+	\cos\ang{36}=&\cos^2\ang{18}-\sin^2\ang{18}\\
+	=&\left(\dfrac{\sqrt{10+2\sqrt{5}}}{4}\right)^2-\left(\dfrac{-1+\sqrt{5}}{4}\right)^2\\
+	=&\dfrac{10+2\sqrt{5}}{16}-\dfrac{5+1-2\sqrt{5}}{16}\\
+	=&\dfrac{10+2\sqrt{5}-1-5+2\sqrt{5}}{16}\\
+		=&\dfrac{4+4\sqrt{5}}{16}\\
+		=&\dfrac{1+\sqrt{5}}{4}\\
+\end{align*}
+\begin{align*}
+	\tan\ang{36}=&\dfrac{\sin\ang{36}}{\cos\ang{36}}\\
+	=&\dfrac{\dfrac{\sqrt{10-2\sqrt{5}}}{4}}{\dfrac{1+\sqrt{5}}{4}}\\
+%	=&\dfrac{\sqrt{10-2\sqrt{5}}}{4}\dfrac{4}{1+\sqrt{5}}\\
+	=&\dfrac{\sqrt{10-2\sqrt{5}}}{1+\sqrt{5}}\\
+	=&\dfrac{\sqrt{10-2\sqrt{5}}}{1+\sqrt{5}}\dfrac{\sqrt{5}-1}{\sqrt{5}-1}\\
+	=&\dfrac{\sqrt{(10-2\sqrt{5})(\sqrt{5}-1)^2}}{4}\\
+	=&\dfrac{\sqrt{(10-2\sqrt{5})(6-2\sqrt{5})}}{4}\\
+	=&\dfrac{\sqrt{84-32\sqrt{5}}}{4}\\
+	=&\sqrt{5-2\sqrt{5}}
+\end{align*}
+\begin{align*}
+	\cot\ang{36}=&\dfrac{1}{\tan\ang{36}}\\
+	=&\dfrac{1}{\sqrt{5-2\sqrt{5}}}\\
+	=&\dfrac{\sqrt{5-2\sqrt{5}}}{5-2\sqrt{5}}\\
+	=&\dfrac{\sqrt{5-2\sqrt{5}}}{5-2\sqrt{5}}\dfrac{5+2\sqrt{5}}{5+2\sqrt{5}}\\
+	=&\dfrac{\sqrt{(5-2\sqrt{5})(5+2\sqrt{5})^2}}{5}\\
+	=&\dfrac{\sqrt{(5-2\sqrt{5})(45+20\sqrt{5})}}{5}\\
+	=&\dfrac{\sqrt{25+10\sqrt{5}}}{5}\\
+\end{align*}
+\section{$\alpha=\ang{45}$}
+\begin{figure}
+	\centering
+	\includestandalone[width=0.3\linewidth]{geometria/triangolosenoquaratacinque}
+	\caption{$\alpha=\ang{45}$}
+	\label{fig:triangolosenoquaratacinque}
+\end{figure}
+Consideriamo la~\vref{fig:triangolosenoquaratacinque}. Poniamo che l'angolo $BOC$ sia di ampiezza di \ang{45}. Ottengo il triangolo $OBA$. Ribalto la figura $OBA$ lungo il lato $OA$. Il triangolo $OBC$ è isoscele dato che ha i lati $OB$ e$OC$ uguali al raggio $R$. $OA$ è bisettrice dell'angolo $BOC$ e quindi è anche mediana ed altezza per il lato $BC$. Segue che l'angolo $BAO$ è retto. Se è retto allora l'angolo in $B$ è di \ang{45}. Segue che l'angolo in $C$ è di \ang{45}. Segue che il triangolo $BOA$ è isoscele. Per cui il lato $AB$ è uguale a $OA$. Poniamo $AB=a$. Quindi
+\begin{align*}
+	R^2=&OA^2+AB^2\\
+	R^2=&a^2+a^2\\
+	R=&a\sqrt{2}\\
+	\sin\ang{45}=&\dfrac{AB}{OB}\\
+	=&\dfrac{a}{a\sqrt{2}}\\
+	=&\dfrac{\sqrt{2}}{2}\\
+	\cos\ang{45}=&\dfrac{OA}{OB}\\
+	=&\dfrac{a}{a\sqrt{2}}\\
+	=&\dfrac{\sqrt{2}}{2}
+\end{align*} 
+\begin{align*}
+	2\cos^2\dfrac{\alpha}{2}=&\cos\alpha+1\\
+	2\cos^2\ang{45}=&\cos\ang{90}+1\\
+	2\cos^2\ang{45}=&1\\
+	\cos\ang{45}=&\pm\sqrt{\dfrac{1}{2}}\\
+	\intertext{ma $\cos\ang{45}>0$}
+	\cos\ang{45}=&\dfrac{\sqrt{2}}{2}\\
+\end{align*}
+\begin{align*}
+	2\sin^2\dfrac{\alpha}{2}=&1-\cos\alpha\\
+	2\sin^2\ang{45}=&1-\sin\ang{90}\\
+	2\sin^2\ang{45}=&1\\
+	\sin\ang{45}=&\pm\sqrt{\dfrac{1}{2}}\\
+	\intertext{ma $\sin\ang{45}>0$}
+	\sin\ang{45}=&\dfrac{\sqrt{2}}{2}\\
+\end{align*}
+\begin{align*}
+	\tan\ang{45}=&\dfrac{\sin\ang{45}}{\cos\ang{45}}\\
+	=&\dfrac{\dfrac{\sqrt{2}}{2}}{\dfrac{\sqrt{2}}{2}}\\
+	=&1
+\end{align*}
+\begin{align*}
+	\cot\ang{45}=&\dfrac{\cos\ang{45}}{\sin\ang{45}}\\
+	=&\dfrac{\dfrac{\sqrt{2}}{2}}{\dfrac{\sqrt{2}}{2}}\\
+	=&1
+\end{align*}
+\section{$\alpha=\ang{54}$}
+\begin{align*}
+	\cos\ang{54}=&\sin(\ang{90}-\ang{36})\\
+	=&\sin\ang{36}\\
+	=&\dfrac{\sqrt{10-2\sqrt{5}}}{4}\\
+\end{align*}
+\begin{align*}
+\cos\ang{54}=&\cos(3\cdot\ang{18})
+\intertext{utilizzando il~\vref{thm:Formulatriplicazionecoseno} otteniamo}
+\cos 3x=&4cos^3 x-3\cos x\\
+=&\cos\ang{18}(4\cos^2 \ang{18}-3)\\
+=&\dfrac{\sqrt{10+2\sqrt{5}}}{4}\left(4\dfrac{10+2\sqrt{5}}{16}-3\right)\\
+=&\dfrac{\sqrt{10+2\sqrt{5}}}{4}\left(\dfrac{10+2\sqrt{5}-12}{4}\right)\\
+=&\dfrac{\sqrt{10+2\sqrt{5}}}{4}\left(\dfrac{\sqrt{5}-1}{2}\right)\\
+=&\dfrac{\sqrt{(10+2\sqrt{5})(\sqrt{5}-1)^2}}{8}\\
+=&\dfrac{\sqrt{(10+2\sqrt{5})(6-2\sqrt{5})}}{8}\\
+=&\dfrac{\sqrt{40-8\sqrt{5}}}{8}\\
+=&\dfrac{\sqrt{10-2\sqrt{5}}}{4}
+\end{align*}
+\begin{align*}
+	\sin\ang{54}=&\cos(\ang{90}-\ang{54})\\
+	=&\cos\ang{36}\\
+	=&\dfrac{1+\sqrt{5}}{4}\\
+\end{align*}
+\begin{align*}
+	\sin\ang{54}=&\sin(3\cdot\ang{18})
+	\intertext{utilizzando il~\vref{thm:Formulatriplicazioneseno} otteniamo}
+\sin 3x=&3\sin x-4\sin^3 x\\
+=&\sin x(3-4sin^2 x)\\
+=&\dfrac{-1+\sqrt{5}}{4}\left(3-4\dfrac{6-2\sqrt{5}}{16}\right)\\
+=&\dfrac{-1+\sqrt{5}}{4}\left(\dfrac{6+2\sqrt{5}}{4}\right)\\
+=&\dfrac{4+4\sqrt{5}}{16}\\
+=&\dfrac{1+\sqrt{5}}{4}
+\end{align*}
+\begin{align*}
+	\tan\ang{54}=&\cot(\ang{90}-\ang{36})\\
+	=&\cot\ang{36}\\
+	=&\dfrac{\sqrt{25+10\sqrt{5}}}{5}\\
+\end{align*}
+\begin{align*}
+	\cot\ang{36}=&\tan(\ang{90}-\ang{36})\\
+	=&\tan\ang{36}\\
+	=&\sqrt{5-2\sqrt{5}}
+\end{align*}
+\section{$\alpha=\ang{60}$}
+\begin{align*}
+	\cos\ang{60}=&\sin(\ang{90}-\ang{60})\\
+	=&\sin\ang{30}\\
+	=&\dfrac{1}{2}
+\end{align*}
+\begin{align*}
+	\sin\ang{60}=&\cos(\ang{90}-\ang{60})\\
+	=&\cos\ang{30}\\
+	=&\dfrac{\sqrt{3}}{2}
+\end{align*}
+\begin{align*}
+	\tan\ang{60}=&\cot(\ang{90}-\ang{60})\\
+	=&\cot\ang{30}\\
+	=&\sqrt{3}
+\end{align*}
+\begin{align*}
+	\cot\ang{60}=&\tan(\ang{90}-\ang{60})\\
+	=&\tan\ang{30}\\
+	=&\dfrac{\sqrt{3}}{3}\\
+\end{align*}
+\section{$\alpha=\ang{72}$}
 \begin{align*}
 	\cos\ang{72}=&\sin(\ang{90}-\ang{72})\\
 	=&\sin\ang{18}\\
@@ -175,4 +415,55 @@
 	=&\dfrac{\sin(\ang{18})}{\cos\ang{18}}\\	
 	=&\tan\ang{18}\\
 	=&\sqrt{\dfrac{5-2\sqrt{5}}{5}}
+\end{align*}
+\section{$\alpha=\ang{75}$}
+\begin{align*}
+	\cos\ang{75}=&\cos(\ang{30}+\ang{45})\\
+	=&\sumcos{30}{45}\\
+	=&\costrenta\cosquarantacinque-\sintrenta\sinquarantecinque\\
+	=&\dfrac{\sqrt{6}}{4}-\dfrac{\sqrt{2}}{4}\\
+	=&\dfrac{\sqrt{6}-\sqrt{2}}{4}
+\end{align*}
+\begin{align*}
+	\sin\ang{75}=&\cos(\ang{90}-\ang{75})\\
+	=&\cos\ang{15}\\
+	=&\dfrac{\sqrt{6}+\sqrt{2}}{4}
+\end{align*}
+\begin{align*}
+	\tan\ang{75}=&\dfrac{\sin\ang{75}}{\cos\ang{75}}\\
+	=&\dfrac{\dfrac{\sqrt{6}+\sqrt{2}}{4}}{\dfrac{\sqrt{2}-\sqrt{6}}{4}}\\
+	=&\dfrac{\sqrt{6}+\sqrt{2}}{4}\dfrac{4}{\sqrt{2}-\sqrt{6}}\\
+	=&\dfrac{\sqrt{6}+\sqrt{2}}{\sqrt{2}-\sqrt{6}}\\
+	=&\dfrac{\sqrt{6}+\sqrt{2}}{\sqrt{2}-\sqrt{6}}\dfrac{\sqrt{6}+\sqrt{2}}{\sqrt{2}+\sqrt{6}}\\
+	=&\dfrac{8+2\sqrt{12}}{6-2}\\
+	=&2+\sqrt{3}
+\end{align*}
+\begin{align*}
+	\cot\ang{75}=&\dfrac{1}{\tan\ang{75}}\\
+	=&\dfrac{1}{2+\sqrt{3}}\\
+	=&\dfrac{1}{2+\sqrt{3}}\dfrac{2-\sqrt{3}}{2-\sqrt{3}}\\
+	=&2-\sqrt{3}\\
+\end{align*}
+
+\section{$\alpha=\ang{82.5}$}
+
+\begin{align*}
+	\cos\ang{82.5}&=\sin(\ang{90}-\ang{82.5})\\
+	=&\sin\ang{7.5}\\
+	=&\sqrt{\dfrac{1}{8}(4-\sqrt{2}-\sqrt{6})}
+\end{align*}
+\begin{align*}
+	\sin\ang{82.5}&=\cos(\ang{90}-\ang{82.5})\\
+	=&\cos\ang{7.5}\\
+	=&\sqrt{\dfrac{1}{8}(\sqrt{2}+\sqrt{6}+4)}
+\end{align*}
+\begin{align*}
+	\tan\ang{82.5}&=\cot(\ang{90}-\ang{82.5})\\
+	=&\cot\ang{7.5}\\
+	=&\sqrt{6}+\sqrt{2}+\sqrt{3}+2
+\end{align*}
+\begin{align*}
+	\cot\ang{82.5}&=\tan(\ang{90}-\ang{82.5})\\
+	=&\tan\ang{7.5}\\
+	=&\sqrt{6}+\sqrt{2}-\sqrt{3}-2
 \end{align*}

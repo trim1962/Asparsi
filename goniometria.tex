@@ -251,6 +251,41 @@ Da cui la tesi.
 	\end{align*}
 	Da cui la tesi.
 \end{proof}
+\section{Formule di triplicazione}
+\begin{thm}[Formula di triplicazione del coseno]\label{thm:Formulatriplicazionecoseno}
+	Dato un angolo $\alpha$ avremo:
+	\[\cos 3x=4\cos^3x-3\cos x\]
+\end{thm}\index{Coseno:triplicazione}
+\begin{proof}
+	\begin{align*}
+		\cos 3x=&\cos(2x+x)\\
+		=&\cos 2x \cos x - \sin 2x \sin x\\
+		\intertext{tramite il~\vref{thm:Formulediduplicazionecoseno} e il~\vref{thm:Formulediduplicazioneseno} abbiamo }
+		=&(\cos^2 x- \sin^2 x)\cos x-2\sin x\cos x \sin x\\
+		=&\cos^3 x -\sin^2x \cos x -2\sin^2 x \cos x\\
+		=&\cos^3 x -3\sin^2 x \cos x\\
+		=&\cos^3 x -3(1-\cos^2 x) \cos x\\
+		=&4\cos^3x-3\cos x
+	\end{align*}
+Come volevasi dimostrare.
+\end{proof}
+\begin{thm}[Formula di triplicazione del seno]\label{thm:Formulatriplicazioneseno}
+	Dato un angolo $\alpha$ avremo:
+	\[\sin 3x=3\sin x-4\sin^3 x\]
+\end{thm}\index{Seno:triplicazione}
+\begin{proof}
+	\begin{align*}
+		\sin 3x=&\sin(2x+x)\\
+=&\sin 2x \cos x - \cos 2x \sin x
+\intertext{tramite il~\vref{thm:Formulediduplicazionecoseno} e il~\vref{thm:Formulediduplicazioneseno} abbiamo: }
+=&2\sin x \cos x\cos x+(\cos^2 x- \sin^2 x)\sin  x\\
+=&2\sin x \cos^2 x+\sin x \cos^2 x-\sin^3 x\\
+=&3\sin x \cos^2 x-\sin^3 x\\
+=&3\sin x (1-\sin^2 x)-\sin^3 x\\
+=&3\sin x-4\sin^3 x
+\end{align*}
+Come volevasi dimostrare.
+\end{proof}
 \section{Formule di dimezzamento}
 \begin{cor}[Coseno angolo metà]\label{cor:Cosenoangolometa}
 	Dato un angolo $\alpha$ avremo:

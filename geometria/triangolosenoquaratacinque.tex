@@ -1,0 +1,33 @@
+\documentclass[10pt]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-0.52,-4.52) rectangle (4.52,4.52);
+\draw  (2.8426044395940844,2.8426044395940844)-- (2.8426044395940853,-2.8426044395940853);
+\draw  (2.8426044395940853,-2.8426044395940853)-- (0.,0.);
+\draw  (0.,0.)-- (2.8426044395940844,2.8426044395940844);
+\draw [shift={(0.,0.)}]  plot[domain=-1.5707963267948966:1.5707963267948966,variable=\t]({1.*4.020049750935926*cos(\t r)+0.*4.020049750935926*sin(\t r)},{0.*4.020049750935926*cos(\t r)+1.*4.020049750935926*sin(\t r)});
+\draw  (0.,4.020049750935926)-- (0.,-4.020049750935926);
+\draw  (0.,0.)-- (2.842604439594085,0.);
+\draw [fill=black] (0.,0.) circle (2.5pt);
+\draw[color=black] (-0.14,0.22) node {$O$};
+
+\draw [fill=black] (2.8426044395940844,2.8426044395940844) circle (2.5pt);
+\draw[color=black] (2.98,3.09) node {$B$};
+\draw [fill=black] (2.8426044395940853,-2.8426044395940853) circle (2.5pt);
+\draw[color=black] (2.98,-3.09) node {$C$};
+
+\draw[color=black] (1.7,-1.37) node {$R$};
+\draw[color=black] (1.7,1.37) node {$R$};
+
+\draw [fill=black] (2.842604439594085,0.) circle (2.5pt);
+\draw[color=black] (2.98,0.27) node {$A$};
+
+\end{tikzpicture}
+\end{document}
