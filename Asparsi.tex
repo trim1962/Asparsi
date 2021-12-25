@@ -4,6 +4,7 @@
 % !TeX spellcheck = it_IT
 
 \documentclass[a4paper,oneside]{book}%
+\usepackage{xpatch}
 \usepackage{cmap}
 \usepackage[big]{layaureo}
 \usepackage{copyright}
@@ -93,7 +94,7 @@
 %dimostrazione per parti
 %Enrico Gregorio
 %https://tex.stackexchange.com/questions/207309/how-to-nicely-split-proofs-into-different-parts
-\usepackage{xpatch}
+
 \makeatletter
 \newcounter{proofpart}
 \xpretocmd{\proof}{\setcounter{proofpart}{0}}{}{}
