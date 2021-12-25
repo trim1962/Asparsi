@@ -91,21 +91,7 @@
 \theorembodyfont{\normalfont}
 \newtheorem{proof}{Dimostrazione}
 %\input{../Mod_base/tabelle}
-%dimostrazione per parti
-%Enrico Gregorio
-%https://tex.stackexchange.com/questions/207309/how-to-nicely-split-proofs-into-different-parts
 
-\makeatletter
-\newcounter{proofpart}
-\xpretocmd{\proof}{\setcounter{proofpart}{0}}{}{}
-\newcommand{\proofpart}[1]{%
-	\par
-	\addvspace{\medskipamount}%
-	\stepcounter{proofpart}%
-	\noindent\emph{Part \theproofpart: #1}\par\nobreak\smallskip
-	\@afterheading
-}
-\makeatother
 \newcommand{\difcos}[2]{\cos\ang{#1}\cos\ang{#2}+\sin\ang{#1}\sin\ang{#2}}
 \newcommand{\difsin}[2]{\sin\ang{#1}\cos\ang{#2}-\cos\ang{#1}\sin\ang{#2}}
 \newcommand{\sumcos}[2]{\cos\ang{#1}\cos\ang{#2}-\sin\ang{#1}\sin\ang{#2}}
