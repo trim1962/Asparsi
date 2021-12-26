@@ -62,13 +62,13 @@ La sezione aurea è:
 \begin{proof}
 	\begin{align*}
 		\intertext{Poniamo}
-		a^2=&\Fib{2}a+\Fib{1}\\
+		a^2=&a\Fib{2}+\Fib{1}\\
 		a^3=&a^2a\\
 		=&a(a+1)\\
 		=&a^2+a\\
 		=&a+1+a\\
 		=&2a+1\\
-		=&\Fib{3}a+\Fib{2}\\
+		=&a\Fib{3}+\Fib{2}\\
 		\intertext{Per induzione su $n$}
 		a^{n-1}=&\Fib{n-1}a+\Fib{n-2}\\
 		a^{n-1}a=&\Fib{n-1}a^2+a\Fib{n-2}\\
@@ -77,4 +77,6 @@ La sezione aurea è:
 		a^{n}=&a(\Fib{n-1}+\Fib{n-2})+\Fib{n-1}\\
 		a^{n}=&a\Fib{n}+\Fib{n-1}\\
 	\end{align*}
+Analogamente si dimostra
+\[b^{n}=b\Fib{n}+\Fib{n-1} \]
 \end{proof}\index{Sezione!aurea!definizione}
