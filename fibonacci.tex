@@ -11,7 +11,7 @@
 \begin{defn}[Sezione aurea]
 	Date due quantità $a$ e $b$ con $a>b>0$ diremo sezione aurea il rapporto
 	\begin{equation}
-	a+b:a=a:b=\phi	
+	a+b:a=a:b=\varphi	
 	\end{equation}\label{eqn:FibAureaDef}\index{Sezione!aurea}
 \end{defn}
 \begin{prop}
@@ -21,15 +21,15 @@
 		=&1+\dfrac{b}{a}\notag\\
 		=&1+\dfrac{1}{\frac{a}{b}}\notag\\
 		\intertext{quindi}
-		\phi=&1+\dfrac{1}{\phi}\label{eqn:FibPhiProp}\\
-		\phi^2=&\phi+1\notag
+		\varphi=&1+\dfrac{1}{\varphi}\label{eqn:FibPhiProp}\\
+		\varphi^2=&\varphi+1\notag
 	\end{align}
 \end{prop}
 	Dalla~\vref{eqn:FibPhiProp} segue
 	\begin{prop}
 	\begin{align}
-		\phi^2=&\phi+1\notag\\
-		\phi^2-\phi-1=&0\notag\\
+		\varphi^2=&\varphi+1\notag\\
+		\varphi^2-\varphi-1=&0\notag\\
 		x^2-x-1=&0\label{eqn:FibValPhiEqua}\\
 		x_1=&\dfrac{1+\sqrt{5}}{2}\label{eqn:FibValPhi}\\
 		x_1=&\dfrac{1-\sqrt{5}}{2}\notag
@@ -39,14 +39,14 @@ Il risultato~\ref{eqn:FibValPhi} permette di scrivere la seguente definizione
 \begin{defn}[Sezione aurea]
 La sezione aurea è: 
 \begin{align*}
-	\phi=&\dfrac{1+\sqrt{5}}{2}\\
+	\varphi=&\dfrac{1+\sqrt{5}}{2}\\
 \intertext{inoltre vale}
-	1-	\phi=&\dfrac{1-\sqrt{5}}{2}\\
+	1-	\varphi=&\dfrac{1-\sqrt{5}}{2}\\
 \end{align*}
 \end{defn}\index{Sezione!aurea!valore}
 \section{Formula di Binet}
 \begin{lem}[Sezione aurea]\label{lem:SezioneAurea}
-	Se indichiamo con $a=\phi$ e con $b=1-\phi$
+	Se indichiamo con $a=\varphi$ e con $b=1-\varphi$
 	allora
 	\begin{align*}
 		a^2=&a+1\\
@@ -60,7 +60,7 @@ La sezione aurea è:
 	\end{equation}\label{eqn:FinBinet}
 \end{thm}~\cite{Conti2020}
 \begin{proof}
-	Poniamo $a=\phi$ e con $b=1-\phi$ allora
+	Poniamo $a=\varphi$ e con $b=1-\varphi$ allora
 	\begin{align*}
 		\intertext{Poniamo}
 		a^2=&a\Fib{2}+\Fib{1}\\
@@ -92,6 +92,6 @@ quindi
 \begin{thm}[Limite successione]
 Se $\Fib{n}$ è la successione di Fibonacci allora 
 \begin{equation}
-	\lim_{n\to\infty}\dfrac{\Fib{n+1}}{\Fib{n}}=\phi
+	\lim_{n\to\infty}\dfrac{\Fib{n+1}}{\Fib{n}}=\varphi
 \end{equation}\label{eqn:FibLimRap}
 \end{thm}
