@@ -116,7 +116,8 @@ Riscriviamo il risultato del~\vref{eqn:FinBinet}
 \begin{align*}
 	\Fib{n}=&\dfrac{1}{a-b}\left(a^n-b^n\right)
 	\intertext{da cui}
-	\Fib{n}^2=&\dfrac{a^2n}{(a-b)^2}-2\dfrac{a^nb^n}{(a-b)^n+\dfrac{b^2n}{(a-b)^2}}\\
+	\Fib{n}^2=&\dfrac{a^2n}{(a-b)^2}-2\dfrac{a^nb^n}{(a-b)^n}+\dfrac{b^2n}{(a-b)^2}\\
+	\Fib{n-1}=&\dfrac{1}{a-b}\left(a^{n-1}-b^{n-1}\right)\\
 	\Fib{n-1}=&\dfrac{1}{a-b}\left(a^{n-1}-b^{n-1}\right)\\
 \end{align*}
 \end{proof}
