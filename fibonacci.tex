@@ -207,7 +207,16 @@ cvd.
 	Tre numeri di Fibonacci consecutivi non possono essere i lati di un triangolo.
 \end{thm}
 \begin{proof}
-	Supponiamo che $\Fib{n}$, $\Fib{n+1}$ e $\Fib{n+2}$ sono i lati di un triangolo. Allora per il~\vref{thm:Formula_Erone} avremo:
+	Supponiamo che $\Fib{n}$, $\Fib{n+1}$ e $\Fib{n+2}$ sono i lati di un triangolo. Allora per il~\vref{thm:Formula_Erone} avremo indicando con $p$ il semiperimetro e $a$, $b$ e$c$ i lati:
+\begin{align*}
+	S^2=p(p-a)(p-b)(p-c)\\
+	\intertext{ma}
+	p=&\dfrac{\Fib{n}+\Fib{n+1}+\Fib{n+2}}{2}\\
+	p=&\dfrac{\Fib{n+2}+\Fib{n+2}}{2}\\
+	p=&\Fib{n+2}\\
+	p-c=&\Fib{n+2}-\Fib{n+2}=0\\
+\end{align*}
+Quindi il triangolo ha area zero, assurdo. 
 \end{proof}
 \chapter{Fibonacci generalizzato}
 \section{Definizione}
