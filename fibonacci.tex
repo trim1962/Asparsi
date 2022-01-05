@@ -44,7 +44,30 @@ La sezione aurea è:
 	1-	\varphi={}&\dfrac{1-\sqrt{5}}{2}\\
 \end{align*}
 \end{defn}\index{Sezione!aurea!valore}
-\section{Formula di Binet}
+\begin{lem}[Proprietà]\label{lem:FibpropPhi}
+	Se $a=\frac{1+\sqrt{5}}{2}$ e  $a=\frac{1-\sqrt{5}}{2}$ allora
+	\begin{align*}
+		ab={}&-1\\
+		a^2+1={}&(a-b)a\\
+		b^2+1={}&(b-a)b\\
+		a+b={}&1\\
+		a^3={}&a^2+a\\
+		b^3={}&b^2+b\\
+		a^2+b^2={}&a+b+2
+	\end{align*}
+\end{lem}
+\begin{proof}
+	\begin{align*}
+		ab={}&\dfrac{1+\sqrt{5}}{2}\dfrac{1-\sqrt{5}}{2}\\
+		={}&\dfrac{1-5}{4}\\
+		={}&-1
+	\end{align*}
+	\begin{align*}
+		(a-b)a={}&a^2-ab=a^2+1\\
+		(b-a)b={}&b^2-ab=b^2+1\\
+	\end{align*}
+	cvd.
+\end{proof}
 \begin{lem}[Sezione aurea]\label{lem:SezioneAurea}
 	Se indichiamo con $a=\varphi$ e con $b=1-\varphi$
 	allora
@@ -53,6 +76,7 @@ La sezione aurea è:
 		b^2={}&b+1
 	\end{align*}
 \end{lem}
+\section{Formula di Binet}
 \begin{thm}[Formula di Binet]
 	Se $\Fib{n}$ è la successione di Fibonacci allora avremo:
 	\begin{equation}
@@ -145,30 +169,7 @@ Riscriviamo il risultato del~\vref{eqn:FinBinet}
 \end{align*}
 cvd.
 \end{proof}
-\begin{lem}[Proprietà]\label{lem:FibpropPhi}
-	Se $a=\frac{1+\sqrt{5}}{2}$ e  $a=\frac{1-\sqrt{5}}{2}$ allora
-	\begin{align*}
-		ab={}&-1\\
-		a^2+1={}&(a-b)a\\
-		b^2+1={}&(b-a)b\\
-		a+b={}&1\\
-		a^3={}&a^2+a\\
-		b^3={}&b^2+b\\
-		a^2+b^2={}&a+b+2
-	\end{align*}
-\end{lem}
-\begin{proof}
-	\begin{align*}
-		ab={}&\dfrac{1+\sqrt{5}}{2}\dfrac{1-\sqrt{5}}{2}\\
-		={}&\dfrac{1-5}{4}\\
-		={}&-1
-	\end{align*}
-\begin{align*}
-	(a-b)a={}&a^2-ab=a^2+1\\
-	(b-a)b={}&b^2-ab=b^2+1\\
-\end{align*}
-cvd.
-\end{proof}
+
 \begin{thm}[Dispari]\label{thm:Fibdispari}
 	Se $\Fib{n}$ è la successione di Fibonacci allora 
 	\begin{equation}
