@@ -2,9 +2,9 @@
 \section{Definizione}
 \begin{defn}[Numeri di Fibonacci]\index{Fibonacci!definizione}
 	\begin{align}
-		\Fib{1}=&1\notag\\
-		\Fib{2}=&1\notag\\
-		\Fib{n}=&\Fib{n-1}+\Fib{n-2}\quad n>2\label{eqn:Fibodef}
+		\Fib{1}={}&1\notag\\
+		\Fib{2}={}&1\notag\\
+		\Fib{n}={}&\Fib{n-1}+\Fib{n-2}\quad n>2\label{eqn:Fibodef}
 	\end{align}
 \end{defn}
 \section{Sezione aurea}
@@ -17,31 +17,31 @@
 \begin{prop}
 	Dalla~\vref{eqn:FibAureaDef} abbiamo
 	\begin{align}
-		\dfrac{a}{b}=&\dfrac{a+b}{a}\notag\\
-		=&1+\dfrac{b}{a}\notag\\
-		=&1+\dfrac{1}{\frac{a}{b}}\notag\\
+		\dfrac{a}{b}={}&\dfrac{a+b}{a}\notag\\
+		={}&1+\dfrac{b}{a}\notag\\
+		={}&1+\dfrac{1}{\frac{a}{b}}\notag\\
 		\intertext{quindi}
-		\varphi=&1+\dfrac{1}{\varphi}\label{eqn:FibPhiProp}\\
-		\varphi^2=&\varphi+1\notag
+		\varphi={}&1+\dfrac{1}{\varphi}\label{eqn:FibPhiProp}\\
+		\varphi^2={}&\varphi+1\notag
 	\end{align}
 \end{prop}
 	Dalla~\vref{eqn:FibPhiProp} segue
 	\begin{prop}
 	\begin{align}
-		\varphi^2=&\varphi+1\notag\\
-		\varphi^2-\varphi-1=&0\notag\\
-		x^2-x-1=&0\label{eqn:FibValPhiEqua}\\
-		x_1=&\dfrac{1+\sqrt{5}}{2}\label{eqn:FibValPhi}\\
-		x_1=&\dfrac{1-\sqrt{5}}{2}\notag
+		\varphi^2={}&\varphi+1\notag\\
+		\varphi^2-\varphi-1={}&0\notag\\
+		x^2-x-1={}&0\label{eqn:FibValPhiEqua}\\
+		x_1={}&\dfrac{1+\sqrt{5}}{2}\label{eqn:FibValPhi}\\
+		x_1={}&\dfrac{1-\sqrt{5}}{2}\notag
 	\end{align}
 \end{prop}
 Il risultato~\ref{eqn:FibValPhi} permette di scrivere la seguente definizione
 \begin{defn}[Sezione aurea]
 La sezione aurea è: 
 \begin{align*}
-	\varphi=&\dfrac{1+\sqrt{5}}{2}\\
+	\varphi={}&\dfrac{1+\sqrt{5}}{2}\\
 \intertext{inoltre vale}
-	1-	\varphi=&\dfrac{1-\sqrt{5}}{2}\\
+	1-	\varphi={}&\dfrac{1-\sqrt{5}}{2}\\
 \end{align*}
 \end{defn}\index{Sezione!aurea!valore}
 \section{Formula di Binet}
@@ -49,8 +49,8 @@ La sezione aurea è:
 	Se indichiamo con $a=\varphi$ e con $b=1-\varphi$
 	allora
 	\begin{align*}
-		a^2=&a+1\\
-		b^2=&b+1
+		a^2={}&a+1\\
+		b^2={}&b+1
 	\end{align*}
 \end{lem}
 \begin{thm}[Formula di Binet]
@@ -63,26 +63,26 @@ La sezione aurea è:
 	Poniamo $a=\varphi$ e con $b=1-\varphi$ allora
 	\begin{align*}
 		\intertext{Poniamo}
-		a^2=&a\Fib{2}+\Fib{1}\\
-		a^3=&a^2a\\
-		=&a(a+1)\\
-		=&a^2+a\\
-		=&a+1+a\\
-		=&2a+1\\
-		=&a\Fib{3}+\Fib{2}\\
+		a^2={}&a\Fib{2}+\Fib{1}\\
+		a^3={}&a^2a\\
+		={}&a(a+1)\\
+		={}&a^2+a\\
+		={}&a+1+a\\
+		={}&2a+1\\
+		={}&a\Fib{3}+\Fib{2}\\
 		\intertext{Per induzione su $n$}
-		a^{n-1}=&a\Fib{n-1}+\Fib{n-2}\\
-		a^{n-1}a=&a^2\Fib{n-1}+a\Fib{n-2}\\
-		a^{n}=&(a+1)\Fib{n-1}+a\Fib{n-2}\\
-		a^{n}=&a\Fib{n-1}+\Fib{n-1}+a\Fib{n-2}\\
-		a^{n}=&a(\Fib{n-1}+\Fib{n-2})+\Fib{n-1}\\
-		a^{n}=&a\Fib{n}+\Fib{n-1}\\
+		a^{n-1}={}&a\Fib{n-1}+\Fib{n-2}\\
+		a^{n-1}a={}&a^2\Fib{n-1}+a\Fib{n-2}\\
+		a^{n}={}&(a+1)\Fib{n-1}+a\Fib{n-2}\\
+		a^{n}={}&a\Fib{n-1}+\Fib{n-1}+a\Fib{n-2}\\
+		a^{n}={}&a(\Fib{n-1}+\Fib{n-2})+\Fib{n-1}\\
+		a^{n}={}&a\Fib{n}+\Fib{n-1}\\
 		\intertext{Analogamente si dimostra}
-		b^{n}=&b\Fib{n}+\Fib{n-1}\\
+		b^{n}={}&b\Fib{n}+\Fib{n-1}\\
 		\intertext{Sottraendo}
-		a^n-b^n=&a\Fib{n}-b\Fib{n}\\
-		a^n-b^n=&\Fib{n}(a-b)\\
-		\Fib{n}=&\dfrac{a^n-b^n}{a-b}
+		a^n-b^n={}&a\Fib{n}-b\Fib{n}\\
+		a^n-b^n={}&\Fib{n}(a-b)\\
+		\Fib{n}={}&\dfrac{a^n-b^n}{a-b}
 	\end{align*}
 quindi
 \begin{equation}
@@ -108,12 +108,12 @@ Se $\Fib{n}$ è la successione di Fibonacci allora
 \end{thm}
 \begin{proof}
 \begin{align}
-	\lim_{n\to\infty}\dfrac{\Fib{n+1}}{\Fib{n}}=&\lim_{n\to\infty}\dfrac{\varphi^{n+1}-(1-\varphi)^{n+1}}{\varphi^n-(1-\varphi)^n}\\
-	=&\lim_{n\to\infty}\dfrac{\varphi^{n+1}\left[1-\left(\dfrac{1-\varphi}{\varphi}\right)^{n+1}\right]}{\varphi^{n}\left[1-\left(\dfrac{1-\varphi}{\varphi}\right)^{n}\right]}\\
-	=&\lim_{n\to\infty}\dfrac{\varphi\left[1-\left(\dfrac{1-\varphi}{\varphi}\right)^{n+1}\right]}{1-\left(\dfrac{1-\varphi}{\varphi}\right)^{n}}\\
-	=&\varphi
+	\lim_{n\to\infty}\dfrac{\Fib{n+1}}{\Fib{n}}={}&\lim_{n\to\infty}\dfrac{\varphi^{n+1}-(1-\varphi)^{n+1}}{\varphi^n-(1-\varphi)^n}\\
+	={}&\lim_{n\to\infty}\dfrac{\varphi^{n+1}\left[1-\left(\dfrac{1-\varphi}{\varphi}\right)^{n+1}\right]}{\varphi^{n}\left[1-\left(\dfrac{1-\varphi}{\varphi}\right)^{n}\right]}\\
+	={}&\lim_{n\to\infty}\dfrac{\varphi\left[1-\left(\dfrac{1-\varphi}{\varphi}\right)^{n+1}\right]}{1-\left(\dfrac{1-\varphi}{\varphi}\right)^{n}}\\
+	={}&\varphi
 	\intertext{dato che}
-	\lim_{n\to\infty}\left(\dfrac{1-\varphi}{\varphi}\right)^{n}=&0
+	\lim_{n\to\infty}\left(\dfrac{1-\varphi}{\varphi}\right)^{n}={}&0
 \end{align}cvd
 \end{proof}
 \begin{thm}[Quadrato]\label{thm:fibQuadrato}
@@ -125,42 +125,42 @@ Se $\Fib{n}$ è la successione di Fibonacci allora
 \begin{proof}
 Riscriviamo il risultato del~\vref{eqn:FinBinet} 
 \begin{align*}
-	\Fib{n}=&\dfrac{1}{a-b}\left(a^n-b^n\right)
+	\Fib{n}={}&\dfrac{1}{a-b}\left(a^n-b^n\right)
 	\intertext{da cui}
-	\Fib{n}^2=&\dfrac{a^2n}{(a-b)^2}-2\dfrac{a^nb^n}{(a-b)^n}+\dfrac{b^2n}{(a-b)^2}\\
+	\Fib{n}^2={}&\dfrac{a^2n}{(a-b)^2}-2\dfrac{a^nb^n}{(a-b)^n}+\dfrac{b^2n}{(a-b)^2}\\
 	\intertext{ma}
-	\Fib{n-1}=&\dfrac{1}{a-b}\left(a^{n-1}-b^{n-1}\right)\\
-	\Fib{n+1}=&\dfrac{1}{a-b}\left(a^{n+1}-b^{n+1}\right)\\
+	\Fib{n-1}={}&\dfrac{1}{a-b}\left(a^{n-1}-b^{n-1}\right)\\
+	\Fib{n+1}={}&\dfrac{1}{a-b}\left(a^{n+1}-b^{n+1}\right)\\
 	\intertext{quindi}
-	\Fib{n-1}\cdot\Fib{n+1}=&\dfrac{a^2n}{(a-b)^2}-2\dfrac{a^nb^n}{(a-b)^n}+\dfrac{b^2n}{(a-b)^2}-a^{n-1}b^{n-1}\\
-	=&	\Fib{n}^2-a^{n-1}b^{n-1}
+	\Fib{n-1}\cdot\Fib{n+1}={}&\dfrac{a^2n}{(a-b)^2}-2\dfrac{a^nb^n}{(a-b)^n}+\dfrac{b^2n}{(a-b)^2}-a^{n-1}b^{n-1}\\
+	={}&	\Fib{n}^2-a^{n-1}b^{n-1}
 		\intertext{ma}
-		-a^{n-1}b^{n-1}=&-\left(\dfrac{1+\sqrt{5}}{2}\right)^{n-1}\cdot\left(\dfrac{1-\sqrt{5}}{2}\right)^{n-1}=(-1)^{n}\\
-		\Fib{n-1}\cdot\Fib{n+1}=&\Fib{n}^2+(-1)^n
+		-a^{n-1}b^{n-1}={}&-\left(\dfrac{1+\sqrt{5}}{2}\right)^{n-1}\cdot\left(\dfrac{1-\sqrt{5}}{2}\right)^{n-1}=(-1)^{n}\\
+		\Fib{n-1}\cdot\Fib{n+1}={}&\Fib{n}^2+(-1)^n
 \end{align*}
 cvd.
 \end{proof}
 \begin{lem}[Proprietà]\label{lem:FibpropPhi}
 	Se $a=\frac{1+\sqrt{5}}{2}$ e  $a=\frac{1-\sqrt{5}}{2}$ allora
 	\begin{align*}
-		ab=&-1\\
-		a^2+1=&(a-b)a\\
-		b^2+1=&(b-a)b\\
-		a+b=&1\\
-		a^3=&a^2+a\\
-		b^3=&b^2+b\\
-		a^2+b^2=&a+b+2
+		ab={}&-1\\
+		a^2+1={}&(a-b)a\\
+		b^2+1={}&(b-a)b\\
+		a+b={}&1\\
+		a^3={}&a^2+a\\
+		b^3={}&b^2+b\\
+		a^2+b^2={}&a+b+2
 	\end{align*}
 \end{lem}
 \begin{proof}
 	\begin{align*}
-		ab=&\dfrac{1+\sqrt{5}}{2}\dfrac{1-\sqrt{5}}{2}\\
-		=&\dfrac{1-5}{4}\\
-		=&-1
+		ab={}&\dfrac{1+\sqrt{5}}{2}\dfrac{1-\sqrt{5}}{2}\\
+		={}&\dfrac{1-5}{4}\\
+		={}&-1
 	\end{align*}
 \begin{align*}
-	(a-b)a=&a^2-ab=a^2+1\\
-	(b-a)b=&b^2-ab=b^2+1\\
+	(a-b)a={}&a^2-ab=a^2+1\\
+	(b-a)b={}&b^2-ab=b^2+1\\
 \end{align*}
 cvd.
 \end{proof}
@@ -173,15 +173,15 @@ cvd.
 \begin{proof}
 	Riscriviamo il risultato del~\vref{eqn:FinBinet} 
 	\begin{align*}
-		\Fib{n}=&\dfrac{1}{a-b}\left(a^n-b^n\right)
+		\Fib{n}={}&\dfrac{1}{a-b}\left(a^n-b^n\right)
 		\intertext{da cui}
-		\Fib{n}^2=&\dfrac{a^{2n}-2a^nb^n+b^{2n}}{(a-b)^2}\\
-			\Fib{n+1}^2=&\dfrac{a^{2(n+1)}-2a^{n+1}b^{n+1}+b^{2(n+1)}}{(a-b)^2}\\
-		\Fib{n}^2+\Fib{n+1}^2=&\dfrac{a^{2n}(a^2+1)-2a^nb^n(ab+1)+b^{2n}(b^2+1)}{(a-b)^2}
+		\Fib{n}^2={}&\dfrac{a^{2n}-2a^nb^n+b^{2n}}{(a-b)^2}\\
+			\Fib{n+1}^2={}&\dfrac{a^{2(n+1)}-2a^{n+1}b^{n+1}+b^{2(n+1)}}{(a-b)^2}\\
+		\Fib{n}^2+\Fib{n+1}^2={}&\dfrac{a^{2n}(a^2+1)-2a^nb^n(ab+1)+b^{2n}(b^2+1)}{(a-b)^2}
 		\intertext{per~\vref{lem:FibpropPhi}}		
-		=&\dfrac{a^{2n}(a-b)a+b^{2n}(b-a)b}{(a-b)^2}\\
-		=&\dfrac{1}{a-b}\left(a^{2n+1}-b^{2n+1}\right)\\
-		=&\Fib{2n+1}
+		={}&\dfrac{a^{2n}(a-b)a+b^{2n}(b-a)b}{(a-b)^2}\\
+		={}&\dfrac{1}{a-b}\left(a^{2n+1}-b^{2n+1}\right)\\
+		={}&\Fib{2n+1}
 	\end{align*}
 	cvd.
 \end{proof}
@@ -194,22 +194,22 @@ cvd.
 \begin{proof}
 	Riscriviamo il risultato del~\vref{eqn:FinBinet} 
 	\begin{align*}
-		\Fib{n}=&\dfrac{1}{a-b}\left(a^n-b^n\right)
+		\Fib{n}={}&\dfrac{1}{a-b}\left(a^n-b^n\right)
 		\intertext{da cui}
-		\Fib{n+2}^2-\Fib{n+1}^2=&\dfrac{a^{2(n+2)}-2(ab)^{n+2}+b^{2(n+2)}}{(a-b)^2}-\dfrac{a^{2(n+1)}-2(ab)^{n+1}+b^{2(n+1)}}{(a-b)^2}\\
-		=&\dfrac{a^{2(n+1)}(a^2-1)+2(ab)^{n+1}(1-ab)+b^{2(n+1)}(b^2-1)}{(a-b)^2}
+		\Fib{n+2}^2-\Fib{n+1}^2={}&\dfrac{a^{2(n+2)}-2(ab)^{n+2}+b^{2(n+2)}}{(a-b)^2}-\dfrac{a^{2(n+1)}-2(ab)^{n+1}+b^{2(n+1)}}{(a-b)^2}\\
+		={}&\dfrac{a^{2(n+1)}(a^2-1)+2(ab)^{n+1}(1-ab)+b^{2(n+1)}(b^2-1)}{(a-b)^2}
 		\intertext{per~\vref{lem:FibpropPhi} e  per~\vref{lem:SezioneAurea}}
-			=&\dfrac{a^{2(n+1)}a+2(ab)^{n+1}2+b^{2(n+1)}b}{(a-b)^2}\\
-				=&\dfrac{a^{2n+3}+4(ab)^{n+1}+b^{2n+3}b}{(a-b)^2}\\
-		\Fib{n}\cdot\Fib{n+3}=&\dfrac{1}{a-b}\left(a^n-b^n\right)\cdot\dfrac{1}{a-b}\left(a^{n+3}-b^{n+3}\right)\\
-		=&\dfrac{(a^n-b^n)(a^{n+3}-b^{n+3})}{(a-b)^2}\\
-		=&\dfrac{(a^n-b^n)(a^{n}a^3-b^{n}b^3)}{(a-b)^2}
+			={}&\dfrac{a^{2(n+1)}a+2(ab)^{n+1}2+b^{2(n+1)}b}{(a-b)^2}\\
+				={}&\dfrac{a^{2n+3}+4(ab)^{n+1}+b^{2n+3}b}{(a-b)^2}\\
+		\Fib{n}\cdot\Fib{n+3}={}&\dfrac{1}{a-b}\left(a^n-b^n\right)\cdot\dfrac{1}{a-b}\left(a^{n+3}-b^{n+3}\right)\\
+		={}&\dfrac{(a^n-b^n)(a^{n+3}-b^{n+3})}{(a-b)^2}\\
+		={}&\dfrac{(a^n-b^n)(a^{n}a^3-b^{n}b^3)}{(a-b)^2}
 		\intertext{per~\vref{lem:FibpropPhi}}
-		=&\dfrac{(a^n-b^n)[a^{n}(a^2+a)-b^{n}(b^2+b)]}{(a-b)^2}\\
-		=&\dfrac{a^{2n+1}(a+1)-(ab)^n(a^2+a+b^2+b)+b^{2n+1}(b+1)}{(a-b)^2}\\
-		=&\dfrac{a^{2n+1}a^2-(ab)^n(a+b+2+a+b)+b^{2n+1}b^2}{(a-b)^2}\\
-		=&\dfrac{a^{2n+3}+4ab(ab)^n+b^{2n+3}}{(a-b)^2}\\
-		=&\dfrac{a^{2n+3}+4(ab)^{n+1}+b^{2n+3}}{(a-b)^2}\\
+		={}&\dfrac{(a^n-b^n)[a^{n}(a^2+a)-b^{n}(b^2+b)]}{(a-b)^2}\\
+		={}&\dfrac{a^{2n+1}(a+1)-(ab)^n(a^2+a+b^2+b)+b^{2n+1}(b+1)}{(a-b)^2}\\
+		={}&\dfrac{a^{2n+1}a^2-(ab)^n(a+b+2+a+b)+b^{2n+1}b^2}{(a-b)^2}\\
+		={}&\dfrac{a^{2n+3}+4ab(ab)^n+b^{2n+3}}{(a-b)^2}\\
+		={}&\dfrac{a^{2n+3}+4(ab)^{n+1}+b^{2n+3}}{(a-b)^2}\\
 	\end{align*}
 	cvd.
 \end{proof}
@@ -219,12 +219,12 @@ cvd.
 \begin{proof}
 	Supponiamo che $\Fib{n}$, $\Fib{n+1}$ e $\Fib{n+2}$ sono i lati di un triangolo. Allora per il~\vref{thm:Formula_Erone} avremo indicando con $p$ il semiperimetro e $a$, $b$ e $c$ i lati:
 \begin{align*}
-	S^2=&p(p-a)(p-b)(p-c)\\
+	S^2={}&p(p-a)(p-b)(p-c)\\
 	\intertext{ma}
-	p=&\dfrac{\Fib{n}+\Fib{n+1}+\Fib{n+2}}{2}\\
-	p=&\dfrac{\Fib{n+2}+\Fib{n+2}}{2}\\
-	p=&\Fib{n+2}\\
-	p-c=&\Fib{n+2}-\Fib{n+2}=0\\
+	p={}&\dfrac{\Fib{n}+\Fib{n+1}+\Fib{n+2}}{2}\\
+	p={}&\dfrac{\Fib{n+2}+\Fib{n+2}}{2}\\
+	p={}&\Fib{n+2}\\
+	p-c={}&\Fib{n+2}-\Fib{n+2}=0\\
 \end{align*}
 Quindi il triangolo ha area zero, assurdo. 
 \end{proof}
@@ -232,9 +232,9 @@ Quindi il triangolo ha area zero, assurdo.
 \section{Definizione}
 \begin{defn}[Numeri di Fibonacci generalizzati]\index{Fibonacci!generalizzati!definizione}
 	\begin{align}
-		\Gib{1}=&a\notag\\
-		\Gib{2}=&b\notag\\
-		\Gib{n}=&\Gib{n-1}+\Gib{n-2}\quad n>2\label{eqn:FiboGendef}
+		\Gib{1}={}&a\notag\\
+		\Gib{2}={}&b\notag\\
+		\Gib{n}={}&\Gib{n-1}+\Gib{n-2}\quad n>2\label{eqn:FiboGendef}
 	\end{align}
 \end{defn}
 \section{Proprietà}
