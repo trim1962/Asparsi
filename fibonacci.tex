@@ -44,7 +44,7 @@ La sezione aurea è:
 	1-	\varphi={}&\dfrac{1-\sqrt{5}}{2}\\
 \end{align*}
 \end{defn}\index{Sezione!aurea!valore}
-\begin{lem}[Proprietà della sezione aurea]\label{lem:FibpropPhi}
+\begin{lem}[Proprietà]\label{lem:FibpropPhi}
 	Se $a=\varphi$ e  $b=1-\varphi$ allora
 	\begin{align*}
 		ab={}&-1\\
@@ -72,7 +72,8 @@ La sezione aurea è:
 	Se indichiamo con $a=\varphi$ e con $b=1-\varphi$
 	allora
 	\begin{align*}
-		
+		a^2={}&a+1\\
+		b^2={}&b+1
 	\end{align*}
 \end{lem}
 \section{Formula di Binet}
@@ -203,7 +204,7 @@ cvd.
 		\intertext{da cui}
 		\Fib{n+2}^2-\Fib{n+1}^2={}&\dfrac{a^{2(n+2)}-2(ab)^{n+2}+b^{2(n+2)}}{(a-b)^2}-\dfrac{a^{2(n+1)}-2(ab)^{n+1}+b^{2(n+1)}}{(a-b)^2}\\
 		={}&\dfrac{a^{2(n+1)}(a^2-1)+2(ab)^{n+1}(1-ab)+b^{2(n+1)}(b^2-1)}{(a-b)^2}
-		\intertext{per~\vref{lem:FibpropPhi}
+		\intertext{per~\vref{lem:FibpropPhi} e  per~\vref{lem:SezioneAurea}}
 			={}&\dfrac{a^{2(n+1)}a+2(ab)^{n+1}2+b^{2(n+1)}b}{(a-b)^2}\\
 				={}&\dfrac{a^{2n+3}+4(ab)^{n+1}+b^{2n+3}b}{(a-b)^2}\\
 		\Fib{n}\cdot\Fib{n+3}={}&\dfrac{1}{a-b}\left(a^n-b^n\right)\cdot\dfrac{1}{a-b}\left(a^{n+3}-b^{n+3}\right)\\
