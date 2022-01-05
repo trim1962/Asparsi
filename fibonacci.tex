@@ -244,3 +244,11 @@ Quindi il triangolo ha area zero, assurdo.
 		\Fib{n}^2+\Fib{n+1}^2=\Fib{n}\cdot\Fib{n+2}+\Fib{n}\cdot\Fib{n+2}
 	\end{equation}\label{eqn:FibquadratiConsecutivi}
 \end{thm}
+\begin{proof}
+		Riscriviamo il risultato del~\vref{eqn:FinBinet} 
+\begin{align*}
+	\Fib{n}={}&\dfrac{1}{a-b}\left(a^n-b^n\right)
+	\intertext{da cui}
+	\Fib{n}^2=&\dfrac{a^{2n}-2(ab)^n+b^{2n}}{(a-b)^2}\\
+\end{align*}
+\end{proof}
