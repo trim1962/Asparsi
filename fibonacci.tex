@@ -271,8 +271,9 @@ Da cui la tesi.
 \begin{proof}
 \begin{align*}
 \intertext{Per induzione su $n$}
-\Fib{1}=&\Fib{1+2}-1=1\\
+\Fib{1}={}&\Fib{1+2}-1=1\\
 \intertext{Supponiamola vera per $n-1$ proviamola per $n$}
-\sum_{k=1}^{n-1}\Fib{k}=&\Fib{n-1+2}-1
+\sum_{k=1}^{n-1}\Fib{k}+\Fib{n}={}&\Fib{n+1}+\Fib{n}-1\\
+\sum_{k=1}^{n}\Fib{k}={}&\Fib{n+2}-1\\
 \end{align*}
 \end{proof}
