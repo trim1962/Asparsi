@@ -142,7 +142,7 @@ cvd.
 \end{align*}
 \end{proof}
 \begin{thm}[Dispari]\label{thm:FibdispariGen}
-	Se $\Gib{n}$ è la successione di Fibonacci Estesa allora 
+	Se $\Gib{n}$ è la successione di Fibonacci generalizzata allora 
 	\begin{equation}
 		\Gib{n}^2+\Gib{n+1}^2-\Gib{2n+1}=0 
 	\end{equation}\label{eqn:FibDispariGen} allora 
@@ -233,4 +233,11 @@ Ricapitolando
 	k=\dfrac{a^3b^2+a^2b^3+a^3+b^3}{(a^2+1)(b^2+1)}=\dfrac{5}{5}=1
 \end{array}
 \right.\]
+Quindi la successione di Fibonacci ordinaria
 \end{proof}
+Utilizzando il~\vref{thm:FibdispariGen} e il~\vref{thm:Fibdispari} otteniamo
+\begin{thm}
+	\begin{equation}
+		\Gib{n}^2+\Gib{n+1}^2=\Gib{2n+1} 
+	\end{equation} se e solo la successione è la successione ordinaria di Fibonacci. 
+\end{thm}
