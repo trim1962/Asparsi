@@ -143,7 +143,7 @@ quindi
 \begin{thm}[Formula di Binet per lucas]\index{Formula!Binet}
 	Se $\Luc{n}$ è la successione di Fibonacci allora avremo:
 	\begin{equation}
-		\Luc{n}=\left[\left(\dfrac{1+\sqrt{5}}{2}\right)^n-\left(\dfrac{1-\sqrt{5}}{2}\right)^n\right]
+		\Luc{n}=\left(\dfrac{1+\sqrt{5}}{2}\right)^{n-1}+\left(\dfrac{1-\sqrt{5}}{2}\right)^{n-1}
 	\end{equation}\label{eqn:LucBinet}
 \end{thm}
 \begin{proof}
@@ -165,7 +165,7 @@ quindi
 		\begin{array}{l}
 			x=\dfrac{1}{a}\\ y=\dfrac{1}{b}
 		\end{array}\right.\\ 
-		&\Luc{n+1}={}a^n+b^n
+		&\Luc{n}={}a^{n-1}+b^{n-1}
 	\end{align*}
 	quindi
 	\begin{equation}
