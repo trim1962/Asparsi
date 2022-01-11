@@ -360,8 +360,9 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 	\Fib{n}^2=&\dfrac{a^{2n}}{(a-b)^2}+\dfrac{2a^{n}b^{n}}{(a-b)^2}+\dfrac{b^{2n}}{(a-b)^2}\\
 	\Luc{n+1}^2-5\Fib{n}^2=&\dfrac{a^{2n}(a^2-2ab+b^2-5)+2a^nb^n(a^2-2ab+b^2+5)+b^{2n}(a^2-2ab+b^2-5)}{(a-b)^2}\\
 	=&\dfrac{(a^2-2ab+b^2-5)(a^{2n}+b^{2n})+2a^nb^n(a^2+2ab+b^2+5)}{(a-b)^2}\\
-	=&\dfrac{[(a-b)^2-5](a^{2n}+b^{2n})+2a^nb^n[(a+b)^2-5]}{(a-b)^2}\\
+	=&\dfrac{[(a-b)^2-5](a^{2n}+b^{2n})+2a^nb^n[(a-b)^2-5]}{(a-b)^2}\\
 	\intertext{per il~\vref{lem:FibpropPhi}}
-	&\dfrac{2a^nb^n[5+5]}{5}\\
+	=&\dfrac{2(-1)^n[5+5]}{5}\\
+	=&4(-1)^n\\
 \end{align*}
 \end{proof}
