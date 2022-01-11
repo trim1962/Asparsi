@@ -348,10 +348,17 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 	={}&(-1)^{n}\Luc{n}
 \end{align*}
 \end{proof}
+\begin{thm}[Da somma a prodotto]
+	Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
+	\begin{equation}
+		\Fib{n+m+1}=\dfrac{\Fib{m}\Luc{n+1}+\Luc{m}\Fib{n}}}{2}
+	\end{equation}\label{eqn:FibLucSommaprodotto}
+\end{thm}\cite{Rabinowitz_1996}
+\begin{proof}
 \begin{thm}[Relazione fondamentale fra Lucas e Fibonacci]
 	Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
 	\begin{equation}
-		\Luc{n+1}^2-5\Fib{n}=4(-1)^{n}
+		\Luc{n+1}^2-5\Fib{n}^2=4(-1)^{n}
 	\end{equation}\label{eqn:FibLucFondamentale}
 \end{thm}\cite{Rabinowitz_1996}
 \begin{proof}
@@ -365,4 +372,5 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 	=&\dfrac{2(-1)^n[5+5]}{5}\\
 	=&4(-1)^n\\
 \end{align*}
+Da cui la tesi.
 \end{proof}
