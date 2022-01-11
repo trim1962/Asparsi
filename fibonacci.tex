@@ -318,11 +318,14 @@ Da cui la tesi.
 \end{align*}
 cvd.
 \end{proof}
-\begin{thm}[Fibonacci negato]
+\begin{thm}[Fibonacci e Lucas negato]
 Se $\Fib{n}$ è la successione di Fibonacci allora:
 \begin{equation}
 	\Fib{-n}=(-1)^{n+1}\Fib{n}
 \end{equation}\label{eqn:FibNegate}
+\begin{equation}
+	\Luc{-n+1}=(-1)^{n}\Luc{n+1}
+\end{equation}\label{eqn:LucNegate}
 \end{thm}\cite{Rabinowitz_1996}
 \begin{proof}
 	Riscriviamo il risultato del~\vref{eqn:FinBinet}
@@ -334,4 +337,13 @@ Se $\Fib{n}$ è la successione di Fibonacci allora:
 	={}&\dfrac{(-1)^{n+1}}{a-b}[a^n-b^n]\\
 	={}&(-1)^{n+1}\Fib{n}
 	\end{align*}
+	Riscriviamo il risultato del~\vref{eqn:LucBinet}
+\begin{align*}
+	\Luc{n}={}&\left(a^{n-1}+b^{n-1}\right)\\
+	\Luc{-n+1}={}&\left(a^{-n+1-1}-b^{-n+1-1}\right)\\
+	={}&\dfrac{(ab)^{-n}}{b-a}[a^n-b^n]
+	\intertext{per il~\vref{lem:FibpropPhi}}
+	={}&\dfrac{(-1)^{n+1}}{a-b}[a^n-b^n]\\
+	={}&(-1)^{n+1}\Fib{n}
+\end{align*}
 \end{proof}
