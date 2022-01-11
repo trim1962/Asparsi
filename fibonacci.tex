@@ -133,7 +133,7 @@ Altra dimostrazione
 	\begin{array}{l}
 	x=\dfrac{1}{a-b}\\ y=-\dfrac{1}{a-b}
 \end{array}\right.\\ 
-	&\Fib{n}={}\dfrac{a^n-b^n}{a-b}
+	&\Fib{n+1}={}\dfrac{a^n-b^n}{a-b}
 	\end{align*}
 quindi
 \begin{equation}
@@ -146,6 +146,32 @@ quindi
 		\Luc{n}=\left[\left(\dfrac{1+\sqrt{5}}{2}\right)^n-\left(\dfrac{1-\sqrt{5}}{2}\right)^n\right]
 	\end{equation}\label{eqn:LucBinet}
 \end{thm}
+\begin{proof}
+	\begin{align*}
+		\intertext{Poniamo:}
+		&\Luc{n}={}xa^n+yb^n\\
+		&\left\{
+		\begin{array}{l}
+			a^1x+b^1y=2\\ a^2y+b^2y=1
+		\end{array}\right.
+		\intertext{Otteniamo}
+		&\left\{
+		\begin{array}{l}
+			x=\dfrac{1-2b}{(a-b)}\\ y=\dfrac{2a-1}{
+				(a-b)}
+		\end{array}\right.
+		\intertext{per il~\vref{lem:FibpropPhi}}
+		&\left\{
+		\begin{array}{l}
+			x=\dfrac{1}{a-b}\\ y=-\dfrac{1}{a-b}
+		\end{array}\right.\\ 
+		&\Fib{n+1}={}\dfrac{a^n-b^n}{a-b}
+	\end{align*}
+	quindi
+	\begin{equation}
+		\Fib{n}=\dfrac{1}{\sqrt{5}}\left[\left(\dfrac{1+\sqrt{5}}{2}\right)^n-\left(\dfrac{1-\sqrt{5}}{2}\right)^n\right]
+	\end{equation}
+\end{proof}
 \section{Proprietà}
 \begin{thm}[Limite successione]
 Se $\Fib{n}$ è la successione di Fibonacci allora 
