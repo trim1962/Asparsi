@@ -290,5 +290,8 @@ Se $\Fib{n}$ è la successione di Fibonacci allora:
 		\Fib{n}={}&\dfrac{1}{a-b}\left(a^n-b^n\right)\\
 		\Fib{-n}={}&\dfrac{1}{a-b}\left(a^{-n}-b^{-n}\right)\\
 		=&\dfrac{(ab)^{-n}}{b-a}[a^n-b^n]
+		\intertext{per il~\vref{lem:FibpropPhi}}
+		=&\dfrac{(-1)^{n+1}}{a-b}[a^n-b^n]\\
+		=&(-1)^{n+1}\Fib{n}
 	\end{align*}
 \end{proof}
