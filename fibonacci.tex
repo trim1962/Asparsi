@@ -350,26 +350,26 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 \begin{thm}[Formule di addizione]
 	Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
 	\begin{equation}
-		\Fib{n+m}=\dfrac{\Fib{m}\Luc{n+1}+\Luc{m+1}\Fib{n}}{2}
+		\Fib{n+m}=\dfrac{\Fib{m}\Luc{n}+\Luc{m}\Fib{n}}{2}
 	\end{equation}\label{eqn:FibLucSommaprodotto}
 \end{thm}\cite{Rabinowitz_1996}
 \begin{proof}
 	\begin{align*}
-	\Fib{m}\Luc{n+1}+\Luc{m+1}\Fib{n}={}&\dfrac{1}{a-b}[a^m-b^m][a^n+b^n]+[a^m+b^m]\dfrac{1}{a-b}[a^n-b^n]\\
-	={}&\dfrac{2}{a-b}[a^{n+m}-b{n+m}]
+	\Fib{m}\Luc{n}+\Luc{m}\Fib{n}={}&\dfrac{1}{a-b}[a^m-b^m][a^n+b^n]+[a^m+b^m]\dfrac{1}{a-b}[a^n-b^n]\\
+	={}&\dfrac{2}{a-b}[a^{n+m}-b^{n+m}]
 	\end{align*}
 \end{proof}
 \begin{thm}[Relazione fondamentale fra Lucas e Fibonacci]
 	Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
 	\begin{equation}
-		\Luc{n+1}^2-5\Fib{n}^2=4(-1)^{n}
+		\Luc{n}^2-5\Fib{n}^2=4(-1)^{n}
 	\end{equation}\label{eqn:FibLucFondamentale}
 \end{thm}\cite{Rabinowitz_1996}
 \begin{proof}
 \begin{align*}
-	\Luc{n+1}^2={}&a^{2n}+2a^nb^n+b^{2n}\\
+	\Luc{n}^2={}&a^{2n}+2a^nb^n+b^{2n}\\
 	\Fib{n}^2={}&\dfrac{a^{2n}}{(a-b)^2}+\dfrac{2a^{n}b^{n}}{(a-b)^2}+\dfrac{b^{2n}}{(a-b)^2}\\
-	\Luc{n+1}^2-5\Fib{n}^2={}&\dfrac{a^{2n}(a^2-2ab+b^2-5)+2a^nb^n(a^2-2ab+b^2+5)+b^{2n}(a^2-2ab+b^2-5)}{(a-b)^2}\\
+	\Luc{n}^2-5\Fib{n}^2={}&\dfrac{a^{2n}(a^2-2ab+b^2-5)+2a^nb^n(a^2-2ab+b^2+5)+b^{2n}(a^2-2ab+b^2-5)}{(a-b)^2}\\
 	={}&\dfrac{(a^2-2ab+b^2-5)(a^{2n}+b^{2n})+2a^nb^n(a^2+2ab+b^2+5)}{(a-b)^2}\\
 	={}&\dfrac{[(a-b)^2-5](a^{2n}+b^{2n})+2a^nb^n[(a-b)^2-5]}{(a-b)^2}\\
 	\intertext{per il~\vref{lem:FibpropPhi}}
