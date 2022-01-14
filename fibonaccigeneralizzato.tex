@@ -2,14 +2,14 @@
 \section{Definizione}
 \begin{defn}[Numeri di Fibonacci generalizzati]\index{Fibonacci!generalizzati!definizione}
 	\begin{align}
-		\Gib{1}={}&h\notag\\
-		\Gib{2}={}&k\notag\\
+		\Gib{0}={}&h\notag\\
+		\Gib{1}={}&k\notag\\
 		\Gib{n}={}&\Gib{n-1}+\Gib{n-2}\quad n>2\label{eqn:FiboGendef}
 	\end{align}
 \end{defn}
 \section{Formula di Binet generalizzata}
 \begin{thm}[Formula di Binet generalizzata]\index{Formula!Binet!generalizzata}
-Se $\Gib{1}={}h$ e $\Gib{2}={}k$ allora \begin{equation}
+Se $\Gib{0}={}h$ e $\Gib{1}={}k$ allora \begin{equation}
 	\Gib{n}={}\dfrac{k-bh}{a(a-b)}a^n+\dfrac{ah-k}{b(a-b)}b^n
 \end{equation}\label{eqn:FormulaBinetgeneralizzata}
 \end{thm}
@@ -20,7 +20,7 @@ Poniamo che \begin{equation}
 \begin{equation*}
 	\left\{
 	\begin{array}{l}
-		a^1x+b^1y=h\\ a^2x+b^2y=k
+		a^0x+b^0y=h\\ a^1x+b^1y=k
 	\end{array}
 	\right.
 \end{equation*}
@@ -34,7 +34,7 @@ che risolto porta
 \end{equation*}
 Riassumendo
  \begin{equation*}
-	\Gib{n}={}\dfrac{k-bh}{a(a-b)}a^n+\dfrac{ah-k}{b(a-b)}b^n
+	\Gib{n}={}\dfrac{k-bh}{a-b}a^n+\dfrac{ah-k}{a-b}b^n
 \end{equation*}
 Da cui la tesi.
 \end{proof}
