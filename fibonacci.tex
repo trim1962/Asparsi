@@ -324,7 +324,7 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 	\Fib{-n}=(-1)^{n+1}\Fib{n}
 \end{equation}\label{eqn:FibNegate}
 \begin{equation}
-	\Luc{-n+1}=(-1)^{n}\Luc{n+1}
+	\Luc{-n}=(-1)^{n}\Luc{n}
 \end{equation}\label{eqn:LucNegate}
 \end{thm}\cite{Rabinowitz_1996}
 \begin{proof}
@@ -339,11 +339,11 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 	\end{align*}
 	Riscriviamo il risultato del~\vref{eqn:LucBinet}
 \begin{align*}
-	\Luc{n}={}&a^{n-1}+b^{n-1}\\
-	\Luc{-n+1}={}&a^{-n}-b^{-n+}\\
-	={}&\dfrac{1}{(ab)^{-n}}[a^n-b^n]
+	\Luc{n}={}&a^{n}+b^{n}\\
+	\Luc{-n}={}&a^{-n}-b^{-n}\\
+	={}&(ab)^{-n}[a^n-b^n]
 	\intertext{per il~\vref{lem:FibpropPhi}}
-	={}&\dfrac{(-1)^{n+1}}{a-b}[a^n-b^n]\\
+	={}&(-1)^{n+1}[a^n-b^n]\\
 	={}&(-1)^{n}\Luc{n}
 \end{align*}
 \end{proof}
