@@ -144,7 +144,7 @@ quindi
 \begin{thm}[Formula di Binet per lucas]\index{Formula!Binet}
 	Se $\Luc{n}$ è la successione di Fibonacci allora avremo:
 	\begin{equation}
-		\Luc{n}=\left(\dfrac{1+\sqrt{5}}{2}\right)^{n-1}+\left(\dfrac{1-\sqrt{5}}{2}\right)^{n-1}
+		\Luc{n}=\left(\dfrac{1+\sqrt{5}}{2}\right)^{}+\left(\dfrac{1-\sqrt{5}}{2}\right)^{n}
 	\end{equation}\label{eqn:LucBinet}
 \end{thm}
 \begin{proof}
@@ -153,20 +153,19 @@ quindi
 		&\Luc{n}={}xa^n+yb^n\\
 		&\left\{
 		\begin{array}{l}
-			a^1x+b^1y=2\\ a^2y+b^2y=1
+			a^0x+b^0y=2\\ a^1y+b^1y=1
 		\end{array}\right.
 		\intertext{Otteniamo}
 		&\left\{
 		\begin{array}{l}
-			x=\dfrac{1-2b}{a(a-b)}\\ y=\dfrac{2a-1}{
-				b(a-b)}
+			x=\dfrac{1-2b}{a-b}\\ y=\dfrac{2a-1}{a-b}
 		\end{array}\right.
 		\intertext{per il~\vref{lem:FibpropPhi}}
 		&\left\{
 		\begin{array}{l}
-			x=\dfrac{1}{a}\\ y=\dfrac{1}{b}
+			x=1\\ y=1
 		\end{array}\right.\\ 
-		&\Luc{n}={}a^{n-1}+b^{n-1}
+		&\Luc{n}={}a^{n}+b^{n}
 	\end{align*}
 	quindi
 	\begin{equation}
