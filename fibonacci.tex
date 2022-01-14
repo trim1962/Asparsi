@@ -2,7 +2,7 @@
 \section{Definizione}
 \begin{defn}[Numeri di Fibonacci]\index{Fibonacci!definizione}
 	\begin{align}
-		\Fib{0}={}&1\notag\\
+		\Fib{0}={}&0\notag\\
 		\Fib{1}={}&1\notag\\
 		\Fib{n}={}&\Fib{n-1}+\Fib{n-2}\quad n>2\label{eqn:Fibodef}
 	\end{align}
@@ -122,19 +122,19 @@ La sezione aurea è:
 		&\Fib{n}={}xa^n+yb^n\\
 		&\left\{
 		\begin{array}{l}
-			a^0x+b^0y=1\\ a^1y+b^1y=1
+			a^0x+b^0y=0\\ a^1y+b^1y=1
 		\end{array}\right.
 	\intertext{Otteniamo}
 	&\left\{
 	\begin{array}{l}
-	x=\dfrac{1-b}{a(a-b)}\\ y=\dfrac{a-1}{b(a-b)}
-	\end{array}\right.
-\intertext{per il~\vref{lem:FibpropPhi}}
-&\left\{
-	\begin{array}{l}
 	x=\dfrac{1}{a-b}\\ y=-\dfrac{1}{a-b}
-\end{array}\right.\\ 
-	&\Fib{n+1}={}\dfrac{a^n-b^n}{a-b}
+	\end{array}\right.
+%\intertext{per il~\vref{lem:FibpropPhi}}
+%&\left\{
+%	\begin{array}{l}
+%	x=\dfrac{a}{a-b}\\ y=-\dfrac{b}{a-b}
+%\end{array}\right.\\ 
+	&\Fib{n}={}\dfrac{a^n-b^n}{a-b}
 	\end{align*}
 quindi
 \begin{equation}
