@@ -172,36 +172,6 @@ quindi
 		\Luc{n}=\left(\dfrac{1+\sqrt{5}}{2}\right)^{n-1}+\left(\dfrac{1-\sqrt{5}}{2}\right)^{n-1}
 	\end{equation}
 \end{proof}
-\begin{proof}
-	Poniamo $a=\varphi$ e con $b=1-\varphi$ allora
-	\begin{align*}
-		\intertext{Poniamo}
-		a^1={}&a\Fib{1}+\Fib{0}\\
-		%		a^3={}&a^2a\\
-		%		={}&a(a+1)\\
-		%		={}&a^2+a\\
-		%		={}&a+1+a\\
-		%		={}&2a+1\\
-		%		={}&a\Fib{3}+\Fib{2}\\
-		\intertext{Per induzione su $n$}
-		a^{n-1}={}&a\Fib{n-1}+\Fib{n-2}\\
-		a^{n-1}a={}&a^2\Fib{n-1}+a\Fib{n-2}\\
-		a^{n}={}&(a+1)\Fib{n-1}+a\Fib{n-2}\\
-		a^{n}={}&a\Fib{n-1}+\Fib{n-1}+a\Fib{n-2}\\
-		a^{n}={}&a(\Fib{n-1}+\Fib{n-2})+\Fib{n-1}\\
-		a^{n}={}&a\Fib{n}+\Fib{n-1}\\
-		\intertext{Analogamente si dimostra}
-		b^{n}={}&b\Fib{n}+\Fib{n-1}\\
-		\intertext{Sommando}
-		a^n-b^n={}&a\Fib{n}+b\Fib{n}\\
-		a^n-b^n={}&\Fib{n}(a+b)\\
-		\Luc{n}={}&a^n+b^n
-	\end{align*}
-	quindi
-	\begin{equation}
-		\Luc{n}=\left(\dfrac{1+\sqrt{5}}{2}\right)^n-\left(\dfrac{1-\sqrt{5}}{2}\right)^n
-	\end{equation}
-\end{proof}
 \section{Proprietà}
 \begin{thm}[Limite successione]
 Se $\Fib{n}$ è la successione di Fibonacci allora 
