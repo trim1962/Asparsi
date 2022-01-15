@@ -192,12 +192,13 @@ Se $\Fib{n}$ è la successione di Fibonacci allora
 \begin{thm}[Limite rapporto]
 	Se $\Fib{n}$ è la successione di Fibonacci e $\Gib{n}$ è quella generalizzata allora 
 	\begin{equation}
-		\lim_{n\to\infty}\dfrac{\Gib{n}}{\Fib{n}}=
-	\end{equation}\label{eqn:FibLimFibGib}=k-bh
+		\lim_{n\to\infty}\dfrac{\Gib{n}}{\Fib{n}}=k-bh
+	\end{equation}\label{eqn:FibLimFibGib}
 \end{thm}
 \begin{proof}
 \begin{align*}
-\dfrac{\Gib{n}}{\Fib{n}}=&\dfrac{a^n(k-bh)+b^n(ah-k)}{a^n-b^n}
+\lim_{n\to\infty}\dfrac{\Gib{n}}{\Fib{n}}=&\lim_{n\to\infty}\dfrac{a^n(k-bh)+b^n(ah-k)}{a^n-b^n}\\
+=&\lim_{n\to\infty}\dfrac{a^n[k-bh+\left(\dfrac{b}{a}\right)^n(ak-k)]}{a^n[1-\left(\dfrac{b}{a}\right)^n]}
 \end{align*}
 \end{proof}
 \begin{thm}[Quadrato]\label{thm:fibQuadrato}
