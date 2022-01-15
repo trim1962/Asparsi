@@ -189,38 +189,7 @@ Se $\Fib{n}$ è la successione di Fibonacci allora
 	\lim_{n\to\infty}\left(\dfrac{1-\varphi}{\varphi}\right)^{n}={}&0
 \end{align*}cvd
 \end{proof}
-\begin{thm}[Limite rapporto]
-	Se $\Fib{n}$ è la successione di Fibonacci e $\Gib{n}$ è quella generalizzata allora 
-	\begin{equation}
-		\lim_{n\to\infty}\dfrac{\Gib{n}}{\Fib{n}}=k-bh
-	\end{equation}\label{eqn:FibLimFibGib}
-\end{thm}~\cite{Horadam_1961}
-\begin{proof}
-\begin{align*}
-\lim_{n\to\infty}\dfrac{\Gib{n}}{\Fib{n}}={}&\lim_{n\to\infty}\dfrac{a^n(k-bh)+b^n(ah-k)}{a^n-b^n}\\
-={}&\lim_{n\to\infty}\dfrac{a^n\left[k-bh+\left(\dfrac{b}{a}\right)^n(ak-k)\right]}{a^n\left[1-\left(\dfrac{b}{a}\right)^n\right]}\\
-={}&k-bh\\
-\intertext{Dato che}
-\lim_{n\to\infty}\left(\dfrac{b}{a}\right)^{n}={}&0\\
-\end{align*}
-Come si voleva dimostrare.
-\end{proof}
-\begin{thm}[Limite rapporto]
-	Se  $\Gib{n}$ è la successione generalizzata allora 
-	\begin{equation}
-		\lim_{n\to\infty}\dfrac{\Gib{n}}{\Gib{n-i}}=a^i
-	\end{equation}\label{eqn:GibLimdif}
-\end{thm}~\cite{Horadam_1961}
-\begin{proof}
-	\begin{align*}
-		\lim_{n\to\infty}\dfrac{\Gib{n}}{\Gib{n-i}}={}&	\lim_{n\to\infty}-\dfrac{a^ib^i[a^n(bh-k)+b^n(k-ah)]}{a^ib^n(ah-k)+a^nb^i(k-bh)}\\
-		={}&\lim_{n\to\infty}-\dfrac{a^n\left\{a^ib^i\left[bh-k\right]\left(\dfrac{b}{a}\right)^n(k-ah)\right\}}{a^n\left\{a^i\left(\dfrac{b}{a}\right)^n(bh-k)+b^i(k-ah)\right\}}\\
-		={}&\dfrac{a^ib^i(k-bh)}{b^i(k-bh)}\\
-		={}&a^i
-		\intertext{Dato che}
-		\lim_{n\to\infty}\left(\dfrac{b}{a}\right)^{n}={}&0\\
-	\end{align*}
-\end{proof}
+
 \begin{thm}[Quadrato]\label{thm:fibQuadrato}
 	Se $\Fib{n}$ è la successione di Fibonacci allora 
 	\begin{equation}
