@@ -273,6 +273,16 @@ Utilizzando il~\vref{thm:FibdispariGen} e il~\vref{thm:Fibdispari} otteniamo
 \begin{proof}
 	\begin{align*}
 		\Gib{n+2}-2\Gib{n}-\Gib{n-1}=&\\
-		=&\dfrac{a^{n-1}(a^3-2a-1(k-bh))}{a-b}+\dfrac{b^{n-1}(b^3-2b-1(ah-k))}{a-b}\\
+		=&\dfrac{a^{n-1}(a^3-2a-1)(k-bh)}{a-b}+\dfrac{b^{n-1}(b^3-2b-1)(ah-k)}{a-b}
+		\intertext{per~\vref{lem:FibpropPhi}}
+		a^3-2a-1=&\\
+		=&aa^2-2a-1	\\
+		=&a(a+1)-2a-1\\
+		=&a^2+a-2a-1\\
+		=&a^2-a-1\\
+		=&0
+		\intertext{Analogamente}
+		b^3-2b-1=&0\\
 	\end{align*}
+Quindi la tesi.
 \end{proof}
