@@ -220,6 +220,5 @@
   publisher        = {Springer Netherlands},
 }
 
-@Comment{jabref-meta: databaseType:biblatex;}
-
-@Comment{ja
+@Article{Horadam_1961,
+  author           = {A. F. Horadam}
