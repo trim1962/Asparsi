@@ -245,6 +245,19 @@ cvd
 		\Fib{n+i}\cdot\Fib{n+j}-\Fib{n}\Fib{n+i+j}=(-1)^{n}\Fib{i}\Fib{j}
 	\end{equation}\label{eqn:FibVajada}
 \end{thm}\index{Fibonacci!identità!Vajada}
+\begin{proof}
+	Riscriviamo il risultato del~\vref{eqn:FinBinet} 
+	\begin{align*}
+		\Fib{n}={}&\dfrac{1}{a-b}\left(a^n-b^n\right)
+		\intertext{da cui}
+		\Fib{n+i}={}&\dfrac{1}{a-b}\left(a^{n+i}-b^{n+i}\right)\\
+		\Fib{n+j}={}&\dfrac{1}{a-b}\left(a^{n+j}-b^{n+j}\right)\\
+\Fib{n+i}\Fib{n+j}-\Fib{n}\Fib{n+i+j}=&\dfrac{a^{n}b^{n}(a^i-b^i)(a^j-b^j)}{(a-b)^2}\\
+		\intertext{per~\vref{lem:FibpropPhi}}
+	=&\dfrac{(-1)^{n}(a^i-b^i)(a^j-b^j)}{(a-b)^2}\\
+		={}&(-1)^{n}\Fib{i}\Fib{j}\\
+	\end{align*}
+\end{proof}
 \begin{thm}[Dispari]\label{thm:Fibdispari}
 	Se $\Fib{n}$ è la successione di Fibonacci allora 
 	\begin{equation}
