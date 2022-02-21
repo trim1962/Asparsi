@@ -168,9 +168,17 @@ cvd.
 \end{proof}
 \begin{lem}\label{lem:PropPhiGen}
 	\begin{equation}
-		(k-bh)(k-ak)=x^2-xy-y^2
+		(k-bh)(k-ak)=k^2-hk-h^2
 	\end{equation}
 \end{lem}
+\begin{proof}
+	\begin{align*}
+			(k-bh)(k-ak)=&abh^2-(a+b)hk+k^2
+		\intertext{per~\vref{lem:FibpropPhi}}
+		=&k^2-hk-h^2
+	\end{align*}
+cvd.
+\end{proof}
 \begin{thm}[Identità di Cassini generalizzata]\label{thm:fibQuadratoGen}
 	Se $\Gib{n}$ è la successione di Fibonacci generalizzata allora 
 	\begin{equation}
