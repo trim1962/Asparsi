@@ -177,7 +177,7 @@ cvd.
 \Gib{n}=&{}\dfrac{k-bh}{a(a-b)}a^n+\dfrac{ah-k}{b(a-b)}b^n\\
 \Gib{n-1}=&{}\dfrac{k-bh}{a(a-b)}a^{n-1}+\dfrac{ah-k}{b(a-b)}b^{n-1}\\
 \Gib{n+1}=&{}\dfrac{k-bh}{a(a-b)}a^{n+1}+\dfrac{ah-k}{b(a-b)}b^{n+1}\\
-\Gib{n-1}\cdot\Gib{n+1}-\Gib{n}^n=&a^{n-1}b^{n-1}(k-bh)(ah-k)\\
+\Gib{n-1}\cdot\Gib{n+1}-\Gib{n}^2=&a^{n-1}b^{n-1}(k-bh)(ah-k)\\
 	\intertext{per~\vref{lem:FibpropPhi}}
 	=&(-1)^{n}(k-bh)(k-ah)\\
 \end{align*}
@@ -194,9 +194,10 @@ cvd.
 		\Gib{n}=&{}\dfrac{k-bh}{a(a-b)}a^n+\dfrac{ah-k}{b(a-b)}b^n\\
 		\Gib{n-r}=&{}\dfrac{k-bh}{a(a-b)}a^{n-1}+\dfrac{ah-k}{b(a-b)}b^{n-1}\\
 		\Gib{n+r}=&{}\dfrac{k-bh}{a(a-b)}a^{n+1}+\dfrac{ah-k}{b(a-b)}b^{n+1}\\
-		\Gib{n-r}\cdot\Gib{n+r}-\Gib{n}^n=&a^{n-r}b^{n+r}(k-bh)(ah-k)\dfrac{a^{2r}-2a^rb^r+b^{2r}}{(a-b)^2}\\
+		\Gib{n-r}\cdot\Gib{n+r}-\Gib{n}^2=&a^{n-r}b^{n+r}(k-bh)(ah-k)\dfrac{a^{2r}-2a^rb^r+b^{2r}}{(a-b)^2}\\
+		=&a^{n-r}b^{n+r}(k-bh)(ah-k)\Gib{r}^2\\
 		\intertext{per~\vref{lem:FibpropPhi}}
-		=&(-1)^{n}(k-bh)(k-ah)\\
+		=&(-1)^{n-r+1}(k-bh)(k-ah)\Gib{r}^2\\
 	\end{align*}
 	cvd.
 \end{proof}
