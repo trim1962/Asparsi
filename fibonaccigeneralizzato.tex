@@ -166,17 +166,20 @@ cvd.
 		\lim_{n\to\infty}\left(\dfrac{b}{a}\right)^{n}={}&0\\
 	\end{align*}
 \end{proof}
-\begin{thm}[Quadrato]\label{thm:fibQuadratoGen}
+\begin{thm}[Identità di Cassini generalizzata]\label{thm:fibQuadratoGen}
 	Se $\Gib{n}$ è la successione di Fibonacci generalizzata allora 
 	\begin{equation}
 		\Gib{n-1}\cdot\Gib{n+1}-\Gib{n}^2=(-1)^n(k-bh)(k-ah)
 	\end{equation}\label{eqn:FibQuadratoGen}
-\end{thm}
+\end{thm}\index{Fibonacci!identita!Cassini generalizzata}
 \begin{proof}
 \begin{align*}
-\Gib{n}={}\dfrac{k-bh}{a(a-b)}a^n+\dfrac{ah-k}{b(a-b)}b^n\\
-\Gib{n-1}={}\dfrac{k-bh}{a(a-b)}a^{n-1}+\dfrac{ah-k}{b(a-b)}b^{n-1}\\
-\Gib{n+1}={}\dfrac{k-bh}{a(a-b)}a^{n+1}+\dfrac{ah-k}{b(a-b)}b^{n+1}\\
+\Gib{n}=&{}\dfrac{k-bh}{a(a-b)}a^n+\dfrac{ah-k}{b(a-b)}b^n\\
+\Gib{n-1}=&{}\dfrac{k-bh}{a(a-b)}a^{n-1}+\dfrac{ah-k}{b(a-b)}b^{n-1}\\
+\Gib{n+1}=&{}\dfrac{k-bh}{a(a-b)}a^{n+1}+\dfrac{ah-k}{b(a-b)}b^{n+1}\\
+\Gib{n-1}\cdot\Gib{n+1}-\Gib{n}^n=&a^{n-1}b^{n-1}(k-bh)(ah-k)\\
+	\intertext{per~\vref{lem:FibpropPhi}}
+	=&(-1)^{n}(k-bh)(k-ah)\\
 \end{align*}
 \end{proof}
 \section{Proprietà esclusive successione di Fibonacci}
