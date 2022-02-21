@@ -182,7 +182,7 @@ cvd.
 \begin{thm}[Identità di Cassini generalizzata]\label{thm:fibQuadratoGen}
 	Se $\Gib{n}$ è la successione di Fibonacci generalizzata allora 
 	\begin{equation}
-		\Gib{n-1}\cdot\Gib{n+1}-\Gib{n}^2=(-1)^n(k-bh)(k-ah)
+		\Gib{n-1}\cdot\Gib{n+1}-\Gib{n}^2=(-1)^n(k^2-hk-h^2)
 	\end{equation}\label{eqn:FibQuadratoGen}
 \end{thm}\index{Fibonacci!identità!Cassini generalizzata}
 \begin{proof}
@@ -192,14 +192,16 @@ cvd.
 \Gib{n+1}=&{}\dfrac{k-bh}{a(a-b)}a^{n+1}+\dfrac{ah-k}{b(a-b)}b^{n+1}\\
 \Gib{n-1}\cdot\Gib{n+1}-\Gib{n}^2=&a^{n-1}b^{n-1}(k-bh)(ah-k)\\
 	\intertext{per~\vref{lem:FibpropPhi}}
-	=&(-1)^{n}(k-bh)(k-ah)\\
+	=&(-1)^{n}(k-bh)(k-ah)
+	\intertext{per~\vref{lem:PropPhiGen}}
+	=&(-1)^n(k^2-hk-h^2)
 \end{align*}
 cvd.
 \end{proof}
 \begin{thm}[Identità di Catalan generalizzata]\label{thm:fibCatalanGen}
 	Se $\Gib{n}$ è la successione di Fibonacci generalizzata allora 
 	\begin{equation}
-		\Gib{n-r}\cdot\Gib{n+r}-\Gib{n}^2=(-1)^{n-r+1}(k-bh)(k-ah)\Gib{r}^2
+		\Gib{n-r}\cdot\Gib{n+r}-\Gib{n}^2=(-1)^{n-r+1}(k^2-hk-h^2)\Gib{r}^2
 	\end{equation}\label{eqn:fibCatalanGen}
 \end{thm}\index{Fibonacci!identità!Catalan generalizzata}
 \begin{proof}
@@ -211,13 +213,15 @@ cvd.
 		=&a^{n-r}b^{n+r}(k-bh)(ah-k)\Gib{r}^2\\
 		\intertext{per~\vref{lem:FibpropPhi}}
 		=&(-1)^{n-r+1}(k-bh)(k-ah)\Gib{r}^2\\
+		\intertext{per~\vref{lem:PropPhiGen}}
+		=&(-1)^{n-r+1}(k^2-hk-h^2)\Gib{r}^2
 	\end{align*}
 	cvd.
 \end{proof}
 \begin{thm}[Identità di Vajda generalizzata]\label{thm:fibVajdaGen}
 	Se $\Gib{n}$ è la successione di Fibonacci generalizzata allora 
 	\begin{equation}
-		\Gib{n+i}\cdot\Gib{n+j}-\Gib{n}\cdot\Gib{n+i+j}=(-1)^{n}(k-bh)(k-ah)\Gib{i}\cdot\Gib{j}
+		\Gib{n+i}\cdot\Gib{n+j}-\Gib{n}\cdot\Gib{n+i+j}=(-1)^{n}(k^2-hk-h^2)\Gib{i}\cdot\Gib{j}
 	\end{equation}\label{eqn:fibVajdaGen}
 \end{thm}\index{Fibonacci!identità!Vajda generalizzata}
 \begin{proof}
@@ -229,6 +233,8 @@ cvd.
 		\Gib{n+i}\cdot\Gib{n+j}-\Gib{n}\cdot\Gib{n+i+j}=&\dfrac{a^nb^n(a^i-b^i)(a^j-b^j)(k-ah)(k-bh)}{(a-b)^2}\\
 		\intertext{per~\vref{lem:FibpropPhi}}
 		=&(-1)^{n}(k-bh)(k-ah)\Gib{i}\cdot\Gib{j}\\
+		\intertext{per~\vref{lem:PropPhiGen}}
+		=&(-1)^{n}(k^2-hk-h^2)\Gib{i}\cdot\Gib{j}\\
 	\end{align*}
 	cvd.
 \end{proof}
