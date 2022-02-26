@@ -474,8 +474,8 @@ Proviamo la seconda parte
 	\end{align*}
 	Da cui la tesi.
 \end{proof}
-Una generalizzazione del~\vref{thm:LucFibSommaprodotto} è il seguente
-\begin{thm}[Formule moltiplicazione scalare]\label{thm:LucFibmoltscalare}
+Una conseguenza del~\vref{thm:LucFibSommaprodotto} è il seguente
+\begin{cor}[Formule moltiplicazione scalare]\label{thm:LucFibmoltscalare}
 	Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
 	\begin{equation}
 		\Fib{kn}=\dfrac{\Fib{(k-1)n}\Luc{n}+\Luc{(k-1)n}\Fib{n}}{2}
@@ -483,7 +483,7 @@ Una generalizzazione del~\vref{thm:LucFibSommaprodotto} è il seguente
 	\begin{equation}
 		\Luc{kn}=\dfrac{5\Fib{(k-1)n}\Fib{n}+\Luc{(k-1)n}\Luc{n}}{2}
 	\end{equation}\label{eqn:Lucmoltiplicazionescalare}
-\end{thm}\cite{Rabinowitz_1996}
+\end{cor}\cite{Rabinowitz_1996}
  \begin{proof}
  \begin{align*}
  	\intertext{Utilizzando il~\vref{thm:LucFibSommaprodotto}}
@@ -546,4 +546,5 @@ Una generalizzazione del~\vref{thm:LucFibSommaprodotto} è il seguente
 	\intertext{per il~\vref{lem:FibpropPhi}}
 	=&\Fib{m+n}+(-1)^{n}\Fib{m-n}
 \end{align*}
+cvd.
 \end{proof}
