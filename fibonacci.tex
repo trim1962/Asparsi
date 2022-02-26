@@ -445,6 +445,9 @@ Da cui la tesi.
 	\begin{equation}
 		\Luc{n}=\Fib{n+1}+\Fib{n-1}
 	\end{equation}\label{eqn:LucasConvertiinFib}
+\begin{equation}
+	\Fib{n}=\dfrac{\Luc{n+1}+\Luc{n-1}}{5}
+\end{equation}\label{eqn:FibConvertiinLucas}
 \end{thm}\cite{Rabinowitz_1996}
 \begin{proof}
 	\begin{align*}
@@ -452,7 +455,7 @@ Da cui la tesi.
 	\Fib{n-1}={}&\dfrac{1}{a-b}\left(a^{n-1}-b^{n-1}\right)\\
 	\Fib{n+1}+\Fib{n-1}=&\dfrac{ba^n(a^2+1)-ab^n(b^2+1)}{ab(a-b)}
 		\intertext{per il~\vref{lem:FibpropPhi}}
-		=&-\dfrac{a^n+b^n}{ab}
+		=&-\dfrac{a^n+b^n}{ab}\\
 		=&a^n+b^n
 	\end{align*}
 	Da cui la tesi.
