@@ -512,6 +512,11 @@ Una generalizzazione del~\vref{thm:LucFibSommaprodotto} è il seguente
 	=&\dfrac{a^{m+n}}{(a-b)^2}+\dfrac{b^{m+n}}{(a-b)^2}-\dfrac{a^mb^n}{(a-b)^2}-\dfrac{a^nb^m}{(a-b)^2}\\
 	=&\dfrac{\Luc{m+n}}{(a-b)^2}-\dfrac{a^mb^n+a^nb^m}{(a-b)^2}\\
 	\Luc{m-n}=&a^{m-n}-b^{m-n}=a^{-n}b^{-n}(a^mb^n+a^nb^m)\\
+	\intertext{ma}
 	a^mb^n+a^nb^m=&a^{n}b^{n}\Luc{m-n}\\
+	\intertext{quindi}
+	=&\dfrac{\Luc{m+n}}{(a-b)^2}-\dfrac{a^{n}b^{n}\Luc{m-n}}{(a-b)^2}\\
+	\intertext{per il~\vref{lem:FibpropPhi}}
+	=&5(\Luc{m+n}-(-1)^{n}\Luc{m-n})\\
 \end{align*}
 \end{proof}
