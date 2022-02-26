@@ -396,7 +396,7 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 	={}&(-1)^{n}\Luc{n}
 \end{align*}
 \end{proof}
-\begin{thm}[Formule di addizione]
+\begin{thm}[Formule di addizione]\label{thm:LucFibSommaprodotto}
 	Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
 	\begin{equation}
 		\Fib{n+m}=\dfrac{\Fib{m}\Luc{n}+\Luc{m}\Fib{n}}{2}
@@ -404,7 +404,7 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 \begin{equation}
 	\Luc{n+m}=\dfrac{5\Fib{m}\Fib{n}+\Luc{m}\Luc{n}}{2}
 \end{equation}\label{eqn:LucFibSommaprodotto}
-\end{thm}\cite{Rabinowitz_1996}\label{thm:LucFibSommaprodotto}
+\end{thm}\cite{Rabinowitz_1996}
 \begin{proof}
 	\begin{align*}
 	\Fib{m}\Luc{n}+\Luc{m}\Fib{n}={}&\dfrac{1}{a-b}[a^m-b^m][a^n+b^n]+[a^m+b^m]\dfrac{1}{a-b}[a^n-b^n]\\
