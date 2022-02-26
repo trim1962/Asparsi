@@ -422,7 +422,7 @@ Dimostriamo la seconda uguaglianza
 cvd.
 \end{proof}
 Una conseguenza del~\vref{thm:LucFibSommaprodotto} è il seguente
-\begin{cor}[Formule moltiplicazione scalare]\label{thm:LucFibmoltscalare}
+\begin{cor}[Formule moltiplicazione scalare]\label{cor:LucFibmoltscalare}
 	Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
 	\begin{equation}
 		\Fib{kn}=\dfrac{\Fib{(k-1)n}\Luc{n}+\Luc{(k-1)n}\Fib{n}}{2}
@@ -579,12 +579,5 @@ m=&n\\
 	\Luc{n}\Luc{n}=&\Luc{n+n}+(-1)^n\Luc{n-n}\\
 	\Luc{n}^2=&\Luc{2n}+(-1)^n\Luc{0}\\
 	\Luc{n}^2=&\Luc{2n}+2(-1)^n\\
-\end{align*}
-\begin{align*}
-\intertext{Per il~\vref{thm:FibProdSomma}}
-\Fib{m}\Fib{n}=&\dfrac{\Luc{n+m}-(-1)^n\Luc{m-n}}{5}
-\intertext{posto}
-m=&n\\
-\Fib{2n}\Fib{n}=&\dfrac{\Luc{n+2n}-(-1)^n\Luc{2n-n}}{5}
 \end{align*}
 \end{proof}
