@@ -503,10 +503,10 @@ Una generalizzazione del~\vref{thm:LucFibSommaprodotto} è il seguente
 		\Fib{m}\Fib{n}=\dfrac{\Luc{n+m}-(-1)^n\Luc{m-n}}{5}
 	\end{equation}\label{eqn:FibProdSomma}
 	\begin{equation}
-	\Luc{m}\Luc{n}=\Luc{n+m}-(-1)^n\Luc{m-n}
+	\Luc{m}\Luc{n}=\Luc{n+m}+(-1)^n\Luc{m-n}
 	\end{equation}\label{eqn:LucProdSomma}
 \begin{equation}
-	\Fib{m}\Luc{n}=\Fib{n+m}-(-1)^n\Fib{m-n}
+	\Fib{m}\Luc{n}=\Fib{n+m}+(-1)^n\Fib{m-n}
 \end{equation}\label{eqn:LucFibProdSomma}
 \end{thm}\cite{Rabinowitz_1996}
 \begin{proof}
@@ -520,30 +520,30 @@ Una generalizzazione del~\vref{thm:LucFibSommaprodotto} è il seguente
 	\intertext{quindi}
 	=&\dfrac{\Luc{m+n}}{(a-b)^2}-\dfrac{a^{n}b^{n}\Luc{m-n}}{(a-b)^2}\\
 	\intertext{per il~\vref{lem:FibpropPhi}}
-	=&\dfrac{\Luc{m+n}-(-1)^{n}\Luc{m-n}}{5}
+	=&\dfrac{\Luc{m+n}+(-1)^{n}\Luc{m-n}}{5}
 \end{align*}
 \begin{align*}
-	\Luc{m}\Luc{n}=&a^{m+n}-a^mb^n-a^nb^m+b^{m+n}\\
-	=&a^{m+n}+b^{m+n}-a^mb^n-a^nb^m\\
-	=&\Luc{m+n}-(a^mb^n+a^nb^m)\\
+	\Luc{m}\Luc{n}=&a^{m+n}+a^mb^n+a^nb^m+b^{m+n}\\
+	=&a^{m+n}+b^{m+n}+a^mb^n+a^nb^m\\
+	=&\Luc{m+n}+(a^mb^n+a^nb^m)\\
 	\Luc{m-n}=&a^{m-n}-b^{m-n}=a^{-n}b^{-n}(a^mb^n+a^nb^m)\\
 	\intertext{ma}
 	a^mb^n+a^nb^m=&a^{n}b^{n}\Luc{m-n}\\
 	\intertext{quindi}
-	=&\Luc{m+n}-a^{n}b^{n}\Luc{m-n}\\
+	=&\Luc{m+n}+a^{n}b^{n}\Luc{m-n}\\
 	\intertext{per il~\vref{lem:FibpropPhi}}
-	=&\Luc{m+n}-(-1)^{n}\Luc{m-n}
+	=&\Luc{m+n}+(-1)^{n}\Luc{m-n}
 \end{align*}
 \begin{align*}
 	\Fib{m}\Luc{n}=&\dfrac{a^{m+n}}{a-b}-\dfrac{a^mb^n}{a-b}-\dfrac{a^nb^m}{(b-a}+\dfrac{b^{m+n}}{b-a}\\
 	=&\dfrac{a^{m+n}}{a-b}+\dfrac{b^{m+n}}{b-a}+\dfrac{a^mb^n}{a-b}+\dfrac{a^nb^m}{b-a}\\
-	=&\Fib{m+n}-\dfrac{a^mb^n+a^nb^m}{a-b}\\
-	\Fib{m-n}=&\dfrac{a^{m-n}}{a-b}+\dfrac{b^{m-n}}{b-a}=a^{-n}b^{-n}(\dfrac{a^mb^n+a^nb^m}{a-b})\\
+	=&\Fib{m+n}-\dfrac{a^mb^n-a^nb^m}{a-b}\\
+	\Fib{m-n}=&\dfrac{a^{m-n}}{a-b}+\dfrac{b^{m-n}}{b-a}=a^{-n}b^{-n}\left(\dfrac{a^mb^n+a^nb^m}{a-b}\right)\\
 	\intertext{ma}
-	a^mb^n+a^nb^m=&a^{n}b^{n}\Luc{m-n}\\
+	\left(\dfrac{a^mb^n+a^nb^m}{a-b}\right)=&a^{n}b^{n}\Fib{m-n}\\
 	\intertext{quindi}
-	=&\dfrac{\Luc{m+n}}{(a-b)^2}-\dfrac{a^{n}b^{n}\Luc{m-n}}{(a-b)^2}\\
+	=&\Fib{m+n}+a^{n}b^{n}\Fib{m-n}\\
 	\intertext{per il~\vref{lem:FibpropPhi}}
-	=&\dfrac{\Luc{m+n}-(-1)^{n}\Luc{m-n}}{5}
+	=&\Fib{m+n}+(-1)^{n}\Fib{m-n}
 \end{align*}
 \end{proof}
