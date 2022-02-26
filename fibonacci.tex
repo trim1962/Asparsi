@@ -68,8 +68,8 @@ La sezione aurea è:
 		b^3={}&b^2+b\\
 		a^2+b^2={}&a+b+2\\
 	a-b={}&\sqrt{5}\\
-	a^2b+b=&-a+b\\
-	-b^2a-a=&b-a\\
+	a^2b+b={}&-a+b\\
+	-b^2a-a={}&b-a\\
 		\end{align*}
 \end{lem}
 \begin{proof}
@@ -452,10 +452,10 @@ Da cui la tesi.
 	\begin{align*}
 	\Fib{n+1}={}&\dfrac{1}{a-b}\left(a^{n+1}-b^{n+1}\right)\\
 	\Fib{n-1}={}&\dfrac{1}{a-b}\left(a^{n-1}-b^{n-1}\right)\\
-	\Fib{n+1}+\Fib{n-1}=&\dfrac{ba^n(a^2+1)-ab^n(b^2+1)}{ab(a-b)}
+	\Fib{n+1}+\Fib{n-1}={}&\dfrac{ba^n(a^2+1)-ab^n(b^2+1)}{ab(a-b)}
 		\intertext{per il~\vref{lem:FibpropPhi}}
-		=&-\dfrac{a^n+b^n}{ab}\\
-		=&a^n+b^n
+		={}&-\dfrac{a^n+b^n}{ab}\\
+		={}&a^n+b^n
 	\end{align*}
 	Da cui la tesi.
 \end{proof}
@@ -464,13 +464,13 @@ Proviamo la seconda parte
 	\begin{align*}
 		\Luc{n+1}={}&a^{n+1}-b^{n+1}\\
 		\Luc{n-1}={}&a^{n-1}-b^{n-1}\\
-		\dfrac{\Luc{n+1}+\Luc{n-1}}{5}=&
+		\dfrac{\Luc{n+1}+\Luc{n-1}}{5}={}&
 		\dfrac{a^{n+1}-b^{n+1}+a^{n-1}-b^{n-1}}{(a-b)^2}\\
-		=&\dfrac{ba^n(a^2+1)+ab^n(b^2+1)}{ab(a-b)^2}
+		={}&\dfrac{ba^n(a^2+1)+ab^n(b^2+1)}{ab(a-b)^2}
 		\intertext{per il~\vref{lem:FibpropPhi}}
-		=&\dfrac{a^n(-a+b)+b^n(-b+a)}{ab(a-b)^2}\\
-		=&\dfrac{a^n-b^n}{ab(b-a)}\\
-		=&\dfrac{a^n-b^n}{a-b}\\
+		={}&\dfrac{a^n(-a+b)+b^n(-b+a)}{ab(a-b)^2}\\
+		={}&\dfrac{a^n-b^n}{ab(b-a)}\\
+		={}&\dfrac{a^n-b^n}{a-b}\\
 	\end{align*}
 	Da cui la tesi.
 \end{proof}
@@ -487,13 +487,13 @@ Una generalizzazione del~\vref{thm:LucFibSommaprodotto} è il seguente
  \begin{proof}
  \begin{align*}
  	\intertext{Utilizzando il~\vref{thm:LucFibSommaprodotto}}
- 	\Fib{n+m}=&\dfrac{\Fib{m}\Luc{n}+\Luc{m}\Fib{n}}{2}\\
- 	\Luc{n+m}=&\dfrac{5\Fib{m}\Fib{n}+\Luc{m}\Luc{n}}{2}
+ 	\Fib{n+m}={}&\dfrac{\Fib{m}\Luc{n}+\Luc{m}\Fib{n}}{2}\\
+ 	\Luc{n+m}={}&\dfrac{5\Fib{m}\Fib{n}+\Luc{m}\Luc{n}}{2}
  	\intertext{Ponendo}
- 	kn=&kn-n+n=n(k-1)+n\\
- 	m=&n(k-1)\\
- 	n=&n\\
- 	\Fib{kn}=&\dfrac{\Fib{n(k-1)}\Luc{n}+\Luc{n(k-1)}\Fib{n}}{2}\\
- \Luc{kn}=&\dfrac{5\Fib{n(k-1)}\Fib{n}+\Luc{n(k-1)}\Luc{n}}{2}
+ 	kn={}&kn-n+n=n(k-1)+n\\
+ 	m={}&n(k-1)\\
+ 	n={}&n\\
+ 	\Fib{kn}={}&\dfrac{\Fib{n(k-1)}\Luc{n}+\Luc{n(k-1)}\Fib{n}}{2}\\
+ \Luc{kn}={}&\dfrac{5\Fib{n(k-1)}\Fib{n}+\Luc{n(k-1)}\Luc{n}}{2}
  \end{align*}
  \end{proof}
