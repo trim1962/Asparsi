@@ -497,3 +497,17 @@ Una generalizzazione del~\vref{thm:LucFibSommaprodotto} è il seguente
  \Luc{kn}={}&\dfrac{5\Fib{n(k-1)}\Fib{n}+\Luc{n(k-1)}\Luc{n}}{2}
  \end{align*}
  \end{proof}
+\begin{thm}[Prodotto in somma]\label{thm:FibProdSomma}
+	Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
+	\begin{equation}
+		\Fib{m}\Fib{n}=\dfrac{\Luc{n+m}-(-1)^n\Luc{m-n}}{5}
+	\end{equation}\label{eqn:FibProdSomma}
+	\begin{equation}
+		\Luc{kn}=\dfrac{5\Fib{(k-1)n}\Fib{n}+\Luc{(k-1)n}\Luc{n}}{2}
+	\end{equation}\label{eqn:Lucmoltiplicazionescalare}
+\end{thm}\cite{Rabinowitz_1996}
+\begin{proof}
+\begin{align*}
+	\Fib{m}\Fib{n}=&\dfrac{a^{m+n}}{(a-b)^2}-\dfrac{a^mb^n}{(a-b)^2}-\dfrac{a^nb^m}{(a-b)^2}+\dfrac{b^{m+n}}{(a-b)^2}\\
+\end{align*}
+\end{proof}
