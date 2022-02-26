@@ -85,7 +85,7 @@ La sezione aurea è:
 	cvd.
 \end{proof}
 \section{Formula di Binet}
-\begin{thm}[Formula di Binet]\index{Formula!Binet}
+\begin{thm}[Formula di Binet]\index{Formula!Binet!Fibonacci}
 	Se $\Fib{n}$ è la successione di Fibonacci allora avremo:
 	\begin{equation}
 		\Fib{n}=\dfrac{1}{\sqrt{5}}\left[\left(\dfrac{1+\sqrt{5}}{2}\right)^n-\left(\dfrac{1-\sqrt{5}}{2}\right)^n\right]
@@ -147,7 +147,7 @@ quindi
 	\Fib{n}=\dfrac{1}{\sqrt{5}}\left[\left(\dfrac{1+\sqrt{5}}{2}\right)^n-\left(\dfrac{1-\sqrt{5}}{2}\right)^n\right]
 \end{equation}
 \end{proof}
-\begin{thm}[Formula di Binet per lucas]\index{Formula!Binet}
+\begin{thm}[Formula di Binet per lucas]\index{Formula!Binet!Lucas}
 	Se $\Luc{n}$ è la successione di Fibonacci allora avremo:
 	\begin{equation}
 		\Luc{n}=\left(\dfrac{1+\sqrt{5}}{2}\right)^{}+\left(\dfrac{1-\sqrt{5}}{2}\right)^{n}
@@ -195,7 +195,6 @@ Se $\Fib{n}$ è la successione di Fibonacci allora
 	\lim_{n\to\infty}\left(\dfrac{1-\varphi}{\varphi}\right)^{n}={}&0
 \end{align*}cvd
 \end{proof}
-
 \begin{thm}[Identità di Cassini]\label{thm:fibQuadrato}\index{Fibonacci!identità!Cassini}
 	Se $\Fib{n}$ è la successione di Fibonacci allora 
 	\begin{equation}
@@ -476,7 +475,7 @@ Proviamo la seconda parte
 	Da cui la tesi.
 \end{proof}
 Una generalizzazione del~\vref{thm:LucFibSommaprodotto} è il seguente
-\begin{thm}[Formule moltiplicaione scalare]\label{thm:LucFibmoltscalare}
+\begin{thm}[Formule moltiplicazione scalare]\label{thm:LucFibmoltscalare}
 	Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
 	\begin{equation}
 		\Fib{kn}=\dfrac{\Fib{(k-1)n}\Luc{n}+\Luc{(k-1)n}\Fib{n}}{2}
@@ -491,8 +490,10 @@ Una generalizzazione del~\vref{thm:LucFibSommaprodotto} è il seguente
  	\Fib{n+m}=&\dfrac{\Fib{m}\Luc{n}+\Luc{m}\Fib{n}}{2}
  	\intertext{Ponendo}
  	kn=&kn-n+n=n(k-1)+n\\
- 	n=&n(k-1)\\
- 	m=&n\\
+ 	m=&n(k-1)\\
+ 	n=&n\\
  	\Fib{kn}=&\dfrac{\Fib{n(k-1)}\Luc{m}+\Luc{n(k-1)}\Fib{n}}{2}
+ 	\intertext{Utilizzando il~\vref{thm:LucFibSommaprodotto}}
+ 		\Luc{n+m}=&\dfrac{5\Fib{m}\Fib{n}+\Luc{m}\Luc{n}}{2}
  \end{align*}
  \end{proof}
