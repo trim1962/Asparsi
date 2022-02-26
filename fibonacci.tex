@@ -551,3 +551,27 @@ Proviamo la seconda parte
 \end{align*}
 cvd.
 \end{proof}
+Conseguenza del~\vref{thm:FibProdSomma} è il seguente
+\begin{cor}[Potenze in somma]\label{thm:FibpotSomma}
+	Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
+	\begin{equation}
+		\Fib{n}^2=\dfrac{\Luc{2n}-2(-1)^n}{5}
+	\end{equation}\label{eqn:FibQuadSomma}
+	\begin{equation}
+		\Luc{n}^2=\Luc{2n}+2(-1)^n
+	\end{equation}\label{eqn:LucQuadSomma}
+	\begin{equation}
+		\Fib{m}\Luc{n}=\Fib{n+m}+(-1)^n\Fib{m-n}
+	\end{equation}\label{eqn:LucFibProdSomma}
+\end{cor}\cite{Rabinowitz_1996}
+\begin{proof}
+\begin{align*}
+\intertext{Per il~\vref{thm:FibProdSomma}}
+\Fib{m}\Fib{n}=&\dfrac{\Luc{n+m}-(-1)^n\Luc{m-n}}{5}
+\intertext{posto}
+m=&n\\
+\Fib{n}\Fib{n}=&\dfrac{\Luc{n+n}-(-1)^n\Luc{n-n}}{5}\\
+\Fib{n}^2=&\dfrac{\Luc{2n}-(-1)^n\Luc{0}}{5}\\
+\Fib{n}^2=&\dfrac{\Luc{2n}-2(-1)^n}{5}\\
+\end{align*}
+\end{proof}
