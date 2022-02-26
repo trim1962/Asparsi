@@ -395,6 +395,7 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 	={}&(-1)^{n}\Luc{n}
 \end{align*}
 \end{proof}
+\section{Addizione}
 \begin{thm}[Formule di addizione]\label{thm:LucFibSommaprodotto}
 	Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
 	\begin{equation}
@@ -420,6 +421,29 @@ Dimostriamo la seconda uguaglianza
 \end{align*}
 cvd.
 \end{proof}
+Una conseguenza del~\vref{thm:LucFibSommaprodotto} è il seguente
+\begin{cor}[Formule moltiplicazione scalare]\label{thm:LucFibmoltscalare}
+	Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
+	\begin{equation}
+		\Fib{kn}=\dfrac{\Fib{(k-1)n}\Luc{n}+\Luc{(k-1)n}\Fib{n}}{2}
+	\end{equation}\label{eqn:Fibmoltiplicazione scalare}
+	\begin{equation}
+		\Luc{kn}=\dfrac{5\Fib{(k-1)n}\Fib{n}+\Luc{(k-1)n}\Luc{n}}{2}
+	\end{equation}\label{eqn:Lucmoltiplicazionescalare}
+\end{cor}\cite{Rabinowitz_1996}
+\begin{proof}
+	\begin{align*}
+		\intertext{Utilizzando il~\vref{thm:LucFibSommaprodotto}}
+		\Fib{n+m}={}&\dfrac{\Fib{m}\Luc{n}+\Luc{m}\Fib{n}}{2}\\
+		\Luc{n+m}={}&\dfrac{5\Fib{m}\Fib{n}+\Luc{m}\Luc{n}}{2}
+		\intertext{Ponendo}
+		kn={}&kn-n+n=n(k-1)+n\\
+		m={}&n(k-1)\\
+		n={}&n\\
+		\Fib{kn}={}&\dfrac{\Fib{n(k-1)}\Luc{n}+\Luc{n(k-1)}\Fib{n}}{2}\\
+		\Luc{kn}={}&\dfrac{5\Fib{n(k-1)}\Fib{n}+\Luc{n(k-1)}\Luc{n}}{2}
+	\end{align*}
+\end{proof}
 \begin{thm}[Relazione fondamentale fra Lucas e Fibonacci]
 	Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
 	\begin{equation}
@@ -439,7 +463,8 @@ cvd.
 \end{align*}
 Da cui la tesi.
 \end{proof}
-\begin{thm}[Converti in Fibonacci]
+\section{Conversione}
+\begin{thm}[Converti in Fibonacci o in Lucas]
 	Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
 	\begin{equation}
 		\Luc{n}=\Fib{n+1}+\Fib{n-1}
@@ -474,29 +499,7 @@ Proviamo la seconda parte
 	\end{align*}
 	Da cui la tesi.
 \end{proof}
-Una conseguenza del~\vref{thm:LucFibSommaprodotto} è il seguente
-\begin{cor}[Formule moltiplicazione scalare]\label{thm:LucFibmoltscalare}
-	Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
-	\begin{equation}
-		\Fib{kn}=\dfrac{\Fib{(k-1)n}\Luc{n}+\Luc{(k-1)n}\Fib{n}}{2}
-	\end{equation}\label{eqn:Fibmoltiplicazione scalare}
-	\begin{equation}
-		\Luc{kn}=\dfrac{5\Fib{(k-1)n}\Fib{n}+\Luc{(k-1)n}\Luc{n}}{2}
-	\end{equation}\label{eqn:Lucmoltiplicazionescalare}
-\end{cor}\cite{Rabinowitz_1996}
- \begin{proof}
- \begin{align*}
- 	\intertext{Utilizzando il~\vref{thm:LucFibSommaprodotto}}
- 	\Fib{n+m}={}&\dfrac{\Fib{m}\Luc{n}+\Luc{m}\Fib{n}}{2}\\
- 	\Luc{n+m}={}&\dfrac{5\Fib{m}\Fib{n}+\Luc{m}\Luc{n}}{2}
- 	\intertext{Ponendo}
- 	kn={}&kn-n+n=n(k-1)+n\\
- 	m={}&n(k-1)\\
- 	n={}&n\\
- 	\Fib{kn}={}&\dfrac{\Fib{n(k-1)}\Luc{n}+\Luc{n(k-1)}\Fib{n}}{2}\\
- \Luc{kn}={}&\dfrac{5\Fib{n(k-1)}\Fib{n}+\Luc{n(k-1)}\Luc{n}}{2}
- \end{align*}
- \end{proof}
+
 \begin{thm}[Prodotto in somma]\label{thm:FibProdSomma}
 	Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
 	\begin{equation}
