@@ -560,9 +560,6 @@ Conseguenza del~\vref{thm:FibProdSomma} è il seguente
 	\begin{equation}
 		\Luc{n}^2=\Luc{2n}+2(-1)^n
 	\end{equation}\label{eqn:LucQuadSomma}
-	\begin{equation}
-		\Fib{m}\Luc{n}=\Fib{n+m}+(-1)^n\Fib{m-n}
-	\end{equation}\label{eqn:LucFibProdSomma}
 \end{cor}\cite{Rabinowitz_1996}
 \begin{proof}
 \begin{align*}
@@ -573,5 +570,21 @@ m=&n\\
 \Fib{n}\Fib{n}=&\dfrac{\Luc{n+n}-(-1)^n\Luc{n-n}}{5}\\
 \Fib{n}^2=&\dfrac{\Luc{2n}-(-1)^n\Luc{0}}{5}\\
 \Fib{n}^2=&\dfrac{\Luc{2n}-2(-1)^n}{5}\\
+\end{align*}
+\begin{align*}
+	\intertext{Per il~\vref{thm:FibProdSomma}}
+\Luc{m}\Luc{n}=&\Luc{n+m}+(-1)^n\Luc{m-n}
+	\intertext{posto}
+	m=&n\\
+	\Luc{n}\Luc{n}=&\Luc{n+n}+(-1)^n\Luc{n-n}\\
+	\Luc{n}^2=&\Luc{2n}+(-1)^n\Luc{0}\\
+	\Luc{n}^2=&\Luc{2n}+2(-1)^n\\
+\end{align*}
+\begin{align*}
+\intertext{Per il~\vref{thm:FibProdSomma}}
+\Fib{m}\Fib{n}=&\dfrac{\Luc{n+m}-(-1)^n\Luc{m-n}}{5}
+\intertext{posto}
+m=&n\\
+\Fib{2n}\Fib{n}=&\dfrac{\Luc{n+2n}-(-1)^n\Luc{2n-n}}{5}
 \end{align*}
 \end{proof}
