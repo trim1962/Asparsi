@@ -404,7 +404,7 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 \begin{equation}
 	\Luc{n+m}=\dfrac{5\Fib{m}\Fib{n}+\Luc{m}\Luc{n}}{2}
 \end{equation}\label{eqn:LucFibSommaprodotto}
-\end{thm}\cite{Rabinowitz_1996}
+\end{thm}\cite{Rabinowitz_1996}\label{thm:LucFibSommaprodotto}
 \begin{proof}
 	\begin{align*}
 	\Fib{m}\Luc{n}+\Luc{m}\Fib{n}={}&\dfrac{1}{a-b}[a^m-b^m][a^n+b^n]+[a^m+b^m]\dfrac{1}{a-b}[a^n-b^n]\\
@@ -475,3 +475,4 @@ Proviamo la seconda parte
 	\end{align*}
 	Da cui la tesi.
 \end{proof}
+Una generalizzazione del\vref{thm:LucFibSommaprodotto} è il seguente
