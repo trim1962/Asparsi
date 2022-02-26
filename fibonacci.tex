@@ -476,3 +476,12 @@ Proviamo la seconda parte
 	Da cui la tesi.
 \end{proof}
 Una generalizzazione del \vref{thm:LucFibSommaprodotto} è il seguente
+\begin{thm}[Formule moltiplicaione scalare]\label{thm:LucFibmoltscalare}
+	Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
+	\begin{equation}
+		\Fib{kn}=\dfrac{\Fib{(k-1)n}\Luc{n}+\Luc{(k-1)n}\Fib{n}}{2}
+	\end{equation}\label{eqn:Fibmoltiplicazione scalare}
+	\begin{equation}
+		\Luc{kn}=\dfrac{5\Fib{(k-1)n}\Fib{n}+\Luc{(k-1)n}\Luc{n}}{2}
+	\end{equation}\label{eqn:Lucmoltiplicazionescalare}
+\end{thm}\cite{Rabinowitz_1996}
