@@ -598,6 +598,9 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 \begin{equation}
 	\Luc{n}^3=\Luc{3n}+3(-1)^n\Luc{n}
 \end{equation}\label{eqn:LucCubSomma}
+\begin{equation}
+	\Fib{n}^4=\dfrac{\Luc{4n}-4(-1)^n\Luc{2n}+6}{25}
+\end{equation}\label{eqn:FibQuartaSomma}
 \end{thm}
 \begin{proof}
 		\proofpart{Cubo Fibonacci}
@@ -613,7 +616,11 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 	\Luc{n}^3=&a^{3n} + 3a^{n}b^{2n} + 3a^{2n}b^{n} + b^{3n}\\
 	=&a^{3n}  + b^{3n}+ 3a^{n}b^{2n} + 3a^{2n}b^{n}\\
 	=&a^{3n}  + b^{3n}+ 3a^nb^n(a^n+b^n)\\
-	\intertext{per il~\vref{lem:FibpropPhi}}
+	\intertext{per il~\vref{lem:FibpropPhi}} 
 	=&\Luc{3n}+3(-1)^n\Luc{n}
+\end{align*}
+\proofpart{Fibonacci Quarta}
+\begin{align*}
+	\Fib{n}^4=&\dfrac{a^{4n}}{(a-b)^4}-4\dfrac{numeratore}{denominatore}
 \end{align*}
 \end{proof}
