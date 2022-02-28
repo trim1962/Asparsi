@@ -624,5 +624,7 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 	\Fib{n}^4=&\dfrac{a^{4n}}{(a-b)^4}-4\dfrac{a^{3n}b^{n}}{(a-b)^4}+6\dfrac{a^{2n}b^{2n}}{(a-b)^4}-4\dfrac{a^{n}b^{3n}}{(a-b)^4}+\dfrac{b^{4n}}{(a-b)^4}\\
 	=&\dfrac{a^{4n}}{(a-b)^4}+\dfrac{b^{4n}}{(a-b)^4}-4\dfrac{a^{3n}b^{n}}{(a-b)^4}-4\dfrac{a^{n}b^{3n}}{(a-b)^4}+6\dfrac{a^{2n}b^{2n}}{(a-b)^4}\\
 	=&\dfrac{a^{4n}}{(a-b)^4}+\dfrac{b^{4n}}{(a-b)^4}-4\dfrac{a^{n}b^{n}(a^{2n}+b^{2n})}{(a-b)^4}+6\dfrac{a^{2n}b^{2n}}{(a-b)^4}\\
+	\intertext{per il~\vref{lem:FibpropPhi}} 
+	=&\dfrac{\Luc{4n}-4(-1)^n\Luc{2n}+6}{25}
 \end{align*}
 \end{proof}
