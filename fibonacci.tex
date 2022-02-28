@@ -193,7 +193,7 @@ Se $\Fib{n}$ è la successione di Fibonacci allora
 	={}&\varphi
 	\intertext{dato che}
 	\lim_{n\to\infty}\left(\dfrac{1-\varphi}{\varphi}\right)^{n}={}&0
-\end{align*}cvd
+\end{align*}cvd.
 \end{proof}
 \begin{thm}[Identità di Cassini]\label{thm:fibQuadrato}\index{Fibonacci!identità!Cassini}
 	Se $\Fib{n}$ è la successione di Fibonacci allora 
@@ -314,7 +314,7 @@ cvd
 	Tre numeri di Fibonacci consecutivi non possono essere i lati di un triangolo.
 \end{thm}\index{Fibonacci!triangolo}
 \begin{proof}
-	Supponiamo che $\Fib{n}$, $\Fib{n+1}$ e $\Fib{n+2}$ sono i lati di un triangolo. Allora per il~\vref{thm:Formula_Erone} avremo indicando con $p$ il semiperimetro e $a$, $b$ e $c$ i lati:
+	Supponiamo che $\Fib{n}$, $\Fib{n+1}$ e $\Fib{n+2}$ siano i lati di un triangolo. Allora per il~\vref{thm:Formula_Erone} avremo, indicando con $p$ il semiperimetro e $a$, $b$ e $c$ i lati:
 \begin{align*}
 	S^2={}&p(p-a)(p-b)(p-c)\\
 	\intertext{ma}
@@ -376,6 +376,7 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 \end{equation}\label{eqn:LucNegate}
 \end{thm}\cite{Rabinowitz_1996}
 \begin{proof}
+	\proofpart{Prima}
 	Riscriviamo il risultato del~\vref{eqn:FinBinet}
 	\begin{align*}
 		\Fib{n}={}&\dfrac{1}{a-b}\left(a^n-b^n\right)\\
@@ -385,6 +386,7 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 	={}&\dfrac{(-1)^{n+1}}{a-b}[a^n-b^n]\\
 	={}&(-1)^{n+1}\Fib{n}
 	\end{align*}
+\proofpart{Seconda}
 	Riscriviamo il risultato del~\vref{eqn:LucBinet}
 \begin{align*}
 	\Luc{n}={}&a^{n}+b^{n}\\
