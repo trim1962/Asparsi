@@ -611,5 +611,9 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 	\proofpart{Cubo Lucas}
 \begin{align*}
 	\Luc{n}^3=&a^{3n} + 3a^{n}b^{2n} + 3a^{2n}b^{n} + b^{3n}\\
+	=&a^{3n}  + b^{3n}+ 3a^{n}b^{2n} + 3a^{2n}b^{n}\\
+	=&a^{3n}  + b^{3n}+ 3a^nb^n(a^n+b^n)\\
+	\intertext{per il~\vref{lem:FibpropPhi}}
+	=&\Luc{3n}+3(-1)^n\Luc{n}
 \end{align*}
 \end{proof}
