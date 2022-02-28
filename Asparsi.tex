@@ -102,7 +102,18 @@
 \usepackage{indice}
 \usepackage{date}
 \usepackage{unita_misura}
-
+\usepackage{xpatch}
+\makeatletter
+\newcounter{proofpart}
+\xpretocmd{\proof}{\setcounter{proofpart}{0}}{}{}
+\newcommand{\proofpart}[1]{%
+	\par
+	\addvspace{\medskipamount}%
+	\stepcounter{proofpart}%
+	\noindent\emph{Part \theproofpart: #1}\par\nobreak\smallskip
+	\@afterheading
+}
+\makeatother
 \usepackage{imakeidx}
 \makeindex[options=-s ../Mod_base/oldclaudio.sti]
 
