@@ -656,7 +656,7 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 \begin{align*}
 	\Luc{n}^5=&a^{5n}+5a^{4n}b^{n}+10a^{3n}b^{2n}+10a^{2n}b^{3n}+5a^{2n}b^{3n}+b^{5n}\\
 	=&a^{5n}+b^{5n}+5a^{4n}b^{n}+5a^{2n}b^{3n}+10a^{3n}b^{2n}+10a^{2n}b^{3n}\\
-	=&\dfrac{a^{5n}}{(a-b)^5}+\dfrac{b^{5n}}{(b-a)^5}-5\dfrac{a^nb^n(a^n-b^n)(a^{2n}+a^nb^n+b^{2n})}{(a-b)^5}+10\dfrac{a^{2n}b^{2n}(a^n-b^n)}{(a-b)^5}\\
+	=&a^{5n}+b^{5n}+5a^nb^n(a^n-b^n)(a^{2n}+a^nb^n+b^{2n})+10a^{2n}b^{2n}(a^n-b^n)\\
 	=&\dfrac{a^{5n}}{(a-b)^5}+\dfrac{b^{5n}}{(b-a)^5}-5\dfrac{a^nb^n(a^{3n}-b^{3n})}{(a-b)^5}+10\dfrac{a^{2n}b^{2n}(a^n-b^n)}{(a-b)^5}\\
 	\intertext{per il~\vref{lem:FibpropPhi}} 
 	=&\dfrac{\Fib{5n}-5(-1)^n\Fib{3n}+10\Fib{n}}{25}\\	
