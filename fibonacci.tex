@@ -411,7 +411,8 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 		\proofpart{Fibonacci}
 	\begin{align*}
 	\Fib{m}\Luc{n}+\Luc{m}\Fib{n}={}&\dfrac{1}{a-b}[a^m-b^m][a^n+b^n]+[a^m+b^m]\dfrac{1}{a-b}[a^n-b^n]\\
-	={}&\dfrac{2}{a-b}[a^{n+m}-b^{n+m}]
+	={}&\dfrac{2}{a-b}[a^{n+m}-b^{n+m}]\\
+	=&2\Fib{m+n}\\
 	\end{align*}
 	\proofpart{Lucas}
 \begin{align*}
@@ -421,6 +422,7 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 	\intertext{per il~\vref{lem:FibpropPhi}}
 	={}&\dfrac{a^{n+m}[5+5]}{5}+\dfrac{b^{n+m}[5+5]}{5}\\
 	={}&2(a^{n+m}+b^{n+m})\\
+	=2\Luc{n+m}\\ 
 \end{align*}
 cvd.
 \end{proof}
@@ -477,6 +479,7 @@ Da cui la tesi.
 \end{equation}\label{eqn:FibConvertiinLucas}
 \end{thm}\cite{Rabinowitz_1996}
 \begin{proof}
+		\proofpart{Fibonacci}
 	\begin{align*}
 	\Fib{n+1}={}&\dfrac{1}{a-b}\left(a^{n+1}-b^{n+1}\right)\\
 	\Fib{n-1}={}&\dfrac{1}{a-b}\left(a^{n-1}-b^{n-1}\right)\\
@@ -485,10 +488,7 @@ Da cui la tesi.
 		={}&-\dfrac{a^n+b^n}{ab}\\
 		={}&a^n+b^n
 	\end{align*}
-	Da cui la tesi.
-\end{proof}
-Proviamo la seconda parte
-\begin{proof}
+	\proofpart{Lucas}
 	\begin{align*}
 		\Luc{n+1}={}&a^{n+1}-b^{n+1}\\
 		\Luc{n-1}={}&a^{n-1}-b^{n-1}\\
@@ -516,6 +516,7 @@ Proviamo la seconda parte
 \end{equation}\label{eqn:LucFibProdSomma}
 \end{thm}\cite{Rabinowitz_1996}
 \begin{proof}
+		\proofpart{Fibonacci}
 \begin{align*}
 	\Fib{m}\Fib{n}=&\dfrac{a^{m+n}}{(a-b)^2}-\dfrac{a^mb^n}{(a-b)^2}-\dfrac{a^nb^m}{(a-b)^2}+\dfrac{b^{m+n}}{(a-b)^2}\\
 	=&\dfrac{a^{m+n}}{(a-b)^2}+\dfrac{b^{m+n}}{(a-b)^2}-\dfrac{a^mb^n}{(a-b)^2}-\dfrac{a^nb^m}{(a-b)^2}\\
@@ -528,6 +529,7 @@ Proviamo la seconda parte
 	\intertext{per il~\vref{lem:FibpropPhi}}
 	=&\dfrac{\Luc{m+n}+(-1)^{n}\Luc{m-n}}{5}
 \end{align*}
+	\proofpart{Lucas}
 \begin{align*}
 	\Luc{m}\Luc{n}=&a^{m+n}+a^mb^n+a^nb^m+b^{m+n}\\
 	=&a^{m+n}+b^{m+n}+a^mb^n+a^nb^m\\
@@ -540,6 +542,7 @@ Proviamo la seconda parte
 	\intertext{per il~\vref{lem:FibpropPhi}}
 	=&\Luc{m+n}+(-1)^{n}\Luc{m-n}
 \end{align*}
+	\proofpart{Fibonacci Lucas}
 \begin{align*}
 	\Fib{m}\Luc{n}=&\dfrac{a^{m+n}}{a-b}+\dfrac{a^mb^n}{a-b}+\dfrac{a^nb^m}{b-a}+\dfrac{b^{m+n}}{b-a}\\
 	=&\dfrac{a^{m+n}}{a-b}+\dfrac{b^{m+n}}{b-a}+\dfrac{a^mb^n}{a-b}+\dfrac{a^nb^m}{b-a}\\
@@ -565,6 +568,7 @@ Conseguenza del~\vref{thm:FibProdSomma} è il seguente
 	\end{equation}\label{eqn:LucQuadSomma}
 \end{cor}\cite{Rabinowitz_1996}
 \begin{proof}
+		\proofpart{Fibonacci}
 \begin{align*}
 \intertext{Per il~\vref{thm:FibProdSomma}}
 \Fib{m}\Fib{n}=&\dfrac{\Luc{n+m}-(-1)^n\Luc{m-n}}{5}
@@ -574,6 +578,7 @@ m=&n\\
 \Fib{n}^2=&\dfrac{\Luc{2n}-(-1)^n\Luc{0}}{5}\\
 \Fib{n}^2=&\dfrac{\Luc{2n}-2(-1)^n}{5}\\
 \end{align*}
+	\proofpart{Lucas }
 \begin{align*}
 	\intertext{Per il~\vref{thm:FibProdSomma}}
 \Luc{m}\Luc{n}=&\Luc{n+m}+(-1)^n\Luc{m-n}
@@ -595,6 +600,7 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 \end{equation}\label{eqn:LucCubSomma}
 \end{thm}
 \begin{proof}
+		\proofpart{Cubo Fibonacci}
 \begin{align*}
 \Fib{n}^3=&\dfrac{a^{3n}}{(a-b)^3}+3\dfrac{a^{2n}b^n}{(b-a)^3}+3\dfrac{a^nb^{2n}}{(a-b)^3}+\dfrac{b^{3n}}{(b-a)^3}\\
 =&+3\dfrac{a^{2n}b^n}{(b-a)^3}+3\dfrac{a^nb^{2n}}{(a-b)^3}\\
@@ -602,7 +608,6 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 \intertext{per il~\vref{lem:FibpropPhi}}
 =&\dfrac{\Fib{3n}-3(-1)^n\Fib{n}}{5}\\
 \end{align*}
-\end{proof}
-\begin{proof}
+	\proofpart{Cubo Lucas}
 	contenuto...
 \end{proof}
