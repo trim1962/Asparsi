@@ -620,12 +620,13 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 \intertext{per il~\vref{lem:FibpropPhi}}
 =&\dfrac{\Fib{3n}-3(-1)^n\Fib{n}}{5}\\
 \end{align*}
-Utilizzando \vref{thm:FibProdSomma}
+Una dimostrazione alternativa è la seguente
 \begin{align*}
 	\Fib{n}^3=&\Fib{n}^2\Fib{n}\\
-	\intertext{\vref{cor:FibpotSomma}}
+	\intertext{per il~\vref{cor:FibpotSomma}}
 	=&\dfrac{\Luc{2n}-2(-1)^n}{5}\Fib{n}\\
 	=&\dfrac{\Luc{2n}\Fib{n}-2(-1)^n\Fib{n}}{5}\\
+	\intertext{Per il~\vref{thm:FibProdSomma}}
 \end{align*}
 	\proofpart{Cubo Lucas}
 \begin{align*}
