@@ -366,7 +366,7 @@ Da cui la tesi.
 \end{align*}
 cvd.
 \end{proof}
-\begin{thm}[Fibonacci e Lucas negativo]
+\begin{thm}[Fibonacci e Lucas negativo]\label{thm:FibLucNeg}
 Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
 \begin{equation}
 	\Fib{-n}=(-1)^{n+1}\Fib{n}
@@ -627,6 +627,15 @@ Una dimostrazione alternativa è la seguente
 	=&\dfrac{\Luc{2n}-2(-1)^n}{5}\Fib{n}\\
 	=&\dfrac{\Luc{2n}\Fib{n}-2(-1)^n\Fib{n}}{5}\\
 	\intertext{Per il~\vref{thm:FibProdSomma}}
+	\Fib{m}\Luc{n}=&\Fib{n+m}+(-1)^n\Fib{m-n}
+	\intertext{Quindi}
+		\Fib{n}\Luc{2n}=&\Fib{n+2n}+(-1)^{2n}\Fib{n-2n}\\
+		=&\Fib{3n}+\Fib{-n}\\
+	\intertext{Per il~\vref{thm:FibLucNeg}}
+	=&\Fib{3n}+(-1)^{n+1}\Fib{-n}\\
+	=&\Fib{3n}-(-1)^{n}\Fib{n}\\
+\intertext{Quindi}
+=&\dfrac{\Fib{3n} -3(-1)^n\Fib{n}}{5}\\
 \end{align*}
 	\proofpart{Cubo Lucas}
 \begin{align*}
