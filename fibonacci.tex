@@ -85,12 +85,12 @@ La sezione aurea è:
 	cvd.
 \end{proof}
 \section{Formula di Binet}
-\begin{thm}[Formula di Binet]\index{Formula!Binet!Fibonacci}
+\begin{thm}[Formula di Binet]~\cite{Conti2020}\index{Formula!Binet!Fibonacci}
 	Se $\Fib{n}$ è la successione di Fibonacci allora avremo:
 	\begin{equation}
 		\Fib{n}=\dfrac{1}{\sqrt{5}}\left[\left(\dfrac{1+\sqrt{5}}{2}\right)^n-\left(\dfrac{1-\sqrt{5}}{2}\right)^n\right]
 	\end{equation}\label{eqn:FinBinet}
-\end{thm}~\cite{Conti2020}
+\end{thm}
 \begin{proof}
 	Poniamo $a=\varphi$ e con $b=1-\varphi$ allora
 	\begin{align*}
@@ -366,7 +366,7 @@ Da cui la tesi.
 \end{align*}
 cvd.
 \end{proof}
-\begin{thm}[Fibonacci e Lucas negativo]\label{thm:FibLucNeg}
+\begin{thm}[Fibonacci e Lucas negativo]\cite{Rabinowitz_1996}\label{thm:FibLucNeg}
 Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
 \begin{equation}
 	\Fib{-n}=(-1)^{n+1}\Fib{n}
@@ -374,7 +374,7 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 \begin{equation}
 	\Luc{-n}=(-1)^{n}\Luc{n}
 \end{equation}\label{eqn:LucNegate}
-\end{thm}\cite{Rabinowitz_1996}
+\end{thm}
 \begin{proof}
 	\proofpart{Fibonacci}
 	Riscriviamo il risultato del~\vref{eqn:FinBinet}
@@ -398,7 +398,7 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 \end{align*}
 \end{proof}
 \section{Addizione}
-\begin{thm}[Formule di addizione]\label{thm:LucFibSommaprodotto}
+\begin{thm}[Formule di addizione]\cite{Rabinowitz_1996}\label{thm:LucFibSommaprodotto}
 	Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
 	\begin{equation}
 		\Fib{n+m}=\dfrac{\Fib{m}\Luc{n}+\Luc{m}\Fib{n}}{2}
@@ -406,7 +406,7 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 \begin{equation}
 	\Luc{n+m}=\dfrac{5\Fib{m}\Fib{n}+\Luc{m}\Luc{n}}{2}
 \end{equation}\label{eqn:LucFibSommaprodotto}
-\end{thm}\cite{Rabinowitz_1996}
+\end{thm}
 \begin{proof}
 		\proofpart{Fibonacci}
 	\begin{align*}
@@ -427,7 +427,7 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 cvd.
 \end{proof}
 Una conseguenza del~\vref{thm:LucFibSommaprodotto} è il seguente
-\begin{cor}[Formule moltiplicazione scalare]\label{cor:LucFibmoltscalare}
+\begin{cor}[Formule moltiplicazione scalare]\cite{Rabinowitz_1996}\label{cor:LucFibmoltscalare}
 	Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
 	\begin{equation}
 		\Fib{kn}=\dfrac{\Fib{(k-1)n}\Luc{n}+\Luc{(k-1)n}\Fib{n}}{2}
@@ -435,7 +435,7 @@ Una conseguenza del~\vref{thm:LucFibSommaprodotto} è il seguente
 	\begin{equation}
 		\Luc{kn}=\dfrac{5\Fib{(k-1)n}\Fib{n}+\Luc{(k-1)n}\Luc{n}}{2}
 	\end{equation}\label{eqn:Lucmoltiplicazionescalare}
-\end{cor}\cite{Rabinowitz_1996}
+\end{cor}
 \begin{proof}
 	\begin{align*}
 		\intertext{Utilizzando il~\vref{thm:LucFibSommaprodotto}}
@@ -449,12 +449,12 @@ Una conseguenza del~\vref{thm:LucFibSommaprodotto} è il seguente
 		\Luc{kn}={}&\dfrac{5\Fib{n(k-1)}\Fib{n}+\Luc{n(k-1)}\Luc{n}}{2}
 	\end{align*}
 \end{proof}
-\begin{thm}[Relazione fondamentale fra Lucas e Fibonacci]
+\begin{thm}[Relazione fondamentale fra Lucas e Fibonacci]\cite{Rabinowitz_1996}
 	Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
 	\begin{equation}
 		\Luc{n}^2-5\Fib{n}^2=4(-1)^{n}
 	\end{equation}\label{eqn:FibLucFondamentale}
-\end{thm}\cite{Rabinowitz_1996}
+\end{thm}
 \begin{proof}
 \begin{align*}
 	\Luc{n}^2={}&a^{2n}+2a^nb^n+b^{2n}\\
@@ -469,7 +469,7 @@ Una conseguenza del~\vref{thm:LucFibSommaprodotto} è il seguente
 Da cui la tesi.
 \end{proof}
 \section{Conversione}
-\begin{thm}[Converti in Fibonacci o in Lucas]
+\begin{thm}[Converti in Fibonacci o in Lucas]\cite{Rabinowitz_1996}
 	Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
 	\begin{equation}
 		\Luc{n}=\Fib{n+1}+\Fib{n-1}
@@ -477,7 +477,7 @@ Da cui la tesi.
 \begin{equation}
 	\Fib{n}=\dfrac{\Luc{n+1}+\Luc{n-1}}{5}
 \end{equation}\label{eqn:FibConvertiinLucas}
-\end{thm}\cite{Rabinowitz_1996}
+\end{thm}
 \begin{proof}
 		\proofpart{Fibonacci}
 	\begin{align*}
@@ -503,7 +503,7 @@ Da cui la tesi.
 	Da cui la tesi.
 \end{proof}
 
-\begin{thm}[Prodotto in somma]\label{thm:FibProdSomma}
+\begin{thm}[Prodotto in somma]~\cite{Rabinowitz_1996}\label{thm:FibProdSomma}
 	Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
 	\begin{equation}
 		\Fib{m}\Fib{n}=\dfrac{\Luc{n+m}-(-1)^n\Luc{m-n}}{5}
@@ -514,7 +514,7 @@ Da cui la tesi.
 \begin{equation}
 	\Fib{m}\Luc{n}=\Fib{n+m}+(-1)^n\Fib{m-n}
 \end{equation}\label{eqn:LucFibProdSomma}
-\end{thm}\cite{Rabinowitz_1996}
+\end{thm}
 \begin{proof}
 		\proofpart{Fibonacci}
 \begin{align*}
@@ -558,7 +558,7 @@ Da cui la tesi.
 cvd.
 \end{proof}
 Conseguenza del~\vref{thm:FibProdSomma} è il seguente
-\begin{cor}[Potenze in somma]\label{cor:FibpotSomma}
+\begin{cor}[Potenze in somma]\cite{Rabinowitz_1996}\label{cor:FibpotSomma}
 	Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
 	\begin{equation}
 		\Fib{n}^2=\dfrac{\Luc{2n}-2(-1)^n}{5}
@@ -566,7 +566,7 @@ Conseguenza del~\vref{thm:FibProdSomma} è il seguente
 	\begin{equation}
 		\Luc{n}^2=\Luc{2n}+2(-1)^n
 	\end{equation}\label{eqn:LucQuadSomma}
-\end{cor}\cite{Rabinowitz_1996}
+\end{cor}
 \begin{proof}
 		\proofpart{Fibonacci}
 \begin{align*}
