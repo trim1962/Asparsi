@@ -672,6 +672,13 @@ Una dimostrazione alternativa è la seguente:
 \Fib{n}^4={}&\Fib{n}^3\Fib{n}\\
 \intertext{per il~\vref{eqn:FibCubSomma}}
 =&\dfrac{\Fib{3n}-3(-1)^n\Fib{n}}{5}\Fib{n}\\
+=&\dfrac{\Fib{3n}\Fib{n}-3(-1)^n\Fib{n}^2}{5}\\
+\intertext{per il~\vref{thm:FibProdSomma}}
+\Fib{3n}\Fib{n}=&\dfrac{\Luc{3n+n}-(-1)^n\Luc{3n-n}}{5}\\
+\Fib{3n}\Fib{n}=&\dfrac{\Luc{4n}-(-1)^n\Luc{2n}}{5}\\
+\Fib{n}^2={}&\dfrac{\Luc{2n}-2(-1)^n}{5}\\
+\intertext{Quindi}
+=&\dfrac{\Luc{4n}-(-1)^n\Luc{2n}-3(-1)^n[\Luc{2n}-2(-1)^n]}{25}\\
 \end{align*}
 \proofpart{Lucas Quarta}
 \begin{align*}
