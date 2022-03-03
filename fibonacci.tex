@@ -590,7 +590,7 @@ m={}&n\\
 \end{align*}
 \end{proof}
 Simili al precedente sono  i seguenti risultati
-\begin{thm}[Potenze in somma]\label{thm:FibpotSommadue}
+\begin{thm}[Potenze in somma]~\cite{Rabinowitz_1996}\label{thm:FibpotSommadue}
 Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
 \begin{equation}
 	\Fib{n}^3=\dfrac{\Fib{3n}-3(-1)^n\Fib{n}}{5}
@@ -666,6 +666,11 @@ Una dimostrazione alternativa è la seguente:
 	={}&\dfrac{a^{4n}}{(a-b)^4}+\dfrac{b^{4n}}{(a-b)^4}-4\dfrac{a^{n}b^{n}(a^{2n}+b^{2n})}{(a-b)^4}+6\dfrac{a^{2n}b^{2n}}{(a-b)^4}\\
 	\intertext{per il~\vref{lem:FibpropPhi}} 
 	={}&\dfrac{\Luc{4n}-4(-1)^n\Luc{2n}+6}{25}
+\end{align*}
+Una dimostrazione alternativa è la seguente:
+\begin{align*}
+\Fib{n}^4={}&\Fib{n}^3\Fib{n}\\
+\intertext{per il~\vref{eqn:FibCubSomma}}
 \end{align*}
 \proofpart{Lucas Quarta}
 \begin{align*}
