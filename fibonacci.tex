@@ -679,7 +679,7 @@ Una dimostrazione alternativa è la seguente:
 \Fib{n}^2={}&\dfrac{\Luc{2n}-2(-1)^n}{5}\\
 \intertext{Quindi}
 =&\dfrac{\Luc{4n}-(-1)^n\Luc{2n}-3(-1)^n[\Luc{2n}-2(-1)^n]}{25}\\
-=&\dfrac{\Luc{4n}-(-1)^n\Luc{2n}-3(-1)^n\Luc{2n}+6(-1)^{2n}]}{25}\\
+=&\dfrac{\Luc{4n}-(-1)^n\Luc{2n}-3(-1)^n\Luc{2n}+6(-1)^{2n}}{25}\\
 ={}&\dfrac{\Luc{4n}-4(-1)^n\Luc{2n}+6}{25}
 \end{align*}
 \proofpart{Lucas Quarta}
@@ -688,6 +688,11 @@ Una dimostrazione alternativa è la seguente:
 	={}&a^{4n}+b^{4n}+4a^{n}b^{n}(a^{2n}+b^{2n})+6a^{2n}b^{2n}\\
 	\intertext{per il~\vref{lem:FibpropPhi}} 
 	={}&\Luc{4n}+4(-1)^n\Luc{2n}+6
+\end{align*}
+Una dimostrazione alternativa è la seguente:
+\begin{align*}
+\Luc{n}^4={}&\Luc{n}^3\Luc{n}\\
+\intertext{per il~\vref{eqn:LucCubSomma}}
 \end{align*}
 \proofpart{Fibonacci Quinta}
 \begin{align*}
