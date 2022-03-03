@@ -412,7 +412,7 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 	\begin{align*}
 	\Fib{m}\Luc{n}+\Luc{m}\Fib{n}={}&\dfrac{1}{a-b}[a^m-b^m][a^n+b^n]+[a^m+b^m]\dfrac{1}{a-b}[a^n-b^n]\\
 	={}&\dfrac{2}{a-b}[a^{n+m}-b^{n+m}]\\
-	=&2\Fib{m+n}\\
+	={}&2\Fib{m+n}\\
 	\end{align*}
 	\proofpart{Lucas}
 \begin{align*}
@@ -518,42 +518,42 @@ Da cui la tesi.
 \begin{proof}
 		\proofpart{Fibonacci}
 \begin{align*}
-	\Fib{m}\Fib{n}=&\dfrac{a^{m+n}}{(a-b)^2}-\dfrac{a^mb^n}{(a-b)^2}-\dfrac{a^nb^m}{(a-b)^2}+\dfrac{b^{m+n}}{(a-b)^2}\\
-	=&\dfrac{a^{m+n}}{(a-b)^2}+\dfrac{b^{m+n}}{(a-b)^2}-\dfrac{a^mb^n}{(a-b)^2}-\dfrac{a^nb^m}{(a-b)^2}\\
-	=&\dfrac{\Luc{m+n}}{(a-b)^2}-\dfrac{a^mb^n+a^nb^m}{(a-b)^2}\\
-	\Luc{m-n}=&a^{m-n}-b^{m-n}=a^{-n}b^{-n}(a^mb^n+a^nb^m)\\
+	\Fib{m}\Fib{n}={}&\dfrac{a^{m+n}}{(a-b)^2}-\dfrac{a^mb^n}{(a-b)^2}-\dfrac{a^nb^m}{(a-b)^2}+\dfrac{b^{m+n}}{(a-b)^2}\\
+	={}&\dfrac{a^{m+n}}{(a-b)^2}+\dfrac{b^{m+n}}{(a-b)^2}-\dfrac{a^mb^n}{(a-b)^2}-\dfrac{a^nb^m}{(a-b)^2}\\
+	={}&\dfrac{\Luc{m+n}}{(a-b)^2}-\dfrac{a^mb^n+a^nb^m}{(a-b)^2}\\
+	\Luc{m-n}={}&a^{m-n}-b^{m-n}=a^{-n}b^{-n}(a^mb^n+a^nb^m)\\
 	\intertext{ma}
-	a^mb^n+a^nb^m=&a^{n}b^{n}\Luc{m-n}\\
+	a^mb^n+a^nb^m={}&a^{n}b^{n}\Luc{m-n}\\
 	\intertext{quindi}
-	=&\dfrac{\Luc{m+n}}{(a-b)^2}-\dfrac{a^{n}b^{n}\Luc{m-n}}{(a-b)^2}\\
+	={}&\dfrac{\Luc{m+n}}{(a-b)^2}-\dfrac{a^{n}b^{n}\Luc{m-n}}{(a-b)^2}\\
 	\intertext{per il~\vref{lem:FibpropPhi}}
-	=&\dfrac{\Luc{m+n}+(-1)^{n}\Luc{m-n}}{5}
+	={}&\dfrac{\Luc{m+n}+(-1)^{n}\Luc{m-n}}{5}
 \end{align*}
 	\proofpart{Lucas}
 \begin{align*}
-	\Luc{m}\Luc{n}=&a^{m+n}+a^mb^n+a^nb^m+b^{m+n}\\
-	=&a^{m+n}+b^{m+n}+a^mb^n+a^nb^m\\
-	=&\Luc{m+n}+(a^mb^n+a^nb^m)\\
-	\Luc{m-n}=&a^{m-n}-b^{m-n}=a^{-n}b^{-n}(a^mb^n+a^nb^m)\\
+	\Luc{m}\Luc{n}={}&a^{m+n}+a^mb^n+a^nb^m+b^{m+n}\\
+	={}&a^{m+n}+b^{m+n}+a^mb^n+a^nb^m\\
+	={}&\Luc{m+n}+(a^mb^n+a^nb^m)\\
+	\Luc{m-n}={}&a^{m-n}-b^{m-n}=a^{-n}b^{-n}(a^mb^n+a^nb^m)\\
 	\intertext{ma}
-	a^mb^n+a^nb^m=&a^{n}b^{n}\Luc{m-n}\\
+	a^mb^n+a^nb^m={}&a^{n}b^{n}\Luc{m-n}\\
 	\intertext{quindi}
-	=&\Luc{m+n}+a^{n}b^{n}\Luc{m-n}\\
+	={}&\Luc{m+n}+a^{n}b^{n}\Luc{m-n}\\
 	\intertext{per il~\vref{lem:FibpropPhi}}
-	=&\Luc{m+n}+(-1)^{n}\Luc{m-n}
+	={}&\Luc{m+n}+(-1)^{n}\Luc{m-n}
 \end{align*}
 	\proofpart{Fibonacci Lucas}
 \begin{align*}
-	\Fib{m}\Luc{n}=&\dfrac{a^{m+n}}{a-b}+\dfrac{a^mb^n}{a-b}+\dfrac{a^nb^m}{b-a}+\dfrac{b^{m+n}}{b-a}\\
-	=&\dfrac{a^{m+n}}{a-b}+\dfrac{b^{m+n}}{b-a}+\dfrac{a^mb^n}{a-b}+\dfrac{a^nb^m}{b-a}\\
-	=&\Fib{m+n}+\dfrac{a^mb^n-a^nb^m}{a-b}\\
-	\Fib{m-n}=&\dfrac{a^{m-n}}{a-b}+\dfrac{b^{m-n}}{b-a}=a^{-n}b^{-n}\left(\dfrac{a^mb^n+a^nb^m}{a-b}\right)\\
+	\Fib{m}\Luc{n}={}&\dfrac{a^{m+n}}{a-b}+\dfrac{a^mb^n}{a-b}+\dfrac{a^nb^m}{b-a}+\dfrac{b^{m+n}}{b-a}\\
+	={}&\dfrac{a^{m+n}}{a-b}+\dfrac{b^{m+n}}{b-a}+\dfrac{a^mb^n}{a-b}+\dfrac{a^nb^m}{b-a}\\
+	={}&\Fib{m+n}+\dfrac{a^mb^n-a^nb^m}{a-b}\\
+	\Fib{m-n}={}&\dfrac{a^{m-n}}{a-b}+\dfrac{b^{m-n}}{b-a}=a^{-n}b^{-n}\left(\dfrac{a^mb^n+a^nb^m}{a-b}\right)\\
 	\intertext{ma}
-	\dfrac{a^mb^n+a^nb^m}{a-b}=&a^{n}b^{n}\Fib{m-n}\\
+	\dfrac{a^mb^n+a^nb^m}{a-b}={}&a^{n}b^{n}\Fib{m-n}\\
 	\intertext{quindi}
-	=&\Fib{m+n}+a^{n}b^{n}\Fib{m-n}\\
+	={}&\Fib{m+n}+a^{n}b^{n}\Fib{m-n}\\
 	\intertext{per il~\vref{lem:FibpropPhi}}
-	=&\Fib{m+n}+(-1)^{n}\Fib{m-n}
+	={}&\Fib{m+n}+(-1)^{n}\Fib{m-n}
 \end{align*}
 cvd.
 \end{proof}
@@ -571,22 +571,22 @@ Conseguenza del~\vref{thm:FibProdSomma} è il seguente
 		\proofpart{Fibonacci}
 \begin{align*}
 \intertext{Per il~\vref{thm:FibProdSomma}}
-\Fib{m}\Fib{n}=&\dfrac{\Luc{n+m}-(-1)^n\Luc{m-n}}{5}
+\Fib{m}\Fib{n}={}&\dfrac{\Luc{n+m}-(-1)^n\Luc{m-n}}{5}
 \intertext{posto}
-m=&n\\
-\Fib{n}\Fib{n}=&\dfrac{\Luc{n+n}-(-1)^n\Luc{n-n}}{5}\\
-\Fib{n}^2=&\dfrac{\Luc{2n}-(-1)^n\Luc{0}}{5}\\
-\Fib{n}^2=&\dfrac{\Luc{2n}-2(-1)^n}{5}\\
+m={}&n\\
+\Fib{n}\Fib{n}={}&\dfrac{\Luc{n+n}-(-1)^n\Luc{n-n}}{5}\\
+\Fib{n}^2={}&\dfrac{\Luc{2n}-(-1)^n\Luc{0}}{5}\\
+\Fib{n}^2={}&\dfrac{\Luc{2n}-2(-1)^n}{5}\\
 \end{align*}
 	\proofpart{Lucas }
 \begin{align*}
 	\intertext{Per il~\vref{thm:FibProdSomma}}
-\Luc{m}\Luc{n}=&\Luc{n+m}+(-1)^n\Luc{m-n}
+\Luc{m}\Luc{n}={}&\Luc{n+m}+(-1)^n\Luc{m-n}
 	\intertext{posto}
-	m=&n\\
-	\Luc{n}\Luc{n}=&\Luc{n+n}+(-1)^n\Luc{n-n}\\
-	\Luc{n}^2=&\Luc{2n}+(-1)^n\Luc{0}\\
-	\Luc{n}^2=&\Luc{2n}+2(-1)^n\\
+	m={}&n\\
+	\Luc{n}\Luc{n}={}&\Luc{n+n}+(-1)^n\Luc{n-n}\\
+	\Luc{n}^2={}&\Luc{2n}+(-1)^n\Luc{0}\\
+	\Luc{n}^2={}&\Luc{2n}+2(-1)^n\\
 \end{align*}
 \end{proof}
 Simili al precedente sono  i seguenti risultati
@@ -614,82 +614,82 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 \begin{proof}
 		\proofpart{Cubo Fibonacci}
 \begin{align*}
-\Fib{n}^3=&\dfrac{a^{3n}}{(a-b)^3}+3\dfrac{a^{2n}b^n}{(b-a)^3}+3\dfrac{a^nb^{2n}}{(a-b)^3}+\dfrac{b^{3n}}{(b-a)^3}\\
-=&+3\dfrac{a^{2n}b^n}{(b-a)^3}+3\dfrac{a^nb^{2n}}{(a-b)^3}\\
-=&\dfrac{a^{3n}}{(a-b)^3}+\dfrac{b^{3n}}{(b-a)^3}+3\dfrac{a^nb^n(a^n-b^n)}{(b-a)^3}\\
+\Fib{n}^3={}&\dfrac{a^{3n}}{(a-b)^3}+3\dfrac{a^{2n}b^n}{(b-a)^3}+3\dfrac{a^nb^{2n}}{(a-b)^3}+\dfrac{b^{3n}}{(b-a)^3}\\
+={}&+3\dfrac{a^{2n}b^n}{(b-a)^3}+3\dfrac{a^nb^{2n}}{(a-b)^3}\\
+={}&\dfrac{a^{3n}}{(a-b)^3}+\dfrac{b^{3n}}{(b-a)^3}+3\dfrac{a^nb^n(a^n-b^n)}{(b-a)^3}\\
 \intertext{per il~\vref{lem:FibpropPhi}}
-=&\dfrac{\Fib{3n}-3(-1)^n\Fib{n}}{5}\\
+={}&\dfrac{\Fib{3n}-3(-1)^n\Fib{n}}{5}\\
 \end{align*}
 Una dimostrazione alternativa è la seguente:
 \begin{align*}
-	\Fib{n}^3=&\Fib{n}^2\Fib{n}\\
+	\Fib{n}^3={}&\Fib{n}^2\Fib{n}\\
 	\intertext{per il~\vref{cor:FibpotSomma}}
-	=&\dfrac{\Luc{2n}-2(-1)^n}{5}\Fib{n}\\
-	=&\dfrac{\Luc{2n}\Fib{n}-2(-1)^n\Fib{n}}{5}\\
+	={}&\dfrac{\Luc{2n}-2(-1)^n}{5}\Fib{n}\\
+	={}&\dfrac{\Luc{2n}\Fib{n}-2(-1)^n\Fib{n}}{5}\\
 	\intertext{Per il~\vref{thm:FibProdSomma}}
-	\Fib{m}\Luc{n}=&\Fib{n+m}+(-1)^n\Fib{m-n}
+	\Fib{m}\Luc{n}={}&\Fib{n+m}+(-1)^n\Fib{m-n}
 	\intertext{Quindi}
-		\Fib{n}\Luc{2n}=&\Fib{n+2n}+(-1)^{2n}\Fib{n-2n}\\
-		=&\Fib{3n}+\Fib{-n}\\
+		\Fib{n}\Luc{2n}={}&\Fib{n+2n}+(-1)^{2n}\Fib{n-2n}\\
+		={}&\Fib{3n}+\Fib{-n}\\
 	\intertext{Per il~\vref{thm:FibLucNeg}}
-	=&\Fib{3n}+(-1)^{n+1}\Fib{-n}\\
-	=&\Fib{3n}-(-1)^{n}\Fib{n}\\
+	={}&\Fib{3n}+(-1)^{n+1}\Fib{-n}\\
+	={}&\Fib{3n}-(-1)^{n}\Fib{n}\\
 \intertext{Quindi}
-=&\dfrac{\Fib{3n}-(-1)^{n}\Fib{n} -2(-1)^n\Fib{n}}{5}\\
-=&\dfrac{\Fib{3n}-3(-1)^n\Fib{n}}{5}\\
+={}&\dfrac{\Fib{3n}-(-1)^{n}\Fib{n} -2(-1)^n\Fib{n}}{5}\\
+={}&\dfrac{\Fib{3n}-3(-1)^n\Fib{n}}{5}\\
 \end{align*}
 	\proofpart{Cubo Lucas}
 \begin{align*}
-	\Luc{n}^3=&a^{3n} + 3a^{n}b^{2n} + 3a^{2n}b^{n} + b^{3n}\\
-	=&a^{3n}  + b^{3n}+ 3a^{n}b^{2n} + 3a^{2n}b^{n}\\
-	=&a^{3n}  + b^{3n}+ 3a^nb^n(a^n+b^n)\\
+	\Luc{n}^3={}&a^{3n} + 3a^{n}b^{2n} + 3a^{2n}b^{n} + b^{3n}\\
+	={}&a^{3n}  + b^{3n}+ 3a^{n}b^{2n} + 3a^{2n}b^{n}\\
+	={}&a^{3n}  + b^{3n}+ 3a^nb^n(a^n+b^n)\\
 	\intertext{per il~\vref{lem:FibpropPhi}} 
-	=&\Luc{3n}+3(-1)^n\Luc{n}
+	={}&\Luc{3n}+3(-1)^n\Luc{n}
 \end{align*}
 Una dimostrazione alternativa è la seguente:
 \begin{align*}
-	\Luc{n}^3=&\Luc{n}^2\Luc{n}\\
+	\Luc{n}^3={}&\Luc{n}^2\Luc{n}\\
 	\intertext{per il~\vref{cor:FibpotSomma}}
-	=&(\Luc{2n}+2(-1)^n)\Luc{n}\\
-	=&\Luc{2n}\Luc{n}+2(-1)^n\Luc{n}\\
+	={}&(\Luc{2n}+2(-1)^n)\Luc{n}\\
+	={}&\Luc{2n}\Luc{n}+2(-1)^n\Luc{n}\\
 	\intertext{Per il~\vref{thm:FibProdSomma}}
-	\Luc{2n}\Luc{n}=&\Luc{2n+n}+(-1)^n\Luc{2n-n}\\
-	=&\Luc{3n}+(-1)^n\Luc{n}\\	
+	\Luc{2n}\Luc{n}={}&\Luc{2n+n}+(-1)^n\Luc{2n-n}\\
+	={}&\Luc{3n}+(-1)^n\Luc{n}\\	
 	\intertext{Quindi}	
-	=&\Luc{3n}+(-1)^n\Luc{n}+2(-1)^n\Luc{n}\\
-=&\Luc{3n}+3(-1)^n\Luc{n}\\
+	={}&\Luc{3n}+(-1)^n\Luc{n}+2(-1)^n\Luc{n}\\
+={}&\Luc{3n}+3(-1)^n\Luc{n}\\
 \end{align*}
 \proofpart{Fibonacci Quarta}
 \begin{align*}
-	\Fib{n}^4=&\dfrac{a^{4n}}{(a-b)^4}-4\dfrac{a^{3n}b^{n}}{(a-b)^4}+6\dfrac{a^{2n}b^{2n}}{(a-b)^4}-4\dfrac{a^{n}b^{3n}}{(a-b)^4}+\dfrac{b^{4n}}{(a-b)^4}\\
-	=&\dfrac{a^{4n}}{(a-b)^4}+\dfrac{b^{4n}}{(a-b)^4}-4\dfrac{a^{3n}b^{n}}{(a-b)^4}-4\dfrac{a^{n}b^{3n}}{(a-b)^4}+6\dfrac{a^{2n}b^{2n}}{(a-b)^4}\\
-	=&\dfrac{a^{4n}}{(a-b)^4}+\dfrac{b^{4n}}{(a-b)^4}-4\dfrac{a^{n}b^{n}(a^{2n}+b^{2n})}{(a-b)^4}+6\dfrac{a^{2n}b^{2n}}{(a-b)^4}\\
+	\Fib{n}^4={}&\dfrac{a^{4n}}{(a-b)^4}-4\dfrac{a^{3n}b^{n}}{(a-b)^4}+6\dfrac{a^{2n}b^{2n}}{(a-b)^4}-4\dfrac{a^{n}b^{3n}}{(a-b)^4}+\dfrac{b^{4n}}{(a-b)^4}\\
+	={}&\dfrac{a^{4n}}{(a-b)^4}+\dfrac{b^{4n}}{(a-b)^4}-4\dfrac{a^{3n}b^{n}}{(a-b)^4}-4\dfrac{a^{n}b^{3n}}{(a-b)^4}+6\dfrac{a^{2n}b^{2n}}{(a-b)^4}\\
+	={}&\dfrac{a^{4n}}{(a-b)^4}+\dfrac{b^{4n}}{(a-b)^4}-4\dfrac{a^{n}b^{n}(a^{2n}+b^{2n})}{(a-b)^4}+6\dfrac{a^{2n}b^{2n}}{(a-b)^4}\\
 	\intertext{per il~\vref{lem:FibpropPhi}} 
-	=&\dfrac{\Luc{4n}-4(-1)^n\Luc{2n}+6}{25}
+	={}&\dfrac{\Luc{4n}-4(-1)^n\Luc{2n}+6}{25}
 \end{align*}
 \proofpart{Lucas Quarta}
 \begin{align*}
-	\Luc{n}^4=&a^{4n}+4a^{3n}b^{n}+6a^{2n}b^{2n}+4a^{n}b^{3n}+b^{4n}\\
-	=&a^{4n}+b^{4n}+4a^{n}b^{n}(a^{2n}+b^{2n})+6a^{2n}b^{2n}\\
+	\Luc{n}^4={}&a^{4n}+4a^{3n}b^{n}+6a^{2n}b^{2n}+4a^{n}b^{3n}+b^{4n}\\
+	={}&a^{4n}+b^{4n}+4a^{n}b^{n}(a^{2n}+b^{2n})+6a^{2n}b^{2n}\\
 	\intertext{per il~\vref{lem:FibpropPhi}} 
-	=&\Luc{4n}+4(-1)^n\Luc{2n}+6
+	={}&\Luc{4n}+4(-1)^n\Luc{2n}+6
 \end{align*}
 \proofpart{Fibonacci Quinta}
 \begin{align*}
-\Fib{n}^5=&\dfrac{a^{5n}}{(a-b)^5}+5\dfrac{a^{4n}b^{n}}{(b-a)^5}+10\dfrac{a^{3n}b^{2n}}{(a-b)^5}+10\dfrac{a^{2n}b^{3n}}{(b-a)^5}+5\dfrac{a^{2n}b^{3n}}{(a-b)^5}+\dfrac{b^{5n}}{(b-a)^5}\\
-=&\dfrac{a^{5n}}{(a-b)^5}+\dfrac{b^{5n}}{(b-a)^5}+5\dfrac{a^{4n}b^{n}}{(b-a)^5}+5\dfrac{a^{2n}b^{3n}}{(a-b)^5}+10\dfrac{a^{3n}b^{2n}}{(a-b)^5}+10\dfrac{a^{2n}b^{3n}}{(b-a)^5}\\
-=&\dfrac{a^{5n}}{(a-b)^5}+\dfrac{b^{5n}}{(b-a)^5}-5\dfrac{a^nb^n(a^n-b^n)(a^{2n}+a^nb^n+b^{2n})}{(a-b)^5}+10\dfrac{a^{2n}b^{2n}(a^n-b^n)}{(a-b)^5}\\
-=&\dfrac{a^{5n}}{(a-b)^5}+\dfrac{b^{5n}}{(b-a)^5}-5\dfrac{a^nb^n(a^{3n}-b^{3n})}{(a-b)^5}+10\dfrac{a^{2n}b^{2n}(a^n-b^n)}{(a-b)^5}\\
+\Fib{n}^5={}&\dfrac{a^{5n}}{(a-b)^5}+5\dfrac{a^{4n}b^{n}}{(b-a)^5}+10\dfrac{a^{3n}b^{2n}}{(a-b)^5}+10\dfrac{a^{2n}b^{3n}}{(b-a)^5}+5\dfrac{a^{2n}b^{3n}}{(a-b)^5}+\dfrac{b^{5n}}{(b-a)^5}\\
+={}&\dfrac{a^{5n}}{(a-b)^5}+\dfrac{b^{5n}}{(b-a)^5}+5\dfrac{a^{4n}b^{n}}{(b-a)^5}+5\dfrac{a^{2n}b^{3n}}{(a-b)^5}+10\dfrac{a^{3n}b^{2n}}{(a-b)^5}+10\dfrac{a^{2n}b^{3n}}{(b-a)^5}\\
+={}&\dfrac{a^{5n}}{(a-b)^5}+\dfrac{b^{5n}}{(b-a)^5}-5\dfrac{a^nb^n(a^n-b^n)(a^{2n}+a^nb^n+b^{2n})}{(a-b)^5}+10\dfrac{a^{2n}b^{2n}(a^n-b^n)}{(a-b)^5}\\
+={}&\dfrac{a^{5n}}{(a-b)^5}+\dfrac{b^{5n}}{(b-a)^5}-5\dfrac{a^nb^n(a^{3n}-b^{3n})}{(a-b)^5}+10\dfrac{a^{2n}b^{2n}(a^n-b^n)}{(a-b)^5}\\
 	\intertext{per il~\vref{lem:FibpropPhi}} 
-=&\dfrac{\Fib{5n}-5(-1)^n\Fib{3n}+10\Fib{n}}{25}\\	
+={}&\dfrac{\Fib{5n}-5(-1)^n\Fib{3n}+10\Fib{n}}{25}\\	
 \end{align*}
 \proofpart{Lucas Quinta}
 \begin{align*}
-	\Luc{n}^5=&a^{5n}+5a^{4n}b^{n}+10a^{3n}b^{2n}+10a^{2n}b^{3n}+5a^{2n}b^{3n}+b^{5n}\\
-	=&a^{5n}+b^{5n}+5a^{4n}b^{n}+5a^{2n}b^{3n}+10a^{3n}b^{2n}+10a^{2n}b^{3n}\\
-	=&a^{5n}+b^{5n}+5a^nb^n(a^n+b^n)(a^{2n}+a^nb^n+b^{2n})+10a^{2n}b^{2n}(a^n-b^n)\\
-	=&a^{5n}+b^{5n}+5a^nb^n(a^{3n}+b^{3n})+10a^{2n}b^{2n}(a^n+b^n)\\
+	\Luc{n}^5={}&a^{5n}+5a^{4n}b^{n}+10a^{3n}b^{2n}+10a^{2n}b^{3n}+5a^{2n}b^{3n}+b^{5n}\\
+	={}&a^{5n}+b^{5n}+5a^{4n}b^{n}+5a^{2n}b^{3n}+10a^{3n}b^{2n}+10a^{2n}b^{3n}\\
+	={}&a^{5n}+b^{5n}+5a^nb^n(a^n+b^n)(a^{2n}+a^nb^n+b^{2n})+10a^{2n}b^{2n}(a^n-b^n)\\
+	={}&a^{5n}+b^{5n}+5a^nb^n(a^{3n}+b^{3n})+10a^{2n}b^{2n}(a^n+b^n)\\
 	\intertext{per il~\vref{lem:FibpropPhi}} 
-	=&\Luc{5n}+5(-1)^n\Luc{3n}+10\Luc{n}\\	
+	={}&\Luc{5n}+5(-1)^n\Luc{3n}+10\Luc{n}\\	
 \end{align*}
 \end{proof}
