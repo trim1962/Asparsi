@@ -687,7 +687,7 @@ Una dimostrazione alternativa è la seguente:
 	\Luc{n}^4={}&a^{4n}+4a^{3n}b^{n}+6a^{2n}b^{2n}+4a^{n}b^{3n}+b^{4n}\\
 	={}&a^{4n}+b^{4n}+4a^{n}b^{n}(a^{2n}+b^{2n})+6a^{2n}b^{2n}\\
 	\intertext{per il~\vref{lem:FibpropPhi}} 
-	={}&\Luc{4n}+4(-1)^n\Luc{2n}+6
+	={}&\Luc{4n}+4(-1)^n\Luc{2n}+6\\
 \end{align*}
 Una dimostrazione alternativa è la seguente:
 \begin{align*}
@@ -698,6 +698,11 @@ Una dimostrazione alternativa è la seguente:
 \intertext{per il~\vref{thm:FibProdSomma}}
 \Luc{3n}\Luc{n}={}&\Luc{3n+n}+(-1)^n\Luc{3n-n}\\
 ={}&\Luc{4n}+(-1)^n\Luc{2n}\\
+\Luc{n}^2={}&\Luc{2n}+2(-1)^n\\
+\intertext{Quindi}
+={}&\Luc{4n}+(-1)^n\Luc{2n}+3(-1)^n[\Luc{2n}+2(-1)^n]\\
+={}&\Luc{4n}+(-1)^n\Luc{2n}+3(-1)^n\Luc{2n}+6(-1)^{2n}\\
+
 \end{align*}
 \proofpart{Fibonacci Quinta}
 \begin{align*}
