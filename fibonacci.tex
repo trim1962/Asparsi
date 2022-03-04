@@ -671,15 +671,15 @@ Una dimostrazione alternativa è la seguente:
 \begin{align*}
 \Fib{n}^4={}&\Fib{n}^3\Fib{n}\\
 \intertext{per il~\vref{eqn:FibCubSomma}}
-=&\dfrac{\Fib{3n}-3(-1)^n\Fib{n}}{5}\Fib{n}\\
-=&\dfrac{\Fib{3n}\Fib{n}-3(-1)^n\Fib{n}^2}{5}\\
+={}&\dfrac{\Fib{3n}-3(-1)^n\Fib{n}}{5}\Fib{n}\\
+={}&\dfrac{\Fib{3n}\Fib{n}-3(-1)^n\Fib{n}^2}{5}\\
 \intertext{per il~\vref{thm:FibProdSomma}}
-\Fib{3n}\Fib{n}=&\dfrac{\Luc{3n+n}-(-1)^n\Luc{3n-n}}{5}\\
-\Fib{3n}\Fib{n}=&\dfrac{\Luc{4n}-(-1)^n\Luc{2n}}{5}\\
+\Fib{3n}\Fib{n}={}&\dfrac{\Luc{3n+n}-(-1)^n\Luc{3n-n}}{5}\\
+\Fib{3n}\Fib{n}={}&\dfrac{\Luc{4n}-(-1)^n\Luc{2n}}{5}\\
 \Fib{n}^2={}&\dfrac{\Luc{2n}-2(-1)^n}{5}\\
 \intertext{Quindi}
-=&\dfrac{\Luc{4n}-(-1)^n\Luc{2n}-3(-1)^n[\Luc{2n}-2(-1)^n]}{25}\\
-=&\dfrac{\Luc{4n}-(-1)^n\Luc{2n}-3(-1)^n\Luc{2n}+6(-1)^{2n}}{25}\\
+={}&\dfrac{\Luc{4n}-(-1)^n\Luc{2n}-3(-1)^n[\Luc{2n}-2(-1)^n]}{25}\\
+={}&\dfrac{\Luc{4n}-(-1)^n\Luc{2n}-3(-1)^n\Luc{2n}+6(-1)^{2n}}{25}\\
 ={}&\dfrac{\Luc{4n}-4(-1)^n\Luc{2n}+6}{25}\\
 \end{align*}
 \proofpart{Lucas Quarta}
@@ -720,14 +720,14 @@ Una dimostrazione alternativa è la seguente:
 	={}&\dfrac{\Luc{4n}-4(-1)^n\Luc{2n}+6}{25}\Fib{n}\\
 	={}&\dfrac{\Luc{4n}\Fib{n}-4(-1)^n\Luc{2n}\Fib{n}+6\Fib{n}}{25}\\
 	\intertext{per il~\vref{thm:FibProdSomma}}
-	\Fib{m}\Luc{n}=&\Fib{n+m}+(-1)^n\Fib{m-n}\\
-	\Fib{n}\Luc{4n}=&\Fib{4n+n}+(-1)^{4n}\Fib{n-4n}\\
-	=&\Fib{5n}+\Fib{-3n}\\
-	=&\Fib{5n}+(-1)^{3n+1}\Fib{3n}\\
-	\Fib{n}\Luc{2n}=&\Fib{2n+n}+(-1)^{2n}\Fib{n-2n}\\
-	=&\Fib{3n}+(-1)^{2n}\Fib{n-2n}\\
-	=&\Fib{3n}+\Fib{-n}\\
-	=&\Fib{3n}+(-1)^{n+1}\Fib{n}\\
+	\Fib{m}\Luc{n}={}&\Fib{n+m}+(-1)^n\Fib{m-n}\\
+	\Fib{n}\Luc{4n}={}&\Fib{4n+n}+(-1)^{4n}\Fib{n-4n}\\
+	={}&\Fib{5n}+\Fib{-3n}\\
+	={}&\Fib{5n}+(-1)^{3n+1}\Fib{3n}\\
+	\Fib{n}\Luc{2n}={}&\Fib{2n+n}+(-1)^{2n}\Fib{n-2n}\\
+	={}&\Fib{3n}+(-1)^{2n}\Fib{n-2n}\\
+	={}&\Fib{3n}+\Fib{-n}\\
+	={}&\Fib{3n}+(-1)^{n+1}\Fib{n}\\
 	\intertext{Quindi}
 	={}&\dfrac{\Fib{5n}+(-1)^{3n+1}\Fib{3n}-4(-1)^n[\Fib{3n}+(-1)^{n+1}\Fib{n}]+6\Fib{n}}{25}\\
 	={}&\dfrac{\Fib{5n}+(-1)^{3n+1}\Fib{3n}-4(-1)^n\Fib{3n}-4(-1)^{2n+1}\Fib{n}+6\Fib{n}}{25}\\
@@ -745,17 +745,20 @@ Una dimostrazione alternativa è la seguente:
 \end{align*}
 Una dimostrazione alternativa è la seguente:
 \begin{align*}
-	\Luc{n}^5=&\Luc{n}^4\Luc{n}\\
-	=&(\Luc{4n}+4(-1)^n\Luc{2n}+6)\Luc{n}\\
-	=&\Luc{4n}\Luc{n}+4(-1)^n\Luc{2n}\Luc{n}+6\Luc{n}\\
+	\Luc{n}^5={}&\Luc{n}^4\Luc{n}\\
+	\intertext{per il~\vref{eqn:FibQuartaSomma}}
+	={}&(\Luc{4n}+4(-1)^n\Luc{2n}+6)\Luc{n}\\
+	={}&\Luc{4n}\Luc{n}+4(-1)^n\Luc{2n}\Luc{n}+6\Luc{n}\\
+	\intertext{per il~\vref{thm:FibProdSomma}}
 	\Luc{m}\Luc{n}={}&\Luc{m+n}+(-1)^{n}\Luc{m-n}\\
 	\Luc{4n}\Luc{n}={}&\Luc{4n+n}+(-1)^{n}\Luc{4n-n}\\
-	=&\Luc{5n}+(-1)^{n}\Luc{3n}\\
+	={}&\Luc{5n}+(-1)^{n}\Luc{3n}\\
 	\Luc{2n}\Luc{n}={}&\Luc{2n+n}+(-1)^{n}\Luc{2n-n}\\
 	={}&\Luc{3n}+(-1)^{n}\Luc{n}\\
-	=&\Luc{5n}+(-1)^{n}\Luc{3n}+4(-1)^n[\Luc{3n}+(-1)^{n}\Luc{n}]+6\Luc{n}\\
-	=&\Luc{5n}+(-1)^{n}\Luc{3n}+4(-1)^n\Luc{3n}+4(-1)^{2n}\Luc{n}+6\Luc{n}\\
-	=&\Luc{5n}+5(-1)^n\Luc{3n}+4\Luc{n}+6\Luc{n}\\
-	=&\Luc{5n}+5(-1)^n\Luc{3n}+10\Luc{n}\\
+	\intertext{Quindi}
+	={}&\Luc{5n}+(-1)^{n}\Luc{3n}+4(-1)^n[\Luc{3n}+(-1)^{n}\Luc{n}]+6\Luc{n}\\
+	={}&\Luc{5n}+(-1)^{n}\Luc{3n}+4(-1)^n\Luc{3n}+4(-1)^{2n}\Luc{n}+6\Luc{n}\\
+	={}&\Luc{5n}+5(-1)^n\Luc{3n}+4\Luc{n}+6\Luc{n}\\
+	={}&\Luc{5n}+5(-1)^n\Luc{3n}+10\Luc{n}\\
 \end{align*}
 \end{proof}
