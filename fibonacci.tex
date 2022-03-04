@@ -716,8 +716,11 @@ Una dimostrazione alternativa è la seguente:
 Una dimostrazione alternativa è la seguente:
 \begin{align*}
 	\Fib{n}^5={}&\Fib{n}^4\Fib{n}\\
+	\intertext{per il~\vref{eqn:FibQuartaSomma}}
 	={}&\dfrac{\Luc{4n}-4(-1)^n\Luc{2n}+6}{25}\Fib{n}\\
 	={}&\dfrac{\Luc{4n}\Fib{n}-4(-1)^n\Luc{2n}\Fib{n}+6\Fib{n}}{25}\\
+	\intertext{per il~\vref{thm:FibProdSomma}}
+	\Fib{m}\Luc{n}=&\Fib{n+m}+(-1)^n\Fib{m-n}
 \end{align*}
 \proofpart{Lucas Quinta}
 \begin{align*}
