@@ -480,6 +480,9 @@ Da cui la tesi.
 \end{thm}
 \begin{proof}
 		\proofpart{Fibonacci}
+		\begin{align*}
+			\intertext{Per il~\vref{thm:LucFibSommaprodotto}}
+		\end{align*}
 	\begin{align*}
 	\Fib{n+1}={}&\dfrac{1}{a-b}\left(a^{n+1}-b^{n+1}\right)\\
 	\Fib{n-1}={}&\dfrac{1}{a-b}\left(a^{n-1}-b^{n-1}\right)\\
@@ -704,4 +707,5 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 	={}&\Luc{5n}+5(-1)^n\Luc{3n}+4\Luc{n}+6\Luc{n}\\
 	={}&\Luc{5n}+5(-1)^n\Luc{3n}+10\Luc{n}\\
 \end{align*}
+\proofpart{Fibonacci Sesta}
 \end{proof}
