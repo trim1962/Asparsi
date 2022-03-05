@@ -469,12 +469,10 @@ Da cui la tesi.
 \section{Conversione}
 \begin{thm}[Converti in Fibonacci o in Lucas]~\cite{Rabinowitz_1996}
 	Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
-	\begin{equation}
-		\Luc{n}=\Fib{n+1}+\Fib{n-1}
-	\end{equation}\label{eqn:LucasConvertiinFib}
-\begin{equation}
-	\Fib{n}=\dfrac{\Luc{n+1}+\Luc{n-1}}{5}
-\end{equation}\label{eqn:FibConvertiinLucas}
+	\begin{align}
+		\Luc{n}=&\Fib{n+1}+\Fib{n-1}\label{eqn:LucasConvertiinFib}\\
+			\Fib{n}=&\dfrac{\Luc{n+1}+\Luc{n-1}}{5}\label{eqn:FibConvertiinLucas}
+	\end{align}
 \end{thm}
 \begin{proof}
 		\proofpart{Fibonacci}
@@ -494,15 +492,19 @@ Da cui la tesi.
 		\end{align*}
 	\proofpart{Lucas}
 	\begin{align*}
-		\Luc{n+1}={}&a^{n+1}-b^{n+1}\\
-		\Luc{n-1}={}&a^{n-1}-b^{n-1}\\
-		\dfrac{\Luc{n+1}+\Luc{n-1}}{5}={}&
-		\dfrac{a^{n+1}-b^{n+1}+a^{n-1}-b^{n-1}}{(a-b)^2}\\
-		={}&\dfrac{ba^n(a^2+1)+ab^n(b^2+1)}{ab(a-b)^2}
-		\intertext{per il~\vref{lem:FibpropPhi}}
-		={}&\dfrac{a^n(-a+b)+b^n(-b+a)}{ab(a-b)^2}\\
-		={}&\dfrac{a^n-b^n}{ab(b-a)}\\
-		={}&\dfrac{a^n-b^n}{a-b}\\
+		\intertext{Per il~\vref{thm:LucFibSommaprodotto}}
+		\Luc{n+m}=&\dfrac{5\Fib{m}\Fib{n}+\Luc{m}\Luc{n}}{2}\\
+		\Luc{n+1}=&\dfrac{5\Fib{1}\Fib{n}+\Luc{1}\Luc{n}}{2}\\
+		\Luc{n-1}=&\dfrac{5\Fib{-1}\Fib{n}+\Luc{-1}\Luc{n}}{2}\\
+		\Luc{n+1}+\Luc{n-1}=&\dfrac{5\Fib{1}\Fib{n}+\Luc{1}\Luc{n}+5\Fib{-1}\Fib{n}+\Luc{-1}\Luc{n}}{2}\\
+			\intertext{Per il~\vref{thm:FibLucNeg}}
+		\Fib{-1}=&(-1)^{-1+1}\Fib{1}=\Fib{1}\\	
+		\Luc{-1}=&(-1)^{1}\Luc{1}=-	\Luc{1}
+		\intertext{Quindi}
+		=&\dfrac{5\Fib{1}\Fib{n}+\Luc{1}\Luc{n}+5\Fib{1}\Fib{n}-\Luc{1}\Luc{n}}{2}\\
+		=&\dfrac{5\Fib{1}\Fib{n}+5\Fib{1}\Fib{n}}{2}\\
+		=&\dfrac{10\Fib{1}\Fib{n}}{2}\\
+		=&5\Fib{n}
 	\end{align*}
 	Da cui la tesi.
 \end{proof}
