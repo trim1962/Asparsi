@@ -597,7 +597,7 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 	\Fib{n}^4={}&\dfrac{\Luc{4n}-4(-1)^n\Luc{2n}+6}{25}\label{eqn:FibQuartaSomma}\\
 	\Luc{n}^4={}&\Luc{4n}+4(-1)^n\Luc{2n}+6\label{eqn:LucQuartaSomma}\\
 	\Fib{n}^5={}&\dfrac{\Fib{5n}-5(-1)^n\Fib{3n}+10\Fib{n}}{25}\label{eqn:FibQuintaaSomma}\\
-	\Luc{n}^5={}&\Luc{5n}+5(-1)^n\Luc{3n}+10\Fib{n}\label{eqn:LucQuintaaSomma}\\
+	\Luc{n}^5={}&\Luc{5n}+5(-1)^n\Luc{3n}+10\Luc{n}\label{eqn:LucQuintaaSomma}\\
 	\Fib{n}^6={}&\dfrac{\Luc{6n}-6(-1)^n\Luc{4n}+15\Luc{2n}-20(-1)^n}{125}\label{eqn:FibSestsaSomma}\\
 	\Luc{n}^6={}&\Luc{6n}+6(-1)^n\Luc{4n}+15\Luc{2n}+20(-1)^n\label{eqn:LucSestsaSomma}
 \end{align} 
@@ -705,7 +705,7 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 \end{align*}
 \proofpart{Fibonacci Sesta}
 \begin{align*}
-		\Fib{n}^6={}&\Fib{n}^4\Fib{n}\\
+	\Fib{n}^6={}&\Fib{n}^4\Fib{n}\\
 	\intertext{per il~\vref{eqn:FibQuintaaSomma}}
 	={}&\dfrac{\Fib{5n}\Fib{n}-5(-1)^n\Fib{3n}\Fib{n}+10\Fib{n}^2}{25}\\
 	\Fib{m}\Fib{n}={}&\dfrac{\Luc{n+m}-(-1)^n\Luc{m-n}}{5}\\
@@ -720,6 +720,17 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 \end{align*}
 \proofpart{Lucas Sesta}
 \begin{align*}
-	contenuto...
+\Luc{n}^6={}&\Luc{n}^5\Luc{n}\\
+\intertext{per il~\vref{eqn:LucQuintaSomma}}
+={}&[\Luc{5n}+5(-1)^n\Luc{3n}+10\Luc{n}]\Luc{n}\\
+={}&\Luc{5n}\Luc{n}+5(-1)^n\Luc{3n}\Luc{n}+10\Luc{n}^2\\
+\intertext{per il~\vref{thm:FibProdSomma}}
+\Luc{m}\Luc{n}={}&\Luc{m+n}+(-1)^{n}\Luc{m-n}\\
+\Luc{5n}\Luc{n}={}&\Luc{5n+n}+(-1)^{n}\Luc{5n-n}\\
+={}&\Luc{5n}+(-1)^{n}\Luc{4n}\\
+\Luc{3n}\Luc{n}={}&\Luc{3n+n}+(-1)^{n}\Luc{3n-n}\\
+={}&\Luc{4n}+(-1)^{n}\Luc{2n}\\
+={}&\Luc{5n}\Luc{n}+5(-1)^n\Luc{3n}\Luc{n}+10\Luc{n}^2\\
+\intertext{Quindi}
 \end{align*}
 \end{proof}
