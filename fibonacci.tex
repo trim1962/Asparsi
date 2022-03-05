@@ -368,12 +368,10 @@ cvd.
 \end{proof}
 \begin{thm}[Fibonacci e Lucas negativo]~\cite{Rabinowitz_1996}\label{thm:FibLucNeg}
 Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
-\begin{equation}
-	\Fib{-n}=(-1)^{n+1}\Fib{n}
-\end{equation}\label{eqn:FibNegate}
-\begin{equation}
-	\Luc{-n}=(-1)^{n}\Luc{n}
-\end{equation}\label{eqn:LucNegate}
+\begin{align}
+	\Fib{-n}=&(-1)^{n+1}\Fib{n}\label{eqn:FibNegate}\\
+	\Luc{-n}=&(-1)^{n}\Luc{n}\label{eqn:LucNegate}
+\end{align}
 \end{thm}
 \begin{proof}
 	\proofpart{Fibonacci}
@@ -486,6 +484,11 @@ Da cui la tesi.
 			\Fib{n+1}=&\dfrac{\Fib{1}\Luc{n}+\Luc{1}\Fib{n}}{2}\\
 			\Fib{n-1}=&\dfrac{\Fib{-1}\Luc{n}+\Luc{-1}\Fib{n}}{2}\\
 				\Fib{n+1}+\Fib{n-1}=&\dfrac{\Fib{1}\Luc{n}+\Luc{1}\Fib{n}+\Fib{-1}\Luc{n}+\Luc{-1}\Fib{n}}{2}\\
+				\intertext{Per il~\vref{thm:FibLucNeg}}
+		\Fib{-1}=&(-1)^{-1+1}\Fib{1}=\Fib{1}\\	
+		\Luc{-1}=&(-1)^{1}\Luc{1}=-	\Luc{1}
+		\intertext{Quindi}
+		=&\dfrac{\Fib{1}\Luc{n}+\Luc{1}\Fib{n}+\Fib{1}\Luc{n}-\Luc{1}\Fib{n}}{2}\\
 		\end{align*}
 	\begin{align*}
 	\Fib{n+1}={}&\dfrac{1}{a-b}\left(a^{n+1}-b^{n+1}\right)\\
