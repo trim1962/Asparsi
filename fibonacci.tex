@@ -727,10 +727,13 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 \intertext{per il~\vref{thm:FibProdSomma}}
 \Luc{m}\Luc{n}={}&\Luc{m+n}+(-1)^{n}\Luc{m-n}\\
 \Luc{5n}\Luc{n}={}&\Luc{5n+n}+(-1)^{n}\Luc{5n-n}\\
-={}&\Luc{5n}+(-1)^{n}\Luc{4n}\\
+={}&\Luc{4n}+(-1)^{n}\Luc{4n}\\
 \Luc{3n}\Luc{n}={}&\Luc{3n+n}+(-1)^{n}\Luc{3n-n}\\
 ={}&\Luc{4n}+(-1)^{n}\Luc{2n}\\
-={}&\Luc{5n}\Luc{n}+5(-1)^n\Luc{3n}\Luc{n}+10\Luc{n}^2\\
+\Luc{n}^2={}&\Luc{2n}+2(-1)^n
 \intertext{Quindi}
+={}&\Luc{5n}+(-1)^{n}\Luc{4n}+5(-1)^n[\Luc{4n}+(-1)^{n}\Luc{2n}]+10[\Luc{4n}+(-1)^{n}\Luc{2n}]\\
+={}&\Luc{6n}+(-1)^{n}\Luc{4n}+5(-1)^n\Luc{4n}+5(-1)^{2n}\Luc{2n}+10\Luc{4n}+20(-1)^{n}\Luc{2n}\\
+={}&\Luc{6n}+6(-1)^{n}\Luc{4n}+15\Luc{2n}+20(-1)^{n}\\
 \end{align*}
 \end{proof}
