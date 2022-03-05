@@ -561,12 +561,10 @@ cvd.
 Conseguenza del~\vref{thm:FibProdSomma} è il seguente
 \begin{cor}[Potenze in somma]~\cite{Rabinowitz_1996}\label{cor:FibpotSomma}
 	Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
-	\begin{equation}
-		\Fib{n}^2=\dfrac{\Luc{2n}-2(-1)^n}{5}
-	\end{equation}\label{eqn:FibQuadSomma}
-	\begin{equation}
-		\Luc{n}^2=\Luc{2n}+2(-1)^n
-	\end{equation}\label{eqn:LucQuadSomma}
+	\begin{align}
+		\Fib{n}^2=&\dfrac{\Luc{2n}-2(-1)^n}{5}\label{eqn:FibQuadSomma}\\
+		\Luc{n}^2=&\Luc{2n}+2(-1)^n\label{eqn:LucQuadSomma}
+	\end{align}
 \end{cor}
 \begin{proof}
 		\proofpart{Fibonacci}
@@ -599,12 +597,13 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 	\Fib{n}^4={}&\dfrac{\Luc{4n}-4(-1)^n\Luc{2n}+6}{25}\label{eqn:FibQuartaSomma}\\
 	\Luc{n}^4={}&\Luc{4n}+4(-1)^n\Luc{2n}+6\label{eqn:LucQuartaSomma}\\
 	\Fib{n}^5={}&\dfrac{\Fib{5n}-5(-1)^n\Fib{3n}+10\Fib{n}}{25}\label{eqn:FibQuintaaSomma}\\
-		\Luc{n}^5={}&\Luc{5n}+5(-1)^n\Luc{3n}+10\Fib{n}\label{eqn:LucQuintaaSomma}
+	\Luc{n}^5={}&\Luc{5n}+5(-1)^n\Luc{3n}+10\Fib{n}\label{eqn:LucQuintaaSomma}\\
+	\Fib{n}^6=&\dfrac{\Luc{6n}-6(-1)^n\Luc{4n}+15\Luc{2n}-20(-1)^n}{125}\\
+	\Luc{n}^6=&\Luc{6n}+6(-1)^n\Luc{4n}+15\Luc{2n}+20(-1)^n
 \end{align} 
 \end{thm}
 \begin{proof}
 		\proofpart{Cubo Fibonacci}
-
 \begin{align*}
 	\Fib{n}^3={}&\Fib{n}^2\Fib{n}\\
 	\intertext{per il~\vref{cor:FibpotSomma}}
@@ -623,7 +622,6 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 ={}&\dfrac{\Fib{3n}-3(-1)^n\Fib{n}}{5}\\
 \end{align*}
 	\proofpart{Cubo Lucas}
-
 \begin{align*}
 	\Luc{n}^3={}&\Luc{n}^2\Luc{n}\\
 	\intertext{per il~\vref{cor:FibpotSomma}}
