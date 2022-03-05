@@ -599,18 +599,11 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 	\Luc{n}^4=&\Luc{4n}+4(-1)^n\Luc{2n}+6\label{eqn:LucQuartaSomma}\\
 	\Fib{n}^5=&\dfrac{\Fib{5n}-5(-1)^n\Fib{3n}+10\Fib{n}}{25}\label{eqn:FibQuintaaSomma}\\
 		\Luc{n}^5=&\Luc{5n}+5(-1)^n\Luc{3n}+10\Fib{n}\label{eqn:LucQuintaaSomma}
-\end{align}
+\end{align} 
 \end{thm}
 \begin{proof}
 		\proofpart{Cubo Fibonacci}
-\begin{align*}
-\Fib{n}^3={}&\dfrac{a^{3n}}{(a-b)^3}+3\dfrac{a^{2n}b^n}{(b-a)^3}+3\dfrac{a^nb^{2n}}{(a-b)^3}+\dfrac{b^{3n}}{(b-a)^3}\\
-={}&+3\dfrac{a^{2n}b^n}{(b-a)^3}+3\dfrac{a^nb^{2n}}{(a-b)^3}\\
-={}&\dfrac{a^{3n}}{(a-b)^3}+\dfrac{b^{3n}}{(b-a)^3}+3\dfrac{a^nb^n(a^n-b^n)}{(b-a)^3}\\
-\intertext{per il~\vref{lem:FibpropPhi}}
-={}&\dfrac{\Fib{3n}-3(-1)^n\Fib{n}}{5}\\
-\end{align*}
-Una dimostrazione alternativa è la seguente:
+
 \begin{align*}
 	\Fib{n}^3={}&\Fib{n}^2\Fib{n}\\
 	\intertext{per il~\vref{cor:FibpotSomma}}
@@ -629,14 +622,7 @@ Una dimostrazione alternativa è la seguente:
 ={}&\dfrac{\Fib{3n}-3(-1)^n\Fib{n}}{5}\\
 \end{align*}
 	\proofpart{Cubo Lucas}
-\begin{align*}
-	\Luc{n}^3={}&a^{3n} + 3a^{n}b^{2n} + 3a^{2n}b^{n} + b^{3n}\\
-	={}&a^{3n}  + b^{3n}+ 3a^{n}b^{2n} + 3a^{2n}b^{n}\\
-	={}&a^{3n}  + b^{3n}+ 3a^nb^n(a^n+b^n)\\
-	\intertext{per il~\vref{lem:FibpropPhi}} 
-	={}&\Luc{3n}+3(-1)^n\Luc{n}
-\end{align*}
-Una dimostrazione alternativa è la seguente:
+
 \begin{align*}
 	\Luc{n}^3={}&\Luc{n}^2\Luc{n}\\
 	\intertext{per il~\vref{cor:FibpotSomma}}
@@ -650,14 +636,6 @@ Una dimostrazione alternativa è la seguente:
 ={}&\Luc{3n}+3(-1)^n\Luc{n}\\
 \end{align*}
 \proofpart{Fibonacci Quarta}
-\begin{align*}
-	\Fib{n}^4={}&\dfrac{a^{4n}}{(a-b)^4}-4\dfrac{a^{3n}b^{n}}{(a-b)^4}+6\dfrac{a^{2n}b^{2n}}{(a-b)^4}-4\dfrac{a^{n}b^{3n}}{(a-b)^4}+\dfrac{b^{4n}}{(a-b)^4}\\
-	={}&\dfrac{a^{4n}}{(a-b)^4}+\dfrac{b^{4n}}{(a-b)^4}-4\dfrac{a^{3n}b^{n}}{(a-b)^4}-4\dfrac{a^{n}b^{3n}}{(a-b)^4}+6\dfrac{a^{2n}b^{2n}}{(a-b)^4}\\
-	={}&\dfrac{a^{4n}}{(a-b)^4}+\dfrac{b^{4n}}{(a-b)^4}-4\dfrac{a^{n}b^{n}(a^{2n}+b^{2n})}{(a-b)^4}+6\dfrac{a^{2n}b^{2n}}{(a-b)^4}\\
-	\intertext{per il~\vref{lem:FibpropPhi}} 
-	={}&\dfrac{\Luc{4n}-4(-1)^n\Luc{2n}+6}{25}
-\end{align*}
-Una dimostrazione alternativa è la seguente:
 \begin{align*}
 \Fib{n}^4={}&\Fib{n}^3\Fib{n}\\
 \intertext{per il~\vref{eqn:FibCubSomma}}
@@ -674,13 +652,6 @@ Una dimostrazione alternativa è la seguente:
 \end{align*}
 \proofpart{Lucas Quarta}
 \begin{align*}
-	\Luc{n}^4={}&a^{4n}+4a^{3n}b^{n}+6a^{2n}b^{2n}+4a^{n}b^{3n}+b^{4n}\\
-	={}&a^{4n}+b^{4n}+4a^{n}b^{n}(a^{2n}+b^{2n})+6a^{2n}b^{2n}\\
-	\intertext{per il~\vref{lem:FibpropPhi}} 
-	={}&\Luc{4n}+4(-1)^n\Luc{2n}+6\\
-\end{align*}
-Una dimostrazione alternativa è la seguente:
-\begin{align*}
 \Luc{n}^4={}&\Luc{n}^3\Luc{n}\\
 \intertext{per il~\vref{eqn:LucCubSomma}}
 ={}&[\Luc{3n}+3(-1)^n\Luc{n}]\Luc{n}\\
@@ -695,15 +666,6 @@ Una dimostrazione alternativa è la seguente:
 ={}&\Luc{4n}+4(-1)^n\Luc{2n}+6\\
 \end{align*}
 \proofpart{Fibonacci Quinta}
-\begin{align*}
-\Fib{n}^5={}&\dfrac{a^{5n}}{(a-b)^5}+5\dfrac{a^{4n}b^{n}}{(b-a)^5}+10\dfrac{a^{3n}b^{2n}}{(a-b)^5}+10\dfrac{a^{2n}b^{3n}}{(b-a)^5}+5\dfrac{a^{2n}b^{3n}}{(a-b)^5}+\dfrac{b^{5n}}{(b-a)^5}\\
-={}&\dfrac{a^{5n}}{(a-b)^5}+\dfrac{b^{5n}}{(b-a)^5}+5\dfrac{a^{4n}b^{n}}{(b-a)^5}+5\dfrac{a^{2n}b^{3n}}{(a-b)^5}+10\dfrac{a^{3n}b^{2n}}{(a-b)^5}+10\dfrac{a^{2n}b^{3n}}{(b-a)^5}\\
-={}&\dfrac{a^{5n}}{(a-b)^5}+\dfrac{b^{5n}}{(b-a)^5}-5\dfrac{a^nb^n(a^n-b^n)(a^{2n}+a^nb^n+b^{2n})}{(a-b)^5}+10\dfrac{a^{2n}b^{2n}(a^n-b^n)}{(a-b)^5}\\
-={}&\dfrac{a^{5n}}{(a-b)^5}+\dfrac{b^{5n}}{(b-a)^5}-5\dfrac{a^nb^n(a^{3n}-b^{3n})}{(a-b)^5}+10\dfrac{a^{2n}b^{2n}(a^n-b^n)}{(a-b)^5}\\
-	\intertext{per il~\vref{lem:FibpropPhi}} 
-={}&\dfrac{\Fib{5n}-5(-1)^n\Fib{3n}+10\Fib{n}}{25}\\	
-\end{align*}
-Una dimostrazione alternativa è la seguente:
 \begin{align*}
 	\Fib{n}^5={}&\Fib{n}^4\Fib{n}\\
 	\intertext{per il~\vref{eqn:FibQuartaSomma}}
@@ -725,15 +687,6 @@ Una dimostrazione alternativa è la seguente:
 	={}&\dfrac{\Fib{5n}-5(-1)^n\Fib{3n}+10\Fib{n}}{25}\\
 \end{align*}
 \proofpart{Lucas Quinta}
-\begin{align*}
-	\Luc{n}^5={}&a^{5n}+5a^{4n}b^{n}+10a^{3n}b^{2n}+10a^{2n}b^{3n}+5a^{2n}b^{3n}+b^{5n}\\
-	={}&a^{5n}+b^{5n}+5a^{4n}b^{n}+5a^{2n}b^{3n}+10a^{3n}b^{2n}+10a^{2n}b^{3n}\\
-	={}&a^{5n}+b^{5n}+5a^nb^n(a^n+b^n)(a^{2n}+a^nb^n+b^{2n})+10a^{2n}b^{2n}(a^n-b^n)\\
-	={}&a^{5n}+b^{5n}+5a^nb^n(a^{3n}+b^{3n})+10a^{2n}b^{2n}(a^n+b^n)\\
-	\intertext{per il~\vref{lem:FibpropPhi}} 
-	={}&\Luc{5n}+5(-1)^n\Luc{3n}+10\Luc{n}\\	
-\end{align*}
-Una dimostrazione alternativa è la seguente:
 \begin{align*}
 	\Luc{n}^5={}&\Luc{n}^4\Luc{n}\\
 	\intertext{per il~\vref{eqn:FibQuartaSomma}}
