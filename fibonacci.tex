@@ -562,8 +562,8 @@ Conseguenza del~\vref{thm:FibProdSomma} è il seguente
 \begin{cor}[Potenze in somma]~\cite{Rabinowitz_1996}\label{cor:FibpotSomma}
 	Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
 	\begin{align}
-		\Fib{n}^2=&\dfrac{\Luc{2n}-2(-1)^n}{5}\label{eqn:FibQuadSomma}\\
-		\Luc{n}^2=&\Luc{2n}+2(-1)^n\label{eqn:LucQuadSomma}
+		\Fib{n}^2={}&\dfrac{\Luc{2n}-2(-1)^n}{5}\label{eqn:FibQuadSomma}\\
+		\Luc{n}^2={}&\Luc{2n}+2(-1)^n\label{eqn:LucQuadSomma}
 	\end{align}
 \end{cor}
 \begin{proof}
@@ -598,8 +598,8 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 	\Luc{n}^4={}&\Luc{4n}+4(-1)^n\Luc{2n}+6\label{eqn:LucQuartaSomma}\\
 	\Fib{n}^5={}&\dfrac{\Fib{5n}-5(-1)^n\Fib{3n}+10\Fib{n}}{25}\label{eqn:FibQuintaaSomma}\\
 	\Luc{n}^5={}&\Luc{5n}+5(-1)^n\Luc{3n}+10\Fib{n}\label{eqn:LucQuintaaSomma}\\
-	\Fib{n}^6=&\dfrac{\Luc{6n}-6(-1)^n\Luc{4n}+15\Luc{2n}-20(-1)^n}{125}\label{eqn:FibSestsaSomma}\\
-	\Luc{n}^6=&\Luc{6n}+6(-1)^n\Luc{4n}+15\Luc{2n}+20(-1)^n\label{eqn:LucSestsaSomma}
+	\Fib{n}^6={}&\dfrac{\Luc{6n}-6(-1)^n\Luc{4n}+15\Luc{2n}-20(-1)^n}{125}\label{eqn:FibSestsaSomma}\\
+	\Luc{n}^6={}&\Luc{6n}+6(-1)^n\Luc{4n}+15\Luc{2n}+20(-1)^n\label{eqn:LucSestsaSomma}
 \end{align} 
 \end{thm}
 \begin{proof}
@@ -710,11 +710,12 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 	={}&\dfrac{\Fib{5n}\Fib{n}-5(-1)^n\Fib{3n}\Fib{n}+10\Fib{n}^2}{25}\\
 	\Fib{m}\Fib{n}={}&\dfrac{\Luc{n+m}-(-1)^n\Luc{m-n}}{5}\\
 	\Fib{5m}\Fib{n}={}&\dfrac{\Luc{5n+n}-(-1)^n\Luc{5n-n}}{5}\\
-	=&\dfrac{\Luc{6n}-(-1)^n\Luc{4n}}{5}\\
+	={}&\dfrac{\Luc{6n}-(-1)^n\Luc{4n}}{5}\\
 	\Fib{3n}\Fib{n}={}&\dfrac{\Luc{3n+n}-(-1)^n\Luc{3n-n}}{5}\\
-	=&\dfrac{\Luc{4n}-(-1)^n\Luc{2n}}{5}\\
-	\Luc{n}^2=&\Luc{2n}+2(-1)^n\\
+	={}&\dfrac{\Luc{4n}-(-1)^n\Luc{2n}}{5}\\
+	\Luc{n}^2={}&\Luc{2n}+2(-1)^n\\
 	\intertext{Quindi}
 	={}&\dfrac{\Luc{6n}-(-1)^n\Luc{4n}-5(-1)^n\Luc{4n}+5(-1)^{2n}\Luc{2n}+10\Luc{2n}+20(-1)^n}{25}\\
+	={}&\dfrac{\Luc{6n}-6(-1)^n\Luc{4n}+15(-1)^{2n}\Luc{2n}+20(-1)^n}{25}\\
 \end{align*}
 \end{proof}
