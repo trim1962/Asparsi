@@ -594,23 +594,12 @@ Simili al precedente sono  i seguenti risultati
 Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
 \begin{align}
 \Fib{n}^3=&\dfrac{\Fib{3n}-3(-1)^n\Fib{n}}{5}\label{eqn:FibCubSomma}\\
+\Luc{n}^3=&\Luc{3n}+3(-1)^n\Luc{n}\label{eqn:LucCubSomma}\\
+	\Fib{n}^4=&\dfrac{\Luc{4n}-4(-1)^n\Luc{2n}+6}{25}\label{eqn:FibQuartaSomma}\\
+	\Luc{n}^4=&\Luc{4n}+4(-1)^n\Luc{2n}+6\label{eqn:LucQuartaSomma}\\
+	\Fib{n}^5=&\dfrac{\Fib{5n}-5(-1)^n\Fib{3n}+10\Fib{n}}{25}\label{eqn:FibQuintaaSomma}\\
+		\Luc{n}^5=&\Luc{5n}+5(-1)^n\Luc{3n}+10\Fib{n}\label{eqn:LucQuintaaSomma}
 \end{align}
-
-\begin{equation}
-	\Luc{n}^3=\Luc{3n}+3(-1)^n\Luc{n}
-\end{equation}\label{eqn:LucCubSomma}
-\begin{equation}
-	\Fib{n}^4=\dfrac{\Luc{4n}-4(-1)^n\Luc{2n}+6}{25}
-\end{equation}\label{eqn:FibQuartaSomma}
-\begin{equation}
-	\Luc{n}^4=\Luc{4n}+4(-1)^n\Luc{2n}+6
-\end{equation}\label{eqn:LucQuartaSomma}
-\begin{equation}
-	\Fib{n}^5=\dfrac{\Fib{5n}-5(-1)^n\Fib{3n}+10\Fib{n}}{25}
-\end{equation}\label{eqn:FibQuintaaSomma}
-\begin{equation}
-	\Luc{n}^5=\Luc{5n}+5(-1)^n\Luc{3n}+10\Fib{n}
-\end{equation}\label{eqn:LucQuintaaSomma}
 \end{thm}
 \begin{proof}
 		\proofpart{Cubo Fibonacci}
