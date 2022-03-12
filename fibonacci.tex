@@ -806,7 +806,7 @@ cvd.
 Cesàro]\label{thm:FibGelinCesaro}\index{Fibonacci!identità!Gelin Cesàro}
 	Se $\Fib{n}$ è la successione di Fibonacci allora 
 	\begin{equation}
-	\Fib{n}^4-\Fib{n-2}\cdot\Fib{n-1}\cdot\Fib{n+1}\cdot\Fib{n+2}=1
+	\Fib{n}^4-\Fib{n-2}\Fib{n-1}\Fib{n+1}\Fib{n+2}=1
 	\end{equation}\label{eqn:FibGelinCesaro}
 \end{thm}
 \begin{proof}
@@ -818,7 +818,9 @@ Cesàro]\label{thm:FibGelinCesaro}\index{Fibonacci!identità!Gelin Cesàro}
 	=&\dfrac{\Luc{2n}-(-1)^{n-2}\Luc{4}}{5}\\
 	\Fib{n-1}\Fib{n+1}={}&\dfrac{\Luc{n-1+n+1}-(-1)^{n-1}\Luc{n+1-n+1}}{5}\\
 	=&\dfrac{\Luc{2n}-(-1)^{n-1}\Luc{2}}{5}\\
-	\Fib{n-2}\cdot\Fib{n-1}\cdot\Fib{n+1}\cdot\Fib{n+2}=&
+	\Fib{n-2}\Fib{n-1}\Fib{n+1}\Fib{n+2}
+	=&\dfrac{1}{25}\left[\Luc{2n}-(-1)^{n-1}\Luc{2}\right]\left[\Luc{2n}-(-1)^{n-2}\Luc{4}\right]\\
+	=&\dfrac{1}{25}\left[\Luc{2n}^2-(-1)^{n-2}\Luc{4}-(-1)^{n-1}\Luc{2}\right]\\
 \end{align*}
 \end{proof}
 \section{Proprietà}
