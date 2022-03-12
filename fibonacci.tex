@@ -772,11 +772,11 @@ cvd.
 	\intertext{Quindi}
 		\Fib{m}\Fib{n+1}={}&\dfrac{\Luc{n+m+1}-(-1)^{n+1}\Luc{m-n-1}}{5}\\
 		\Fib{n}\Fib{m+1}={}&\dfrac{\Luc{n+m+1}-(-1)^{n}\Luc{m-n+1}}{5}\\
-		\Fib{m}\Fib{n+1}-\Fib{n}\Fib{m+1}={}
+		\Fib{m}\Fib{n+1}-\Fib{n}\Fib{m+1}
 		=&\dfrac{1}{5}\left[\Luc{n+m+1}-(-1)^{n+1}\Luc{m-n-1}-\Luc{n+m+1}+(-1)^{n}\Luc{m-n+1}\right]\\
 =&\dfrac{1}{5}\left[(-1)^{n}\Luc{m-n-1}+(-1)^{n}\Luc{m-n+1}\right]\\
 =&\dfrac{(-1)^{n}}{5}\left[+\Luc{m-n+1}+\Luc{m-n-1}\right]\\
-\intertext{Per il\vref{eqn:FibConvertiinLucas}}
+\intertext{Per il~\vref{eqn:FibConvertiinLucas}}
 =&(-1)^{n}\Fib{m-n}\\
 \end{align*}
 \end{proof}
@@ -787,6 +787,21 @@ cvd.
 		\Fib{k-1}\cdot\Fib{n}+\Fib{k}\cdot\Fib{n+1}=\Fib{n+k}
 	\end{equation}\label{eqn:FibHonsberger}
 \end{thm}
+\begin{proof}
+	\begin{align*}
+		\intertext{Per il~\vref{thm:FibProdSomma}}
+	\Fib{m}\Fib{n}={}&\dfrac{\Luc{n+m}-(-1)^n\Luc{m-n}}{5}\\
+	\intertext{Quindi}
+	\Fib{k-1}\Fib{n}={}&\dfrac{\Luc{n+k-1}-(-1)^n\Luc{k-n-1}}{5}\\
+	\Fib{k}\Fib{n+1}={}&\dfrac{\Luc{n+k+1}-(-1)^{n+1}\Luc{k-n-1}}{5}\\
+	\Fib{k-1}\Fib{n}-\Fib{k}\Fib{n+1}=
+	&\dfrac{1}{5}\left[\Luc{n+k-1}-(-1)^n\Luc{k-n-1}+\Luc{n+k+1}-(-1)^{n+1}\Luc{k-n-1}\right]\\
+	=&\dfrac{1}{5}\left[\Luc{n+k-1}-(-1)^n\Luc{k-n-1}+\Luc{n+k+1}+(-1)^{n}\Luc{k-n-1}\right]\\
+	=&\dfrac{1}{5}\left[\Luc{n+k-1}+\Luc{n+k+1}\right]\\
+	\intertext{Per il~\vref{eqn:FibConvertiinLucas}}
+	=&\Fib{n+k}
+	\end{align*}
+\end{proof}
 \section{Proprietà}
 \begin{thm}[Dispari]\label{thm:Fibdispari}
 	Se $\Fib{n}$ è la successione di Fibonacci allora 
