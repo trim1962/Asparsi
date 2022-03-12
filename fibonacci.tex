@@ -283,7 +283,8 @@ Da cui la tesi.
 		={}&(-1)^{n}\Luc{n}
 	\end{align*}
 \end{proof}  
-\begin{thm}[Converti in Fibonacci o in Lucas]~\cite{Rabinowitz_1996}
+\begin{thm}[Converti in Fibonacci o in 
+Lucas]\label{thm:LucasToFibFibToLuc}~\cite{Rabinowitz_1996}
 	Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
 	\begin{align}
 		\Luc{n}={}&\Fib{n+1}+\Fib{n-1}\label{eqn:LucasConvertiinFib}\\
@@ -768,6 +769,15 @@ cvd.
 \begin{align*}
 	\intertext{Per il~\vref{thm:FibProdSomma}}
 	\Fib{m}\Fib{n}={}&\dfrac{\Luc{n+m}-(-1)^n\Luc{m-n}}{5}\\
+	\intertext{Quindi}
+		\Fib{m}\Fib{n+1}={}&\dfrac{\Luc{n+m+1}-(-1)^{n+1}\Luc{m-n-1}}{5}\\
+		\Fib{n}\Fib{m+1}={}&\dfrac{\Luc{n+m+1}-(-1)^{n}\Luc{m-n+1}}{5}\\
+		\Fib{m}\Fib{n+1}-\Fib{n}\Fib{m+1}={}&
+		=&\dfrac{1}{5}\left[\Luc{n+m+1}-(-1)^{n+1}\Luc{m-n-1}-\Luc{n+m+1}+(-1)^{n}\Luc{m-n+1}\right]\\
+=&\dfrac{1}{5}\left[(-1)^{n}\Luc{m-n-1}+(-1)^{n}\Luc{m-n+1}\right]\\
+=&\dfrac{(-1)^{n}}{5}\left[+\Luc{m-n+1}+\Luc{m-n-1}\right]\\
+\intertext{Per il\vref{eqn:FibConvertiinLucas}}
+=&(-1)^{n}\Fib{m-n}\\
 \end{align*}
 \end{proof}
 \begin{thm}[Identità di 
