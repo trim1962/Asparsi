@@ -634,7 +634,7 @@ n=&{}{}-n\\
 Cassini]\label{thm:FibCassini}\index{Fibonacci!identità!Cassini}
 	Se $\Fib{n}$ è la successione di Fibonacci allora 
 	\begin{equation}
-		\Fib{n-1}\cdot\Fib{n+1}=\Fib{n}^2+(-1)^n
+		\Fib{n-1}\Fib{n+1}=\Fib{n}^2+(-1)^n
 	\end{equation}\label{eqn:FibCassini}
 \end{thm}
 \begin{proof}
@@ -649,16 +649,16 @@ Cassini]\label{thm:FibCassini}\index{Fibonacci!identità!Cassini}
 		\Fib{n-1}={}&\dfrac{1}{a-b}\left(a^{n-1}-b^{n-1}\right)\\
 		\Fib{n+1}={}&\dfrac{1}{a-b}\left(a^{n+1}-b^{n+1}\right)\\
 		\intertext{quindi}
-		\Fib{n-1}\cdot\Fib{n+1}={}&\dfrac{a^2n}{(a-b)^2}-2\dfrac{a^nb^n}{(a-b)^n}+\dfrac{b^2n}{(a-b)^2}-a^{n-1}b^{n-1}\\
+		\Fib{n-1}\Fib{n+1}={}&\dfrac{a^2n}{(a-b)^2}-2\dfrac{a^nb^n}{(a-b)^n}+\dfrac{b^2n}{(a-b)^2}-a^{n-1}b^{n-1}\\
 		={}&	\Fib{n}^2-a^{n-1}b^{n-1}
 		\intertext{ma}
-		-a^{n-1}b^{n-1}={}&-\left(\dfrac{1+\sqrt{5}}{2}\right)^{n-1}\cdot\left(\dfrac{1-\sqrt{5}}{2}\right)^{n-1}=(-1)^{n}\\
-		\Fib{n-1}\cdot\Fib{n+1}={}&\Fib{n}^2+(-1)^n
+		-a^{n-1}b^{n-1}={}&-\left(\dfrac{1+\sqrt{5}}{2}\right)^{n-1}\left(\dfrac{1-\sqrt{5}}{2}\right)^{n-1}=(-1)^{n}\\
+		\Fib{n-1}\Fib{n+1}={}&\Fib{n}^2+(-1)^n
 	\end{align*}
 	cvd.
 	\proofpart{Seconda dimostrazione}
 	\begin{align*}
-\Fib{n-1}\cdot\Fib{n+1}=&{}{}{}{}\\ 
+\Fib{n-1}\Fib{n+1}=&{}{}{}{}\\ 
 \intertext{Per il~\vref{thm:LucFibSommaprodotto}}
 \Fib{n+m}=&{}{}{}{}\dfrac{\Fib{m}\Luc{n}+\Luc{m}\Fib{n}}{2}\\
 \Fib{n-1}=&{}{}{}{}\dfrac{\Fib{-1}\Luc{n}+\Luc{-1}\Fib{n}}{2}\\
@@ -680,7 +680,7 @@ cvd.
 \begin{thm}[Identità di Catalan]
 	Se $\Fib{n}$ è la successione di Fibonacci allora 
 	\begin{equation}
-		\Fib{n}^2-\Fib{n-r}\cdot\Fib{n+r}=(-1)^{n-r}\Fib{r}^2
+		\Fib{n}^2-\Fib{n-r}\Fib{n+r}=(-1)^{n-r}\Fib{r}^2
 	\end{equation}\label{eqn:FibCatalan}
 \end{thm}\index{Fibonacci!identità!Catalan}
 \begin{proof}
@@ -691,7 +691,7 @@ cvd.
 		\Fib{n}^2={}&\dfrac{a^{2n}-2a^nb^n+b^{2n}}{(a-b)^2}\\\Fib{n-r}={}&\dfrac{1}{a-b}\left(a^{n-r}-b^{n-r}\right)\\
 		\Fib{n+r}={}&\dfrac{1}{a-b}\left(a^{n+r}-b^{n+r}\right)\\
 		\Fib{n}^2-	
-		\Fib{n-r}\cdot\Fib{n+r}={}&\dfrac{a^{n+r}b^{n-r}}{(a-b)^2}+\dfrac{a^{n-r}b^{n+r}}{(a-b)^2}-\dfrac{2a^{n}b^{n}}{(a-b)^2}\\
+		\Fib{n-r}\Fib{n+r}={}&\dfrac{a^{n+r}b^{n-r}}{(a-b)^2}+\dfrac{a^{n-r}b^{n+r}}{(a-b)^2}-\dfrac{2a^{n}b^{n}}{(a-b)^2}\\
 		={}&\dfrac{a^{n-r}b^{n-r}(a^r-b^r)^2}{(a-b)^2}
 		\intertext{per~\vref{lem:FibpropPhi}}
 		={}&\dfrac{(-1)^{n-r}(a^r-b^r)^2}{(a-b)^2}\\
@@ -705,7 +705,7 @@ cvd.
 		\Fib{n-r}=&{}{}(-1)^r\dfrac{\Fib{n}\Luc{r}-\Luc{n}\Fib{r}}{2}\\
 		\intertext{Per~\vref{thm:LucFibSommaprodotto}}
 		\Fib{n+r}=&{}{}\dfrac{\Fib{n}\Luc{r}+\Luc{n}\Fib{r}}{2}\\
-\Fib{n-r}\cdot\Fib{n+r}
+\Fib{n-r}\Fib{n+r}
 =&{}{}\dfrac{(-1)^r}{4}\left(\Fib{n}\Luc{r}-\Luc{n}\Fib{r}\right)\left(\Fib{n}\Luc{r}+\Luc{n}\Fib{r}\right)\\
 =&{}{}\dfrac{(-1)^r}{4}\left(\Fib{n}^2\Luc{r}^2-\Luc{n}^2\Fib{r}^2\right)\\
 \intertext{Per il~\vref{cor:FibpotSomma}}
@@ -726,7 +726,7 @@ cvd.
   =&{}{} \dfrac{(-1)^r}{4}\dfrac{1}{5}[4(-1)^r\Luc{2n}-4(-1)^n\Luc{2r}]\\
   =&{}{} \dfrac{(-1)^r}{5}[(-1)^r\Luc{2n}-(-1)^n\Luc{2r}]\\
 \intertext{Ricapitolando}
-	\Fib{n}^2-\Fib{n-r}\cdot\Fib{n+r}=&{}{}
+	\Fib{n}^2-\Fib{n-r}\Fib{n+r}=&{}{}
 	\intertext{Per il~\vref{cor:FibpotSomma}}
 =&{}{}\dfrac{\Luc{2n}-2(-1)^n}{5}-\dfrac{(-1)^r}{5}[(-1)^r\Luc{2n}-(-1)^n\Luc{2r}]\\
 =&{}{}\dfrac{\Luc{2n}-2(-1)^n- (-1)^{2r}\Luc{2n}+(-1)^{n+r}\Luc{2r}}{5}\\
@@ -740,7 +740,7 @@ cvd.
 \begin{thm}[Identità di Vajada]\label{thm:FibVajada}
 	Se $\Fib{n}$ è la successione di Fibonacci allora 
 	\begin{equation}
-		\Fib{n+i}\cdot\Fib{n+j}-\Fib{n}\Fib{n+i+j}=(-1)^{n}\Fib{i}\Fib{j}
+		\Fib{n+i}\Fib{n+j}-\Fib{n}\Fib{n+i+j}=(-1)^{n}\Fib{i}\Fib{j}
 	\end{equation}
 \end{thm}\index{Fibonacci!identità!Vajada}
 \begin{proof}
@@ -762,7 +762,7 @@ cvd.
 	d'Ocagne]\label{thm:FibdOcagne}\index{Fibonacci!identità!d'Ocagne}
 	Se $\Fib{n}$ è la successione di Fibonacci allora 
 	\begin{equation}
-		\Fib{m}\cdot\Fib{n+1}-\Fib{n}\cdot\Fib{m+1}=(-1)^n\Fib{m-n}
+		\Fib{m}\Fib{n+1}-\Fib{n}\Fib{m+1}=(-1)^n\Fib{m-n}
 	\end{equation}\label{eqn:FibdOcagne}
 \end{thm}
 \begin{proof}
@@ -775,7 +775,7 @@ cvd.
 		\Fib{m}\Fib{n+1}-\Fib{n}\Fib{m+1}
 		=&{}\dfrac{1}{5}\left[\Luc{n+m+1}-(-1)^{n+1}\Luc{m-n-1}-\Luc{n+m+1}+(-1)^{n}\Luc{m-n+1}\right]\\
 =&{}\dfrac{1}{5}\left[(-1)^{n}\Luc{m-n-1}+(-1)^{n}\Luc{m-n+1}\right]\\
-=&{}\dfrac{(-1)^{n}}{5}\left[+\Luc{m-n+1}+\Luc{m-n-1}\right]\\
+=&{}\dfrac{(-1)^{n}}{5}\left[\Luc{m-n+1}+\Luc{m-n-1}\right]\\
 \intertext{Per il~\vref{eqn:FibConvertiinLucas}}
 =&{}(-1)^{n}\Fib{m-n}\\
 \end{align*}
@@ -784,7 +784,7 @@ cvd.
 	Honsberger]\label{thm:FibHonsberger}\index{Fibonacci!identità!Honsberger}
 	Se $\Fib{n}$ è la successione di Fibonacci allora 
 	\begin{equation}
-		\Fib{k-1}\cdot\Fib{n}+\Fib{k}\cdot\Fib{n+1}=\Fib{n+k}
+		\Fib{k-1}\Fib{n}+\Fib{k}\Fib{n+1}=\Fib{n+k}
 	\end{equation}\label{eqn:FibHonsberger}
 \end{thm}
 \begin{proof}
@@ -821,7 +821,8 @@ Cesàro]\label{thm:FibGelinCesaro}\index{Fibonacci!identità!Gelin Cesàro}
 	\Fib{n-2}\Fib{n-1}\Fib{n+1}\Fib{n+2}
 	=&\dfrac{1}{25}\left[\Luc{2n}-(-1)^{n-1}\Luc{2}\right]\left[\Luc{2n}-(-1)^{n-2}\Luc{4}\right]\\
 	=&\dfrac{1}{25}\left[\Luc{2n}^2-(-1)^{n-2}\Luc{4}\Luc{2n}-(-1)^{n-1}\Luc{2}\Luc{2n}-(-1)^{n-1+n-2}\Luc{2}\Luc{4}\right]\\
-	=&\dfrac{1}{25}\left[\Luc{2n}^2-(-1)^{n}7\Luc{2n}-(-1)^{n}3\Luc{2n}-21\right]\\
+	=&\dfrac{1}{25}\left[\Luc{2n}^2-7(-1)^{n}\Luc{2n}+3(-1)^{n}\Luc{2n}-21\right]\\
+	=&\dfrac{1}{25}\left[\Luc{2n}^2-4(-1)^{n}\Luc{2n}-21\right]\\
 \end{align*}
 \end{proof}
 \section{Proprietà}
@@ -849,7 +850,7 @@ Cesàro]\label{thm:FibGelinCesaro}\index{Fibonacci!identità!Gelin Cesàro}
 \begin{thm}[Quattro numeri consecutivi]\label{thm:FibConsecutivi}
 	Se $\Fib{n}$ è la successione di Fibonacci allora 
 	\begin{equation}
-		\Fib{n+2}^2-\Fib{n+1}^2=\Fib{n}\cdot\Fib{n+3}
+		\Fib{n+2}^2-\Fib{n+1}^2=\Fib{n}\Fib{n+3}
 	\end{equation}\label{eqn:FibConsecutivi}
 \end{thm}
 \begin{proof}
@@ -862,7 +863,7 @@ Cesàro]\label{thm:FibGelinCesaro}\index{Fibonacci!identità!Gelin Cesàro}
 		\intertext{per~\vref{lem:FibpropPhi}}
 		={}&\dfrac{a^{2(n+1)}a+2(ab)^{n+1}2+b^{2(n+1)}b}{(a-b)^2}\\
 		={}&\dfrac{a^{2n+3}+4(ab)^{n+1}+b^{2n+3}b}{(a-b)^2}\\
-		\Fib{n}\cdot\Fib{n+3}={}&\dfrac{1}{a-b}\left(a^n-b^n\right)\cdot\dfrac{1}{a-b}\left(a^{n+3}-b^{n+3}\right)\\
+		\Fib{n}\Fib{n+3}={}&\dfrac{1}{a-b}\left(a^n-b^n\right)\dfrac{1}{a-b}\left(a^{n+3}-b^{n+3}\right)\\
 		={}&\dfrac{(a^n-b^n)(a^{n+3}-b^{n+3})}{(a-b)^2}\\
 		={}&\dfrac{(a^n-b^n)(a^{n}a^3-b^{n}b^3)}{(a-b)^2}
 		\intertext{per~\vref{lem:FibpropPhi}}
@@ -895,7 +896,7 @@ Cesàro]\label{thm:FibGelinCesaro}\index{Fibonacci!identità!Gelin Cesàro}
 \begin{thm}[Quadrati consecutivi]
 	Se $\Fib{n}$ è la successione di Fibonacci allora:
 	\begin{equation}
-		\Fib{n}^2+\Fib{n+1}^2=\Fib{n}\cdot\Fib{n+2}+\Fib{n}\cdot\Fib{n+2}
+		\Fib{n}^2+\Fib{n+1}^2=\Fib{n}\Fib{n+2}+\Fib{n}\Fib{n+2}
 	\end{equation}\label{eqn:FibquadratiConsecutivi}
 \end{thm}
 \begin{proof}
@@ -908,9 +909,9 @@ Cesàro]\label{thm:FibGelinCesaro}\index{Fibonacci!identità!Gelin Cesàro}
 		\Fib{n}^2+\Fib{n+1}^2={}&\dfrac{a^{2n}(a^2+1)-2(ab)^n(ab+1)+b^{2n}(b^2+1)}{(a-b)^2}\\
 		\intertext{per~\vref{lem:FibpropPhi}}
 		={}&\dfrac{a^{2n}(a^2+1)+b^{2n}(b^2+1)}{(a-b)^2}\\
-		\Fib{n}\cdot\Fib{n+1}={}&\dfrac{(a^{n}-b^{n})((a^{n+2}-b^{n+2})}{(a-b)^2}\\
-		\Fib{n-1}\cdot\Fib{n+1}={}&\dfrac{(a^{n+1}-b^{n+1})((ba^{n}-ab^{n})}{(a-b)^2}\\
-		\Fib{n}\cdot\Fib{n+1}+\Fib{n-1}\cdot\Fib{n+1}={}&
+		\Fib{n}\Fib{n+1}={}&\dfrac{(a^{n}-b^{n})((a^{n+2}-b^{n+2})}{(a-b)^2}\\
+		\Fib{n-1}\Fib{n+1}={}&\dfrac{(a^{n+1}-b^{n+1})((ba^{n}-ab^{n})}{(a-b)^2}\\
+		\Fib{n}\Fib{n+1}+\Fib{n-1}\Fib{n+1}={}&
 		\dfrac{ba^{2n+1}(a^2+1)-(ab)^n(a^2+b^2)(ab+1)+ab^{2n+1}(b^2+1)}{(a-b)^2}\\
 		\intertext{per~\vref{lem:FibpropPhi}}
 		={}&\dfrac{a^{2n}(a^2+1)+b^{2n}(b^2+1)}{(a-b)^2}\\
