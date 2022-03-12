@@ -825,7 +825,15 @@ Cesàro]\label{thm:FibGelinCesaro}\index{Fibonacci!identità!Gelin Cesàro}
 	=&\dfrac{1}{25}\left[\Luc{2n}^2-4(-1)^{n}\Luc{2n}-21\right]\\
 	\intertext{Per l'~\vref{eqn:FibQuartaSomma}}
 	\Fib{n}^4={}&\dfrac{\Luc{4n}-4(-1)^n\Luc{2n}+6}{25}\\
+	\intertext{Ricapitolando}
+	=&\dfrac{1}{25}\left[\Luc{4n}-4(-1)^n\Luc{2n}+6-\Luc{2n}^2+4(-1)^{n}\Luc{2n}+21\right]\\
+	=&\dfrac{1}{25}\left[\Luc{4n}-\Luc{2n}^2+27\right]\\
+	\intertext{ma}
+	\Luc{2n}^2=&\Luc{4n}+2\\
+	=&\dfrac{1}{25}\left[\Luc{4n}-\Luc{4n}-2+27\right]\\
+	=&\dfrac{1}{25}25=1\\
 \end{align*}
+cvd.
 \end{proof}
 \section{Proprietà}
 \begin{thm}[Dispari]\label{thm:Fibdispari}
