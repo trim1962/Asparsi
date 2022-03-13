@@ -26,7 +26,7 @@
 	\end{equation}\label{eqn:FibAureaDef}\index{Sezione!aurea}
 \end{defn}
 \begin{prop}
-	Dalla~\vref{eqn:FibAureaDef} abbiamo
+	Dall'~\vref{eqn:FibAureaDef} abbiamo
 	\begin{align}
 		\dfrac{a}{b}={}&\dfrac{a+b}{a}\notag\\
 		={}&1+\dfrac{b}{a}\notag\\
@@ -36,7 +36,7 @@
 		\varphi^2={}&\varphi+1\notag
 	\end{align}
 \end{prop}
-	Dalla~\vref{eqn:FibPhiProp} segue
+	Dall'~\vref{eqn:FibPhiProp} segue
 	\begin{prop}
 	\begin{align}
 		\varphi^2={}&\varphi+1\notag\\
@@ -267,7 +267,7 @@ Da cui la tesi.
 \end{thm}
 \begin{proof}
 	\proofpart{Fibonacci}
-	Riscriviamo il risultato del~\vref{eqn:FinBinet}
+	Riscriviamo il risultato dell'~\vref{eqn:FinBinet}
 	\begin{align*}
 		\Fib{n}={}&\dfrac{1}{a-b}\left(a^n-b^n\right)\\
 		\Fib{-n}={}&\dfrac{1}{a-b}\left(a^{-n}-b^{-n}\right)\\
@@ -277,7 +277,7 @@ Da cui la tesi.
 		={}&(-1)^{n+1}\Fib{n}
 	\end{align*}
 	\proofpart{Lucas}
-	Riscriviamo il risultato del~\vref{eqn:LucBinet}
+	Riscriviamo il risultato dell'~\vref{eqn:LucBinet}
 	\begin{align*}
 		\Luc{n}={}&a^{n}+b^{n}\\
 		\Luc{-n}={}&a^{-n}-b^{-n}\\
@@ -345,7 +345,7 @@ Lucas]\label{thm:LucasToFibFibToLuc}~\cite{Rabinowitz_1996}
 	={}&\dfrac{a^{m+n}}{(a-b)^2}+\dfrac{b^{m+n}}{(a-b)^2}-\dfrac{a^mb^n}{(a-b)^2}-\dfrac{a^nb^m}{(a-b)^2}\\
 	={}&\dfrac{\Luc{m+n}}{(a-b)^2}-\dfrac{a^mb^n+a^nb^m}{(a-b)^2}\\
 	\Luc{m-n}={}&a^{m-n}-b^{m-n}=a^{-n}b^{-n}(a^mb^n+a^nb^m)\\
-	\intertext{ma}
+	\intertext{Ma}
 	a^mb^n+a^nb^m={}&a^{n}b^{n}\Luc{m-n}\\
 	\intertext{Quindi}
 	={}&\dfrac{\Luc{m+n}}{(a-b)^2}-\dfrac{a^{n}b^{n}\Luc{m-n}}{(a-b)^2}\\
@@ -358,7 +358,7 @@ Lucas]\label{thm:LucasToFibFibToLuc}~\cite{Rabinowitz_1996}
 	={}&a^{m+n}+b^{m+n}+a^mb^n+a^nb^m\\
 	={}&\Luc{m+n}+(a^mb^n+a^nb^m)\\
 	\Luc{m-n}={}&a^{m-n}-b^{m-n}=a^{-n}b^{-n}(a^mb^n+a^nb^m)\\
-	\intertext{ma}
+	\intertext{Ma}
 	a^mb^n+a^nb^m={}&a^{n}b^{n}\Luc{m-n}\\
 	\intertext{Quindi}
 	={}&\Luc{m+n}+a^{n}b^{n}\Luc{m-n}\\
@@ -371,7 +371,7 @@ Lucas]\label{thm:LucasToFibFibToLuc}~\cite{Rabinowitz_1996}
 	={}&\dfrac{a^{m+n}}{a-b}+\dfrac{b^{m+n}}{b-a}+\dfrac{a^mb^n}{a-b}+\dfrac{a^nb^m}{b-a}\\
 	={}&\Fib{m+n}+\dfrac{a^mb^n-a^nb^m}{a-b}\\
 	\Fib{m-n}={}&\dfrac{a^{m-n}}{a-b}+\dfrac{b^{m-n}}{b-a}=a^{-n}b^{-n}\left(\dfrac{a^mb^n+a^nb^m}{a-b}\right)\\
-	\intertext{ma}
+	\intertext{Ma}
 	\dfrac{a^mb^n+a^nb^m}{a-b}={}&a^{n}b^{n}\Fib{m-n}\\
 	\intertext{Quindi}
 	={}&\Fib{m+n}+a^{n}b^{n}\Fib{m-n}\\
@@ -460,7 +460,7 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 \proofpart{Fibonacci Quarta}
 \begin{align*}
 \Fib{n}^4={}&\Fib{n}^3\Fib{n}\\
-\intertext{Per il~\vref{eqn:FibCubSomma}}
+\intertext{Per l'~\vref{eqn:FibCubSomma}}
 ={}&\dfrac{\Fib{3n}-3(-1)^n\Fib{n}}{5}\Fib{n}\\
 ={}&\dfrac{\Fib{3n}\Fib{n}-3(-1)^n\Fib{n}^2}{5}\\
 \intertext{Per il~\vref{thm:FibProdSomma}}
@@ -475,7 +475,7 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 \proofpart{Lucas Quarta}
 \begin{align*}
 \Luc{n}^4={}&\Luc{n}^3\Luc{n}\\
-\intertext{Per il~\vref{eqn:LucCubSomma}}
+\intertext{Per l'~\vref{eqn:LucCubSomma}}
 ={}&[\Luc{3n}+3(-1)^n\Luc{n}]\Luc{n}\\
 ={}&\Luc{3n}\Luc{n}+3(-1)^n\Luc{n}^2\\
 \intertext{Per il~\vref{thm:FibProdSomma}}
@@ -490,7 +490,7 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 \proofpart{Fibonacci Quinta}
 \begin{align*}
 	\Fib{n}^5={}&\Fib{n}^4\Fib{n}\\
-	\intertext{Per il~\vref{eqn:FibQuartaSomma}}
+	\intertext{Per l'~\vref{eqn:FibQuartaSomma}}
 	={}&\dfrac{\Luc{4n}-4(-1)^n\Luc{2n}+6}{25}\Fib{n}\\
 	={}&\dfrac{\Luc{4n}\Fib{n}-4(-1)^n\Luc{2n}\Fib{n}+6\Fib{n}}{25}\\
 	\intertext{Per il~\vref{thm:FibProdSomma}}
@@ -511,7 +511,7 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 \proofpart{Lucas Quinta}
 \begin{align*}
 	\Luc{n}^5={}&\Luc{n}^4\Luc{n}\\
-	\intertext{Per il~\vref{eqn:LucQuartaSomma}}
+	\intertext{Per l'~\vref{eqn:LucQuartaSomma}}
 	={}&(\Luc{4n}+4(-1)^n\Luc{2n}+6)\Luc{n}\\
 	={}&\Luc{4n}\Luc{n}+4(-1)^n\Luc{2n}\Luc{n}+6\Luc{n}\\
 	\intertext{Per il~\vref{thm:FibProdSomma}}
@@ -529,7 +529,7 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 \proofpart{Fibonacci Sesta}
 \begin{align*}
 	\Fib{n}^6={}&\Fib{n}^4\Fib{n}\\
-	\intertext{Per il~\vref{eqn:FibQuintaSomma}}
+	\intertext{Per l'~\vref{eqn:FibQuintaSomma}}
 	={}&\dfrac{\Fib{5n}\Fib{n}-5(-1)^n\Fib{3n}\Fib{n}+10\Fib{n}^2}{25}\\
 	\Fib{m}\Fib{n}={}&\dfrac{\Luc{n+m}-(-1)^n\Luc{m-n}}{5}\\
 	\Fib{5m}\Fib{n}={}&\dfrac{\Luc{5n+n}-(-1)^n\Luc{5n-n}}{5}\\
@@ -544,7 +544,7 @@ Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allo
 \proofpart{Lucas Sesta}
 \begin{align*}
 \Luc{n}^6={}&\Luc{n}^5\Luc{n}\\
-\intertext{Per il~\vref{eqn:LucQuintaSomma}}
+\intertext{Per l'~\vref{eqn:LucQuintaSomma}}
 ={}&[\Luc{5n}+5(-1)^n\Luc{3n}+10\Luc{n}]\Luc{n}\\
 ={}&\Luc{5n}\Luc{n}+5(-1)^n\Luc{3n}\Luc{n}+10\Luc{n}^2\\
 \intertext{Per il~\vref{thm:FibProdSomma}}
@@ -597,7 +597,7 @@ allora:
 \end{thm}
 \begin{proof}
 \proofpart{Fibonacci}
-Utilizzando il~\vref{eqn:FibLucSommaprodotto}
+Utilizzando l'~\vref{eqn:FibLucSommaprodotto}
 \begin{align*}
 	\Fib{m+n}={}&{}\dfrac{\Fib{m}\Luc{n}+\Luc{m}\Fib{n}}{2}\\
 \intertext{Posto}
@@ -608,7 +608,7 @@ n={}&{}-n\\
 ={}&{}(-1)^n\dfrac{\Fib{m}\Luc{n}-\Luc{m}\Fib{n}}{2}
 \end{align*}
 \proofpart{Lucas}
-Utilizzando il~\vref{eqn:LucFibSommaprodotto}
+Utilizzando l'~\vref{eqn:LucFibSommaprodotto}
 \begin{align*}
 \Luc{m+n}={}&{}\dfrac{5\Fib{m}\Fib{n}+\Luc{m}\Luc{n}}{2}\\
 \intertext{Posto}
@@ -649,18 +649,18 @@ Cassini]\label{thm:FibCassini}\index{Fibonacci!identità!Cassini}
 \begin{proof}
 	
 	\proofpart{Prima dimostrazione}
-	Riscriviamo il risultato del~\vref{eqn:FinBinet} 
+	Riscriviamo il risultato dell'~\vref{eqn:FinBinet} 
 	\begin{align*}
 		\Fib{n}={}&\dfrac{1}{a-b}\left(a^n-b^n\right)
 		\intertext{da cui}
 		\Fib{n}^2={}&\dfrac{a^2n}{(a-b)^2}-2\dfrac{a^nb^n}{(a-b)^n}+\dfrac{b^2n}{(a-b)^2}\\
-		\intertext{ma}
+		\intertext{Ma}
 		\Fib{n-1}={}&\dfrac{1}{a-b}\left(a^{n-1}-b^{n-1}\right)\\
 		\Fib{n+1}={}&\dfrac{1}{a-b}\left(a^{n+1}-b^{n+1}\right)\\
 		\intertext{Quindi}
 		\Fib{n-1}\Fib{n+1}={}&\dfrac{a^2n}{(a-b)^2}-2\dfrac{a^nb^n}{(a-b)^n}+\dfrac{b^2n}{(a-b)^2}-a^{n-1}b^{n-1}\\
 		={}&	\Fib{n}^2-a^{n-1}b^{n-1}
-		\intertext{ma}
+		\intertext{Ma}
 		-a^{n-1}b^{n-1}={}&-\left(\dfrac{1+\sqrt{5}}{2}\right)^{n-1}\left(\dfrac{1-\sqrt{5}}{2}\right)^{n-1}=(-1)^{n}\\
 		\Fib{n-1}\Fib{n+1}={}&\Fib{n}^2+(-1)^n
 	\end{align*}
@@ -696,7 +696,7 @@ cvd.
 \begin{proof}
 	
 	\proofpart{Prima dimostrazione}
-	Riscriviamo il risultato del~\vref{eqn:FinBinet} 
+	Riscriviamo il risultato dell'~\vref{eqn:FinBinet} 
 	\begin{align*}
 		\Fib{n}={}&\dfrac{1}{a-b}\left(a^n-b^n\right)
 		\intertext{da cui}
@@ -759,7 +759,7 @@ cvd.
 \begin{proof}
 	
 	\proofpart{Prima dimostrazione}
-	Riscriviamo il risultato del~\vref{eqn:FinBinet} 
+	Riscriviamo il risultato dell'~\vref{eqn:FinBinet} 
 	\begin{align*}
 		\Fib{n}={}&\dfrac{1}{a-b}\left(a^n-b^n\right)
 		\intertext{da cui}
@@ -812,7 +812,7 @@ cvd.
 	={}&{}\dfrac{1}{5}\left[\Luc{n+m+1}-(-1)^{n+1}\Luc{m-n-1}-\Luc{n+m+1}+(-1)^{n}\Luc{m-n+1}\right]\\
 ={}&\dfrac{1}{5}\left[(-1)^{n}\Luc{m-n-1}+(-1)^{n}\Luc{m-n+1}\right]\\
 ={}&\dfrac{(-1)^{n}}{5}\left[\Luc{m-n+1}+\Luc{m-n-1}\right]\\
-\intertext{Per il~\vref{eqn:FibConvertiinLucas}}
+\intertext{Per l'~\vref{eqn:FibConvertiinLucas}}
 ={}&(-1)^{n}\Fib{m-n}\\
 \end{align*}
 cvd.
@@ -835,7 +835,7 @@ cvd.
 	&\dfrac{1}{5}\left[\Luc{n+k-1}-(-1)^n\Luc{k-n-1}+\Luc{n+k+1}-(-1)^{n+1}\Luc{k-n-1}\right]\\
 ={}&{}\dfrac{1}{5}\left[\Luc{n+k-1}-(-1)^n\Luc{k-n-1}+\Luc{n+k+1}+(-1)^{n}\Luc{k-n-1}\right]\\
 ={}&{}\dfrac{1}{5}\left[\Luc{n+k-1}+\Luc{n+k+1}\right]\\
-	\intertext{Per il~\vref{eqn:FibConvertiinLucas}}
+	\intertext{Per l'~\vref{eqn:FibConvertiinLucas}}
 ={}&{}\Fib{n+k}
 	\end{align*}
 cvd.
@@ -866,7 +866,7 @@ Cesàro]\label{thm:FibGelinCesaro}\index{Fibonacci!identità!Gelin Cesàro}
 	\intertext{Ricapitolando}
 ={}&\dfrac{1}{25}\left[\Luc{4n}-4(-1)^n\Luc{2n}+6-\Luc{2n}^2+4(-1)^{n}\Luc{2n}+21\right]\\
 ={}&\dfrac{1}{25}\left[\Luc{4n}-\Luc{2n}^2+27\right]\\
-	\intertext{ma}
+	\intertext{Ma}
 	\Luc{2n}^2=&\Luc{4n}+2\\
 ={}&\dfrac{1}{25}\left[\Luc{4n}-\Luc{4n}-2+27\right]\\
 ={}&\dfrac{1}{25}25=1\\
@@ -884,7 +884,7 @@ cvd.
 	
 	\proofpart{Prima dimostrazione}
 	
-	Riscriviamo il risultato del~\vref{eqn:FinBinet} 
+	Riscriviamo il risultato dell'~\vref{eqn:FinBinet} 
 	\begin{align*}
 		\Fib{n}={}&\dfrac{1}{a-b}\left(a^n-b^n\right)
 		\intertext{da cui}
@@ -923,7 +923,7 @@ cvd.
 	\end{equation}\label{eqn:FibConsecutivi}
 \end{thm}
 \begin{proof}
-	Riscriviamo il risultato del~\vref{eqn:FinBinet} 
+	Riscriviamo il risultato dell'~\vref{eqn:FinBinet} 
 	\begin{align*}
 		\Fib{n}={}&\dfrac{1}{a-b}\left(a^n-b^n\right)
 		\intertext{da cui}
@@ -954,7 +954,7 @@ cvd.
 	il semiperimetro e $a$, $b$ e $c$ i lati:
 	\begin{align*}
 		S^2={}&p(p-a)(p-b)(p-c)\\
-		\intertext{ma}
+		\intertext{Ma}
 		p={}&\dfrac{\Fib{n}+\Fib{n+1}+\Fib{n+2}}{2}\\
 		p={}&\dfrac{\Fib{n+2}+\Fib{n+2}}{2}\\
 		p={}&\Fib{n+2}\\
@@ -969,7 +969,7 @@ cvd.
 	\end{equation}\label{eqn:FibquadratiConsecutivi}
 \end{thm}
 \begin{proof}
-	Riscriviamo il risultato del~\vref{eqn:FinBinet} 
+	Riscriviamo il risultato dell'~\vref{eqn:FinBinet} 
 	\begin{align*}
 		\Fib{n}={}&\dfrac{1}{a-b}\left(a^n-b^n\right)
 		\intertext{da cui}
