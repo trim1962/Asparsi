@@ -848,7 +848,6 @@ Cesàro]\label{thm:FibGelinCesaro}\index{Fibonacci!identità!Gelin Cesàro}
 	\end{equation}\label{eqn:FibGelinCesaro}
 \end{thm}
 \begin{proof}
-cvd.
 \begin{align*}
 		\intertext{Per il~\vref{thm:FibProdSomma}}
 	\Fib{m}\Fib{n}={}&\dfrac{\Luc{n+m}-(-1)^n\Luc{m-n}}{5}\\
@@ -882,6 +881,9 @@ cvd.
 	\end{equation}\label{eqn:FibDispari}
 \end{thm}
 \begin{proof}
+	
+	\proofpart{Prima dimostrazione}
+	
 	Riscriviamo il risultato del~\vref{eqn:FinBinet} 
 	\begin{align*}
 		\Fib{n}={}&\dfrac{1}{a-b}\left(a^n-b^n\right)
@@ -895,6 +897,20 @@ cvd.
 		={}&\Fib{2n+1}
 	\end{align*}
 	cvd.
+	
+	\proofpart{Seconda dimostrazione}
+	
+	\begin{align*}
+		\intertext{Per il~\vref{thm:FibCassini}}
+		\Fib{n}^2=&\Fib{n-1}\Fib{n+1}-(-1)^n\\
+		\intertext{Quindi}
+		\Fib{n}^2+\Fib{n+1}^2=&\Fib{n-1}\Fib{n+1}-(-1)^n+\Fib{n+1}^2\\
+		=&\Fib{n+1}\left[\Fib{n-1}+\Fib{n+1}\right]-(-1)^n\\
+		\intertext{ma per il~\vref{thm:LucasToFibFibToLuc}}
+			\Luc{n}={}&\Fib{n+1}+\Fib{n-1}
+		\intertext{Quindi}
+		=&\Fib{n+1}\Luc{n}-(-1)^n\\
+	\end{align*}
 \end{proof}
 \begin{thm}[Quattro numeri consecutivi]\label{thm:FibConsecutivi}
 	Se $\Fib{n}$ è la successione di Fibonacci allora 
