@@ -694,6 +694,8 @@ cvd.
 	\end{equation}\label{eqn:FibCatalan}
 \end{thm}\index{Fibonacci!identità!Catalan}
 \begin{proof}
+	
+	\proofpart{Prima dimostrazione}
 	Riscriviamo il risultato del~\vref{eqn:FinBinet} 
 	\begin{align*}
 		\Fib{n}={}&\dfrac{1}{a-b}\left(a^n-b^n\right)
@@ -755,6 +757,8 @@ cvd.
 	\end{equation}
 \end{thm}\index{Fibonacci!identità!Vajada}
 \begin{proof}
+	
+	\proofpart{Prima dimostrazione}
 	Riscriviamo il risultato del~\vref{eqn:FinBinet} 
 	\begin{align*}
 		\Fib{n}={}&\dfrac{1}{a-b}\left(a^n-b^n\right)
@@ -768,6 +772,18 @@ cvd.
 		={}&(-1)^{n}\Fib{i}\Fib{j}\\
 	\end{align*}
 	cvd.
+	
+	\proofpart{Seconda dimostrazione}
+	\begin{align*}
+		\intertext{Per il~\vref{thm:FibProdSomma}}
+		\Fib{m}\Fib{n}={}&\dfrac{\Luc{n+m}-(-1)^n\Luc{m-n}}{5}\\
+		\intertext{Quindi}
+		\Fib{n+i}\Fib{n+j}={}&\dfrac{\Luc{n+i+n+j}-(-1)^{n+j}\Luc{n+i-n-j}}{5}\\
+		=&\dfrac{\Luc{2n+i+j}-(-1)^{n+j}\Luc{i-j}}{5}\\
+		\Fib{n}\Fib{n+i+j}={}&\dfrac{\Luc{n+i+n+j}-(-1)^{n+i+j}\Luc{n-n-i-j}}{5}\\
+		=&\dfrac{\Luc{2n+i+j}-(-1)^{n+i+j}\Luc{-i-j}}{5}\\
+		\Fib{n+i}\Fib{n+j}-\Fib{n}\Fib{n+i+j}={}&\dfrac{\Luc{2n+i+j}-(-1)^{n+j}\Luc{i-j}-\Luc{2n+i+j}+(-1)^{n+i+j}\Luc{-i-j}}{5}\\
+	\end{align*}
 \end{proof}
 \begin{thm}[Identità di 
 	d'Ocagne]\label{thm:FibdOcagne}\index{Fibonacci!identità!d'Ocagne}
