@@ -968,7 +968,16 @@ cvd.
 \intertext{Per il~\vref{thm:LucFibSommaprodotto}}
 \Fib{n}\Fib{n+3}=&\Fib{n}\dfrac{2\Luc{n}+4\Fib{n}}{2}\\
 =&\dfrac{2\Fib{n}\Luc{n}+4\Fib{n}^2}{2}\\
+=&\Fib{n}\Luc{n}+2\Fib{n}^2
+\intertext{per il~\vref{cor:FibpotSomma}}
+2\Fib{n}^2=&={}&\dfrac{2\Luc{2n}-4(-1)^{n}}{5}\\
+\intertext{per il~\vref{thm:FibProdSomma}}
+	\Fib{n}\Luc{n}={}&\Fib{n+n}+(-1)^n\Fib{n-n}\\
+	\Fib{n}\Luc{n}={}&\Fib{2}\\ù
+\intertext{Quindi}
+\Fib{n}\Fib{n+3}=&\dfrac{1}{5}\left[5\Fib{2n}+2\Luc{2n}-4(-1)^{n}\right]\\
 	\end{align*}
+cvd.
 \end{proof}
 \begin{thm}[Tre numeri consecutivi]
 	Tre numeri di Fibonacci consecutivi non possono essere i lati di un 
