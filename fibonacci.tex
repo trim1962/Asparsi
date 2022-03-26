@@ -873,8 +873,8 @@ Cesàro]\label{thm:FibGelinCesaro}\index{Fibonacci!identità!Gelin Cesàro}
 \end{align*}
 cvd.
 \end{proof}
-\section{Proprietà}
-\begin{thm}[Dispari]\label{thm:Fibdispari}
+\section{Quadrati}
+\begin{thm}[Somma di quadrati]\label{thm:Fibdispari}
 	Se $\Fib{n}$ è la successione di Fibonacci allora 
 	\begin{equation}
 		\Fib{n}^2+\Fib{n+1}^2=\Fib{2n+1}
@@ -916,7 +916,7 @@ cvd.
 				={}&\Fib{2n+1}\\
 	\end{align*}
 \end{proof}
-\begin{thm}[Quattro numeri consecutivi]\label{thm:FibConsecutivi}
+\begin{thm}[Differenza di quadrati]\label{thm:FibConsecutivi}
 	Se $\Fib{n}$ è la successione di Fibonacci allora 
 	\begin{equation}
 		\Fib{n+2}^2-\Fib{n+1}^2=\Fib{n}\Fib{n+3}
@@ -979,25 +979,8 @@ cvd.
 	\end{align*}
 cvd.
 \end{proof}
-\begin{thm}[Tre numeri consecutivi]
-	Tre numeri di Fibonacci consecutivi non possono essere i lati di un 
-	triangolo.
-\end{thm}\index{Fibonacci!triangolo}
-\begin{proof}
-	Supponiamo che $\Fib{n}$, $\Fib{n+1}$ e $\Fib{n+2}$ siano i lati di un 
-	triangolo. Allora per il~\vref{thm:Formula_Erone} avremo, indicando con $p$ 
-	il semiperimetro e $a$, $b$ e $c$ i lati:
-	\begin{align*}
-		S^2={}&p(p-a)(p-b)(p-c)\\
-		\intertext{Ma}
-		p={}&\dfrac{\Fib{n}+\Fib{n+1}+\Fib{n+2}}{2}\\
-		p={}&\dfrac{\Fib{n+2}+\Fib{n+2}}{2}\\
-		p={}&\Fib{n+2}\\
-		p-c={}&\Fib{n+2}-\Fib{n+2}=0\\
-	\end{align*}
-	Quindi il triangolo ha area zero, assurdo. 
-\end{proof}
-\begin{thm}[Quadrati consecutivi]
+
+\begin{thm}[Somma di quadrati]
 	Se $\Fib{n}$ è la successione di Fibonacci allora:
 	\begin{equation}
 		\Fib{n}^2+\Fib{n+1}^2=\Fib{n}\Fib{n+2}+\Fib{n-1}\Fib{n+1}
@@ -1031,6 +1014,25 @@ cvd.
 	\end{align*}	
 		
 	
+\end{proof}
+\section{Proprietà}
+\begin{thm}[Tre numeri consecutivi]
+	Tre numeri di Fibonacci consecutivi non possono essere i lati di un 
+	triangolo.
+\end{thm}\index{Fibonacci!triangolo}
+\begin{proof}
+	Supponiamo che $\Fib{n}$, $\Fib{n+1}$ e $\Fib{n+2}$ siano i lati di un 
+	triangolo. Allora per il~\vref{thm:Formula_Erone} avremo, indicando con $p$ 
+	il semiperimetro e $a$, $b$ e $c$ i lati:
+	\begin{align*}
+		S^2={}&p(p-a)(p-b)(p-c)\\
+		\intertext{Ma}
+		p={}&\dfrac{\Fib{n}+\Fib{n+1}+\Fib{n+2}}{2}\\
+		p={}&\dfrac{\Fib{n+2}+\Fib{n+2}}{2}\\
+		p={}&\Fib{n+2}\\
+		p-c={}&\Fib{n+2}-\Fib{n+2}=0\\
+	\end{align*}
+	Quindi il triangolo ha area zero, assurdo. 
 \end{proof}
 \begin{thm}[Somme di numeri di Fibonacci]
 	Se $\Fib{n}$ è la successione di Fibonacci allora:
