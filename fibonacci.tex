@@ -152,9 +152,9 @@ cvd.
 \end{proof}
 \begin{thm}[Formula di Binet per 
 Lucas]\label{thm:LucFormulaBinet}\index{Formula!Binet!Lucas}
-	Se $\Luc{n}$ è la successione di Fibonacci allora avremo:
+	Se $\Luc{n}$ è la successione di Lucas allora avremo:
 	\begin{equation}
-		\Luc{n}=\left(\dfrac{1+\sqrt{5}}{2}\right)^{}+\left(\dfrac{1-\sqrt{5}}{2}\right)^{n}
+		\Luc{n}=\left(\dfrac{1+\sqrt{5}}{2}\right)^{n}+\left(\dfrac{1-\sqrt{5}}{2}\right)^{n}
 	\end{equation}\label{eqn:LucBinet}
 \end{thm}
 \begin{proof}
@@ -1014,9 +1014,15 @@ cvd.
 		\Fib{n}^2+\Fib{n+1}^2
 		={}&\dfrac{\Luc{2n}-2(-1)^n}{5}+\dfrac{\Luc{2n+2}-2(-1)^{n+1}}{5}\\
 		={}&\dfrac{\Luc{2n}+\Luc{2n+2}}{5}\\
+		\intertext{Per il~\vref{thm:FibProdSomma}}
+		\Fib{n}\Fib{n+2}+	
+		\Fib{n+1}\Fib{n-1}={}&\dfrac{\Luc{n+n+2}-(-1)^n\Luc{n+2-n}}{5}
+		\dfrac{\Luc{n+1+n-1}-(-1)^{n-1}\Luc{n+1-n+1}}{5}\\
+		\Fib{n+1}\Fib{n-1}={}&\dfrac{\Luc{2n+2}+3(-1)^n}{5}
+		\dfrac{\Luc{2n}-3(-1)^{n}}{5}\\
+		={}&\dfrac{\Luc{2n+2}+\Luc{2n}}{5}\\
 	\end{align*}	
-		
-	
+	cvd.	
 \end{proof}
 \section{Proprietà}
 \begin{thm}[Tre numeri consecutivi]
