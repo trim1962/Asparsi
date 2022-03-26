@@ -1004,6 +1004,9 @@ cvd.
 	\end{equation}\label{eqn:FibquadratiConsecutivi}
 \end{thm}
 \begin{proof}
+	
+		\proofpart{Prima dimostrazione}
+	
 	Riscriviamo il risultato dell'~\vref{eqn:FinBinet} 
 	\begin{align*}
 		\Fib{n}={}&\dfrac{1}{a-b}\left(a^n-b^n\right)
@@ -1015,12 +1018,19 @@ cvd.
 		={}&\dfrac{a^{2n}(a^2+1)+b^{2n}(b^2+1)}{(a-b)^2}\\
 		\Fib{n}\Fib{n+1}={}&\dfrac{(a^{n}-b^{n})((a^{n+2}-b^{n+2})}{(a-b)^2}\\
 		\Fib{n-1}\Fib{n+1}={}&\dfrac{(a^{n+1}-b^{n+1})((ba^{n}-ab^{n})}{(a-b)^2}\\
-		\Fib{n}\Fib{n+1}+\Fib{n-1}\Fib{n+1}={}&
+		\Fib{n}\Fib{n+2}+\Fib{n-1}\Fib{n+1}={}&
 		\dfrac{ba^{2n+1}(a^2+1)-(ab)^n(a^2+b^2)(ab+1)+ab^{2n+1}(b^2+1)}{(a-b)^2}\\
 		\intertext{Per~\vref{lem:FibpropPhi}}
 		={}&\dfrac{a^{2n}(a^2+1)+b^{2n}(b^2+1)}{(a-b)^2}\\
 	\end{align*}
-	Da cui la tesi.
+	Da cui la tesi.ù
+	
+		\proofpart{Seconda dimostrazione}
+	\begin{align*}
+		contenuto...
+	\end{align*}	
+		
+	
 \end{proof}
 \begin{thm}[Somme di numeri di Fibonacci]
 	Se $\Fib{n}$ è la successione di Fibonacci allora:
