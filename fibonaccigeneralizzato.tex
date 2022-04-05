@@ -96,15 +96,18 @@ Possiamo con qualche calcolo, verificare che
 \begin{align*}
 \Gib{0}={}&h\\
 \Gib{1}={}&k\\
-\Gib{2}={}&k+h=\Fib{1}k+h\Fib{2}\\
-\Gib{3}={}&2k+h=\Fib{3}k+h\Fib{2}\\
-\Gib{4}={}&3k+2h=\Fib{4}k+h\Fib{3}\\
-\Gib{5}={}&5k+3h=\Fib{5}k+h\Fib{4}
+\Gib{2}={}&k+h=\Fib{2}k+\Fib{1}h\\
+\Gib{3}={}&2k+h=\Fib{3}k+\Fib{2}h\\
+\Gib{4}={}&3k+2h=\Fib{4}k+\Fib{3}h\\
+\Gib{5}={}&5k+3h=\Fib{5}k+\Fib{4}h                                              
+                                                                                
+ 
 \end{align*} 
 \begin{thm}[Derivazione]
-	Se $\Gib{n}$ è una successione di Fibonacci generalizzata  con $\Gib{1}=h$ e $\Gib{2}=k $ allora
+	Se $\Gib{n}$ è una successione di Fibonacci generalizzata  con $\Gib{0}=h$ 
+	e $\Gib{1}=k $ allora
 	\begin{equation}
-		\Gib{n}=k\Fib{n-1}+h\Fib{n-2}\quad n>3
+		\Gib{n}=k\Fib{n}+h\Fib{n-1}
 	\end{equation}\label{thm:FibGenDer}
 	Dove $\Fib{n}$ è la successione di Fibonacci
 \end{thm}
@@ -114,11 +117,11 @@ Per induzione
 \intertext{proviamola per n+1}
 		\Gib{n+1}={}&\Gib{n}+\Gib{n-1}\\
 \intertext{per ipotesi induttiva}
-\Gib{n}={}&h\Fib{n}+k\Fib{n-1}\\
-\Gib{n-1}={}&h\Fib{n-1}+k\Fib{n-2}\\
-\Gib{n}+\Gib{n-1}={}&h\Fib{n}+k\Fib{n-1}+h\Fib{n-1}+k\Fib{n-2}\\
-={}&h(\Fib{n}+\Fib{n-1})+k(\Fib{n-1}+\Fib{n-2})\\
-={}&h\Fib{n+1}+k\Fib{n}\\
+\Gib{n}={}&\Fib{n}k+\Fib{n-1}h\\
+\Gib{n}={}&\Fib{n-1}k+\Fib{n-2}h\\
+\Gib{n}+\Gib{n-1}={}&\Fib{n}k+\Fib{n-1}h+\Fib{n-1}k+\Fib{n-2}h\\
+={}&(\Fib{n}+\Fib{n-1})k+(\Fib{n-1}+\Fib{n-2})h\\
+={}&\Fib{n+1}k+\Fib{n}h\\
 \end{align*}
 cvd.
 \end{proof}
