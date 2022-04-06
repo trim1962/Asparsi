@@ -207,10 +207,19 @@ cvd.
 	\intertext{Per il~\vref{lem:FibpropPhi}}
 	={}&\dfrac{a^{n+m}[5+5]}{5}+\dfrac{b^{n+m}[5+5]}{5}\\
 	={}&2(a^{n+m}+b^{n+m})\\
-={}&{}{}{}2\Luc{n+m}\\ 
+={}&{}2\Luc{n+m}\\ 
 \end{align*}
 cvd.
 \end{proof}
+Dal~\vref{thm:LucFibSommaprodotto} possiamo ottenere il seguente risultato
+\begin{cor}[Formule di traslazione]
+Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas 
+allora:
+\begin{align*}
+	\Fib{n}=&\dfrac{2}{5\Fib{a}\Fib{b}-\Luc{a}\Luc{b}}
+	\left[\Fib{a}\Luc{n+b}-\Luc{b}\Fib{n+a}\right]\\
+\end{align*}
+\end{cor}
 Una conseguenza del~\vref{thm:LucFibSommaprodotto} è il seguente
 \begin{cor}[Formule moltiplicazione scalare]~\cite{Rabinowitz_1996}\label{cor:LucFibmoltscalare}
 	Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
