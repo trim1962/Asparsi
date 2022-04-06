@@ -227,8 +227,17 @@ allora:
 	\begin{align*}
 		\intertext{Utilizzando il~\vref{thm:LucFibSommaprodotto}}
 		\Fib{n+m}={}&\dfrac{\Fib{m}\Luc{n}+\Luc{m}\Fib{n}}{2}\\
-		\Luc{n+m}={}&\dfrac{5\Fib{m}\Fib{n}+\Luc{m}\Luc{n}}{2}
-		\intertext{Ponendo}
+		\Luc{n+m}={}&\dfrac{5\Fib{m}\Fib{n}+\Luc{m}\Luc{n}}{2}\\
+		\intertext{Ottengo}
+		\Fib{n+a}={}&\dfrac{\Fib{a}\Luc{n}+\Luc{a}\Fib{n}}{2}\\
+		\Luc{n+b}={}&\dfrac{5\Fib{b}\Fib{n}+\Luc{b}\Luc{n}}{2}\\
+		\intertext{Da cui}
+		\Fib{a}\Luc{n}+\Luc{a}\Fib{n}=&2\Fib{n+a}\\
+		\Luc{b}\Luc{n}+5\Fib{b}\Fib{n}=&2\Luc{n+b}\\
+		\(D_x = \begin{vmatrix}
+			\Fib{a} & \Luc{a}  \\
+			\Luc{b} & 5\Fib{b}
+		\end{vmatrix} = 5\Fib{a}\Fib{b}-\Luc{a}\Luc{b} \)
 	\end{align*}
 \end{proof}
 Una conseguenza del~\vref{thm:LucFibSommaprodotto} è il seguente
