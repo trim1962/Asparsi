@@ -212,7 +212,8 @@ cvd.
 cvd.
 \end{proof}
 Dal~\vref{thm:LucFibSommaprodotto} possiamo ottenere il seguente risultato
-\begin{cor}[Formule di traslazione]
+\begin{cor}[Formule di 
+traslazione]~\cite{Rabinowitz_1996}\label{cor:Formuleditraslazione}
 Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas 
 allora:
 \begin{align*}
@@ -222,6 +223,14 @@ allora:
 	\left[5\Fib{n+a}\Fib{b}-\Luc{n+b}\Luc{a}\right]\\
 \end{align*}
 \end{cor}
+\begin{proof}
+	\begin{align*}
+		\intertext{Utilizzando il~\vref{thm:LucFibSommaprodotto}}
+		\Fib{n+m}={}&\dfrac{\Fib{m}\Luc{n}+\Luc{m}\Fib{n}}{2}\\
+		\Luc{n+m}={}&\dfrac{5\Fib{m}\Fib{n}+\Luc{m}\Luc{n}}{2}
+		\intertext{Ponendo}
+	\end{align*}
+\end{proof}
 Una conseguenza del~\vref{thm:LucFibSommaprodotto} è il seguente
 \begin{cor}[Formule moltiplicazione scalare]~\cite{Rabinowitz_1996}\label{cor:LucFibmoltscalare}
 	Se $\Fib{n}$ è la successione di Fibonacci e  $\Luc{n}$ è quella di Lucas allora:
