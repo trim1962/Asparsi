@@ -1135,3 +1135,18 @@ cvd.
 	\end{align*}
 	cvd.
 \end{proof}
+\begin{thm}[$\Fib{3n}$ è pari qualunque $<\geq1$]
+	Se $\Fib{n}$ è la successione di Fibonacci allora:
+	$\Fib{3n}$ è pari qualunque $<\geq1$\label{eqn:Fib3npari}
+\end{thm}\index{Fibonacci!Valori pari}
+\begin{proof}
+	Per induzione su $n$. Per $n=1$ $\Fib{3}=2$ quindi è vero. Supponiamolo 
+	vero per $n$ proviamolo per $n+1$
+\begin{align*}
+	\Fib{3(n+1)}={}&\Fib{3n+3}\\
+	={}&\Fib{3n+2}+\Fib{3n+1}\\
+	={}&\Fib{3n+1}+\Fib{3n}+\Fib{3n+1}\\
+	={}&2\Fib{3n+1}+\Fib{3n}\\
+\end{align*}
+Dato che $\Fib{3n}$ è pari per ipotesi induttiva $\Fib{3n+3}$ è pari.
+\end{proof}
