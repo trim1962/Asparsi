@@ -9,7 +9,9 @@
 	x_{1,2}=\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}
 	\end{equation*}\index{Equazione!secondo grado!soluzioni}\index{Triniomio!secondo!grado}
 \end{thm}
+
 \begin{proof}
+\proofpart{Prima dimostrazione}
 	\begin{align*}
 	ax^2+bx+c=&0
 	\intertext{$a\neq 0$}
@@ -23,7 +25,104 @@
 	x_{1,2}=&\frac{-b\pm\sqrt{b^2-4ac}}{2a}
 	\end{align*}
 	Da cui la tesi.
+\proofpart{Seconda dimostrazione}
+\cite{Bourne2011}
+\begin{align*}
+	ax^2+bx+c=&0\\
+	4a^2x^2+4abx+4ac=&0\\
+	4a^2x^2+4abx=&-4ac\\
+	4a^2x^2+4abx+b^2=&b^2-4ac\\
+	(2ax+b)^2=&b^2-4ac\\
+	2ax+b=&\pm\sqrt{b^2-4ac}\\
+	2ax=&-b\pm\sqrt{b^2-4ac}\\
+	x=&\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}
+\end{align*}
+cvd.
+\proofpart{Terza dimostrazione}
+\begin{align*}
+	ax^2+bx+c=&0\\
+	a\left(x^2+\dfrac{bx}{a}\right)+c=&0\\
+	a\left(x^2+\dfrac{bx}{a}+\dfrac{b^2}{4a^2}\right)+c=&\dfrac{b^2}{4a}\\
+	a\left[x^2+\dfrac{bx}{a}+\left(\dfrac{b}{2a}\right)^2\right]
+	=&\dfrac{b^2}{4a}-c\\
+	a\left(x+\dfrac{b}{2a}\right)^2=&\dfrac{b^2-4ac}{4a}\\
+	\left(x+\dfrac{b}{2a}\right)^2=&\dfrac{b^2-4ac}{4a^2}\\
+	x+\dfrac{b}{2a}=&\pm\sqrt{\dfrac{b^2-4ac}{4a^2}}\\
+	x+\dfrac{b}{2a}=&\pm\dfrac{\sqrt{b^2-4ac}}{2a}\\
+	x=&-\dfrac{b}{2a}\pm\dfrac{\sqrt{b^2-4ac}}{2a}\\
+	x=&\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\end{align*}
+cvd.
+\proofpart{Quarta dimostrazione}
+\begin{align*}
+	a^2+bx+c=&0\\
+	x^2+\dfrac{b}{a}x+\dfrac{c}{a}=&0\\
+	x^2+\dfrac{b}{a}x+\left(\dfrac{b}{2a}\right)^2+\dfrac{c}{a}-\left(\dfrac{b}{2a}\right)^2=&0\\
+	\left(x+\dfrac{b}{2a}\right)^2+\left(\dfrac{4ac}{4a^2}-\dfrac{b^2}{4a^2}\right)=&0\\
+	\left(x+\dfrac{b}{2a}\right)^2=&\dfrac{b^2-4ac}{4a^2}\\
+	x+\dfrac{b}{2a}=&\pm\dfrac{\sqrt{b^2-4ac}}{2a}\\
+	x=&-\dfrac{b}{2a}\pm\dfrac{\sqrt{b^2-4ac}}{2a}\\
+	x=&\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\end{align*}
 \end{proof}
+\begin{thm}[Formula risolutiva]\label{thm:Equasecdue}
+	Un'equazione di secondo grado $ax^2+bx+c=0$ con $a\neq 0$ e $c\neq 0$ ha 
+	per soluzioni \begin{equation*}\label[equation]{eq:equasecdue}
+		x_{1,2}=\dfrac{2c}{-b\pm\sqrt{b^2-4ac}}
+	\end{equation*}\index{Equazione!secondo 
+	grado!soluzioni}\index{Triniomio!secondo!grado}\index{Citardauq!formula}
+\end{thm}\cite{Wilson2022}
+\begin{proof}
+	\begin{align*}
+		ax^2+bx+c=&0\\
+		a+\dfrac{b}{x}+\dfrac{c}{x^2}=&0\\
+		\dfrac{c}{x^2}+\dfrac{b}{x}=&-a\\
+		c\left(\dfrac{1}{x^2}+\dfrac{b}{cx}\right)=&-a\\
+		c\left[\dfrac{1}{x^2}+\dfrac{b}{cx}+\left(\dfrac{b}{2c}\right)^2\right]=&-a+\left(\dfrac{b}{2c}\right)^2\\
+		c\left(\dfrac{1}{x}+\dfrac{b}{2c}\right)^2=&-a+c\left(\dfrac{b}{2c}\right)^2\\
+		c\left(\dfrac{1}{x}+\dfrac{b}{2c}\right)^2=&-\dfrac{4ac}{4c}+c\left(\dfrac{b}{2c}\right)^2\\
+		c\left(\dfrac{1}{x}+\dfrac{b}{2c}\right)^2=&-\dfrac{4ac}{4c}+\dfrac{cb^2}{4c^2}\\
+		c\left(\dfrac{1}{x}+\dfrac{b}{2c}\right)^2=&\dfrac{b^2}{4c}-\dfrac{4ac}{4c}\\
+		c\left(\dfrac{1}{x}+\dfrac{b}{2c}\right)^2=&\dfrac{b^2-4ac}{4c}\\
+		\left(\dfrac{1}{x}+\dfrac{b}{2c}\right)^2=&\dfrac{b^2-4ac}{4c^2}\\
+		\dfrac{1}{x}+\dfrac{b}{2c}=&\pm\sqrt{\dfrac{b^2-4ac}{4c^2}}\\
+		\dfrac{1}{x}=&-\dfrac{b}{2c}\pm\dfrac{\sqrt{b^2-4ac}}{2c}\\
+		\dfrac{1}{x}=&\dfrac{-b\pm\sqrt{b^2-4ac}}{2c}\\
+		x=&\dfrac{2c}{-b\pm\sqrt{b^2-4ac}}\\
+	\end{align*}
+cvd.
+\end{proof}
+\begin{commento}
+	Il~\vref{thm:Equasecdue} si presta a questa osservazione: se
+	\begin{align*}
+		c=&0\\
+		x=&\dfrac{0}{-b-\sqrt{b^2b}}\\
+		=&\dfrac{0}{-2b}=0\\
+		x=&\dfrac{0}{-b+\sqrt{b^2b}}\\
+		=&\dfrac{0}{0}\\
+	\end{align*}
+\begin{thm}[Equivalenza]
+	Data un'equazione di secondo grado $ax^2+bx+c=0$ le soluzioni 
+	del~\vref{thm:Equasec1} e del~\vref{thm:Equasecdue} sono equivalenti.
+\end{thm}
+\begin{proof}
+	Partendo dal~\vref{thm:Equasec1} abbiamo:
+	\begin{align*}
+	 x=&\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+	=&\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}\dfrac{-b\mp\sqrt{b^2-4ac}}{-b\mp\sqrt{b^2-4ac}}\\
+	=&\dfrac{b^2-(b^2-4ac)}{2a(-b\mp\sqrt{b^2-4ac})}\\
+	=&\dfrac{2c}{-b\mp\sqrt{b^2-4ac}}\\
+	\end{align*}
+Viceversa:
+\begin{align*}
+	x=&\dfrac{2c}{-b\pm\sqrt{b^2-4ac}}\\
+	=&\dfrac{2c}{-b\pm\sqrt{b^2-4ac}}\dfrac{-b\mp\sqrt{b^2-4ac}}{-b\mp\sqrt{b^2-4ac}}\\
+	=&\dfrac{2c(-b\mp\sqrt{b^2-4ac})}{b^2-(b^2-4ac)}\\
+	=&\dfrac{-b\mp\sqrt{b^2-4ac}}{2a}\\
+\end{align*}
+cvd.
+\end{proof}
+\end{commento}
 \begin{cor}[Proprietà delle soluzioni]\label{cor:secondogradopropsoluzioni}
 Data un'equazione di secondo grado $ax^2+bx+c=0$ con $a\neq 0$, se $x_1$ e $x_2$ sono le sue soluzioni allora\[\begin{cases}
 	x_1+x_2=-\dfrac{b}{a}\\
@@ -76,7 +175,7 @@ x_{1,2}=&\dfrac{-2\beta\pm\sqrt{4\beta^2-4ac}}{2a}\\
 \end{align*}
 Come si voleva dimostrare.
 \end{proof}
-\begin{thm}[somma di due numeri]\label{thm:Equasec3}
+\begin{thm}[Somma di due numeri]\label{thm:Equasec3}
 	\[px^2+(p+q)x+q=0 \] allora l'equazione ha soluzione \[\begin{cases}
 	x_1=-1\\ x_2=-\dfrac{q}{p}
 	\end{cases}\]
@@ -94,4 +193,20 @@ Come si voleva dimostrare.
 	\end{cases}\\
 	\end{align*}
 	Come si voleva dimostrare.
+\end{proof}
+\begin{thm}[Phi]\label{thm:Equasec3Phi}
+	\[x^2-ax-a^2=0 \] allora l'equazione ha soluzione \[\begin{cases}
+		x_1=\left(\dfrac{1+\sqrt{5}}{2}\right) \\ 
+		x_2=\left(\dfrac{1-\sqrt{5}}{2}\right) 
+	\end{cases}\]
+\end{thm}
+\begin{proof}
+Consideriamo l'equazione $x^2-ax-a^2=0$, dal~\cref{thm:Equasec1} otteniamo:
+\begin{align*}
+	x_{1,2}=&\dfrac{a\pm\sqrt{a^2+4a^2}}{2}\\
+	=&\dfrac{a\pm\sqrt{5a^2}}{2}\\
+	=&\dfrac{a\pm a\sqrt{5}}{2}\\
+	=&a\left(\dfrac{1\pm\sqrt{5}}{2}\right)
+\end{align*}
+Come si voleva dimostrare.
 \end{proof}
