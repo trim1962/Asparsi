@@ -64,6 +64,19 @@ cvd.
 	x=&-\dfrac{b}{2a}\pm\dfrac{\sqrt{b^2-4ac}}{2a}\\
 	x=&\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}\\
 \end{align*}
+cvd.
+\proofpart{Quinta dimostrazione}
+\begin{align*}
+	a^2+bx+c=&0\\
+	x^2+\dfrac{b}{a}x+\dfrac{c}{a}=&0\\ 
+	x^2+\dfrac{b}{a}x+\left(\dfrac{b}{2a}\right)^2=&\left(\dfrac{b}{2a}\right)^2-\dfrac{c}{a}\\
+	\left(x+\dfrac{b}{2a}\right)^2=&\dfrac{b^2}{4a^2}-\dfrac{c}{a}\\
+	\left(x+\dfrac{b}{2a}\right)^2=&\dfrac{b^2-4ac}{4a^2}\\
+	x+\dfrac{b}{2a}=&\pm\dfrac{\sqrt{b^2-4ac}}{2a}\\
+	x=&-\dfrac{b}{2a}\pm\dfrac{\sqrt{b^2-4ac}}{2a}\\
+	x=&\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+\end{align*}
+cvd.
 \end{proof}
 \begin{thm}[Formula risolutiva]\label{thm:Equasecdue}
 	Un'equazione di secondo grado $ax^2+bx+c=0$ con $a\neq 0$ e $c\neq 0$ ha 
@@ -73,6 +86,7 @@ cvd.
 	grado!soluzioni}\index{Triniomio!secondo!grado}\index{Citardauq!formula}
 \end{thm}\cite{Wilson2022}
 \begin{proof}
+\proofpart{Prima dimostrazione}
 	\begin{align*}
 		ax^2+bx+c=&0\\
 		a+\dfrac{b}{x}+\dfrac{c}{x^2}=&0\\
@@ -91,6 +105,32 @@ cvd.
 		x=&\dfrac{2c}{-b\pm\sqrt{b^2-4ac}}\\
 	\end{align*}
 cvd.
+\proofpart{Seconda dimostrazione}
+\begin{align*}
+	ax^2+bx+c=&0\\
+a+\dfrac{b}{x}+\dfrac{c}{x^2}=&0\\
+y=&\dfrac{1}{x}\\
+cy^2+by+a=&0	
+\intertext{Utilizzando il~\vref{thm:Equasec1}}
+y=&\dfrac{-b\pm\sqrt{b^2-4ac}}{2c}\\
+x=&\dfrac{2c}{-b\pm\sqrt{b^2-4ac}}\\
+\end{align*}
+cvd.
+\end{proof}
+\begin{thm}[Simmetria]\label{thm:Equasectre}
+	Un'equazione di secondo grado $ax^2+bx+c=0$ con $a\neq 0$ ha per soluzioni 
+	\begin{equation*}\label[equation]{eq:equasectre}
+	x_{1,2}=\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}
+\end{equation*}\index{Equazione!secondo 
+grado!soluzioni}\index{Triniomio!secondo!grado}	
+\end{thm}\cite{Mueller2021}
+\begin{proof}
+	Ad ogni equazione di secondo grado possiamo associare una parabola. Questa  
+	è una curva simmetrica quindi abbiamo che $x_1$ e $x_2$ sono le soluzioni 
+	allora:  \[\left\{\begin{array}{l}
+			x_1=\alpha+\delta\\
+			x_2=\alpha-\delta
+		\end{array}\right.\] 
 \end{proof}
 \begin{commento}
 	Il~\vref{thm:Equasecdue} si presta a questa osservazione: se
@@ -101,6 +141,7 @@ cvd.
 		x=&\dfrac{0}{-b+\sqrt{b^2b}}\\
 		=&\dfrac{0}{0}\\
 	\end{align*}
+\end{commento}
 \begin{thm}[Equivalenza]
 	Data un'equazione di secondo grado $ax^2+bx+c=0$ le soluzioni 
 	del~\vref{thm:Equasec1} e del~\vref{thm:Equasecdue} sono equivalenti.
@@ -122,7 +163,7 @@ Viceversa:
 \end{align*}
 cvd.
 \end{proof}
-\end{commento}
+
 \begin{cor}[Proprietà delle soluzioni]\label{cor:secondogradopropsoluzioni}
 Data un'equazione di secondo grado $ax^2+bx+c=0$ con $a\neq 0$, se $x_1$ e $x_2$ sono le sue soluzioni allora\[\begin{cases}
 	x_1+x_2=-\dfrac{b}{a}\\
