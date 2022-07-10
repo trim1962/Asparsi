@@ -116,27 +116,10 @@ x=&\dfrac{2c}{-b\pm\sqrt{b^2-4ac}}\\
 \end{align*}
 cvd.
 \end{proof}
-\begin{thm}[Simmetria]\label{thm:Equasectre}
-	Un'equazione di secondo grado $ax^2+bx+c=0$ con $a\neq 0$ ha per soluzioni 
-	\begin{equation*}\label[equation]{eq:equasectre}
-	x_{1,2}=\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}
-\end{equation*}\index{Equazione!secondo 
-grado!soluzioni}\index{Triniomio!secondo!grado}	
-\end{thm}\cite{Mueller2021}
-\begin{proof}
-	Ad ogni equazione di secondo grado possiamo associare una parabola. Questa  
-	è una curva simmetrica quindi abbiamo che $x_1$ e $x_2$ sono le soluzioni 
-	allora:\begin{equation}\label{eqn:Equasectre}
-		\left\{\begin{array}{l}
-			x_1=\alpha+\delta\\
-			x_2=\alpha-\delta
-		\end{array}\right.
-	\end{equation}
-\end{proof}
+
 \begin{commento}
-	Il~\vref{thm:Equasecdue} si presta a questa osservazione: se
+	Il~\vref{thm:Equasecdue} si presta a questa osservazione: se $c=0$
 	\begin{align*}
-		c=&0\\
 		x=&\dfrac{0}{-b-\sqrt{b^2b}}\\
 		=&\dfrac{0}{-2b}=0\\
 		x=&\dfrac{0}{-b+\sqrt{b^2b}}\\
@@ -164,7 +147,44 @@ Viceversa:
 \end{align*}
 cvd.
 \end{proof}
-
+\begin{thm}[Simmetria]\label{thm:Equasectre}
+	Un'equazione di secondo grado $ax^2+bx+c=0$ con $a\neq 0$ ha per soluzioni 
+	\begin{equation*}\label[equation]{eq:equasectre}
+		x_{1,2}=\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}
+	\end{equation*}\index{Equazione!secondo 
+		grado!soluzioni}\index{Triniomio!secondo!grado}	
+\end{thm}\cite{Mueller2021}
+\begin{proof}
+	Ad ogni equazione di secondo grado possiamo associare una parabola. Questa  
+	è una curva simmetrica quindi abbiamo che $x_1$ e $x_2$ sono le soluzioni 
+	allora:\begin{equation}\label{eqn:Equasectre}
+		\left\{\begin{array}{l}
+			x_1=\alpha+\delta\\
+			x_2=\alpha-\delta
+		\end{array}\right.
+	\end{equation}
+	
+	Abbiamo che
+	\begin{align*}
+		ax^2+bx+c=&0\\
+		x^2+\dfrac{b}{a}x+\dfrac{c}{a}=&(x-x_1)(x-x_2)\\
+		=&x^2-(x_1+x_2)x+x_1x_2\\
+		-(x_1+x_2)=&\dfrac{b}{a}\\
+		\alpha+\delta+\alpha-\delta=&-\dfrac{b}{a}\\
+		\alpha=&-\dfrac{b}{2a}\\
+		(\alpha-\delta)(\alpha+\delta)=&\dfrac{c}{a}\\
+		\alpha^2-\delta^2=&\dfrac{c}{a}\\
+		\dfrac{b^2}{4a^2}-\delta^2=&\dfrac{c}{a}\\
+		\delta^2=&\dfrac{b^2}{4a^2}-\dfrac{c}{a}\\
+		\delta^2=&\dfrac{b^2-4ac}{4a^2}\\
+		\delta=&\dfrac{\pm\sqrt{b^2-4ac}}{2a}\\
+		x_1=&-\dfrac{b}{2a}+\dfrac{\sqrt{b^2-4ac}}{2a}\\
+		x_1=&\dfrac{-b+\sqrt{b^2-4ac}}{2a}\\
+		x_2=&-\dfrac{b}{2a}-\dfrac{\sqrt{b^2-4ac}}{2a}\\
+		x_2=&\dfrac{-b-\sqrt{b^2-4ac}}{2a}\\
+	\end{align*}
+	cvd.
+\end{proof}
 \begin{cor}[Proprietà delle soluzioni]\label{cor:secondogradopropsoluzioni}
 Data un'equazione di secondo grado $ax^2+bx+c=0$ con $a\neq 0$, se $x_1$ e $x_2$ sono le sue soluzioni allora\[\begin{cases}
 	x_1+x_2=-\dfrac{b}{a}\\
