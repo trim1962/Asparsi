@@ -106,7 +106,8 @@
 \usepackage{indice}
 \usepackage{date}
 \usepackage{unita_misura}
-
+%\usepackage[xindy]{imakeidx}
+%\makeindex[columns=1,options=-C utf8 -L italian -s ../Mod_base/oldclaudio.sti]
 
 \usepackage{imakeidx}
 \makeindex[options=-s ../Mod_base/oldclaudio.sti]
@@ -203,19 +204,20 @@ citecolor={red},
 breaklinks,
 bookmarksopen,
 verbose,
+unicode,
 baseurl={http://breviariomatematico.altervista.org}
 }
 
 \input{compilaTexStudio}
 
 %patch allieamento lista teoremi
-\usepackage{regexpatch}
-\makeatletter
-%\xpatchcmd*{\thm@@thmline}{2.3em}{5em}{}{} % not really needed
-\xpatchcmd*{\thm@@thmline@name}{2.3em}{5em}{}{} 
-\xpatchcmd*{\thm@@thmline@noname}{2.3em}{5em}{}{}
-\makeatother
-%fine patch allieamento lista teoremi
+%%\usepackage{regexpatch}
+%\makeatletter
+%%\xpatchcmd*{\thm@@thmline}{2.3em}{5em}{}{} % not really needed
+%\xpatchcmd*{\thm@@thmline@name}{2.3em}{5em}{}{} 
+%\xpatchcmd*{\thm@@thmline@noname}{2.3em}{5em}{}{}
+%\makeatother
+%%fine patch allieamento lista teoremi
 \makeatletter
 \newcounter{proofpart}
 \xpretocmd{\proof}{\setcounter{proofpart}{0}}{}{}
