@@ -1,0 +1,228 @@
+% !TeX root = Asparsi.tex
+% !BIB TS-program = biber
+% !TeX encoding = UTF-8
+% !TeX spellcheck = it_IT
+\chapter{Disuguaglianze triangolari}
+\section{Triangolo qualunque}
+\begin{thm}[Disuguaglianza triangolare]\label{thm:disuguaglianza_triangolare}
+	In un triangolo qualunque  di lati $a$, $b$ e $c$ abbiamo\index{Triangolo!qualunque}
+	\begin{align*}
+		a<&b+c\\
+		b<&a+c\\
+		c<&a+b\\
+	\end{align*}
+\end{thm}
+\begin{thm}[Triangolo qualunque]\label{thm:triangolo_qualunque}
+In un triangolo qualunque se $\alpha > \beta$ allora $a>\dfrac{1}{2}c$\index{Triangolo!qualunque}
+\end{thm}
+\begin{figure}
+	\centering
+	\includestandalone{geometria/triangolo_qualunque}
+	\caption{Triangolo qualunque}
+	\label{fig:triangoloqualunque}
+\end{figure}
+\begin{figure}
+	\centering
+	\includestandalone{geometria/triangolo_qualunque_mediana}
+	\caption{Triangolo qualunque mediana}
+	\label{fig:triangoloqualunquemediana}
+\end{figure}
+\begin{proof}
+	Consideriamo la figura~\vref{fig:triangoloqualunque} se  $\alpha > \beta$ allora 
+	\begin{align*}
+		a>&b\\
+			a+a>&a+b\\
+			2a>&a+b\\
+			\intertext{ma}
+			a+b>&c\\
+			\intertext{quindi}
+				2a>&c\\
+				a>&\dfrac{1}{2}c
+	\end{align*}
+cvd.
+\end{proof}
+\begin{thm}[Triangolo qualunque mediana]\label{thm:triangolo_qualunque_mediana}
+	In un triangolo qualunque, se $m_a$, $m_b$ e $m_c$ sono le lunghezze delle mediane  di un triangolo di lati $a$, $b$ e $c$ allora\index{Triangolo!qualunque}\index{Mediana!triangolo}\index{Triangolo!mediana}
+	\begin{align*}
+		m_a>&\dfrac{b+c-a}{2}\\
+		m_b>&\dfrac{a+c-b}{2}\\
+		m_c>&\dfrac{a+b-c}{2}\\
+	\end{align*}
+\end{thm}
+\begin{proof}
+	Dimostriamo la prima disuguaglianza essendo le altre analoghe. Consideriamo il triangolo $ABC$ della figura~\vref{fig:triangoloqualunquemediana}
+	\begin{align*}
+		\intertext{Nel triangolo $AMB$}
+		m_a+\dfrac{a}{2}>&c\\
+		\intertext{Nel triangolo $AMC$}
+		m_a+\dfrac{a}{2}>&b\\
+		2m_a+a>&b+c\\
+		m_a>&\dfrac{b+c-a}{2}
+	\end{align*}
+\end{proof}
+cvd.
+\begin{thm}[Prodotti dei lati]\label{thm:triangoloprodottolati}
+	In un triangolo qualunque  di lati $a$, $b$ e $c$ abbiamo\index{Triangolo!qualunque}
+	\begin{align*}
+	(p-a)(p-b)<&ab\\
+	(p-a)(p-c)<&ac\\
+	(p-b)(p-c)<&bc\\
+	\end{align*}
+\end{thm}
+\begin{proof}
+	Dimostriamo la prima visto che le altre sono analoghe::
+	\begin{align*}
+	c<&a+b\\
+a+b+c<&a+b+a+b\\
+a+b+c<&2(a+b)\\
+p<&a+b\\
+p^2<&p(a+b)\\
+p^2-p(a+b)<&0\\
+p^2-pa-pb<&0\\
+p^2-pa-pb+ab<&ab\\
+p(p-a)-b(p-a)<&ab\\
+(p-a)(p-b)<&ab\\
+\end{align*}
+\end{proof}
+cvd.
+\begin{thm}[Prodotti negativi]\label{thm:Prodotti_negativi}
+In un triangolo di lati $a$, $b$, $c$ se $ab=a^2+b^2-c^2$ allora $(a-b)(b-c)<0$
+\end{thm}
+\begin{proof}
+	Il segno del prodotto  dipende dal prodotto dei segni
+	
+	\begin{center}
+		\begin{tabular}{ccc}.
+	$(a-b)$&$(b-c)$	&  \\
+	\midrule
+	$+$&$+$&$+$\\
+	$-$&$-$	&$+$ \\
+	$+$&$-$	&$-$ \\
+	$-$&$+$	&$-$ \\
+	\bottomrule
+	\end{tabular}
+	\end{center}
+Supponiamo che
+\begin{align*}
+	\begin{cases}
+		a-b>0\\
+		b-c>0
+	&\end{cases}\\
+\begin{cases}
+	a>b\\
+	b>c
+	&\end{cases}\\
+\intertext{Se}
+a>&b\\
+a^2>&ab
+\intertext{ma}
+ab=&a^2+b^2-c^2\\
+a^2>&a^2+b^2-c^2\\
+c^2-b^2>&0\\
+(c-b)(c+b)>&0
+\intertext{Se per ipotesi $b-c>0$ allora $c-b<0$ Quindi il prodotto non può essere positivo.}
+\intertext{Se}
+b>&c\\
+b^2>&c^2\\
+b^2-c^2>&0\\
+\intertext{ma}
+b^2-a^2-b^2+ab>&0\\
+ab-a^2>&0\\
+a(b-a)>&0
+\intertext{Se per ipotesi $a-b>0$ allora $b-a<0$ Quindi il prodotto non può essere positivo.}
+\end{align*}
+Quindi supporre che i fattori di $(a-b)(b-c)$  sono entrambi positivi porta ad una contraddizione.
+
+Supponiamo che
+\begin{align*}
+	\begin{cases}
+		a-b<0\\
+		b-c<0
+		&\end{cases}\\
+	\begin{cases}
+		a<b\\
+		b<c
+		&\end{cases}\\
+	\intertext{Se}
+	b<&c\\
+	b^2<&c^2
+	\intertext{ma}
+	b^2=&ab+c^2-a^2\\
+	ab+c^2-a^2<&c^2\\
+	ab-a^2<&0\\
+	a(b-a)<&0
+	\intertext{Se per ipotesi $a-b<0$ allora $b-a>0$ Quindi il prodotto non può essere negativo.}
+	\intertext{Se}
+	a<&b\\
+	a^2<&ab
+	\intertext{ma}
+	a^2<&a^2+b^2-c^2\\
+	a^2-a^2-b^2+c^2<&0\\
+	c^2-b^2<&0\\
+	(c+b)(c-b)<&0\\
+	\intertext{Se per ipotesi $b-c<0$ allora $c-b>0$ Quindi il prodotto non può essere negativo.}
+\end{align*}
+Quindi supporre che i fattori di $(a-b)(b-c)$  sono entrambi negativi porta ad una contraddizione.
+
+Supponiamo che
+\begin{align*}
+	\begin{cases}
+		a-b<0\\
+		b-c>0
+		&\end{cases}\\
+	\begin{cases}
+		a<b\\
+		b>c
+		&\end{cases}\\
+	\intertext{Se}
+	b>&c\\
+	b^2>&c^2
+	\intertext{ma}
+	c^2=&ab+b^2-a^2\\
+	b^2>&a^2+b^2-ab\\
+	ab-a^2>&0\\
+	a(b-a)> &0
+	\intertext{Se per ipotesi $a-b<0$ allora $b-a>0$ Quindi il prodotto è positivo.}
+	\intertext{Se}
+	a<&b\\
+	a^2<&ab
+	\intertext{ma}
+	a^2<&a^2+b^2-c^2\\
+	a^2-a^2-b^2+c^2<&0\\
+	c^2-b^2<&0\\
+	(c+b)(c-b)<&0\\
+	\intertext{Se per ipotesi $b-c>0$ allora $c-b<0$ Quindi il prodotto è negativo.}
+\end{align*}
+Quindi supporre che i fattori di $(a-b)(b-c)$  sono discordi porta ad un'identità da cui la tesi.
+
+Supponiamo che
+\begin{align*}
+	\begin{cases}
+		a-b>0\\
+		b-c<0
+		&\end{cases}\\
+	\begin{cases}
+		a>b\\
+		b<c
+		&\end{cases}\\
+	\intertext{Se}
+	b<&c\\
+	b^2<&c^2
+	\intertext{ma}
+	c^2=&ab+c^2-a^2\\
+	b^2<&a^2+b^2-ab\\
+	ab-a^2<&0\\
+	a(b-a)< &0
+	\intertext{Se per ipotesi $a-b>0$ allora $b-a<0$ Quindi il prodotto è negativo.}
+	\intertext{Se}
+	a>&b\\
+	a^2>&ab
+	\intertext{ma}
+	a^2>&a^2+b^2-c^2\\
+	a^2-a^2-b^2+c^2>&0\\
+	c^2-b^2>&0\\
+	(c+b)(c-b)>&0\\
+	\intertext{Se per ipotesi $b-c<0$ allora $c-b>0$ Quindi il prodotto è positivo.}
+\end{align*}
+Quindi supporre che i fattori di $(a-b)(b-c)$  sono discordi porta ad un'identità da cui la tesi.
+\end{proof}
