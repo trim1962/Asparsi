@@ -4,9 +4,10 @@
 % !TeX spellcheck = it_IT
 
 \documentclass[a4paper,oneside,12pt]{book}%
+\usepackage{cmap}
 \usepackage{base}
 \usepackage{linebreaker}
-\usepackage{cmap}
+
 \usepackage[big]{layaureo}
 \usepackage{copyright}
 \frenchspacing%
@@ -94,13 +95,19 @@
 \theorembodyfont{\normalfont}
 \newtheorem{proof}{Dimostrazione}
 %\input{../Mod_base/tabelle}
-\newtheorem{prob}{Problema}[section]
+
 %Proprietà
 \theoremstyle{marginbreak}
 \theoremheaderfont{\normalfont\bfseries}\theorembodyfont{\slshape}
 \theoremsymbol{\ensuremath{\diamondsuit}}
 \theoremseparator{:}
-
+\newtheorem{prob}{Problema}[section]
+\theoremstyle{plain}
+\theoremstyle{break}
+\theorembodyfont{\upshape}
+\theoremsymbol{\ensuremath{\blacklozenge}}
+\theoremseparator{:}
+\newtheorem{racconto}{Racconto}[section]
 \usepackage{pagina}
 
 %\setlength{\headheight}{13pt}
@@ -172,6 +179,8 @@ backref]{biblatex}
 \Crefname{lem}{Lemma}{Lemmi}
 \crefname{prob}{problema}{problemi}
 \Crefname{prob}{Problema}{Problemi}
+\crefname{rac}{racconto}{racconti}
+\Crefname{rac}{Racconto}{Racconti}
 
 \newcommand{\citaoeis}[1]{La successione è la successione 
 \citetitle{#1}~\citeurl{#1} del OEIS}
