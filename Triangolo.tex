@@ -521,7 +521,7 @@ Come volevasi dimostrare.
 \begin{thm}[Il raggio della circonferenza inscritta ad un triangolo]\label{thm:raggiocirconferenzainscrittatriangolo}
 In un triangolo il raggio della circonferenza inscritta ad un triangolo
 \[R=\dfrac{A}{p}\]
-Dove $A$ è l'area del triangolo e $p$ il suo semiperimetro
+Dove $A$ è l'area del triangolo e $p$ il suo semiperimetro.
 \end{thm}\index{Circonferenza!inscritta}\index{Triangolo!area}\index{Triangolo!seiperimetro}
 \begin{figure}
 	\centering
@@ -575,7 +575,7 @@ Come volevasi dimostrare.
 \end{proof}
 \section{Triangolo rettangolo}\label{sec:triangolo-rettangolo}
 \begin{thm}[Circonferenza inscritta]\label{thm:triangolo-rettangoloraggio}
-	In un triangolo rettangolo di ipotenusa $a$ e cateti $b$ e $c$,u  il raggio della circonferenza inscritta è:
+	In un triangolo rettangolo di ipotenusa $a$ e cateti $b$ e $c$  il raggio della circonferenza inscritta è:
 	\[r=\dfrac{b+c-a}{2}\]
 \end{thm}\index{Triangolo!rettangolo}\index{Circonferenza!inscritta}\index{Circocentro!triangolo!rettangolo}
 \begin{figure}
@@ -606,13 +606,13 @@ Come volevasi dimostrare.
 	\end{align*}
 Come volevasi dimostrare.
 \end{proof}
-\section{Triangolo isoscele}
+g  \section{Triangolo isoscele}
 \begin{thm}[Raggio circonferenza inscritta]\label{thm:triangoloisoscelecirconferenzainscritta}
 	In un triangolo isoscele di lato obliquo $a$ e base $b$
-\end{thm}\index{Triangolo!isoscele}\index{Circonferenza!inscritta}il raggio della circonferenza inscritta è \[R=\dfrac{1}{2}b\sqrt{\dfrac{p-b}{p}}\] dove $p$ è il semiperimetro.
+\end{thm}\index{Triangolo!isoscele}\index{Circonferenza!inscritta}il raggio della circonferenza inscritta è \[r=\dfrac{1}{2}b\sqrt{\dfrac{p-b}{p}}\] dove $p$ è il semiperimetro.
 \begin{figure}
 	\centering
-%	\includestandalone{geometria/triangolo_isoscele_raggiocirconferenza_inscritta}
+\includestandalone{geometria/triangolo_isoscele_raggiocirconferenza_inscritta}
 	\caption{Triangolo isoscele circonferenza inscritta}
 	\label{fig:Triangoloisoscelecirconferenzainscritta}
 \end{figure}
@@ -625,7 +625,7 @@ Come volevasi dimostrare.
 		=&\dfrac{1}{2}b\sqrt{a^2-\dfrac{b^2}{4}}\\
 		\intertext{ma vale anche}
 		A_{ABC}=&A_{AOB}+A_{COB}+A_{AOC}\\
-		=&\dfrac{1}{2}ar+\dfrac{1}{2}ar+\dfrac{1}{2}cr\\
+		=&\dfrac{1}{2}ar+\dfrac{1}{2}ar+\dfrac{1}{2}bf                r\\
 		=&\dfrac{1}{2}r(2a+b)\\
 		\intertext{quindi}
 		\dfrac{1}{2}r(2a+b)=&\dfrac{1}{2}b\sqrt{a^2-\dfrac{b^2}{4}}\\
@@ -642,6 +642,39 @@ Come volevasi dimostrare.
 		=&\dfrac{1}{2}b\sqrt{\dfrac{p-b}{p}}
 	\end{align*} 
 Come volevasi dimostrare
+\end{proof}
+\begin{proof}
+	Consideriamo la~\cref{fig:Triangoloisoscelecirconferenzainscritta}.
+	Il triangolo $EBC$ è retto in $E$ e per il teorema di Pitagora\index{Pitagora!Teorema} abbiamo:  \begin{align*}
+		CE^2=&BC^2-EB^2\\
+		CE=&\sqrt{a^2-\dfrac{b^2}{4}}\\
+		\intertext{Consideriamo i triangoli $EOB$ e $BOF$ questi triangoli sono uguali e quindi }
+		FB=&EB\\
+		\intertext{Consideriamo il triangolo rettangolo in $FE$ $OFC$ abbiamo}
+		FC=&CB-FB\\
+		FC=&a-\dfrac{b}{2}\\
+		CO=&CE-OE\\
+		CO=&\sqrt{a^2-\dfrac{b^2}{4}}-r\\
+		\intertext{Per il teorema di Pitagora abbiamo anche che}
+		CO^2=&FO^2+CF^2\\
+		=&r^2+\left(a-\dfrac{b}{2}\right)^2\\
+		\intertext{Quindi combinando i risultati abbiamo}
+		\left(\sqrt{a^2-\dfrac{b^2}{4}}-r\right)^2=&r^2+\left(a-\dfrac{b}{2}\right)^2\\
+		4r\sqrt{4a^2-b^2}+b^2=&4ab-b^2\\
+		4r\sqrt{4a^2-b^2}=&4ab-2b^2\\
+		2r\sqrt{4a^2-b^2}=&2ab-b^2\\
+		r=&\dfrac{2ab-b^2}{2\sqrt{4a^2-b^2}}\\
+		r=&\dfrac{b(2a-b)}{2\sqrt{(2a-b)(2a+b)}}\\
+		\intertext{Dalla definizione di perimetro}
+		2a+b=&2p\\
+		2a-b=&2(p-b)\\
+		r=&\dfrac{2b(p-b)}{2\sqrt{4p(p-b)}}\\
+		=&\dfrac{b(p-b)}{2\sqrt{p(p-b)}}\cdot\dfrac{\sqrt{p(p-b)}}{\sqrt{p(p-b)}}\\
+		=&\dfrac{b(p-b)\sqrt{p(p-b)}}{2p(p-b)}\\
+		=&\dfrac{b\sqrt{p(p-b)}}{2p}\\
+		=&\dfrac{b}{2}\sqrt{\dfrac{p(p-b)}{p}}\\
+		\end{align*}
+		Da cui la tesi.
 \end{proof}
 \section{Triangolo equilatero}\label{sec:triangolo-equilatero}
 \begin{thm}[Ortocentro, circocentro e baricentro]\label{thm:triangoloequilatero1}
@@ -693,11 +726,11 @@ Come volevasi dimostrare
 		\intertext{Quindi}
 		h=&\dfrac{l}{2}\sqrt{3}\\
 		\intertext{Consideriamo il triangolo $OBC$}
-		x^2=&r^2-\dfrac{l^2}{4}\\
+		x^2=&R^2-\dfrac{l^2}{4}\\
 		x=&h-R\\
-		(h-R)^2=&r^2-\dfrac{l^2}{4}\\
+		(h-R)^2=&R^2-\dfrac{l^2}{4}\\
 		2hR-h^2=&\dfrac{l^2}{4}\\
-		2(\dfrac{l}{2}\sqrt{3})R-(\dfrac{l}{2}\sqrt{3})^2=&\dfrac{l^2}{4}\\
+		2\left(\dfrac{l}{2}\sqrt{3}\right)R-\left(\dfrac{l}{2}\sqrt{3}\right)^2=&\dfrac{l^2}{4}\\
 		\dfrac{3}{4}l^2-l\sqrt{3}R=&-\dfrac{l^2}{4}\\
 		\dfrac{3}{4}l^2+\dfrac{l^2}{4}-l\sqrt{3}R=&0\\
 		l^2-l\sqrt{3}R=&0\\
@@ -773,7 +806,7 @@ Come volevasi dimostrare.
 		b^2-x^2=&c^2-a^2-x^2+2ax\nonumber\\
 		2ax=&b^2+a^2-c^2\nonumber\\
 		x=&\dfrac{b^2+a^2-c^2}{2a}\nonumber\\
-		\intertext{Per esprire l'altezza in funzione dei lati sostituiamo il risultato precedente nell'~\cref{eqn:erone1}}
+		\intertext{Per esprimere l'altezza in funzione dei lati sostituiamo il risultato precedente nell'~\cref{eqn:erone1}}
 		h^2=&b^2-\dfrac{\left(b^2+a^2-c^2\right)^2}{4a^2}\nonumber\\
 		=&\dfrac{4a^2b^2-(b^2+a^2-c^2)^2}{4a^2}\nonumber\\
 		=&\dfrac{\left[2ab-\left(a^2+b^2-c^2\right)\right]\left[2ab+\left(a^2+b^2-c^2\right)\right]}{4a^2}\nonumber\\
@@ -817,3 +850,40 @@ Come volevasi dimostrare.
 \begin{cor}[Formula di Erone triangolo equilatero]\label{cor:Formula_Erone_equilatero_2}
 	Dato un triangolo equilatero, l'area è \[A=\dfrac{a^2}{4}\sqrt{3}\]
 \end{cor}\index{Triangolo!equilatero!Erone}\index{Teorema!Erone}
+\section{Quadrato inscritto in un triangolo equilatero}
+\begin{figure}
+	\centering
+	\includestandalone{geometria/quadratoinscritto}
+	\caption{Quadrato inscritto}
+	\label{fig:Quadratoinscritto1}
+\end{figure}
+\begin{thm}[Lato quadrato inscritto]\label{thm:LatoQuadratoinscritto1}
+Il lato del quadrato inscritto~\cite{Gregorio2025} in un triangolo equilatero di lato $l$ è 
+\[x=\sqrt{3}(2-\sqrt{3})l\] 
+\end{thm}\index{Triangolo!Quadrato!inscritto}
+\begin{proof}
+	Consideriamo la~\cref{fig:Quadratoinscritto1}, poniamo che il lato del triangolo sia $l$ e che il quadrato abbia lato $x$. Consideriamo il triangolo $AED$. Il cateto $AE$ è lungo $\dfrac{l-x}{2}$. La lunghezza del lato $AD$ è $l-x$. Questo si dimostra osservando che se i triangoli $ADE$ e $GBF$ vengono uniti formano un triangolo equilatero di cui $AD$ è lato e quindi la sua lunghezza è il doppio di $AE$.   
+	
+	Il lato $DE$ è
+	\begin{align*}
+			=&\sqrt{\left(l-x\right)^2-\left(\dfrac{l-x}{2}\right)^2}\\
+			=&\sqrt{3}\left(\dfrac{l-x}{2}\right)\\
+			\intertext{Ma $DE$ è lungo $x$ quindi}
+			\sqrt{3}\left(\dfrac{l-x}{2}\right)=&x\\
+			\sqrt{3}\left(l-x\right)=&2x\\
+			\sqrt{3}l-\sqrt{3}x-2x=&0\\
+			x(\sqrt{3}+2)=&\sqrt{3}l\\
+			x=&\dfrac{\sqrt{3}}{\sqrt{3}+2}l\\
+			x=&\sqrt{3}(2-\sqrt{3})l\\
+	\end{align*}
+da cui la tesi.
+\end{proof}
+\begin{cor}[Area quadrato inscritto]\label{cor:AreaQuadratoinscritto1}
+	In un triangolo equilatero il rapporto tra l'area del triangolo e quella del quadrato inscritto è costante
+\end{cor}\index{Triangolo!Equilatero!Quadrato inscritto}\index{Quadrato!Area}
+\begin{proof}
+	Per il~\cref{thm:LatoQuadratoinscritto1},  il lato del quadrato è:  \[x=\sqrt{3}(2-\sqrt{3})l\] dove $l$ è quello del triangolo. Quindi la sua area \[A_{q}=\left(\sqrt{3}(2-\sqrt{3})\right)^2l^2\]
+	Per il~\cref{cor:Formula_Erone_equilatero_2} il triangolo ha area \[A_{t}=\dfrac{l^2}{4}\sqrt{3}\]
+	Quindi \[\dfrac{A_{q}}{A_{t}}=\dfrac{\left(\sqrt{3}(2-\sqrt{3})\right)^2l^2}{\dfrac{l^2}{4}\sqrt{3}}=4\sqrt{3}\left(7-4\sqrt{3}\right)\]
+	DA cui la tesi.
+\end{proof}
