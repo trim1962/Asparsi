@@ -1,0 +1,109 @@
+% !TeX root = Asparsi.tex
+% !BIB TS-program = biber
+% !TeX encoding = UTF-8
+% !TeX spellcheck = it_IT
+\section{Esagono}
+\begin{figure}
+	\centering
+	\includestandalone{geometria/esagono}
+	\caption{Esagono}
+	\label{fig:esagono1}
+\end{figure}
+\begin{thm}[Diagonali]
+	Un esagono ha nove diagonali.
+\end{thm}\index{Esagono!diagonale}\index{Diagonale!esagono}
+
+\begin{figure}
+	\centering
+	\includestandalone{geometria/esagono_diagonali}
+	\caption{Esagono diagonali}
+	\label{fig:esagonodiagonali}
+\end{figure}
+\begin{proof}
+	Consideriamo la~\vref{fig:esagonodiagonali}. Da ogni vertice escono tre diagonali i vertici sono sei quindi abbiamo \num{18} diagonali ma ogni diagonale collega due vertici quindi il numero totale delle diagonali è nove. 
+	
+	Come volevasi dimostrare.
+\end{proof}
+\begin{thm}[Lato esagono]\label{thm:latoesagonoinscritto}
+	L'esagono inscritto in una circonferenza ha i lati uguali al raggio della circonferenza.
+\end{thm}\index{Esagono!lato}
+\begin{proof}
+	Consideriamo la~\vref{fig:esagono1}. Il triangolo $OCD$ è isoscele di lati uguali $OC$ e $OD$. Quindi gli angoli in $C$ e in $D$ sono uguali. L'angolo in $O$ è la sesta parte di un angolo giro. Quindi
+	\begin{align*} 
+		2x+\ang{60}=&\ang{180}\\
+		x=&\ang{60}
+	\end{align*} 
+	Dato che un triangolo equiangolo è equilatero i tre lati sono uguali.
+	Come volevasi dimostrare.
+\end{proof}
+\begin{cor}[Lato triangolo equilatero]\label{cor:latotriangoloequilatero1}
+	Dato un triangolo equilatero di lato $l$ inscritto in una circonferenza si raggio $r$ avremo  \[l=r\sqrt{3}\]
+\end{cor}\index{Triangolo!equilatero}\index{Triangolo!equilatero!lato}
+\begin{figure}
+	\centering
+	\includestandalone{geometria/esagono_triangolo_equilatero}
+	\caption{Lato triangolo equilatero inscritto}
+	\label{fig:latotriangoloequilatero1}
+\end{figure}
+\begin{proof}
+	In una circonferenza di centro $O$ e raggio $r$ si disegna un esagono di lato $m$. Unendo fra loro i vertici non consecutivi otteniamo un triangolo come nella~\vref{fig:latotriangoloequilatero1}. 
+	
+	Infatti Consideriamo i triangoli $ABC$, $CDE$ e $EGA$. Questi poligoni hanno, per costruzione due lati e l'angolo fra essi compreso uguali e quindi i tre triangoli sono congruenti. Ne segue che il triangolo $CAE$ è equilatero.   
+	
+	Tracciamo il triangolo $EDA$. Dato che il vertice $E$ è sulla circonferenza e $DA$ è il diametro il triangolo è rettangolo. Per il~\vref{thm:latoesagonoinscritto} il cateto $DE$ ha lungnezza uguale al raggio.
+	\begin{align*}
+		EA^2=&DA^2-DE^2\\
+		=&(2r)^2-r^2\\
+		\intertext{Quindi}
+		EA=&\sqrt{3r^2}\\
+		=&\sqrt{3}r
+	\end{align*}
+	Da cui la tesi.
+\end{proof}
+\begin{thm}[Area esagono]\label{thm:areaesagonoin1}
+	L'area dell'esagono di lato $R$ è \[A=\dfrac{3}{2}R^2\sqrt{3}\]
+\end{thm}\index{Esagono!area}
+\begin{proof}
+	Consideriamo la~\vref{fig:esagono1}. Calcoliamo l'area del triangolo $OCD$. 
+	\begin{align*}
+		A_{OCD}=&Ra\dfrac{1}{2}
+		\intertext{Abbiamo:}
+		a=&\sqrt{\dfrac{4R^2-R^2}{4}}\\
+		=&	\sqrt{\dfrac{4R^2-R^2}{4}}\\
+		=&\dfrac{R}{2}\sqrt{3}\\
+		\intertext{sostituendo}
+		A_{OCD}=&\dfrac{R^2}{4}\sqrt{3}\\
+		\intertext{L'esagono è formato da sei triangoli quindi:}
+		A=&6\dfrac{R^2}{4}\sqrt{3}\\
+		=&\dfrac{3}{2}R^2\sqrt{3}
+	\end{align*}
+	Come volevasi dimostrare.
+\end{proof}
+\begin{thm}[Rapporto tra aree]
+	L'area di un triangolo equilatero inscritto in un esagono è la metà dell'area dell'esagono.
+\end{thm}\index{Triangolo!equilatero!area}\index{Esagono!area}
+\begin{proof}
+	Consideriamo la~\vref{fig:esagono1}. L'area del triangolo equilatero dato il lato $l$ è \[A_T=\dfrac{l^2}{4}\sqrt{3}\]
+	Per quanto detto nel~\vref{thm:areaesagonoin1}
+	\[A_E=\dfrac{3}{2}R^2\sqrt{3}\]
+	Quindi
+	\begin{align*}
+		\dfrac{A_E}{A_T}=&\dfrac{\dfrac{3}{2}r^2\sqrt{3}}{\dfrac{l^2}{4}\sqrt{3}}\\
+		=&\dfrac{3}{2}r^2\sqrt{3}\dfrac{4}{l^2\sqrt{3}}\\
+		=&6\dfrac{r^2}{l^2}\\
+		\intertext{Ma per il~\vref{cor:latotriangoloequilatero1}}
+		l=&r\sqrt{3}\\
+		=&6\dfrac{r^2}{3r^2}\\
+		=2
+	\end{align*}
+	Come volevasi dimostrare.
+\end{proof}
+\begin{thm}[Apotema dell'esagono]
+	in un esagono l'apotema è:\[a=\dfrac{R}{2}\sqrt{3} \]
+\end{thm}
+\begin{figure}
+	\centering
+	\includestandalone{geometria/esagono_inscritta_circoscritta}
+	\caption{Esagono inscritto e circoscritto}
+	\label{fig:esagonoinscrittocircoscritto}
+\end{figure}
