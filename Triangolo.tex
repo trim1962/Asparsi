@@ -98,8 +98,30 @@ Dato un triangolo, una circonferenza circoscritta è una circonferenza che passa
 	\label{fig:circumcerchio}
 \end{figure}
 \begin{defn}[Circocentro]\label{defn:Circocentro1}
-Il circocentro è il centro della circonferenza circonscritta. \index{Triangolo!circocentro}
+Il circocentro è il centro della circonferenza circoscritta. \index{Triangolo!circocentro}
 \end{defn}
+\begin{thm}[Raggio circonferenza circoscritta]\label{thm:Raggiocirconferenzacircoscritta1}
+	Dato un triangolo di lati $a$, $b$ e $c$ se $A$ è la sua area allora il raggio $r$ della circonferenza circoscritta è \[r=\dfrac{abc}{4A}\]
+\end{thm}\index{Raggio!circonferenza!circonscritta}\index{Circonferenza!circonscritta}\index{Triangolo!circonferenza!circonscritta}
+\begin{proof}
+	Disegniamo la~\vref{fig:Raggiocirconferenzacircoscritta1} e consideriamo il triangolo $ABC$. Per ipotesi poniamo che per i lati $BC=a$, $AC=b$, $BC=c$ e per l'altezza $PH=h$. Mentre la circonferenza di Centro $O$ ha raggio $r$.
+	I due triangoli $ABH$ e $ADC$  sono rettangoli. Il primo è retto in $H$ per ipotesi. Il secondo in $C$ perché l'angolo $H$ insiste sul diametro $AD$. Gli angoli in $B$ e $D$ sono congruenti perché sono angoli alla circonferenza che insistono sulla stessa corda $AC$. Quindi vale la proporzione
+	\begin{align*}
+	AB:AD=&AH:AC\\
+	c:2r=&h:b\\
+	r=&\dfrac{bc}{2h}\\
+	r=&\dfrac{abc}{2ha}\\
+	\intertext{ma $ha=2A$}
+	=&\dfrac{abc}{4A}
+	\end{align*}
+	Da cui la tesi.
+\end{proof}
+\begin{figure}
+	\centering
+	\includestandalone{geometria/raggio_circonferenza_circoscritta}
+	\caption{Raggio circonferenza circoscritta}
+	\label{fig:Raggiocirconferenzacircoscritta1}
+\end{figure}
 \begin{thm}[Assi dei lati e circocentro]\label{thm:CircoAsse1}
 Il circocentro è il punto di incontro degli assi del segmento.\index{Triangolo!circocentro}\index{Triangolo!asse!lato}\index{Circocentro!triangolo}
 \end{thm}
@@ -606,7 +628,7 @@ Come volevasi dimostrare.
 	\end{align*}
 Come volevasi dimostrare.
 \end{proof}
-g  \section{Triangolo isoscele}
+\section{Triangolo isoscele}
 \begin{thm}[Raggio circonferenza inscritta]\label{thm:triangoloisoscelecirconferenzainscritta}
 	In un triangolo isoscele di lato obliquo $a$ e base $b$
 \end{thm}\index{Triangolo!isoscele}\index{Circonferenza!inscritta}il raggio della circonferenza inscritta è \[r=\dfrac{1}{2}b\sqrt{\dfrac{p-b}{p}}\] dove $p$ è il semiperimetro.
@@ -860,7 +882,7 @@ Come volevasi dimostrare.
 \begin{thm}[Lato quadrato inscritto]\label{thm:LatoQuadratoinscritto1}
 Il lato del quadrato inscritto~\cite{Gregorio2025} in un triangolo equilatero di lato $l$ è 
 \[x=\sqrt{3}(2-\sqrt{3})l\] 
-\end{thm}\index{Triangolo!Quadrato!inscritto}
+\end{thm}\index{Triangolo!quadrato!inscritto}
 \begin{proof}
 	Consideriamo la~\cref{fig:Quadratoinscritto1}, poniamo che il lato del triangolo sia $l$ e che il quadrato abbia lato $x$. Consideriamo il triangolo $AED$. Il cateto $AE$ è lungo $\dfrac{l-x}{2}$. La lunghezza del lato $AD$ è $l-x$. Questo si dimostra osservando che se i triangoli $ADE$ e $GBF$ vengono uniti formano un triangolo equilatero di cui $AD$ è lato e quindi la sua lunghezza è il doppio di $AE$.   
 	
